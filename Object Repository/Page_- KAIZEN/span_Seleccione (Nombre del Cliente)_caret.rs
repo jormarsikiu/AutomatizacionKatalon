@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Seleccione (Nombre del Cliente)_caret</name>
+   <tag></tag>
+   <elementGuidId>4ac13301-1a79-4325-8831-fc8cd4e802a6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='datos_principales']/div[2]/div/div/div[2]/div/div/div/button/span[2]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>caret</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;datos_principales&quot;)/div[@class=&quot;panel-body&quot;]/div[@class=&quot;wz-wrapper wizzy&quot;]/div[@class=&quot;wz-inner&quot;]/div[@class=&quot;wz-body&quot;]/div[@class=&quot;wz-step active&quot;]/div[@class=&quot;col-sm-4&quot;]/div[@class=&quot;btn-group bootstrap-select&quot;]/button[@class=&quot;btn dropdown-toggle bs-placeholder combo-cliente&quot;]/span[@class=&quot;bs-caret&quot;]/span[@class=&quot;caret&quot;]</value>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='datos_principales']/div[2]/div/div/div[2]/div/div/div/button/span[2]/span</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/span</value>
+   </webElementXpaths>
+</WebElementEntity>
