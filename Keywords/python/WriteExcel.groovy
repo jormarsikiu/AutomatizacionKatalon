@@ -30,12 +30,15 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import com.kms.katalon.core.configuration.RunConfiguration
+
+
 public class WriteExcel {
 
 
 	@Keyword
 	public void demoKey(String name) throws IOException{
-		FileInputStream fis = new FileInputStream("C:\\Users\\kaizen\\Desktop\\jt\\JormarRespaldo\\Pedidos\\Data Excel\\Pedidos_Creados.xlsx");
+		FileInputStream fis = new FileInputStream("${RunConfiguration.getProjectDir()}/Data Excel/Pedidos_Creados.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
 		XSSFSheet sheet = workbook.getSheet("Sheet1");
@@ -48,7 +51,7 @@ public class WriteExcel {
 		cell.setCellType(cell.CELL_TYPE_STRING);
 
 		cell.setCellValue(name);
-		FileOutputStream fos = new FileOutputStream("C:\\Users\\kaizen\\Desktop\\jt\\JormarRespaldo\\Pedidos\\Data Excel\\Pedidos_Creados.xlsx");
+		FileOutputStream fos = new FileOutputStream("${RunConfiguration.getProjectDir()}/Data Excel/Pedidos_Creados.xlsx");
 		workbook.write(fos);
 		fos.close();
 	}
