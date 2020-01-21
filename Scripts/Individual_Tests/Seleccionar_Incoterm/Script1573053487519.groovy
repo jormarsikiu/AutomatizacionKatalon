@@ -19,7 +19,7 @@ WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/select_incoterm'),
 //Se guarda el id del pedido
 String IDPedidoCreado = WebUI.executeJavaScript('return document.getElementById(\'IdPedido\').value;', null)
 
-CustomKeywords.'python.WriteExcel.demoKey'(IDPedidoCreado)
+CustomKeywords.'exportar_archivos.WriteExcel.demoKey'(IDPedidoCreado)
 
 
 WebUI.click(findTestObject('Page_- KAIZEN/btn_next'))

@@ -8,7 +8,7 @@ import datetime
 from openpyxl.utils import get_column_letter
 
 
-idpedidos = pd.read_excel(r"Pedidos_Creados.xlsx")
+idpedidos = pd.read_excel(r"Pedidos_Creados_Katalon.xlsx")
 
 df_pedidos= pd.DataFrame(idpedidos, columns= ['IdPedido'])
 #n=len(df_pedidos)
@@ -52,12 +52,12 @@ count=0
 
 for rows in sheet5.iter_cols(min_col=1, max_col=1, min_row=2, max_row=n):
 	for row in rows:
-		row.value="admin@grupokaizen.net"
-
+		row.value="automated.test@grupokaizen.net"
 
 for rows in sheet5.iter_cols(min_col=2, max_col=2, min_row=2, max_row=n):
 	for row in rows:
-		row.value="xzigr4SmWZ9Mgtz4Jfx/9Q=="
+		row.value="aeHFOx8jV/A="
+
 wb5.save("TestDataUser.xlsx") 
 
 usuarios = pd.read_excel(r"TestDataUser.xlsx")

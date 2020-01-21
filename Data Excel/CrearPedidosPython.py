@@ -106,19 +106,13 @@ count=0
 
 for rows in sheet5.iter_cols(min_col=1, max_col=1, min_row=2, max_row=n):
 	for row in rows:
-		count = count+1
-		if count%2 == 0:
-			row.value="admin@grupokaizen.net"
-		else:
-			row.value="jormar.turizo@corpalcione.com"
+		row.value="automated.test@grupokaizen.net"
+
 
 for rows in sheet5.iter_cols(min_col=2, max_col=2, min_row=2, max_row=n):
 	for row in rows:
-		count = count+1
-		if count%2 == 0:
-			row.value="xzigr4SmWZ9Mgtz4Jfx/9Q=="
-		else:
-			row.value="MnWdBOQ5x9U="
+		row.value="aeHFOx8jV/A="
+
 wb5.save("TestDataUser.xlsx") 
 
 ################################################
@@ -189,10 +183,10 @@ for i in range (0, len(df_aleatorio)):
 	else:
 		df_aleatorio.loc[i, 'Resultado'] = "Prueba fallida"
 
-export_excel2 = df_aleatorio.to_excel (r'crear_pedido.xlsx', index = None, header=True)
+export_excel2 = df_aleatorio.to_excel (r'Crear_Pedido.xlsx', index = None, header=True)
 
 #Ajustar columnas
-wb6 = openpyxl.load_workbook('crear_pedido.xlsx')
+wb6 = openpyxl.load_workbook('Crear_Pedido.xlsx')
 sheet6 = wb6.worksheets[0]
 
 sheet6.column_dimensions['B'].width = 20
