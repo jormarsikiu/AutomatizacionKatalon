@@ -11,10 +11,16 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>e9be072d-2eb8-422f-91c6-9b2d1de0266c</testSuiteGuid>
    <testCaseLink>
-      <guid>13271a1c-f6f7-4c45-9d37-df005bdd9d4a</guid>
+      <guid>17983afc-6442-4399-a896-a9ae4c8ba007</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_Crear Pedido_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Aleatorio_Pedidos_20pies</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>13271a1c-f6f7-4c45-9d37-df005bdd9d4a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>eba6bb82-0829-4be6-92ac-30b3d749966a</id>
@@ -118,8 +124,8 @@
    <testCaseLink>
       <guid>23bd29bb-5d20-4356-a86f-4d41621103d4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/TC_Aprobar_Ventas_20pies</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>707fd087-ddc1-4afd-99cf-fe69f709e1e4</id>
@@ -127,7 +133,7 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/ApVentas_data</testDataId>
+         <testDataId>Data Files/ApVentas_data_20pies</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>707fd087-ddc1-4afd-99cf-fe69f709e1e4</testDataLinkId>
