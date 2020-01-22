@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>17983afc-6442-4399-a896-a9ae4c8ba007</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Aleatorio_Pedidos_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -120,6 +120,12 @@
          <value>Iterar</value>
          <variableId>7d15c4d3-f641-4e07-9964-b7c3fcdf5271</variableId>
       </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ae438aa2-5091-4bc5-a8c4-49ff56a86348</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_AprobVentas_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>23bd29bb-5d20-4356-a86f-4d41621103d4</guid>

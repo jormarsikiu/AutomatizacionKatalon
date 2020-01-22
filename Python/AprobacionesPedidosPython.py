@@ -104,3 +104,4 @@ export_excel3 = df_fusion3.to_excel (r'AprobacionVentas.xlsx', index = None, hea
 os.remove('TestEstadoPedido.xlsx')
 os.remove('ventas.xlsx')
 os.remove('AprobacionV.xlsx')
+os.remove('TestDataUser.xlsx')

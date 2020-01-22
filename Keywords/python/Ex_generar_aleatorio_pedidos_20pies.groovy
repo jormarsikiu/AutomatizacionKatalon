@@ -23,7 +23,7 @@ public class Ex_generar_aleatorio_pedidos_20pies {
 
 			// Run a command
 			String home = System.getProperty("user.dir");
-			String actual = "\\Data_Excel\\CrearPedidosPython.py"
+			String actual = "\\Python\\CrearPedidosPython.py"
 			String ruta = home + actual
 
 			Process process = Runtime.getRuntime().exec("cmd /c py "+ruta);
@@ -39,11 +39,11 @@ public class Ex_generar_aleatorio_pedidos_20pies {
 
 			int exitVal = process.waitFor();
 			if (exitVal == 0) {
-				System.out.println("Success!");
+				System.out.println("Archivo Creado!!");
 				System.out.println(output);
 				//System.exit(0);
 			} else {
-				System.out.println("Error");
+				System.out.println("No se puedo crear el archivo");
 			}
 
 		} catch (IOException e) {

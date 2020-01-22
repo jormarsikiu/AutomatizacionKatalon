@@ -48,7 +48,7 @@ if (Estado_Pedido=="Aprobar"){
 }
 else {
 
-	WebUI.executeJavaScript("document.querySelector('.btn-danger[onclick='AplazarPedidoV('$IDPedido')']').click()", null)
+	WebUI.executeJavaScript("document.querySelector('.btn-danger[onclick='AplazarPedidoV('$IDPedido');']').click()", null)
 	
 	WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/btn_aceptar_av'))
 	

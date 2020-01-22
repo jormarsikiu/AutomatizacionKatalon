@@ -15,8 +15,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Aprobacion_Ventas'), [('IDCliente') : IDCliente, ('CreadosDesde') : CreadosDesde, ('CreadosHasta') : CreadosHasta
-        , ('IDPedido') : IDPedido, ('Estado_Pedido') : Estado_Pedido], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Usuario') : Usuario, ('Contrasena') : Contrasena], 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Aprobacion_Ventas'), [('IDCliente') : IDCliente, ('CreadosDesde') : CreadosDesde
+        , ('CreadosHasta') : CreadosHasta, ('IDPedido') : IDPedido, ('Estado_Pedido') : Estado_Pedido], FailureHandling.STOP_ON_FAILURE)
+
 
