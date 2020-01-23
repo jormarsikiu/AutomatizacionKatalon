@@ -23,7 +23,7 @@ public class Ex_pedidos_aprobar_20pies {
 
 			// Run a command
 			String home = System.getProperty("user.dir");
-			String actual = "\\Python\\AprobacionesPedidosPython.py"
+			String actual = "\\Pedidos\\Python\\AprobacionesPedidosPython.py"
 			String ruta = home + actual
 
 			Process process = Runtime.getRuntime().exec("cmd /c py "+ruta);

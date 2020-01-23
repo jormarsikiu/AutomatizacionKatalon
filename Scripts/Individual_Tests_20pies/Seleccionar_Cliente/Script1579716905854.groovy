@@ -21,42 +21,42 @@ if ((element == Nombre)) {
  //WebUI.executeJavaScript('alert(\'Es igual\')', null)
     WebUI.delay(2)
 
-    WebUI.waitForElementVisible(findTestObject('Page_- KAIZEN/btn_next'), 0)
+    WebUI.waitForElementVisible(findTestObject('Page_- KAIZEN/sc_btn_next'), 0)
 
-    WebUI.click(findTestObject('Page_- KAIZEN/btn_next') )
+    WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_next') )
 } else {
 //WebUI.executeJavaScript('alert(\'Es Diferente\')', null)
 
 
-	WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/select_cliente1'))
+	WebUI.click(findTestObject('Page_- KAIZEN/sc_select_cliente1'))
 
-	WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/select_cliente2'))
+	WebUI.click(findTestObject('Page_- KAIZEN/sc_select_cliente2'))
 	
-	WebUI.waitForElementPresent(findTestObject('Object Repository/Page_- KAIZEN/select_cliente3'), 5)
+	WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sc_select_cliente3'), 5)
 
-	WebUI.selectOptionByValue(findTestObject('Object Repository/Page_- KAIZEN/select_cliente3'), Nombre, true)
+	WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/sc_select_cliente3'), Nombre, true)
     
-	WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/span_select_address'), 5)
+	WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sc_span_select_address'), 5)
 	
-	WebUI.click(findTestObject('Page_- KAIZEN/span_select_address'))
+	WebUI.click(findTestObject('Page_- KAIZEN/sc_span_select_address'))
 
  //   WebUI.click(findTestObject('Page_- KAIZEN/click_select_address'))
 
-    WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/assing_select_address'), Direccion, 
+    WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/sc_assing_select_address'), Direccion, 
         true)
 
 	if (Contenedor == '20'){
 	
-    	WebUI.click(findTestObject('Page_- KAIZEN/btn_contenedor_20_pies'))
+    	WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_contenedor_20_pies'))
 	}
 	else{
-		WebUI.click(findTestObject('Page_- KAIZEN/btn_contenedor_40_pies'))
+		WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_contenedor_40_pies'))
 		
 	}
     WebUI.delay(2)
 
-    WebUI.waitForElementVisible(findTestObject('Page_- KAIZEN/btn_next'), 3)
+    WebUI.waitForElementVisible(findTestObject('Page_- KAIZEN/sc_btn_next'), 3)
 
-    WebUI.click(findTestObject('Page_- KAIZEN/btn_next'))
+    WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_next'))
 }
 

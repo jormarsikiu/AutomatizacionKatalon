@@ -19,14 +19,13 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.openBrowser('http://test.kaizendev.net/Login/Accesar?salir=true')
 
-//WebUI.navigateToUrl('http://test.kaizendev.net/Login/Accesar?salir=true')
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Page_Iniciar Sesin - KAIZEN/input_email'), Usuario)
+WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
 
-WebUI.setEncryptedText(findTestObject('Page_Iniciar Sesin - KAIZEN/input_contrasena'), Contrasena)
+WebUI.setEncryptedText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
 
-//WebUI.setText(findTestObject('Page_Iniciar Sesin - KAIZEN/input_contrasena'), Contrasena)
-WebUI.click(findTestObject('Page_Iniciar Sesin - KAIZEN/btn_ingresar_sistema'))
+//WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
+WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
 
 

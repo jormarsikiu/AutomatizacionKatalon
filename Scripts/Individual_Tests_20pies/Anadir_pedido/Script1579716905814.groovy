@@ -14,9 +14,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Page_- KAIZEN/menu_pedido'))
+WebUI.click(findTestObject('Page_- KAIZEN/bp_menu_pedido'))
 
-WebUI.click(findTestObject('Page_- KAIZEN/click_menu_pedido'))
+WebUI.click(findTestObject('Page_- KAIZEN/bp_click_menu_pedido'))
 
-WebUI.click(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/btn_agregar'))
+WebUI.click(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/ap_btn_agregar'))
 

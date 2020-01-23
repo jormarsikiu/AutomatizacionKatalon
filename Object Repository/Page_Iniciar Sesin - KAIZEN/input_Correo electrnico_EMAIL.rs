@@ -3,15 +3,11 @@
    <description></description>
    <name>input_Correo electrnico_EMAIL</name>
    <tag></tag>
-   <elementGuidId>65d8168b-c35e-416e-86c8-cb4ff3a094e9</elementGuidId>
+   <elementGuidId>81c2e748-5a6d-4b70-87a0-b16bd278cedd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
          <value>//input[@id='EMAIL']</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>id(&quot;EMAIL&quot;)[count(. | //*[@id = 'EMAIL' and @name = 'EMAIL' and @type = 'text']) = count(//*[@id = 'EMAIL' and @name = 'EMAIL' and @type = 'text'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

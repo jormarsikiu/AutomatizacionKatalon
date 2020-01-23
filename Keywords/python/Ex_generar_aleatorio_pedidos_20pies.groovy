@@ -23,7 +23,7 @@ public class Ex_generar_aleatorio_pedidos_20pies {
 
 			// Run a command
 			String home = System.getProperty("user.dir");
-			String actual = "\\Python\\CrearPedidosPython.py"
+			String actual = "\\Pedidos\\Python\\CrearPedidosPython.py"
 			String ruta = home + actual
 
 			Process process = Runtime.getRuntime().exec("cmd /c py "+ruta);

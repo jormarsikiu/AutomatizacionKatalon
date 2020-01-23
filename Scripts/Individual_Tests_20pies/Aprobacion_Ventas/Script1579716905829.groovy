@@ -16,57 +16,42 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/btn_ventas_av'))
+WebUI.click(findTestObject('Page_- KAIZEN/av_btn_ventas'))
 
-WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/btn_aprobacinventas_av'))
+WebUI.click(findTestObject('Page_- KAIZEN/av_btn_aprobacinventas'))
 
-WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/click_aprobacionventas_av'))
+WebUI.click(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas'))
 
-WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/btn_seleccione_cliente_av'))
+WebUI.click(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente'))
 
-WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/click_seleccione_cliente_av'))
+WebUI.click(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/assing_seleccione_cliente_av'), 
+WebUI.selectOptionByValue(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'), 
     IDCliente, true)
 
-WebUI.setText(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/input_Creados desde_av'), CreadosDesde)
+WebUI.setText(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_input_Creados desde'), CreadosDesde)
 
-WebUI.setText(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/input_Creados hasta_av'), CreadosHasta)
+WebUI.setText(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_input_Creados hasta'), CreadosHasta)
 
-WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/btn_Buscar_av'))
+WebUI.click(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar'))
 
 
-if (Estado_Pedido=="Aprobar"){
+if (AprobacionVentas=="Aprobar"){
 
 	String variable = 'btn_aprobar_'+IDPedido
 
 	WebUI.executeJavaScript("document.getElementById('$variable').click();", null)	
 
-	WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/btn_aceptar_av'))
+	WebUI.click(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar'))
 
 	
 }
 else {
-
-	WebUI.executeJavaScript("document.querySelector('.btn-danger[onclick='AplazarPedidoV('$IDPedido');']').click()", null)
 	
-	WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/btn_aceptar_av'))
+	WebUI.executeJavaScript("document.querySelector(\".btn-danger[onclick='AplazarPedidoV("+IDPedido+");']\").click()", null)
+	
+	WebUI.click(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar'))
 	
 }
 
-
-//Comprobacion 
-WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/click_aprobacionventas_av'))
-
-WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/btn_seleccione_cliente_av'))
-
-WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/click_seleccione_cliente_av'))
-
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/assing_seleccione_cliente_av'),
-	IDCliente, true)
-
-WebUI.setText(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/input_Creados desde_av'), CreadosDesde)
-
-WebUI.setText(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/input_Creados hasta_av'), CreadosHasta)
-
-WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Ventas - KAIZEN/btn_Buscar_av'))
+WebUI.delay(20)

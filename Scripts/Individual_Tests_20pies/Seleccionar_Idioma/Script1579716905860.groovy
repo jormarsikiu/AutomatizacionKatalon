@@ -14,16 +14,16 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Page_- KAIZEN/btn_idioma'))
+WebUI.click(findTestObject('Page_- KAIZEN/si_btn_idioma'))
 
 if (Idioma == '0'){ 
 	
-	WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/a_Ingls'))
+	WebUI.click(findTestObject('Page_- KAIZEN/si_Ingles'))
 }
 
 else {
 
-	WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/a_Spanish'))
+	WebUI.click(findTestObject('Page_- KAIZEN/si_Spanish'))
  }
 
 

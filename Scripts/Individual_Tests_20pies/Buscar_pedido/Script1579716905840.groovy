@@ -14,20 +14,20 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Page_- KAIZEN/menu_pedido'))
+WebUI.click(findTestObject('Page_- KAIZEN/bp_menu_pedido'))
 
-WebUI.click(findTestObject('Page_- KAIZEN/click_menu_pedido'))
+WebUI.click(findTestObject('Page_- KAIZEN/bp_click_menu_pedido'))
 
-WebUI.click(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/btn_buscar_pedido_binoculares'))
+WebUI.click(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/bp_btn_buscar_pedido_binoculares'))
 
-WebUI.setText(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/input_id_pedido'), IDPedido)
+WebUI.setText(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/bp_input_id_pedido'), IDPedido)
 
-WebUI.click(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/btn_buscar'))
+WebUI.click(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/bp_btn_buscar'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/btn_consultar_registro'))
+WebUI.click(findTestObject('Page_Pedidos de Lubricantes - KAIZEN/bp_btn_consultar_registro'))
 
-WebUI.click(findTestObject('Page_- KAIZEN/btn_edit_pedido'))
+WebUI.click(findTestObject('Page_- KAIZEN/bp_btn_edit_pedido'))
 
 

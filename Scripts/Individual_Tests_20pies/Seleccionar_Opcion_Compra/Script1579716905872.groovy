@@ -15,17 +15,17 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(7)
 
-WebUI.waitForElementClickable(findTestObject('Page_- KAIZEN/SelectorOP'), 7)
+WebUI.waitForElementClickable(findTestObject('Page_- KAIZEN/so_SelectorOP'), 7)
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_- KAIZEN/select_SeleccioneOPCION'))
+WebUI.click(findTestObject('Page_- KAIZEN/so_select_SeleccioneOPCION'))
 
 //WebUI.delay(3)
-WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/select_SeleccioneOPCION'), OpCompra1, true)
+WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/so_select_SeleccioneOPCION'), OpCompra1, true)
 
 //WebUI.delay(3)
-WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/btn_next'), 7)
+WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sc_btn_next'), 7)
 
-WebUI.click(findTestObject('Page_- KAIZEN/btn_next'))
+WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_next'))
 

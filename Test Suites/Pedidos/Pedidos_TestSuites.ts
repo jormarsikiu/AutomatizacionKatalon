@@ -130,7 +130,7 @@
    <testCaseLink>
       <guid>23bd29bb-5d20-4356-a86f-4d41621103d4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -139,7 +139,7 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/ApVentas_data_20pies</testDataId>
+         <testDataId>Data Files/Aprobaciones_20pies</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>707fd087-ddc1-4afd-99cf-fe69f709e1e4</testDataLinkId>
@@ -180,8 +180,134 @@
       <variableLink>
          <testDataLinkId>707fd087-ddc1-4afd-99cf-fe69f709e1e4</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Estado_Pedido</value>
-         <variableId>7b28262d-6184-4709-a543-7a288c73bea9</variableId>
+         <value>Aprob. Ventas</value>
+         <variableId>4296e2c4-04aa-4772-9687-590f38a237de</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>df5e1fb1-7b76-4845-ab6c-c6b732540fd8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Aprobar_Financiera_20pies</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0198fc8c-b004-429b-bf0f-b146834ddc0d</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Aprobaciones_20pies</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Id_Cliente</value>
+         <variableId>48c2e3f3-4f82-47c7-90cd-25e2cf3f626e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Creado_desde</value>
+         <variableId>b0f1e053-134c-4da1-b1cf-5dab02bb5e11</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Creado_hasta</value>
+         <variableId>dcc8035f-0944-4aed-9737-c39f081f19e5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>IdPedido</value>
+         <variableId>f5368b3b-a230-40d0-a80b-d1c41c96ac91</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Estatus_Pedido</value>
+         <variableId>c945c05c-0b7e-4794-a666-b33c6ccef50f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Aprob. Financiera</value>
+         <variableId>94b82c47-b740-47e6-85ac-a9d80531462b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Usuario</value>
+         <variableId>c8611b1f-1baf-4587-85eb-d4c34b2f05c5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Contrasena</value>
+         <variableId>340cbecb-3d61-47a7-b6d3-e391aacd2132</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4873f97e-4bb0-4f61-b2c7-2d050eed676d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Aprobar_Produccion_20pies</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>4270d510-0424-46b7-b800-228f7bc8ff62</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Aprobaciones_20pies</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Usuario</value>
+         <variableId>3bdf01d6-fd8e-441b-adf2-fbad8fdf8d5e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Contrasena</value>
+         <variableId>64a292b6-9261-4fe4-8225-614270cd369c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Id_Cliente</value>
+         <variableId>10df624b-bdbc-487c-8687-125c6bb1319a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>IdPedido</value>
+         <variableId>9e21ebd6-aa79-4ce8-9286-e24e5e31f1eb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Creado_desde</value>
+         <variableId>f6053fde-4465-4a78-b517-34c07f503e1e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Creado_hasta</value>
+         <variableId>4dc8815c-6582-40bd-a9f4-a15a9aa1f496</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Estatus_Pedido</value>
+         <variableId>12c66e64-2d9f-4924-801a-611c86819607</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Aprob. Produccion</value>
+         <variableId>efd9f664-ef97-4b1d-9edb-11f8778f81aa</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -3,7 +3,7 @@
    <description></description>
    <name>input_Contrasea_btn btn-default</name>
    <tag></tag>
-   <elementGuidId>b3c44cf6-db11-4fba-b942-79a68437943f</elementGuidId>
+   <elementGuidId>60b6052f-bed2-43c9-afb7-2f61ff1122d8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
