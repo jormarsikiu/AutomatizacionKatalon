@@ -29,11 +29,13 @@ WebUI.click(findTestObject('Page_Aprobacion Financiera - KAIZEN/af_click_selecci
 WebUI.selectOptionByValue(findTestObject('Page_Aprobacion Financiera - KAIZEN/af_assing_seleccione_cliente'), IDCliente, 
     true)
 
-WebUI.setText(findTestObject('Page_Aprobacion Financiera - KAIZEN/af_input_Creados desde'), CreadosDesde)
+//WebUI.setText(findTestObject('Page_Aprobacion Financiera - KAIZEN/af_input_Creados desde'), CreadosDesde)
 
-WebUI.setText(findTestObject('Page_Aprobacion Financiera - KAIZEN/af_input_Creados hasta'), CreadosHasta)
+//WebUI.setText(findTestObject('Page_Aprobacion Financiera - KAIZEN/af_input_Creados hasta'), CreadosHasta)
 
 WebUI.click(findTestObject('Page_Aprobacion Financiera - KAIZEN/af_btn_Buscar'))
+
+WebUI.delay(5)
 
 if (AprobacionFinanciera=="Aprobar"){
 	
@@ -53,7 +55,7 @@ else {
 	
 }
 
-WebUI.delay(20)
+WebUI.delay(10)
 
 //WebUI.click(findTestObject('Page_Aprobacion Financiera - KAIZEN/af_btn_aprobar'))
 

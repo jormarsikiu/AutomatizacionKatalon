@@ -37,7 +37,7 @@ public class Ex_guardar_pedidos_creados {
 
 	@Keyword
 	public void demoKey(String name) throws IOException{
-		FileInputStream fis = new FileInputStream("${RunConfiguration.getProjectDir()}/Pedidos_Creados_Katalon.xlsx");
+		FileInputStream fis = new FileInputStream("${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
 		XSSFSheet sheet = workbook.getSheet("Sheet1");
@@ -50,7 +50,7 @@ public class Ex_guardar_pedidos_creados {
 		cell.setCellType(cell.CELL_TYPE_STRING);
 
 		cell.setCellValue(name);
-		FileOutputStream fos = new FileOutputStream("${RunConfiguration.getProjectDir()}/Pedidos_Creados_Katalon.xlsx");
+		FileOutputStream fos = new FileOutputStream("${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx");
 		workbook.write(fos);
 		fos.close();
 	}

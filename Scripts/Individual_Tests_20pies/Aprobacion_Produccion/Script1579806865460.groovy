@@ -29,15 +29,17 @@ WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Produccin - KAIZ
 WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_assing_selecione_cliente'), 
     IDCliente, true)
 
-WebUI.setText(findTestObject('Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_input_Creados desde'), CreadosDesde)
+//WebUI.setText(findTestObject('Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_input_Creados desde'), CreadosDesde)
 
-WebUI.setText(findTestObject('Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_input_Creados hasta'), CreadosHasta)
+//WebUI.setText(findTestObject('Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_input_Creados hasta'), CreadosHasta)
 
 WebUI.click(findTestObject('Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_Buscar'))
 
 
 WebUI.executeJavaScript('document.querySelector(\'.btn-info[href="/PedidoLubricante/DetalleAprobacion/' + IDPedido + '?Ventana=3"]\').click()', 
     null)
+
+WebUI.delay(5)
 
 if (AprobacionProduccion == 'Aprobar') {
     WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/apo_Aprobar'))
@@ -51,7 +53,7 @@ if (AprobacionProduccion == 'Aprobar') {
     WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/apo_btn_Aceptar'))
 }
 
-WebUI.delay(20)
+WebUI.delay(10)
 
 //println('document.querySelector(\'.btn-info[href="/PedidoLubricante/DetalleAprobacion/' + IDPedido + '?Ventana=3"]\').click()')
 

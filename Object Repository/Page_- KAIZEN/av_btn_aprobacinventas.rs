@@ -6,11 +6,15 @@
    <elementGuidId>af9dadd7-c66c-449e-a8db-9a3188566fa8</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '/PedidoLubricante/AprobacionGVentas' and (text() = ' Aprobación de Ventas' or . = ' Aprobación de Ventas')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
-         <value>//a[@onclick=&quot;localStorage.setItem('delivery', 'Aprobación de Ventas');&quot;]</value>
+         <value>//ul[@id='side-menu']/li[4]/ul/li/a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

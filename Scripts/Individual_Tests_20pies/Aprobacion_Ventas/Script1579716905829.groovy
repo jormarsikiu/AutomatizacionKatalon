@@ -29,12 +29,13 @@ WebUI.click(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_click_seleccion
 WebUI.selectOptionByValue(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'), 
     IDCliente, true)
 
-WebUI.setText(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_input_Creados desde'), CreadosDesde)
+//WebUI.setText(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_input_Creados desde'), CreadosDesde)
 
-WebUI.setText(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_input_Creados hasta'), CreadosHasta)
+//WebUI.setText(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_input_Creados hasta'), CreadosHasta)
 
 WebUI.click(findTestObject('Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar'))
 
+WebUI.delay(5)
 
 if (AprobacionVentas=="Aprobar"){
 
@@ -54,4 +55,4 @@ else {
 	
 }
 
-WebUI.delay(20)
+WebUI.delay(15)

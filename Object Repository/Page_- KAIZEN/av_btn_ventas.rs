@@ -6,11 +6,15 @@
    <elementGuidId>ebef4b58-1069-4abc-ad73-ad1b23fe5409</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@href = '#Ventas' and (text() = ' Ventas' or . = ' Ventas')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//ul[@id='side-menu']/li[4]/a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
