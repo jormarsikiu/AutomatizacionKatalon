@@ -183,6 +183,12 @@
          <value>Aprob. Ventas</value>
          <variableId>4296e2c4-04aa-4772-9687-590f38a237de</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>707fd087-ddc1-4afd-99cf-fe69f709e1e4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Idioma</value>
+         <variableId>5844a590-5f7e-4843-9d98-7dbb50c41d3a</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>df5e1fb1-7b76-4845-ab6c-c6b732540fd8</guid>
@@ -225,12 +231,6 @@
       <variableLink>
          <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Estatus_Pedido</value>
-         <variableId>c945c05c-0b7e-4794-a666-b33c6ccef50f</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
-         <type>DATA_COLUMN</type>
          <value>Aprob. Financiera</value>
          <variableId>94b82c47-b740-47e6-85ac-a9d80531462b</variableId>
       </variableLink>
@@ -245,6 +245,12 @@
          <type>DATA_COLUMN</type>
          <value>Contrasena</value>
          <variableId>340cbecb-3d61-47a7-b6d3-e391aacd2132</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0198fc8c-b004-429b-bf0f-b146834ddc0d</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Idioma</value>
+         <variableId>dfd2441a-5718-486e-b463-8e0128d38918</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -300,14 +306,14 @@
       <variableLink>
          <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Estatus_Pedido</value>
-         <variableId>12c66e64-2d9f-4924-801a-611c86819607</variableId>
+         <value>Aprob. Produccion</value>
+         <variableId>efd9f664-ef97-4b1d-9edb-11f8778f81aa</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId>4270d510-0424-46b7-b800-228f7bc8ff62</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Aprob. Produccion</value>
-         <variableId>efd9f664-ef97-4b1d-9edb-11f8778f81aa</variableId>
+         <value>Idioma</value>
+         <variableId>8daa739a-8a1d-4a8f-9d6e-ba9794febcc8</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

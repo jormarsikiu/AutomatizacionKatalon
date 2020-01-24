@@ -8,7 +8,7 @@ import datetime
 from openpyxl.utils import get_column_letter
 
 
-idpedidos = pd.read_excel(r"Pedidos_Creados_Katalon.xlsx")
+idpedidos = pd.read_excel(r"../../AutomatizacionKatalon/Pedidos_Creados_Katalon.xlsx")
 
 df_pedidos= pd.DataFrame(idpedidos, columns= ['IdPedido'])
 #n=len(df_pedidos)
@@ -41,27 +41,37 @@ wb = openpyxl.load_workbook('Ventas.xlsx')
 sheet = wb.worksheets[0]
 n=len(sheet['A'])
 
-
 #################################################################################
 #Escribir el Usuario y contrasena
 wb5 = openpyxl.Workbook() 
 sheet5 = wb5.active
-sheet5.cell(row=1, column=1).value ="Usuario"
-sheet5.cell(row=1, column=2).value ="Contrasena"
-count=0
+sheet5.cell(row=1, column=1).value ="Idioma"
+sheet5.cell(row=1, column=2).value ="Usuario"
+sheet5.cell(row=1, column=3).value ="Contrasena"
 
-for rows in sheet5.iter_cols(min_col=1, max_col=1, min_row=2, max_row=n):
+count=0
+count5=0
+
+for rows5 in sheet5.iter_cols(min_col=1, max_col=1, min_row=2, max_row=n):
+	for row5 in rows5:
+			count5 = count5+1
+			if count5%2 == 0:
+				row5.value="0"
+			else:
+				row5.value="1"	
+
+for rows in sheet5.iter_cols(min_col=2, max_col=2, min_row=2, max_row=n):
 	for row in rows:
 		row.value="automated.test@grupokaizen.net"
 
-for rows in sheet5.iter_cols(min_col=2, max_col=2, min_row=2, max_row=n):
+for rows in sheet5.iter_cols(min_col=3, max_col=3, min_row=2, max_row=n):
 	for row in rows:
 		row.value="aeHFOx8jV/A="
 
 wb5.save("TestDataUser.xlsx") 
 
 usuarios = pd.read_excel(r"TestDataUser.xlsx")
-df_usuarios =  pd.DataFrame(usuarios, columns= ['Usuario', 'Contrasena'])
+df_usuarios =  pd.DataFrame(usuarios, columns= ['Idioma', 'Usuario', 'Contrasena'])
 #################################################################################
 
 #Escribir el Estado del pedido 
@@ -107,6 +117,7 @@ export_excel2 = df_fusion2.to_excel (r'AprobacionV.xlsx', index = None, header=T
 df_fusion3= pd.DataFrame()
 for i in range (0, len(df_fusion2)):
 	if (df_fusion2.loc[i, 'Estatus_Pedido']=="Creado"):
+		df_fusion3.loc[i, 'Idioma']=df_fusion2.loc[i, 'Idioma']
 		df_fusion3.loc[i, 'Usuario']=df_fusion2.loc[i, 'Usuario']
 		df_fusion3.loc[i, 'Contrasena']=df_fusion2.loc[i, 'Contrasena']
 		df_fusion3.loc[i, 'IdPedido']=df_fusion2.loc[i, 'IdPedido']
@@ -118,9 +129,9 @@ for i in range (0, len(df_fusion2)):
 		df_fusion3.loc[i, 'Aprob. Financiera']=df_fusion2.loc[i, 'Aprob. Financiera']
 		df_fusion3.loc[i, 'Aprob. Produccion']=df_fusion2.loc[i, 'Aprob. Produccion']
 
-export_excel3 = df_fusion3.to_excel (r'AprobacionVentas20pies.xlsx', index = None, header=True)
+export_excel3 = df_fusion3.to_excel (r'AprobacionesPedidos_20pies.xlsx', index = None, header=True)
 
-#os.remove('TestEstadoPedido.xlsx')
+os.remove('TestEstadoPedido.xlsx')
 os.remove('ventas.xlsx')
 os.remove('AprobacionV.xlsx')
 os.remove('TestDataUser.xlsx')
