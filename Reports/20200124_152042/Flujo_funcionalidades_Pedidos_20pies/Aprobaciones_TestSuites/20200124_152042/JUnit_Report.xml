@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Aprobaciones_TestSuites" time="424.088" tests="6" failures="0" errors="0">
+   <testsuite name="Aprobaciones_TestSuites" tests="6" failures="0" errors="0" time="424.088" timestamp="2020-01-24 15:20:44" hostname="kaizen - DESKTOP-38N4VV4" id="Test Suites/Flujo_funcionalidades_Pedidos_20pies/Aprobaciones_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200124_152042\\Flujo_funcionalidades_Pedidos_20pies\\Aprobaciones_TestSuites\\20200124_152042"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200124_152042\\Flujo_funcionalidades_Pedidos_20pies\\Aprobaciones_TestSuites\\20200124_152042\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - DESKTOP-38N4VV4"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 79.0.3945.130"/>
+         <property name="hostAddress" value="192.168.1.101"/>
+         <property name="sessionId" value="3cbc482ef53eb622896290f3be4c6442"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_Aprobaciones_20pies" time="2.29" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_Aprobaciones_20pies" status="PASSED">
+         <system-out><![CDATA[2020-01-24 15:20:45 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_Aprobaciones_20pies: Test Cases/Secuencias de Ejecucion/TC_Generar_Aprobaciones_20pies
+
+2020-01-24 15:20:45 - [TEST_STEP][PASSED] - python.Ex_pedidos_aprobar_20pies.runPython(): python.Ex_pedidos_aprobar_20pies.runPython is PASSED
+
+2020-01-24 15:20:47 - [MESSAGE][PASSED] - python.Ex_pedidos_aprobar_20pies.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" time="86.531" classname="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" status="PASSED">
+         <system-out><![CDATA[2020-01-24 15:20:47 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies: Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies
+
+2020-01-24 15:20:48 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:20:48 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-24 15:20:48 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:20:49 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-24 15:20:49 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-01-24 15:21:20 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:21:20 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-24 15:21:24 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-24 15:21:24 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:21:25 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:21:25 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:21:25 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:21:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:21:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:21:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:21:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:21:30 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-24 15:21:30 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:21:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:21:30 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-01-24 15:21:30 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-24 15:21:30 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-24 15:21:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-24 15:21:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:21:36 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Aprobacion_Ventas"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido, "AprobacionVentas":AprobacionVentas], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully
+
+2020-01-24 15:21:36 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Aprobacion_Ventas: Test Cases/Individual_Tests_20pies/Aprobacion_Ventas
+
+2020-01-24 15:21:37 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_ventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:21:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:21:37 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_aprobacinventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:21:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:21:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:21:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:21:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:21:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:21:42 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:21:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:21:43 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente"), IDCliente, true): All options with value '1' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:21:45 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:21:45 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:21:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:21:48 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-01-24 15:21:53 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-01-24 15:21:53 - [TEST_STEP][PASSED] - if (AprobacionVentas == "Aprobar"): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:21:53 - [TEST_STEP][PASSED] - variable = "btn_aprobar_" + IDPedido: null
+
+2020-01-24 15:21:53 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('$variable').click();, null): Execute JavaScript 'document.getElementById('btn_aprobar_117').click();' successfully
+
+2020-01-24 15:21:53 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('btn_aprobar_117').click();' successfully
+
+2020-01-24 15:21:53 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:21:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:21:54 - [TEST_STEP][PASSED] - delay(20): Delayed 20 second(s)
+
+2020-01-24 15:22:14 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2020-01-24 15:22:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" time="91.185" classname="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" status="PASSED">
+         <system-out><![CDATA[2020-01-24 15:22:14 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies: Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies
+
+2020-01-24 15:22:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:22:14 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-24 15:22:14 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:22:14 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-01-24 15:22:15 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-24 15:22:57 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:22:57 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-24 15:23:02 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-24 15:23:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:23:02 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:23:02 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:23:03 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:23:03 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:23:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:23:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:23:07 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:23:07 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-24 15:23:07 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:23:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:23:07 - [TEST_STEP][PASSED] - if (Idioma == "0"): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-24 15:23:07 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Ingles")): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-24 15:23:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-24 15:23:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:23:09 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Aprobacion_Ventas"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido, "AprobacionVentas":AprobacionVentas], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully
+
+2020-01-24 15:23:09 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Aprobacion_Ventas: Test Cases/Individual_Tests_20pies/Aprobacion_Ventas
+
+2020-01-24 15:23:09 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_ventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:23:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:23:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_aprobacinventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:23:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:23:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:23:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:23:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:23:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:23:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:23:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:23:15 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente"), IDCliente, true): All options with value '7' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:23:17 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:23:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:23:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:23:19 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-01-24 15:23:24 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-01-24 15:23:24 - [TEST_STEP][PASSED] - if (AprobacionVentas == "Aprobar"): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:23:24 - [TEST_STEP][PASSED] - variable = "btn_aprobar_" + IDPedido: null
+
+2020-01-24 15:23:24 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('$variable').click();, null): Execute JavaScript 'document.getElementById('btn_aprobar_120').click();' successfully
+
+2020-01-24 15:23:25 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('btn_aprobar_120').click();' successfully
+
+2020-01-24 15:23:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:23:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:23:25 - [TEST_STEP][PASSED] - delay(20): Delayed 20 second(s)
+
+2020-01-24 15:23:45 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2020-01-24 15:23:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" time="80.984" classname="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" status="PASSED">
+         <system-out><![CDATA[2020-01-24 15:23:45 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies: Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies
+
+2020-01-24 15:23:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:23:45 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-24 15:23:45 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:23:45 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-01-24 15:23:46 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-24 15:24:17 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:24:17 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-24 15:24:21 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-24 15:24:21 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:24:22 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:24:22 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:24:22 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:24:22 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:24:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:24:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:24:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:24:27 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-24 15:24:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:24:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:24:27 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-01-24 15:24:27 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-24 15:24:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-24 15:24:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-24 15:24:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:24:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Aprobacion_Ventas"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido, "AprobacionVentas":AprobacionVentas], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully
+
+2020-01-24 15:24:29 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Aprobacion_Ventas: Test Cases/Individual_Tests_20pies/Aprobacion_Ventas
+
+2020-01-24 15:24:29 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_ventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:24:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:24:30 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_aprobacinventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:24:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:24:34 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:24:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:24:35 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:24:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:24:35 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:24:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:24:36 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente"), IDCliente, true): All options with value '1' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:24:38 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:24:38 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:24:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:24:41 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-01-24 15:24:46 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-01-24 15:24:46 - [TEST_STEP][PASSED] - if (AprobacionVentas == "Aprobar"): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:24:46 - [TEST_STEP][PASSED] - variable = "btn_aprobar_" + IDPedido: null
+
+2020-01-24 15:24:46 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('$variable').click();, null): Execute JavaScript 'document.getElementById('btn_aprobar_121').click();' successfully
+
+2020-01-24 15:24:46 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('btn_aprobar_121').click();' successfully
+
+2020-01-24 15:24:46 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:24:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:24:46 - [TEST_STEP][PASSED] - delay(20): Delayed 20 second(s)
+
+2020-01-24 15:25:06 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2020-01-24 15:25:06 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" time="78.727" classname="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" status="PASSED">
+         <system-out><![CDATA[2020-01-24 15:25:06 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies: Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies
+
+2020-01-24 15:25:06 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:25:07 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-24 15:25:07 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:25:07 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-01-24 15:25:07 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-24 15:25:26 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:25:26 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-24 15:25:30 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-24 15:25:30 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:25:31 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:25:31 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:25:32 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:25:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:25:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:25:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:25:35 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:25:35 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-24 15:25:35 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:25:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:25:36 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-01-24 15:25:36 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-24 15:25:36 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-24 15:25:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-24 15:25:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:25:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Aprobacion_Ventas"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido, "AprobacionVentas":AprobacionVentas], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully
+
+2020-01-24 15:25:40 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Aprobacion_Ventas: Test Cases/Individual_Tests_20pies/Aprobacion_Ventas
+
+2020-01-24 15:25:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_ventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:25:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:25:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_aprobacinventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:25:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:25:53 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:25:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:25:54 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:25:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:25:55 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:25:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:25:55 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente"), IDCliente, true): All options with value '8' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:25:57 - [MESSAGE][PASSED] - All options with value '8' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:25:57 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:25:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:25:59 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-01-24 15:26:04 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-01-24 15:26:04 - [TEST_STEP][PASSED] - if (AprobacionVentas == "Aprobar"): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:26:04 - [TEST_STEP][PASSED] - variable = "btn_aprobar_" + IDPedido: null
+
+2020-01-24 15:26:04 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('$variable').click();, null): Execute JavaScript 'document.getElementById('btn_aprobar_125').click();' successfully
+
+2020-01-24 15:26:05 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('btn_aprobar_125').click();' successfully
+
+2020-01-24 15:26:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:26:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:26:05 - [TEST_STEP][PASSED] - delay(20): Delayed 20 second(s)
+
+2020-01-24 15:26:25 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2020-01-24 15:26:25 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" time="82.162" classname="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies" status="PASSED">
+         <system-out><![CDATA[2020-01-24 15:26:25 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies: Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies
+
+2020-01-24 15:26:25 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:26:25 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-24 15:26:25 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:26:25 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-01-24 15:26:26 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-24 15:27:01 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-24 15:27:01 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-24 15:27:06 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-24 15:27:06 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:27:06 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-24 15:27:06 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:27:07 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-24 15:27:07 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:27:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-24 15:27:10 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-24 15:27:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:27:10 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-24 15:27:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:27:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-24 15:27:10 - [TEST_STEP][PASSED] - if (Idioma == "0"): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-24 15:27:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Ingles")): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-24 15:27:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-24 15:27:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-24 15:27:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Aprobacion_Ventas"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido, "AprobacionVentas":AprobacionVentas], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully
+
+2020-01-24 15:27:13 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Aprobacion_Ventas: Test Cases/Individual_Tests_20pies/Aprobacion_Ventas
+
+2020-01-24 15:27:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_ventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:27:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-01-24 15:27:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_aprobacinventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:27:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-01-24 15:27:16 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:27:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-01-24 15:27:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:27:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-01-24 15:27:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:27:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-01-24 15:27:18 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente"), IDCliente, true): All options with value '7' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:27:20 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-01-24 15:27:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:27:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-01-24 15:27:22 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-01-24 15:27:27 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-01-24 15:27:27 - [TEST_STEP][PASSED] - if (AprobacionVentas == "Aprobar"): null
+
+2020-01-24 15:27:27 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:27:27 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector(".btn-danger[onclick='AplazarPedidoV(" + IDPedido + ");']").click()", null): Execute JavaScript 'document.querySelector(".btn-danger[onclick='AplazarPedidoV(126);']").click()' successfully
+
+2020-01-24 15:27:27 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector(".btn-danger[onclick='AplazarPedidoV(126);']").click()' successfully
+
+2020-01-24 15:27:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:27:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-01-24 15:27:27 - [TEST_STEP][PASSED] - delay(20): Delayed 20 second(s)
+
+2020-01-24 15:27:47 - [MESSAGE][PASSED] - Delayed 20 second(s)
+
+2020-01-24 15:27:47 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-24 15:20:44 - [TEST_SUITE][PASSED] - Aprobaciones_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas_20pies]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

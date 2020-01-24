@@ -7,8 +7,8 @@ import os
 import datetime
 from openpyxl.utils import get_column_letter
 
-
-idpedidos = pd.read_excel(r"../../AutomatizacionKatalon/Pedidos_Creados_Katalon.xlsx")
+os.remove('Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx')
+idpedidos = pd.read_excel(r"Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
 
 df_pedidos= pd.DataFrame(idpedidos, columns= ['IdPedido'])
 #n=len(df_pedidos)
@@ -129,7 +129,7 @@ for i in range (0, len(df_fusion2)):
 		df_fusion3.loc[i, 'Aprob. Financiera']=df_fusion2.loc[i, 'Aprob. Financiera']
 		df_fusion3.loc[i, 'Aprob. Produccion']=df_fusion2.loc[i, 'Aprob. Produccion']
 
-export_excel3 = df_fusion3.to_excel (r'AprobacionesPedidos_20pies.xlsx', index = None, header=True)
+export_excel3 = df_fusion3.to_excel (r'Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx', index = None, header=True)
 
 os.remove('TestEstadoPedido.xlsx')
 os.remove('ventas.xlsx')

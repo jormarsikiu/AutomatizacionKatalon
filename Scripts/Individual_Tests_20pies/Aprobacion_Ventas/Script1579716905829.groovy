@@ -55,4 +55,4 @@ else {
 	
 }
 
-WebUI.delay(15)
+WebUI.delay(10)
