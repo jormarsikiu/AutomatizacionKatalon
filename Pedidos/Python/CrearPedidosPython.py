@@ -28,12 +28,10 @@ data = pd.read_sql('Select C.ID  AS ID_Cliente, C.NOMBRE, D.ID AS ID_Direccion, 
 data2 = pd.read_sql('Select  O.ID AS OpCompra, P.ID AS Presentacion, T.ID AS Producto, S.CANTIDAD AS Cantidad from OPCION_COMPRA as O, OPCION_COMPRA_PRESENTACION as S,PRESENTACION as P, PRODUCTO as T, PRESENTACION_PRODUCTO as A  where O.ID = S.ID_OPCION AND P.ID = S.ID_PRESENTACION AND A.ID_PRODUCTO=T.ID AND A.ID_PRESENTACION=S.ID_PRESENTACION AND O.ELIMINADO=0 AND O.ACTIVO=1 AND P.ELIMINADO=0 AND P.ACTIVO=1 AND T.ELIMINADO=0 AND T.ACTIVO=1 AND T.EN_VENTA=1',cnxn)
 data3 = pd.read_sql('Select  O.ID AS OpCompra, P.ID AS Presentacion2, T.ID AS Producto2, S.CANTIDAD AS Cantidad2 from OPCION_COMPRA as O, OPCION_COMPRA_PRESENTACION as S,PRESENTACION as P, PRODUCTO as T, PRESENTACION_PRODUCTO as A  where O.ID = S.ID_OPCION AND P.ID = S.ID_PRESENTACION AND A.ID_PRODUCTO=T.ID AND A.ID_PRESENTACION=S.ID_PRESENTACION AND O.ELIMINADO=0 AND O.ACTIVO=1 AND P.ELIMINADO=0 AND P.ACTIVO=1 AND T.ELIMINADO=0 AND T.ACTIVO=1 AND T.EN_VENTA=1',cnxn)
 
-
 #Se guardan las consultas en el excel 
 data.to_excel('TestDataClient.xlsx')
 data2.to_excel('TestDataProduct.xlsx')
 data3.to_excel('TestDataProduct2.xlsx')
-
 
 ############################################
 #Leer el tamaño del archivo
@@ -134,6 +132,7 @@ df_usuarios =  pd.DataFrame(usuarios, columns= ['Usuario', 'Contrasena'])
 df_cliente = pd.DataFrame(cliente, columns= ['ID_Cliente', 'ID_Direccion'])
 df_icoterms= pd.DataFrame(incoterm, columns= ['Incoterms'])
 df_contenedor = pd.DataFrame(contenedor, columns= ['Contenedor'])
+
 
 #Se Crea un dataframe con las columnas de los dataframes anteriores para productos
 df_producto1= pd.DataFrame(producto, columns= ['OpCompra','Presentacion', 'Producto', 'Cantidad'])

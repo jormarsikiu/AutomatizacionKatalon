@@ -1,0 +1,2045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="3-AgregarLogistica_20_TestSuites" time="391.221" tests="5" failures="2" errors="0">
+   <testsuite name="3-AgregarLogistica_20_TestSuites" tests="5" failures="2" errors="0" time="391.221" timestamp="2020-01-27 15:06:57" hostname="kaizen - DESKTOP-38N4VV4" id="Test Suites/Flujo_funcionalidades_Pedidos_20pies/3-AgregarLogistica_20_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200127_150654\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200127_150654"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200127_150654\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200127_150654\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200127_150654\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200127_150654\\1580152276756.png, C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200127_150654\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200127_150654\\1580152407438.png"/>
+         <property name="hostName" value="kaizen - DESKTOP-38N4VV4"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 79.0.3945.130"/>
+         <property name="hostAddress" value="192.168.1.106"/>
+         <property name="sessionId" value="1c2951c41bfaf9ab757a9f8161d67765"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" time="123.616" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" status="PASSED">
+         <system-out><![CDATA[2020-01-27 15:06:57 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos
+
+2020-01-27 15:06:58 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:06:58 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-27 15:06:58 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:06:59 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-27 15:06:59 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-01-27 15:07:22 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:07:22 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-27 15:07:26 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-27 15:07:26 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:07:27 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:07:27 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:07:27 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:07:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:07:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:07:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:07:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:07:31 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-27 15:07:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:07:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:07:31 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-01-27 15:07:31 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-27 15:07:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-27 15:07:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-27 15:07:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:07:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-01-27 15:07:33 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica
+
+2020-01-27 15:07:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:07:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:07:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:07:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:07:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:07:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:07:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:07:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:07:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:07:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:07:38 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '1' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:07:40 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:07:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:07:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:07:41 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/117"]').click()' successfully
+
+2020-01-27 15:07:43 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/117"]').click()' successfully
+
+2020-01-27 15:07:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-01-27 15:07:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-01-27 15:07:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-01-27 15:07:44 - [MESSAGE][ERROR] - javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b89a84be98d8fe2972346548c90d7630
+
+2020-01-27 15:08:14 - [MESSAGE][ERROR] - javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b89a84be98d8fe2972346548c90d7630
+
+2020-01-27 15:08:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-01-27 15:08:14 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), "20", true): All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:08:15 - [MESSAGE][PASSED] - All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:08:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), "20XYZ"): Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:08:16 - [MESSAGE][PASSED] - Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:08:16 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), "20XYZ"): Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:08:17 - [MESSAGE][PASSED] - Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:08:17 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), "20XYZ"): Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:08:17 - [MESSAGE][PASSED] - Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:08:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:08:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:08:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:08:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:08:18 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), "1", true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:08:19 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:08:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:08:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:08:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:08:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:08:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_seleccione_cargo_logistico2")): Object: 'Object Repository/Page_- KAIZEN/lg_seleccione_cargo_logistico2' is clicked on
+
+2020-01-27 15:08:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_seleccione_cargo_logistico2' is clicked on
+
+2020-01-27 15:08:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_cargo_logistico2")): Object: 'Object Repository/Page_- KAIZEN/lg_click_cargo_logistico2' is clicked on
+
+2020-01-27 15:08:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_cargo_logistico2' is clicked on
+
+2020-01-27 15:08:21 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), "21", true): All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:08:23 - [MESSAGE][PASSED] - All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:08:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), "30DSD"): Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:08:23 - [MESSAGE][PASSED] - Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:08:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), "30DSD"): Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:08:24 - [MESSAGE][PASSED] - Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:08:24 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), "30DSD"): Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:08:24 - [MESSAGE][PASSED] - Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:08:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:08:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:08:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:08:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:08:25 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), "1", true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:08:26 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:08:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:08:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:08:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:08:27 - [MESSAGE][ERROR] - javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b89a84be98d8fe2972346548c90d7630
+
+2020-01-27 15:08:57 - [MESSAGE][ERROR] - javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:50957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b89a84be98d8fe2972346548c90d7630
+
+2020-01-27 15:08:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:08:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-01-27 15:08:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-01-27 15:08:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-01-27 15:09:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-01-27 15:09:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" time="88.897" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" status="PASSED">
+         <system-out><![CDATA[2020-01-27 15:09:01 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos
+
+2020-01-27 15:09:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:09:01 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-27 15:09:01 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:09:01 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-01-27 15:09:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-27 15:09:21 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:09:21 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-27 15:09:25 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-27 15:09:25 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:09:26 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:09:26 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:09:26 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:09:26 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:09:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:09:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:09:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:09:29 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-27 15:09:29 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:09:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:09:30 - [TEST_STEP][PASSED] - if (Idioma == "0"): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-27 15:09:30 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Ingles")): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-27 15:09:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-27 15:09:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:09:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-01-27 15:09:31 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica
+
+2020-01-27 15:09:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:09:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:09:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:09:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:09:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:09:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:09:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:09:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:09:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:09:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:09:36 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '7' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:09:38 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:09:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:09:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:09:40 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/120"]').click()' successfully
+
+2020-01-27 15:09:41 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/120"]').click()' successfully
+
+2020-01-27 15:09:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-01-27 15:09:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-01-27 15:09:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-01-27 15:09:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-01-27 15:09:43 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), "20", true): All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:09:44 - [MESSAGE][PASSED] - All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:09:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), "20XYZ"): Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:09:44 - [MESSAGE][PASSED] - Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:09:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), "20XYZ"): Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:09:45 - [MESSAGE][PASSED] - Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:09:45 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), "20XYZ"): Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:09:45 - [MESSAGE][PASSED] - Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:09:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:09:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:09:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:09:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:09:46 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), "1", true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:09:47 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:09:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:09:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:09:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:09:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:09:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_seleccione_cargo_logistico2")): Object: 'Object Repository/Page_- KAIZEN/lg_seleccione_cargo_logistico2' is clicked on
+
+2020-01-27 15:09:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_seleccione_cargo_logistico2' is clicked on
+
+2020-01-27 15:09:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_cargo_logistico2")): Object: 'Object Repository/Page_- KAIZEN/lg_click_cargo_logistico2' is clicked on
+
+2020-01-27 15:09:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_cargo_logistico2' is clicked on
+
+2020-01-27 15:09:50 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), "21", true): All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:09:51 - [MESSAGE][PASSED] - All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:09:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), "30DSD"): Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:09:51 - [MESSAGE][PASSED] - Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:09:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), "30DSD"): Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:09:52 - [MESSAGE][PASSED] - Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:09:52 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), "30DSD"): Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:09:52 - [MESSAGE][PASSED] - Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:09:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:09:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:09:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:09:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:09:53 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), "1", true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:09:54 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:09:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:09:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:09:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:09:55 - [MESSAGE][ERROR] - javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51331}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9add0f428590666b43fe8a6bbd101225
+
+2020-01-27 15:10:25 - [MESSAGE][ERROR] - javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51331}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9add0f428590666b43fe8a6bbd101225
+
+2020-01-27 15:10:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:10:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-01-27 15:10:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-01-27 15:10:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-01-27 15:10:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-01-27 15:10:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" time="46.748" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+"/>
+         <system-out><![CDATA[2020-01-27 15:10:30 - [TEST_CASE][FAILED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2020-01-27 15:10:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:10:30 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-27 15:10:30 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:10:30 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-01-27 15:10:31 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-27 15:10:52 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:10:52 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-27 15:10:56 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-27 15:10:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:10:57 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:10:57 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:10:58 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:10:58 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:11:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:11:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:11:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:11:03 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-27 15:11:03 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:11:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:11:03 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-01-27 15:11:03 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-27 15:11:03 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-27 15:11:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-27 15:11:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:11:05 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2020-01-27 15:11:05 - [TEST_CASE][FAILED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2020-01-27 15:11:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:11:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:11:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:11:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:11:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:11:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:11:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:11:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:11:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:11:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:11:11 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '1' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:11:13 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:11:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:11:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:11:16 - [TEST_STEP][FAILED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Unable to execute JavaScript. (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Script1580137396650.run(Script1580137396650.groovy:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1580137380995.run(Script1580137380995.groovy:22)
+	... 13 more
+)
+
+2020-01-27 15:11:17 - [MESSAGE][FAILED] - Unable to execute JavaScript. (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Script1580137396650.run(Script1580137396650.groovy:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1580137380995.run(Script1580137380995.groovy:22)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200127_150654\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200127_150654\\1580152276756.png]]
+
+2020-01-27 15:11:17 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)]]></system-out>
+         <system-err><![CDATA[2020-01-27 15:10:30 - [TEST_CASE][FAILED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" time="87.318" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" status="PASSED">
+         <system-out><![CDATA[2020-01-27 15:11:17 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos
+
+2020-01-27 15:11:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:11:17 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-27 15:11:17 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:11:17 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-01-27 15:11:18 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-27 15:11:35 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:11:35 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-27 15:11:39 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-27 15:11:39 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:11:40 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:11:40 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:11:40 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:11:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:11:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:11:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:11:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:11:43 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-27 15:11:43 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:11:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:11:44 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-01-27 15:11:44 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-27 15:11:44 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-27 15:11:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-27 15:11:45 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:11:45 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-01-27 15:11:45 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica
+
+2020-01-27 15:11:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:11:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:11:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:11:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:11:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:11:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:11:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:11:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:11:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:11:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:11:50 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '8' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:11:51 - [MESSAGE][PASSED] - All options with value '8' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:11:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:11:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:11:53 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/125"]').click()' successfully
+
+2020-01-27 15:11:56 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/125"]').click()' successfully
+
+2020-01-27 15:11:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-01-27 15:11:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-01-27 15:11:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-01-27 15:11:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-01-27 15:11:57 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), "20", true): All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:11:58 - [MESSAGE][PASSED] - All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:11:58 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), "20XYZ"): Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:11:59 - [MESSAGE][PASSED] - Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:11:59 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), "20XYZ"): Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:11:59 - [MESSAGE][PASSED] - Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:11:59 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), "20XYZ"): Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:12:00 - [MESSAGE][PASSED] - Text '20XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:12:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:12:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:12:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:12:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:12:01 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), "1", true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:12:02 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:12:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:12:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:12:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:12:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:12:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_seleccione_cargo_logistico2")): Object: 'Object Repository/Page_- KAIZEN/lg_seleccione_cargo_logistico2' is clicked on
+
+2020-01-27 15:12:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_seleccione_cargo_logistico2' is clicked on
+
+2020-01-27 15:12:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_cargo_logistico2")): Object: 'Object Repository/Page_- KAIZEN/lg_click_cargo_logistico2' is clicked on
+
+2020-01-27 15:12:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_cargo_logistico2' is clicked on
+
+2020-01-27 15:12:04 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), "21", true): All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:12:05 - [MESSAGE][PASSED] - All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-01-27 15:12:05 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), "30DSD"): Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:12:06 - [MESSAGE][PASSED] - Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-01-27 15:12:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), "30DSD"): Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:12:06 - [MESSAGE][PASSED] - Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-01-27 15:12:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), "30DSD"): Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:12:07 - [MESSAGE][PASSED] - Text '30DSD' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-01-27 15:12:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:12:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-01-27 15:12:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:12:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-01-27 15:12:08 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), "1", true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:12:08 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-01-27 15:12:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:12:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-01-27 15:12:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:12:10 - [MESSAGE][ERROR] - javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51403}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1be986e44545c76c41d19b08483047e4
+
+2020-01-27 15:12:40 - [MESSAGE][ERROR] - javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51403}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1be986e44545c76c41d19b08483047e4
+
+2020-01-27 15:12:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-01-27 15:12:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-01-27 15:12:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-01-27 15:12:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-01-27 15:12:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-01-27 15:12:44 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" time="43.216" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2951c41bfaf9ab757a9f8161d67765
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+"/>
+         <system-out><![CDATA[2020-01-27 15:12:44 - [TEST_CASE][FAILED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2951c41bfaf9ab757a9f8161d67765
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2020-01-27 15:12:44 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:12:44 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-27 15:12:44 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:12:44 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-01-27 15:12:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-27 15:13:06 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-27 15:13:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-27 15:13:10 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-27 15:13:10 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:13:11 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-27 15:13:11 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:13:11 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-27 15:13:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:13:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-27 15:13:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-27 15:13:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:13:13 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-27 15:13:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:13:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-27 15:13:14 - [TEST_STEP][PASSED] - if (Idioma == "0"): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-27 15:13:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Ingles")): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-27 15:13:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-01-27 15:13:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-27 15:13:17 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2951c41bfaf9ab757a9f8161d67765
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2020-01-27 15:13:17 - [TEST_CASE][FAILED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2951c41bfaf9ab757a9f8161d67765
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2020-01-27 15:13:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:13:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-27 15:13:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:13:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-27 15:13:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:13:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-27 15:13:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:13:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-27 15:13:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:13:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-27 15:13:23 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '7' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:13:24 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-27 15:13:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:13:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-27 15:13:27 - [TEST_STEP][FAILED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Unable to execute JavaScript. (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2951c41bfaf9ab757a9f8161d67765
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Script1580137396650.run(Script1580137396650.groovy:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1580137380995.run(Script1580137380995.groovy:22)
+	... 13 more
+)
+
+2020-01-27 15:13:27 - [MESSAGE][FAILED] - Unable to execute JavaScript. (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2951c41bfaf9ab757a9f8161d67765
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Script1580137396650.run(Script1580137396650.groovy:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1580137380995.run(Script1580137380995.groovy:22)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200127_150654\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200127_150654\\1580152407438.png]]
+
+2020-01-27 15:13:27 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2951c41bfaf9ab757a9f8161d67765
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)]]></system-out>
+         <system-err><![CDATA[2020-01-27 15:12:44 - [TEST_CASE][FAILED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2951c41bfaf9ab757a9f8161d67765
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-27 15:06:57 - [TEST_SUITE][FAILED] - 3-AgregarLogistica_20_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-out>
+      <system-err><![CDATA[2020-01-27 15:06:57 - [TEST_SUITE][FAILED] - 3-AgregarLogistica_20_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580152014591.run(TempTestSuite1580152014591.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to execute JavaScript.
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.executeJavascript(ExecuteJavascriptKeyword.groovy:42)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword.execute(ExecuteJavascriptKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.executeJavaScript(WebUiBuiltInKeywords.groovy:3787)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$executeJavaScript$5.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:33)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.JavascriptException: javascript error: Cannot read property 'click' of null
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-38N4VV4', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51371}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a09720fbc74b4ab9d6817361f024060e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.executeScript(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.doCall(ExecuteJavascriptKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.ExecuteJavaScriptKeyword$_executeJavascript_closure1.call(ExecuteJavascriptKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-err>
+   </testsuite>
+</testsuites>

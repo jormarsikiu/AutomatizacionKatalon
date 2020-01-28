@@ -28,10 +28,9 @@ except Exception as e:
 	raise e
 
 data = pd.read_sql('select P.ID AS IdPedido, P.ID_CLIENTE AS Id_Cliente, P.FECHA_CREACION AS Creado_desde, E.NOMBRE As Estatus_Pedido from PEDIDO_MOVIL AS P, ESTATUS_PEDIDO AS E WHERE P.ID_ESTATUS = E.ID AND P.ID in (' + ','.join((str(n) for n in l)) + ')',cnxn)
-
 data.to_excel('Ventas.xlsx')
-ventas = pd.read_excel(r"Ventas.xlsx")
 
+ventas = pd.read_excel(r"Ventas.xlsx")
 df_ventas= pd.DataFrame(ventas, columns= ['IdPedido', 'Id_Cliente', 'Estatus_Pedido', 'Creado_desde'])
 df_ventas['Creado_desde'] = df_ventas['Creado_desde'].dt.strftime('%d/%m/%Y')
 df_ventas['Creado_hasta'] = df_ventas['Creado_desde']
@@ -130,6 +129,18 @@ for i in range (0, len(df_fusion2)):
 		df_fusion3.loc[i, 'Aprob. Produccion']=df_fusion2.loc[i, 'Aprob. Produccion']
 
 export_excel3 = df_fusion3.to_excel (r'Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx', index = None, header=True)
+
+#####################################
+#Cargo logistico
+#Crear dataframe con filas aleatorias
+data1 = pd.read_sql('select ID as IDCargo, NOMBRE as NombreCargo from producto where ID_GRUPO=1',cnxn)
+data1.to_excel('Pedidos/DataExcel/TestDataCargoLogistico.xlsx')
+
+cargologistico = pd.read_excel(r"Pedidos/DataExcel/TestDataCargoLogistico.xlsx")
+df_cargo = pd.DataFrame(usuarios, columns= ['IDCargo', 'NombreCargo'])
+
+nc=len(df_cargo)
+df_aleatorio_cargo = df_cargo.sample(nc)
 
 os.remove('TestEstadoPedido.xlsx')
 os.remove('ventas.xlsx')
