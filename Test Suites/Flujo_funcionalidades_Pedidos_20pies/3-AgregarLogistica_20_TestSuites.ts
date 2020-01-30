@@ -11,60 +11,78 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <testSuiteGuid>6a0225de-0408-4693-a134-f12a81a98597</testSuiteGuid>
    <testCaseLink>
-      <guid>c697476e-7dee-498e-a520-c73fb5da7444</guid>
+      <guid>c3c00368-8635-44be-9ad9-999592b7c16e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8ca0ecf6-af69-41a4-8c47-dc6f83daa9cd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos_20pies</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>ea782c7e-52c7-450b-8eae-5de946ad8421</id>
+         <id>bfdaf999-9626-4705-842e-5059c9e94d00</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/Aprobaciones_20pies</testDataId>
+         <testDataId>Data Files/Logistica_data_20pies</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>ea782c7e-52c7-450b-8eae-5de946ad8421</testDataLinkId>
+         <testDataLinkId>bfdaf999-9626-4705-842e-5059c9e94d00</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Idioma</value>
          <variableId>4e6c4b9d-697c-49e9-b01e-134043fb01b1</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>ea782c7e-52c7-450b-8eae-5de946ad8421</testDataLinkId>
+         <testDataLinkId>bfdaf999-9626-4705-842e-5059c9e94d00</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Usuario</value>
          <variableId>d1232ff6-adac-417c-be89-e06530cf5ddd</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>ea782c7e-52c7-450b-8eae-5de946ad8421</testDataLinkId>
+         <testDataLinkId>bfdaf999-9626-4705-842e-5059c9e94d00</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Contrasena</value>
          <variableId>76f6417f-47bf-492f-bb15-6d77326a5356</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>ea782c7e-52c7-450b-8eae-5de946ad8421</testDataLinkId>
+         <testDataLinkId>bfdaf999-9626-4705-842e-5059c9e94d00</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Id_Cliente</value>
          <variableId>6f951296-9d30-4eca-bcaa-d8e03e7d3bae</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>ea782c7e-52c7-450b-8eae-5de946ad8421</testDataLinkId>
+         <testDataLinkId>bfdaf999-9626-4705-842e-5059c9e94d00</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>IdPedido</value>
          <variableId>6e5c43c0-a274-474f-a3fb-881bb9c8064a</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>ea782c7e-52c7-450b-8eae-5de946ad8421</testDataLinkId>
+         <testDataLinkId>bfdaf999-9626-4705-842e-5059c9e94d00</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Creado_desde</value>
          <variableId>c1712760-1bb0-4a74-93ab-1c9c5b0354bc</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>ea782c7e-52c7-450b-8eae-5de946ad8421</testDataLinkId>
+         <testDataLinkId>bfdaf999-9626-4705-842e-5059c9e94d00</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>Creado_hasta</value>
+         <value>Creado_desde</value>
          <variableId>2eb97d71-489b-4192-a5ab-4b35c31ed8f3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bfdaf999-9626-4705-842e-5059c9e94d00</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>IDCargo</value>
+         <variableId>b1861e52-1f65-46ad-a520-85fb5861eb6f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bfdaf999-9626-4705-842e-5059c9e94d00</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>IDCargo2</value>
+         <variableId>3ede25ea-4b59-46b3-80dc-92c2545a1938</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

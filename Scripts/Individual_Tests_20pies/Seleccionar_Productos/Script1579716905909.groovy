@@ -16,6 +16,7 @@ import internal.GlobalVariable as GlobalVariable
 //WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_Element_presentacion'), 5)
 
 String boton = WebUI.executeJavaScript('return document.getElementById("btn_next").style.display;', null)
+int cantPedido = 0
 
 if (boton == 'block') {
     //WebUI.executeJavaScript('alert(\'El boton SI ESTA\')', null)
@@ -44,6 +45,8 @@ if (boton == 'block') {
 	    WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_add_product'))
 		
 		WebUI.click(findTestObject('Page_- KAIZEN/sp_Siguiente'))
+		
+		cantPedido=1
 		
 	}
 	else
@@ -81,8 +84,16 @@ if (boton == 'block') {
 	    WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_add_product'))
 		
 		WebUI.click(findTestObject('Page_- KAIZEN/sp_Siguiente'))
+		
+		cantPedido=2
 	}	    
 }
+
+//Se guarda el id del pedido
+String IDPedidoCreado = WebUI.executeJavaScript('return document.getElementById(\'IdPedido\').value;', null)
+
+CustomKeywords.'exportar_archivos.Ex_guardar_pedidos_creados.demoKey'(IDPedidoCreado, cantPedido)
+
 
 WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_btn_finish'), 5)
 WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_finish'))

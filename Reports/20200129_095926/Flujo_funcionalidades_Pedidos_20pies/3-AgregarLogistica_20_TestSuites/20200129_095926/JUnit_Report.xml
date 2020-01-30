@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="3-AgregarLogistica_20_TestSuites" time="205.04" tests="3" failures="0" errors="1">
+   <testsuite name="3-AgregarLogistica_20_TestSuites" tests="3" failures="0" errors="1" time="205.04" timestamp="2020-01-29 09:59:29" hostname="kaizen - DESKTOP-38N4VV4" id="Test Suites/Flujo_funcionalidades_Pedidos_20pies/3-AgregarLogistica_20_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200129_095926\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200129_095926"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200129_095926\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200129_095926\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - DESKTOP-38N4VV4"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 79.0.3945.130"/>
+         <property name="hostAddress" value="192.168.1.114"/>
+         <property name="sessionId" value="b3275c6ad7001a2d9df1772a10f98639"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies" time="5.935" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies" status="PASSED">
+         <system-out><![CDATA[2020-01-29 09:59:29 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies: Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies
+
+2020-01-29 09:59:29 - [TEST_STEP][PASSED] - python.Ex_logistica_pedidos_20pies.runPython(): python.Ex_logistica_pedidos_20pies.runPython is PASSED
+
+2020-01-29 09:59:35 - [MESSAGE][PASSED] - python.Ex_logistica_pedidos_20pies.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" time="167.337" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580306366369.run(TempTestSuite1580306366369.groovy:36)
+Caused by: groovy.lang.MissingPropertyException: No such property: IDCargo1 for class: Script1580137396650
+	at Agregar_Logistica.run(Agregar_Logistica:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+"/>
+         <system-out><![CDATA[2020-01-29 09:59:35 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580306366369.run(TempTestSuite1580306366369.groovy:36)
+Caused by: groovy.lang.MissingPropertyException: No such property: IDCargo1 for class: Script1580137396650
+	at Agregar_Logistica.run(Agregar_Logistica:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2020-01-29 09:59:36 - [TEST_STEP][PASSED] - info = callTestCase(findTestCase("Individual_Tests_20pies/Refresh"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Refresh' successfully
+
+2020-01-29 09:59:36 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Refresh: Test Cases/Individual_Tests_20pies/Refresh
+
+2020-01-29 09:59:36 - [TEST_STEP][PASSED] - delay(30): Delayed 30 second(s)
+
+2020-01-29 10:00:06 - [MESSAGE][PASSED] - Delayed 30 second(s)
+
+2020-01-29 10:00:06 - [TEST_STEP][PASSED] - info = ["Idioma":"", "Usuario":"", "Contrasena":"", "IdPedido":"", "Id_Cliente":"", "IDCargo":"", "IDCargo2":"", "Creado_desde":""]: null
+
+2020-01-29 10:00:06 - [TEST_STEP][PASSED] - data = findTestData("Data Files/Logistica_data_20pies"): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Idioma = data.getValue("Idioma", 1): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Usuario = data.getValue("Usuario", 1): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Contrasena = data.getValue("Contrasena", 1): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Cargo = data.getValue("IDCargo", 1): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Cargo2 = data.getValue("IDCargo2", 1): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - IdPedido = data.getValue("IdPedido", 1): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Id_Cliente = data.getValue("Id_Cliente", 1): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Creado_desde = data.getValue("Creado_desde", 1): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - println(info): null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - return info: null
+
+2020-01-29 10:00:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Refresh' successfully
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Usuario = Usuario: null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Contrasena = Contrasena: null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Idioma = Idioma: null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - IdPedido = IdPedido: null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Id_Cliente = Id_Cliente: null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - IDCargo = IDCargo: null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - IDCargo2 = IDCargo2: null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - Creado_desde = Creado_desde: null
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-29 10:00:07 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-01-29 10:00:07 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-29 10:00:07 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-29 10:00:07 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-01-29 10:01:35 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-01-29 10:01:35 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-01-29 10:01:39 - [MESSAGE][PASSED] - Current window maximized
+
+2020-01-29 10:01:39 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-29 10:01:40 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-01-29 10:01:40 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-29 10:01:41 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-01-29 10:01:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-29 10:01:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-01-29 10:01:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-01-29 10:01:49 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-29 10:01:49 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-01-29 10:01:49 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-29 10:01:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-01-29 10:01:50 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-01-29 10:01:50 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-29 10:01:50 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-29 10:01:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-01-29 10:01:57 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-01-29 10:01:57 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["IDCliente":IDCliente, "CreadosDesde":CreadosDesde, "CreadosHasta":CreadosHasta, "IDPedido":IDPedido, "IDCargo":IDCargo, "IDCargo2":IDCargo2], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580306366369.run(TempTestSuite1580306366369.groovy:36)
+Caused by: groovy.lang.MissingPropertyException: No such property: IDCargo1 for class: Script1580137396650
+	at Agregar_Logistica.run(Agregar_Logistica:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-01-29 10:01:57 - [TEST_CASE][ERROR] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: IDCargo1 for class: Script1580137396650
+	at Agregar_Logistica.run(Agregar_Logistica:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580306366369.run(TempTestSuite1580306366369.groovy:36)
+
+
+2020-01-29 10:01:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-29 10:01:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-01-29 10:01:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-29 10:02:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-01-29 10:02:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-29 10:02:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-01-29 10:02:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-29 10:02:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-01-29 10:02:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-29 10:02:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-01-29 10:02:08 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '1' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-29 10:02:10 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-01-29 10:02:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-29 10:02:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-01-29 10:02:16 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/117"]').click()' successfully
+
+2020-01-29 10:02:22 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/117"]').click()' successfully
+
+2020-01-29 10:02:22 - [TEST_STEP][PASSED] - if (IDCargo1 == IDCargo2): null
+
+2020-01-29 10:02:22 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580306366369.run(TempTestSuite1580306366369.groovy:36)
+Caused by: groovy.lang.MissingPropertyException: No such property: IDCargo1 for class: Script1580137396650
+	at Agregar_Logistica.run(Agregar_Logistica:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)]]></system-out>
+         <system-err><![CDATA[2020-01-29 09:59:35 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580306366369.run(TempTestSuite1580306366369.groovy:36)
+Caused by: groovy.lang.MissingPropertyException: No such property: IDCargo1 for class: Script1580137396650
+	at Agregar_Logistica.run(Agregar_Logistica:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" time="30.951" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" status="INCOMPLETE">
+         <system-out><![CDATA[2020-01-29 10:02:23 - [TEST_CASE][INCOMPLETE] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: null
+
+2020-01-29 10:02:23 - [TEST_STEP][PASSED] - info = callTestCase(findTestCase("Individual_Tests_20pies/Refresh"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Refresh' successfully
+
+2020-01-29 10:02:23 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Refresh: Test Cases/Individual_Tests_20pies/Refresh
+
+2020-01-29 10:02:23 - [TEST_STEP][PASSED] - delay(30): Delayed 30 second(s)
+
+2020-01-29 10:02:53 - [MESSAGE][PASSED] - Delayed 30 second(s)
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - info = ["Idioma":"", "Usuario":"", "Contrasena":"", "IdPedido":"", "Id_Cliente":"", "IDCargo":"", "IDCargo2":"", "Creado_desde":""]: null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - data = findTestData("Data Files/Logistica_data_20pies"): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Idioma = data.getValue("Idioma", 1): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Usuario = data.getValue("Usuario", 1): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Contrasena = data.getValue("Contrasena", 1): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Cargo = data.getValue("IDCargo", 1): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Cargo2 = data.getValue("IDCargo2", 1): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - IdPedido = data.getValue("IdPedido", 1): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Id_Cliente = data.getValue("Id_Cliente", 1): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Creado_desde = data.getValue("Creado_desde", 1): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - println(info): null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - return info: null
+
+2020-01-29 10:02:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Refresh' successfully
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Usuario = Usuario: null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Contrasena = Contrasena: null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Idioma = Idioma: null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - IdPedido = IdPedido: null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Id_Cliente = Id_Cliente: null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - IDCargo = IDCargo: null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - IDCargo2 = IDCargo2: null
+
+2020-01-29 10:02:53 - [TEST_STEP][PASSED] - Creado_desde = Creado_desde: null
+
+2020-01-29 10:02:53 - [TEST_STEP][INCOMPLETE] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): null
+
+2020-01-29 10:02:53 - [TEST_CASE][INCOMPLETE] - Test Cases/Individual_Tests_20pies/Login: null
+
+2020-01-29 10:02:53 - [TEST_STEP][INCOMPLETE] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Starting 'Chrome' driver
+
+2020-01-29 10:02:53 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-01-29 10:02:54 - [MESSAGE][INFO] - Starting 'Chrome' driver]]></system-out>
+         <system-err><![CDATA[2020-01-29 10:02:23 - [TEST_CASE][INCOMPLETE] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: null]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-29 09:59:29 - [TEST_SUITE][INCOMPLETE] - 3-AgregarLogistica_20_TestSuites: null]]></system-out>
+      <system-err><![CDATA[2020-01-29 09:59:29 - [TEST_SUITE][INCOMPLETE] - 3-AgregarLogistica_20_TestSuites: null]]></system-err>
+   </testsuite>
+</testsuites>

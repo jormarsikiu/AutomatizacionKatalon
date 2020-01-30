@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2020-01-28T16:06:22</date>
+  <millis>1580241982787</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Flujo_funcionalidades_Pedidos_20pies/3-AgregarLogistica_20_TestSuites</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">3-AgregarLogistica_20_TestSuites</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Flujo_funcionalidades_Pedidos_20pies/3-AgregarLogistica_20_TestSuites</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:22</date>
+  <millis>1580241982804</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = kaizen - DESKTOP-38N4VV4</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">kaizen - DESKTOP-38N4VV4</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:22</date>
+  <millis>1580241982805</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 10 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 10 64bit</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:22</date>
+  <millis>1580241982806</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 192.168.1.114</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">192.168.1.114</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:22</date>
+  <millis>1580241982807</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 7.2.1.1</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">7.2.1.1</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:23</date>
+  <millis>1580241983134</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies</property>
+  <property name="source">C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Test Cases\\Secuencias de Ejecucion\\TC_Generar_CargosLogisticos_20pies.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:23</date>
+  <millis>1580241983628</millis>
+  <sequence>7</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : python.Ex_logistica_pedidos_20pies.runPython()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">19</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:27</date>
+  <millis>1580241987901</millis>
+  <sequence>8</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>python.Ex_logistica_pedidos_20pies.runPython is PASSED</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-28T16:06:27</date>
+  <millis>1580241987902</millis>
+  <sequence>9</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : python.Ex_logistica_pedidos_20pies.runPython()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-28T16:06:27</date>
+  <millis>1580241987903</millis>
+  <sequence>10</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : excel = getExcelDataWithDefaultSheet(\&amp;quot;Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx\&amp;quot;, \&amp;quot;Sheet1\&amp;quot;, true)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">21</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:28</date>
+  <millis>1580241988544</millis>
+  <sequence>11</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : excel = getExcelDataWithDefaultSheet(\&amp;quot;Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx\&amp;quot;, \&amp;quot;Sheet1\&amp;quot;, true)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-28T16:06:28</date>
+  <millis>1580241988544</millis>
+  <sequence>12</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : excel.getValue(\&amp;quot;tc_variable\&amp;quot;, 1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">22</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:28</date>
+  <millis>1580241988600</millis>
+  <sequence>13</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : excel.getValue(\&amp;quot;tc_variable\&amp;quot;, 1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2020-01-28T16:06:28</date>
+  <millis>1580241988615</millis>
+  <sequence>15</sequence>
+  <level>ERROR</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies FAILED.\nReason:\njava.lang.IllegalArgumentException: Invalid column name &amp;apos;tc_variable&amp;apos; for test data &amp;apos;Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx&amp;apos;. Possible values are &amp;apos;{Idioma,Usuario,Contrasena,IdPedido,Id_Cliente,Estatus_Pedido,Creado_desde,IDCargo,NombreCargo,IDCargo2,NombreCargo2}&amp;apos;\r\n\tat com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)\r\n\tat com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)\r\n\tat com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)\r\n\tat com.kms.katalon.core.testdata.TestData$getValue.call(Unknown Source)\r\n\tat TC_Generar_CargosLogisticos_20pies.run(TC_Generar_CargosLogisticos_20pies:22)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1580241980402.run(TempTestSuite1580241980402.groovy:36)\r\n</message>
+  <exception>
+    <message>java.lang.IllegalArgumentException: Invalid column name 'tc_variable' for test data 'Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,IdPedido,Id_Cliente,Estatus_Pedido,Creado_desde,IDCargo,NombreCargo,IDCargo2,NombreCargo2}'</message>
+    <frame>
+      <class>com.kms.katalon.core.testdata.AbstractTestData</class>
+      <method>verifyColumnName</method>
+      <line>78</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.testdata.AbstractTestData</class>
+      <method>getObjectValue</method>
+      <line>136</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.testdata.AbstractTestData</class>
+      <method>getValue</method>
+      <line>107</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.testdata.TestData$getValue</class>
+      <method>call</method>
+    </frame>
+    <frame>
+      <class>TC_Generar_CargosLogisticos_20pies</class>
+      <method>run</method>
+      <line>22</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.ScriptEngine</class>
+      <method>run</method>
+      <line>194</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.ScriptEngine</class>
+      <method>runScriptAsRawText</method>
+      <line>119</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>runScript</method>
+      <line>337</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>doExecute</method>
+      <line>328</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>processExecutionPhase</method>
+      <line>307</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>accessMainPhase</method>
+      <line>299</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>execute</method>
+      <line>233</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestSuiteExecutor</class>
+      <method>accessTestCaseMainPhase</method>
+      <line>169</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestSuiteExecutor</class>
+      <method>accessTestSuiteMainPhase</method>
+      <line>142</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestSuiteExecutor</class>
+      <method>execute</method>
+      <line>91</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseMain</class>
+      <method>startTestSuite</method>
+      <line>157</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseMain$startTestSuite$0</class>
+      <method>call</method>
+    </frame>
+    <frame>
+      <class>TempTestSuite1580241980402</class>
+      <method>run</method>
+      <line>36</line>
+    </frame>
+  </exception>
+  <nestedLevel>0</nestedLevel>
+  <property name="failed.exception.stacktrace">java.lang.IllegalArgumentException: Invalid column name &apos;tc_variable&apos; for test data &apos;Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx&apos;. Possible values are &apos;{Idioma,Usuario,Contrasena,IdPedido,Id_Cliente,Estatus_Pedido,Creado_desde,IDCargo,NombreCargo,IDCargo2,NombreCargo2}&apos;\r\n\tat com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)\r\n\tat com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)\r\n\tat com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)\r\n\tat com.kms.katalon.core.testdata.TestData$getValue.call(Unknown Source)\r\n\tat TC_Generar_CargosLogisticos_20pies.run(TC_Generar_CargosLogisticos_20pies:22)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1580241980402.run(TempTestSuite1580241980402.groovy:36)\r\n</property>
+  <property name="failed.exception.class">java.lang.IllegalArgumentException</property>
+  <property name="failed.exception.message">Invalid column name &apos;tc_variable&apos; for test data &apos;Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx&apos;. Possible values are &apos;{Idioma,Usuario,Contrasena,IdPedido,Id_Cliente,Estatus_Pedido,Creado_desde,IDCargo,NombreCargo,IDCargo2,NombreCargo2}&apos;</property>
+</record>
+<record>
+  <date>2020-01-28T16:06:28</date>
+  <millis>1580241988627</millis>
+  <sequence>17</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-28T16:06:28</date>
+  <millis>1580241988692</millis>
+  <sequence>18</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/Flujo_funcionalidades_Pedidos_20pies/3-AgregarLogistica_20_TestSuites</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<record>
+  <date>2020-01-29T09:39:26</date>
+  <millis>1580305166875</millis>
+  <sequence>124</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>297</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:39:26</date>
+  <millis>1580305166918</millis>
+  <sequence>125</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>297</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:39:26</date>
+  <millis>1580305166919</millis>
+  <sequence>126</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>297</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:41:19</date>
+  <millis>1580305279797</millis>
+  <sequence>451</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>163</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:41:19</date>
+  <millis>1580305279800</millis>
+  <sequence>452</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>163</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:41:19</date>
+  <millis>1580305279801</millis>
+  <sequence>453</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>163</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:44:06</date>
+  <millis>1580305446866</millis>
+  <sequence>603</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>347</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:44:06</date>
+  <millis>1580305446867</millis>
+  <sequence>604</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>347</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:44:06</date>
+  <millis>1580305446868</millis>
+  <sequence>605</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>347</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:47:02</date>
+  <millis>1580305622550</millis>
+  <sequence>707</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>314</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:47:02</date>
+  <millis>1580305622552</millis>
+  <sequence>708</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>314</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:47:02</date>
+  <millis>1580305622553</millis>
+  <sequence>709</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>314</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:49:39</date>
+  <millis>1580305779228</millis>
+  <sequence>733</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>163</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:49:39</date>
+  <millis>1580305779232</millis>
+  <sequence>734</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>163</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:49:39</date>
+  <millis>1580305779234</millis>
+  <sequence>735</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>163</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:52:13</date>
+  <millis>1580305933896</millis>
+  <sequence>760</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>163</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:52:13</date>
+  <millis>1580305933898</millis>
+  <sequence>761</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>163</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:52:13</date>
+  <millis>1580305933898</millis>
+  <sequence>762</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>163</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:54:05</date>
+  <millis>1580306045489</millis>
+  <sequence>1168</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>484</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:54:05</date>
+  <millis>1580306045492</millis>
+  <sequence>1169</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>484</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:54:05</date>
+  <millis>1580306045493</millis>
+  <sequence>1170</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>484</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:59:25</date>
+  <millis>1580306365914</millis>
+  <sequence>1475</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>329</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:59:25</date>
+  <millis>1580306365918</millis>
+  <sequence>1476</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>329</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T09:59:25</date>
+  <millis>1580306365918</millis>
+  <sequence>1477</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>329</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:09:00</date>
+  <millis>1580306940079</millis>
+  <sequence>2394</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>606</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:09:00</date>
+  <millis>1580306940083</millis>
+  <sequence>2395</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>606</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:09:00</date>
+  <millis>1580306940084</millis>
+  <sequence>2396</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>606</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:09:20</date>
+  <millis>1580306960062</millis>
+  <sequence>2421</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>624</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:09:20</date>
+  <millis>1580306960065</millis>
+  <sequence>2422</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>624</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:09:20</date>
+  <millis>1580306960066</millis>
+  <sequence>2423</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>624</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:13:33</date>
+  <millis>1580307213699</millis>
+  <sequence>2752</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>611</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:13:33</date>
+  <millis>1580307213701</millis>
+  <sequence>2753</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>611</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:13:33</date>
+  <millis>1580307213701</millis>
+  <sequence>2754</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>611</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:11</date>
+  <millis>1580307431820</millis>
+  <sequence>4087</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>715</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:11</date>
+  <millis>1580307431823</millis>
+  <sequence>4088</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>715</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:11</date>
+  <millis>1580307431823</millis>
+  <sequence>4089</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>715</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:13</date>
+  <millis>1580307433516</millis>
+  <sequence>4090</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>719</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:13</date>
+  <millis>1580307433517</millis>
+  <sequence>4091</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>719</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:13</date>
+  <millis>1580307433518</millis>
+  <sequence>4092</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>719</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:17</date>
+  <millis>1580307437206</millis>
+  <sequence>4093</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>753</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:17</date>
+  <millis>1580307437208</millis>
+  <sequence>4094</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>753</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:17</date>
+  <millis>1580307437208</millis>
+  <sequence>4095</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>753</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:31</date>
+  <millis>1580307451239</millis>
+  <sequence>4120</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>715</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:31</date>
+  <millis>1580307451241</millis>
+  <sequence>4121</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>715</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:17:31</date>
+  <millis>1580307451241</millis>
+  <sequence>4122</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>715</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:28:17</date>
+  <millis>1580308097641</millis>
+  <sequence>4419</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>824</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:28:17</date>
+  <millis>1580308097646</millis>
+  <sequence>4420</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>824</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:28:17</date>
+  <millis>1580308097646</millis>
+  <sequence>4421</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>824</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:36:01</date>
+  <millis>1580308561189</millis>
+  <sequence>4857</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>651</thread>
+  <message>Finding test data with id &amp;apos;Data Files/Logistica_data_20pies&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:36:01</date>
+  <millis>1580308561191</millis>
+  <sequence>4858</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>651</thread>
+  <message>Test data is excel file, reading excel file</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2020-01-29T10:36:01</date>
+  <millis>1580308561192</millis>
+  <sequence>4859</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>651</thread>
+  <message>Reading excel file with source file &amp;apos;C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Pedidos\\DataExcel\\Cargos_Logisticos20pies.xlsx&amp;apos; and sheet name &amp;apos;Sheet1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+</log>

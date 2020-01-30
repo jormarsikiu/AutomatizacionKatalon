@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>5-Despachar_20pies_TestSuites</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>21cc7c29-391f-4ec8-9d93-62159f96d840</testSuiteGuid>
+   <testCaseLink>
+      <guid>29ce1e78-6553-4aa2-86d3-50317d71a8b1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Despachar_20pies</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>57a18d7e-f2e4-4e47-80c5-6b2d305e0772</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Despachar_20pies</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c4d24525-dd65-476d-82c1-57cfa635b20a</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Despacho_data_20pies</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>c4d24525-dd65-476d-82c1-57cfa635b20a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>IdPedido</value>
+         <variableId>97c770da-9151-4f2c-b7be-8c8ab8a9d3d4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c4d24525-dd65-476d-82c1-57cfa635b20a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Idioma</value>
+         <variableId>1d057216-3997-46ac-9cdf-0a03de6369f0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c4d24525-dd65-476d-82c1-57cfa635b20a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Usuario</value>
+         <variableId>0fc82bd5-9929-4689-97ca-d13c78270e98</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c4d24525-dd65-476d-82c1-57cfa635b20a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Contrasena</value>
+         <variableId>1f696116-87df-4092-92d7-2d8953ef2da4</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

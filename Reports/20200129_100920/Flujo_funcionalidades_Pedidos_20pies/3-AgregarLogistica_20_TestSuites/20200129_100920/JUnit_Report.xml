@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="3-AgregarLogistica_20_TestSuites" time="39.622" tests="2" failures="0" errors="0">
+   <testsuite name="3-AgregarLogistica_20_TestSuites" tests="2" failures="0" errors="0" time="39.622" timestamp="2020-01-29 10:09:23" hostname="kaizen - DESKTOP-38N4VV4" id="Test Suites/Flujo_funcionalidades_Pedidos_20pies/3-AgregarLogistica_20_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200129_100920\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200129_100920"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200129_100920\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200129_100920\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - DESKTOP-38N4VV4"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 79.0.3945.130"/>
+         <property name="hostAddress" value="192.168.1.114"/>
+         <property name="sessionId" value="942673360ed808e6345b2fab411263b5"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies" time="6.857" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies" status="PASSED">
+         <system-out><![CDATA[2020-01-29 10:09:23 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies: Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies
+
+2020-01-29 10:09:23 - [TEST_STEP][PASSED] - python.Ex_logistica_pedidos_20pies.runPython(): python.Ex_logistica_pedidos_20pies.runPython is PASSED
+
+2020-01-29 10:09:30 - [MESSAGE][PASSED] - python.Ex_logistica_pedidos_20pies.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" time="32.196" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" status="INCOMPLETE">
+         <system-out><![CDATA[2020-01-29 10:09:30 - [TEST_CASE][INCOMPLETE] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: null
+
+2020-01-29 10:09:30 - [TEST_STEP][PASSED] - info = callTestCase(findTestCase("Individual_Tests_20pies/Refresh"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Refresh' successfully
+
+2020-01-29 10:09:31 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Refresh: Test Cases/Individual_Tests_20pies/Refresh
+
+2020-01-29 10:09:31 - [TEST_STEP][PASSED] - delay(30): Delayed 30 second(s)
+
+2020-01-29 10:10:01 - [MESSAGE][PASSED] - Delayed 30 second(s)
+
+2020-01-29 10:10:01 - [TEST_STEP][PASSED] - info = ["Idioma":"", "Usuario":"", "Contrasena":"", "IdPedido":"", "Id_Cliente":"", "IDCargo":"", "IDCargo2":"", "Creado_desde":""]: null
+
+2020-01-29 10:10:01 - [TEST_STEP][PASSED] - data = findTestData("Data Files/Logistica_data_20pies"): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - Idioma = data.getValue("Idioma", 1): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - Usuario = data.getValue("Usuario", 1): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - Contrasena = data.getValue("Contrasena", 1): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - IDCargo = data.getValue("IDCargo", 1): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - IDCargo2 = data.getValue("IDCargo2", 1): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - IDPedido = data.getValue("IdPedido", 1): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - IDCliente = data.getValue("Id_Cliente", 1): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - CreadoDesde = data.getValue("Creado_desde", 1): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - println(info): null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - return info: null
+
+2020-01-29 10:10:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Refresh' successfully
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - Usuario = Usuario: null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - Contrasena = Contrasena: null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - Idioma = Idioma: null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - IDPedido = IDPedido: null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - IDCliente = IDCliente: null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - IDCargo = IDCargo: null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - IDCargo2 = IDCargo2: null
+
+2020-01-29 10:10:02 - [TEST_STEP][PASSED] - CreadoDesde = CreadoDesde: null
+
+2020-01-29 10:10:02 - [TEST_STEP][INCOMPLETE] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): null
+
+2020-01-29 10:10:02 - [TEST_CASE][INCOMPLETE] - Test Cases/Individual_Tests_20pies/Login: null
+
+2020-01-29 10:10:02 - [TEST_STEP][INCOMPLETE] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Action delay is set to 0 seconds
+
+2020-01-29 10:10:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-01-29 10:10:02 - [MESSAGE][INFO] - Action delay is set to 0 seconds]]></system-out>
+         <system-err><![CDATA[2020-01-29 10:09:30 - [TEST_CASE][INCOMPLETE] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: null]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-01-29 10:09:23 - [TEST_SUITE][INCOMPLETE] - 3-AgregarLogistica_20_TestSuites: null]]></system-out>
+      <system-err><![CDATA[2020-01-29 10:09:23 - [TEST_SUITE][INCOMPLETE] - 3-AgregarLogistica_20_TestSuites: null]]></system-err>
+   </testsuite>
+</testsuites>

@@ -207,6 +207,7 @@ sheet6.column_dimensions['O'].width = 15
 sheet6.column_dimensions['P'].width = 15
 
 wb6.save('Pedidos/DataExcel/Crear_Pedido20pies.xlsx') 
+print ("Archivo creado: Pedidos/DataExcel/Crear_Pedido20pies.xlsx")
 
 #Borrado de archivos
 os.remove('TestDataIdioma.xlsx')

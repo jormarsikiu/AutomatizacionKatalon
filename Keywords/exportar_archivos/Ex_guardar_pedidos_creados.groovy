@@ -36,20 +36,27 @@ public class Ex_guardar_pedidos_creados {
 
 
 	@Keyword
-	public void demoKey(String name) throws IOException{
+	public void demoKey(String name, int cantPedido) throws IOException{
 		FileInputStream fis = new FileInputStream("${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
-		XSSFSheet sheet = workbook.getSheet("Sheet1");
+		XSSFSheet sheet = workbook.getSheet("sheet1");
 		Row header = sheet.createRow(0);
-		header.createCell(0).setCellValue("IdPedido");
+		Cell c = header.createCell(0);
+		c.setCellValue("IdPedido");
+		Cell c2 = header.createCell(1);
+		c2.setCellValue("CantProductos");
+
 		int rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
+		System.out.println(sheet.getLastRowNum());
+		System.out.println(sheet.getFirstRowNum());
 		Row row = sheet.createRow(rowCount+1);
-		Cell cell = row.createCell(0);
-
-		cell.setCellType(cell.CELL_TYPE_STRING);
-
-		cell.setCellValue(name);
+		Cell c3 = row.createCell(0);
+		c3.setCellType(c3.CELL_TYPE_STRING);
+		c3.setCellValue(name);
+		Cell c4 = row.createCell(1);
+		c4.setCellType(c4.CELL_TYPE_STRING);
+		c4.setCellValue(cantPedido);
 		FileOutputStream fos = new FileOutputStream("${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx");
 		workbook.write(fos);
 		fos.close();

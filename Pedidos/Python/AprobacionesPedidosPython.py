@@ -7,6 +7,7 @@ import os
 import datetime
 from openpyxl.utils import get_column_letter
 
+
 os.remove('Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx')
 idpedidos = pd.read_excel(r"Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
 
@@ -22,9 +23,9 @@ try:
 	username = 'KAIZEN' 
 	password = 'SYSERP2016-9#' 
 	cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-	print ("Conecto")
+	print ("Conecto a la BD")
 except Exception as e:
-	print ("No Conecto")
+	print ("No Conecto a la BD")
 	raise e
 
 data = pd.read_sql('select P.ID AS IdPedido, P.ID_CLIENTE AS Id_Cliente, P.FECHA_CREACION AS Creado_desde, E.NOMBRE As Estatus_Pedido from PEDIDO_MOVIL AS P, ESTATUS_PEDIDO AS E WHERE P.ID_ESTATUS = E.ID AND P.ID in (' + ','.join((str(n) for n in l)) + ')',cnxn)
@@ -130,17 +131,7 @@ for i in range (0, len(df_fusion2)):
 
 export_excel3 = df_fusion3.to_excel (r'Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx', index = None, header=True)
 
-#####################################
-#Cargo logistico
-#Crear dataframe con filas aleatorias
-data1 = pd.read_sql('select ID as IDCargo, NOMBRE as NombreCargo from producto where ID_GRUPO=1',cnxn)
-data1.to_excel('Pedidos/DataExcel/TestDataCargoLogistico.xlsx')
-
-cargologistico = pd.read_excel(r"Pedidos/DataExcel/TestDataCargoLogistico.xlsx")
-df_cargo = pd.DataFrame(usuarios, columns= ['IDCargo', 'NombreCargo'])
-
-nc=len(df_cargo)
-df_aleatorio_cargo = df_cargo.sample(nc)
+print ("Archivo creado: Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx")
 
 os.remove('TestEstadoPedido.xlsx')
 os.remove('ventas.xlsx')
