@@ -22,10 +22,9 @@ WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/dp_menu_Lista de Emp
 
 WebUI.executeJavaScript('document.querySelector(\'.btn-success[href="/DespachoPedido/Edit/' +IDPedido+ '"]\').click()', null)
 
-//WebUI.click(findTestObject('Object Repository/Page_Index - KAIZEN/dp_select_pedido'))
 
-if(CantProductos==1){
-
+if(CantProductos=='1'){	
+	
 	WebUI.click(findTestObject('Object Repository/Page_Lista de Empaque - KAIZEN/dp_click_mas_1'))
 }
 else
@@ -36,7 +35,12 @@ else
 
 }
 
-WebUI.click(findTestObject('Object Repository/Page_Lista de Empaque - KAIZEN/dp_Despachar'))
+WebUI.executeJavaScript("document.querySelector(\".btn-warning[onclick='GuardarModal()']\").click()", null)
 
 WebUI.click(findTestObject('Object Repository/Page_Lista de Empaque - KAIZEN/dp_Aceptar'))
 
+
+
+//WebUI.click(findTestObject('Object Repository/Page_Index - KAIZEN/dp_select_pedido'))
+
+//WebUI.click(findTestObject('Object Repository/Page_Lista de Empaque - KAIZEN/dp_Despachar'))

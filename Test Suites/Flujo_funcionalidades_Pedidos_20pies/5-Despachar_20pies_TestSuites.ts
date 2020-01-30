@@ -17,13 +17,13 @@
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Despachar_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>57a18d7e-f2e4-4e47-80c5-6b2d305e0772</guid>
+      <guid>602b4ce2-c0a7-455e-ab10-162ecf302c91</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Despachar_20pies</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>c4d24525-dd65-476d-82c1-57cfa635b20a</id>
+         <id>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -31,28 +31,34 @@
          <testDataId>Data Files/Despacho_data_20pies</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>c4d24525-dd65-476d-82c1-57cfa635b20a</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>IdPedido</value>
-         <variableId>97c770da-9151-4f2c-b7be-8c8ab8a9d3d4</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>c4d24525-dd65-476d-82c1-57cfa635b20a</testDataLinkId>
+         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Idioma</value>
          <variableId>1d057216-3997-46ac-9cdf-0a03de6369f0</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>c4d24525-dd65-476d-82c1-57cfa635b20a</testDataLinkId>
+         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Usuario</value>
          <variableId>0fc82bd5-9929-4689-97ca-d13c78270e98</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>c4d24525-dd65-476d-82c1-57cfa635b20a</testDataLinkId>
+         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>Contrasena</value>
          <variableId>1f696116-87df-4092-92d7-2d8953ef2da4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>IdPedido</value>
+         <variableId>97c770da-9151-4f2c-b7be-8c8ab8a9d3d4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>CantProductos</value>
+         <variableId>e52f68db-dace-4d04-9d2b-8ee81be90845</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@onclick=&quot;localStorage.setItem('delivery', 'Lista de Empaque');&quot;]</value>
+         <value>//ul[@id='side-menu']/li[6]/ul/li[4]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
