@@ -52,11 +52,11 @@ public class Ex_despacho_pedidos_20pies {
 
 			int exitVal = process.waitFor();
 			if (exitVal == 0) {
-				System.out.println("Archivo Creado!");
+				System.out.println("Archivo Creado: Pedidos/DataExcel/Despacho_20pies.xlsx");
 				System.out.println(output);
 				//System.exit(0);
 			} else {
-				System.out.println("No se puedo crear el archivo!. Cierre el archivo");
+				System.out.println("No se puedo crear el archivo!. (Cierre el archivo o revise la instalación de python)");
 			}
 
 		} catch (IOException e) {

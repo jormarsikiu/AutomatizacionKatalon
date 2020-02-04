@@ -13,6 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+String OpCompra1 = data[7]
+
 WebUI.delay(7)
 
 WebUI.waitForElementClickable(findTestObject('Page_- KAIZEN/so_SelectorOP'), 7)

@@ -13,14 +13,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+
+int Incoterm = data[6]
+
 WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/sin_select_incoterm'), 
     Incoterm, true)
 
-/*//Se guarda el id del pedido
-String IDPedidoCreado = WebUI.executeJavaScript('return document.getElementById(\'IdPedido\').value;', null)
-
-CustomKeywords.'exportar_archivos.Ex_guardar_pedidos_creados.demoKey'(IDPedidoCreado)
-*/
 
 WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_next'))
 

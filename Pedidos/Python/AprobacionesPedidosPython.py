@@ -131,8 +131,6 @@ for i in range (0, len(df_fusion2)):
 
 export_excel3 = df_fusion3.to_excel (r'Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx', index = None, header=True)
 
-print ("Archivo creado: Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx")
-
 os.remove('TestEstadoPedido.xlsx')
 os.remove('ventas.xlsx')
 os.remove('AprobacionV.xlsx')

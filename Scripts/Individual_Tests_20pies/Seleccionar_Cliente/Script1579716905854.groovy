@@ -13,6 +13,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+
+List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+int Nombre = data[3]
+int Direccion = data[4]
+int Contenedor= data[5]
+
 WebUI.delay(2)
 
 String element = WebUI.executeJavaScript('return document.getElementById(\'ID_CLIENTE_LIST\').value;', null)

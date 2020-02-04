@@ -14,6 +14,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+
+int Idioma = data[0]
+
 WebUI.click(findTestObject('Page_- KAIZEN/si_btn_idioma'))
 
 if (Idioma == '0'){ 

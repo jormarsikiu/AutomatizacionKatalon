@@ -14,21 +14,32 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.testdata.reader.ExcelFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
+String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Crear_Pedido20pies.xlsx"
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
+Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Anadir_pedido'), [:], FailureHandling.STOP_ON_FAILURE)
+for (def Index : (1..excelData.getRowNumbers() - 1))
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Cliente'), [('Nombre') : Nombre, ('Direccion') : Direccion
+{
+	
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Index') : Index, ('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
+
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Index') : Index, ('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
+
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Anadir_pedido'), [:], FailureHandling.STOP_ON_FAILURE)
+
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Cliente'), [('Index') : Index, ('Nombre') : Nombre, ('Direccion') : Direccion
         , ('Contenedor') : Contenedor], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Incoterm'), [('Incoterm') : Incoterm], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Incoterm'), [('Index') : Index, ('Incoterm') : Incoterm], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Opcion_Compra'), [('OpCompra1') : OpCompra], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Opcion_Compra'), [('Index') : Index, ('OpCompra1') : OpCompra], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Productos'), [('Iterar') : Iterar, ('Presentacion') : Presentacion
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Productos'), [('Index') : Index, ('Iterar') : Iterar, ('Presentacion') : Presentacion
         , ('Producto') : Producto, ('Cantidad') : Cantidad, ('Presentacion2') : Presentacion2, ('Producto2') : Producto2
         , ('Cantidad2') : Cantidad2], FailureHandling.STOP_ON_FAILURE)
 
+}

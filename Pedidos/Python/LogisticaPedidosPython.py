@@ -114,7 +114,7 @@ export_excel5 = df_fusion_logistico.to_excel(r'Pedidos/DataExcel/Cargos_Logistic
 
 print(df_fusion_logistico['IDCargo'])
 
-print ("Archivo creado: Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx")
+
 os.remove('TestCargosInv.xlsx')
 os.remove('TestDataCargoLogistico.xlsx')
 os.remove('TestDataCargoLogistico2.xlsx')

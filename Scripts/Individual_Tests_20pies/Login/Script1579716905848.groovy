@@ -16,6 +16,9 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+String Usuario = data[1]
+String Contrasena = data[2]
 
 WebUI.openBrowser('http://test.kaizendev.net/Login/Accesar?salir=true')
 
@@ -26,6 +29,8 @@ WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usu
 WebUI.setEncryptedText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
 
 //WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
+
 WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
+
 
 

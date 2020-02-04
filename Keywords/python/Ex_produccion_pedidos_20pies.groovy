@@ -21,8 +21,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class Ex_produccion_pedidos_20pies {
-	
-	
+
+
 	@Keyword
 	def runPython(){
 
@@ -53,7 +53,7 @@ public class Ex_produccion_pedidos_20pies {
 
 			int exitVal = process.waitFor();
 			if (exitVal == 0) {
-				System.out.println("Archivo Creado!");
+				System.out.println("Archivo Creado: Pedidos/DataExcel/Orden_Produccion_20pies.xlsx");
 				System.out.println(output);
 				//System.exit(0);
 			} else {
@@ -68,5 +68,5 @@ public class Ex_produccion_pedidos_20pies {
 
 	}
 
-	
-	}
+
+}

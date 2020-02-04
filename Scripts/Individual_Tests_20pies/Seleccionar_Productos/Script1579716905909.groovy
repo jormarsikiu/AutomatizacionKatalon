@@ -13,6 +13,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+int Presentacion = data[9]
+int Producto = data[10]
+int Cantidad = data[11]
+int Presentacion2 = data[12]
+int Producto2 = data[13]
+int Cantidad2 = data[14]
+int Iterar = data[15]
+
+
+
 //WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_Element_presentacion'), 5)
 
 String boton = WebUI.executeJavaScript('return document.getElementById("btn_next").style.display;', null)

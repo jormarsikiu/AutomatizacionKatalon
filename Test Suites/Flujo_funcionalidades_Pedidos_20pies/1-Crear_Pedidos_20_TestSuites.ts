@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>17983afc-6442-4399-a896-a9ae4c8ba007</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Aleatorio_Pedidos_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -119,6 +119,12 @@
          <type>DATA_COLUMN</type>
          <value>Iterar</value>
          <variableId>7d15c4d3-f641-4e07-9964-b7c3fcdf5271</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>48bc8f00-5ea5-4382-914b-4f7d258a8a38</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
