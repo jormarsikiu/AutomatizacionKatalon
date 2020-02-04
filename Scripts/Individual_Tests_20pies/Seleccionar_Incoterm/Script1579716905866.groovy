@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
 
-int Incoterm = data[6]
+String Incoterm = data[6]
 
 WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/sin_select_incoterm'), 
     Incoterm, true)

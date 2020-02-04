@@ -21,55 +21,46 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>af485a74-7b28-46be-b57d-69c27cf88a98</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/Produccion_data_20pies</testDataId>
-      </testDataLink>
       <variableLink>
-         <testDataLinkId>af485a74-7b28-46be-b57d-69c27cf88a98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Idioma</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>8e2df030-a28e-47c8-888c-bbd77bd1ec4e</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>af485a74-7b28-46be-b57d-69c27cf88a98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Usuario</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>ca5cb557-f7f1-453a-8994-832b591dc7af</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>af485a74-7b28-46be-b57d-69c27cf88a98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Contrasena</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>577a38d6-c645-42c7-8360-a114a529328d</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>af485a74-7b28-46be-b57d-69c27cf88a98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Id_Cliente</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>1cc52665-9a6e-4fe5-a7ef-d0d604354cb4</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>af485a74-7b28-46be-b57d-69c27cf88a98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>IdPedido</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>3baf5a54-ce27-4a10-9783-7e2a9b8e084a</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>af485a74-7b28-46be-b57d-69c27cf88a98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Creado_desde</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>3349d306-c1e4-41f7-9ac6-eac86df5cfb4</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>af485a74-7b28-46be-b57d-69c27cf88a98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Creado_desde</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>4513d383-446e-4c7c-bd71-04db1d5f2d65</variableId>
       </variableLink>
    </testCaseLink>

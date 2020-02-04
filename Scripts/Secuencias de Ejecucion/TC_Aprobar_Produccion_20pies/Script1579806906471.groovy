@@ -14,13 +14,22 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testdata.reader.ExcelFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Usuario') : Usuario, ('Contrasena') : Contrasena], 
+String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx"
+
+Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true)
+
+for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
+
+{
+WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Aprobar',  ('Index') : Index, ('Usuario') : Usuario, ('Contrasena') : Contrasena], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : 'Aprobar',  ('Index') : Index, ('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Aprobacion_Produccion'), [('IDCliente') : IDCliente, ('CreadosDesde') : CreadosDesde
-        , ('CreadosHasta') : CreadosHasta, ('IDPedido') : IDPedido, ('AprobacionProduccion') : AprobacionProduccion], 
+WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Aprobacion_Produccion'), [ ('Index') : Index, ('IDCliente') : IDCliente, ('IDPedido') : IDPedido, ('AprobacionProduccion') : AprobacionProduccion], 
     FailureHandling.STOP_ON_FAILURE)
 
+}

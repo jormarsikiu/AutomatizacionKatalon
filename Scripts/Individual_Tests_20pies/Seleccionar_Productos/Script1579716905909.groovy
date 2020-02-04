@@ -14,13 +14,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
 List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
-int Presentacion = data[9]
-int Producto = data[10]
-int Cantidad = data[11]
-int Presentacion2 = data[12]
-int Producto2 = data[13]
-int Cantidad2 = data[14]
-int Iterar = data[15]
+String Presentacion = data[8]
+String Producto = data[9]
+String Cantidad = data[10]
+String Presentacion2 = data[11]
+String Producto2 = data[12]
+String Cantidad2 = data[13]
+String Iterar = data[15]
 
 
 

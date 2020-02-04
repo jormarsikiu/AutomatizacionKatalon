@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="1-Crear_Pedidos_20_TestSuites" time="34.975" tests="2" failures="0" errors="1">
+   <testsuite name="1-Crear_Pedidos_20_TestSuites" tests="2" failures="0" errors="1" time="34.975" timestamp="2020-02-04 12:23:57" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Flujo_funcionalidades_Pedidos_20pies/1-Crear_Pedidos_20_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200204_122354\\Flujo_funcionalidades_Pedidos_20pies\\1-Crear_Pedidos_20_TestSuites\\20200204_122354"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200204_122354\\Flujo_funcionalidades_Pedidos_20pies\\1-Crear_Pedidos_20_TestSuites\\20200204_122354\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 79.0.3945.130"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="eef597db782b8c6f83a5afeda3f317da"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_Aleatorio_Pedidos_20pies" time="4.584" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_Aleatorio_Pedidos_20pies" status="PASSED">
+         <system-out><![CDATA[2020-02-04 12:23:57 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_Aleatorio_Pedidos_20pies: Test Cases/Secuencias de Ejecucion/TC_Generar_Aleatorio_Pedidos_20pies
+
+2020-02-04 12:23:58 - [TEST_STEP][PASSED] - python.Ex_crear_aleatorio_pedidos_20pies.runPython(): python.Ex_crear_aleatorio_pedidos_20pies.runPython is PASSED
+
+2020-02-04 12:24:02 - [MESSAGE][PASSED] - python.Ex_crear_aleatorio_pedidos_20pies.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies" time="29.91" classname="Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580833434338.run(TempTestSuite1580833434338.groovy:36)
+Caused by: org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'CIF' with class 'java.lang.String' to class 'int'
+	at Seleccionar_Incoterm.run(Seleccionar_Incoterm:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+"/>
+         <system-out><![CDATA[2020-02-04 12:24:02 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies: Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580833434338.run(TempTestSuite1580833434338.groovy:36)
+Caused by: org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'CIF' with class 'java.lang.String' to class 'int'
+	at Seleccionar_Incoterm.run(Seleccionar_Incoterm:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2020-02-04 12:24:03 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Crear_Pedido20pies.xlsx: null
+
+2020-02-04 12:24:03 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-04 12:24:04 - [TEST_STEP][FAILED] - for (def Index : (1..(excelData.getRowNumbers() - 1))): Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580833434338.run(TempTestSuite1580833434338.groovy:36)
+Caused by: org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'CIF' with class 'java.lang.String' to class 'int'
+	at Seleccionar_Incoterm.run(Seleccionar_Incoterm:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-02-04 12:24:04 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-04 12:24:04 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-04 12:24:04 - [TEST_STEP][PASSED] - data = getexcel.obtener_pedidos20pies.getValuesExcelCreate20(Index): getexcel.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-04 12:24:05 - [MESSAGE][PASSED] - getexcel.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-04 12:24:05 - [TEST_STEP][PASSED] - Usuario = data[1]: null
+
+2020-02-04 12:24:05 - [TEST_STEP][PASSED] - Contrasena = data[2]: null
+
+2020-02-04 12:24:05 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-04 12:24:07 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-04 12:24:07 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-04 12:24:07 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-04 12:24:07 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-04 12:24:08 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-04 12:24:08 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-04 12:24:08 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-04 12:24:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-04 12:24:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-04 12:24:10 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-04 12:24:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-04 12:24:10 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-04 12:24:10 - [TEST_STEP][PASSED] - data = getexcel.obtener_pedidos20pies.getValuesExcelCreate20(Index): getexcel.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-04 12:24:10 - [MESSAGE][PASSED] - getexcel.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-04 12:24:10 - [TEST_STEP][PASSED] - Idioma = data[0]: null
+
+2020-02-04 12:24:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-04 12:24:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-04 12:24:11 - [TEST_STEP][PASSED] - if (Idioma == "0"): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-02-04 12:24:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Ingles")): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-02-04 12:24:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-02-04 12:24:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-04 12:24:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Anadir_pedido"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Anadir_pedido' successfully
+
+2020-02-04 12:24:12 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Anadir_pedido: Test Cases/Individual_Tests_20pies/Anadir_pedido
+
+2020-02-04 12:24:12 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/bp_menu_pedido")): Object: 'Object Repository/Page_- KAIZEN/bp_menu_pedido' is clicked on
+
+2020-02-04 12:24:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/bp_menu_pedido' is clicked on
+
+2020-02-04 12:24:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/bp_click_menu_pedido")): Object: 'Object Repository/Page_- KAIZEN/bp_click_menu_pedido' is clicked on
+
+2020-02-04 12:24:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/bp_click_menu_pedido' is clicked on
+
+2020-02-04 12:24:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_Pedidos de Lubricantes - KAIZEN/ap_btn_agregar")): Object: 'Object Repository/Page_Pedidos de Lubricantes - KAIZEN/ap_btn_agregar' is clicked on
+
+2020-02-04 12:24:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Pedidos de Lubricantes - KAIZEN/ap_btn_agregar' is clicked on
+
+2020-02-04 12:24:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Anadir_pedido' successfully
+
+2020-02-04 12:24:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Cliente"), ["Index":Index, "Nombre":Nombre, "Direccion":Direccion, "Contenedor":Contenedor], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Cliente' successfully
+
+2020-02-04 12:24:17 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Cliente: Test Cases/Individual_Tests_20pies/Seleccionar_Cliente
+
+2020-02-04 12:24:18 - [TEST_STEP][PASSED] - data = getexcel.obtener_pedidos20pies.getValuesExcelCreate20(Index): getexcel.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-04 12:24:18 - [MESSAGE][PASSED] - getexcel.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-04 12:24:18 - [TEST_STEP][PASSED] - Nombre = data[3]: null
+
+2020-02-04 12:24:18 - [TEST_STEP][PASSED] - Direccion = data[4]: null
+
+2020-02-04 12:24:18 - [TEST_STEP][PASSED] - Contenedor = data[5]: null
+
+2020-02-04 12:24:18 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-02-04 12:24:20 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-02-04 12:24:20 - [TEST_STEP][PASSED] - element = executeJavaScript("return document.getElementById('ID_CLIENTE_LIST').value;", null): Execute JavaScript 'return document.getElementById('ID_CLIENTE_LIST').value;' successfully
+
+2020-02-04 12:24:20 - [MESSAGE][PASSED] - Execute JavaScript 'return document.getElementById('ID_CLIENTE_LIST').value;' successfully
+
+2020-02-04 12:24:20 - [TEST_STEP][PASSED] - if (element == Nombre): null
+
+2020-02-04 12:24:20 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-04 12:24:20 - [TEST_STEP][PASSED] - print(Nombre + "
+"): null
+
+2020-02-04 12:24:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_select_cliente1")): Object: 'Object Repository/Page_- KAIZEN/sc_select_cliente1' is clicked on
+
+2020-02-04 12:24:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_select_cliente1' is clicked on
+
+2020-02-04 12:24:21 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_select_cliente2")): Object: 'Object Repository/Page_- KAIZEN/sc_select_cliente2' is clicked on
+
+2020-02-04 12:24:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_select_cliente2' is clicked on
+
+2020-02-04 12:24:22 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_- KAIZEN/sc_select_cliente3"), 5): Object 'Object Repository/Page_- KAIZEN/sc_select_cliente3' is present
+
+2020-02-04 12:24:22 - [MESSAGE][PASSED] - Object 'Object Repository/Page_- KAIZEN/sc_select_cliente3' is present
+
+2020-02-04 12:24:22 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_- KAIZEN/sc_select_cliente3"), Nombre.toString(), true): All options with value '3' are selected in object 'Object Repository/Page_- KAIZEN/sc_select_cliente3'  using regular expression
+
+2020-02-04 12:24:25 - [MESSAGE][PASSED] - All options with value '3' are selected in object 'Object Repository/Page_- KAIZEN/sc_select_cliente3'  using regular expression
+
+2020-02-04 12:24:25 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_- KAIZEN/sc_span_select_address"), 5): Object 'Object Repository/Page_- KAIZEN/sc_span_select_address' is present
+
+2020-02-04 12:24:25 - [MESSAGE][PASSED] - Object 'Object Repository/Page_- KAIZEN/sc_span_select_address' is present
+
+2020-02-04 12:24:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_span_select_address")): Object: 'Object Repository/Page_- KAIZEN/sc_span_select_address' is clicked on
+
+2020-02-04 12:24:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_span_select_address' is clicked on
+
+2020-02-04 12:24:26 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_- KAIZEN/sc_assing_select_address"), Direccion, true): All options with value '7' are selected in object 'Object Repository/Page_- KAIZEN/sc_assing_select_address'  using regular expression
+
+2020-02-04 12:24:28 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_- KAIZEN/sc_assing_select_address'  using regular expression
+
+2020-02-04 12:24:28 - [TEST_STEP][PASSED] - if (Contenedor == "20"): Object: 'Object Repository/Page_- KAIZEN/sc_btn_contenedor_20_pies' is clicked on
+
+2020-02-04 12:24:28 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_btn_contenedor_20_pies")): Object: 'Object Repository/Page_- KAIZEN/sc_btn_contenedor_20_pies' is clicked on
+
+2020-02-04 12:24:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_btn_contenedor_20_pies' is clicked on
+
+2020-02-04 12:24:28 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-02-04 12:24:30 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-02-04 12:24:30 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_- KAIZEN/sc_btn_next"), 3): Object 'Object Repository/Page_- KAIZEN/sc_btn_next' is visible
+
+2020-02-04 12:24:31 - [MESSAGE][PASSED] - Object 'Object Repository/Page_- KAIZEN/sc_btn_next' is visible
+
+2020-02-04 12:24:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_btn_next")): Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-04 12:24:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-04 12:24:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Cliente' successfully
+
+2020-02-04 12:24:31 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Incoterm"), ["Index":Index, "Incoterm":Incoterm], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580833434338.run(TempTestSuite1580833434338.groovy:36)
+Caused by: org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'CIF' with class 'java.lang.String' to class 'int'
+	at Seleccionar_Incoterm.run(Seleccionar_Incoterm:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-02-04 12:24:31 - [TEST_CASE][ERROR] - Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm: Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm FAILED.
+Reason:
+org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'CIF' with class 'java.lang.String' to class 'int'
+	at Seleccionar_Incoterm.run(Seleccionar_Incoterm:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580833434338.run(TempTestSuite1580833434338.groovy:36)
+
+
+2020-02-04 12:24:32 - [TEST_STEP][PASSED] - data = getexcel.obtener_pedidos20pies.getValuesExcelCreate20(Index): getexcel.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-04 12:24:32 - [MESSAGE][PASSED] - getexcel.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-04 12:24:32 - [TEST_STEP][PASSED] - Incoterm = data[6]: null
+
+2020-02-04 12:24:32 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580833434338.run(TempTestSuite1580833434338.groovy:36)
+Caused by: org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'CIF' with class 'java.lang.String' to class 'int'
+	at Seleccionar_Incoterm.run(Seleccionar_Incoterm:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)]]></system-out>
+         <system-err><![CDATA[2020-02-04 12:24:02 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies: Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580833434338.run(TempTestSuite1580833434338.groovy:36)
+Caused by: org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'CIF' with class 'java.lang.String' to class 'int'
+	at Seleccionar_Incoterm.run(Seleccionar_Incoterm:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-04 12:23:57 - [TEST_SUITE][ERROR] - 1-Crear_Pedidos_20_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580833434338.run(TempTestSuite1580833434338.groovy:36)
+Caused by: org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'CIF' with class 'java.lang.String' to class 'int'
+	at Seleccionar_Incoterm.run(Seleccionar_Incoterm:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[2020-02-04 12:23:57 - [TEST_SUITE][ERROR] - 1-Crear_Pedidos_20_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580833434338.run(TempTestSuite1580833434338.groovy:36)
+Caused by: org.codehaus.groovy.runtime.typehandling.GroovyCastException: Cannot cast object 'CIF' with class 'java.lang.String' to class 'int'
+	at Seleccionar_Incoterm.run(Seleccionar_Incoterm:18)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>

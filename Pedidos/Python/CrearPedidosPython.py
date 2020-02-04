@@ -8,7 +8,7 @@ from openpyxl.utils import get_column_letter
 from datetime import datetime
 
 
-os.remove('Pedidos/DataExcel/Crear_Pedido20pies.xlsx')
+#os.remove('Pedidos/DataExcel/Crear_Pedido20pies.xlsx')
 
 #Conexion con la base de fatos
 try:
@@ -185,6 +185,7 @@ for i in range (0, len(df_aleatorio)):
 		df_aleatorio.loc[i, 'Resultado'] = "Prueba fallida"
 
 export_excel2 = df_aleatorio.to_excel (r'Pedidos/DataExcel/Crear_Pedido20pies.xlsx', index = None, header=True)
+
 
 #Ajustar columnas
 wb6 = openpyxl.load_workbook('Pedidos/DataExcel/Crear_Pedido20pies.xlsx')

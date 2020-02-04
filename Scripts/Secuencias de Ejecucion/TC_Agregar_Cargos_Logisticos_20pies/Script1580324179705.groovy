@@ -14,22 +14,20 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testdata.reader.ExcelFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 
-/*def info = WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Refresh'), [:], FailureHandling.STOP_ON_FAILURE)
+String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx"
 
-def Usuario = info.Usuario
-def Contrasena = info.Contrasena
-def Idioma = info.Idioma
-def IDPedido = info.IDPedido
-def IDCliente = info.IDCliente
-def IDCargo = info.IDCargo
-def IDCargo2 = info.IDCargo2
-def CreadoDesde = info.CreadoDesde*/
+Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true)
 
+for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
+{
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Logistica', ('Index') : Index, ('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : 'Logistica', ('Index') : Index, ('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Agregar_Logistica'), [('IDCliente') : IDCliente, ('CreadosDesde') : CreadosDesde, ('CreadosHasta') : CreadosHasta, ('IDPedido') : IDPedido,  ('IDCargo') : IDCargo,  ('IDCargo2') : IDCargo2], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Agregar_Logistica'), [('Index') : Index, ('IDCliente') : IDCliente, ('IDPedido') : IDPedido,  ('IDCargo') : IDCargo,  ('IDCargo2') : IDCargo2], FailureHandling.STOP_ON_FAILURE)
 
+}

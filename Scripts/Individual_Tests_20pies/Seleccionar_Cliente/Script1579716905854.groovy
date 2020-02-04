@@ -15,9 +15,9 @@ import internal.GlobalVariable as GlobalVariable
 
 
 List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
-int Nombre = data[3]
-int Direccion = data[4]
-int Contenedor= data[5]
+String Nombre = data[3]
+String Direccion = data[4]
+String Contenedor= data[5]
 
 WebUI.delay(2)
 
@@ -33,14 +33,14 @@ if ((element == Nombre)) {
 } else {
 //WebUI.executeJavaScript('alert(\'Es Diferente\')', null)
 
-
+	print(Nombre+"\n")
 	WebUI.click(findTestObject('Page_- KAIZEN/sc_select_cliente1'))
 
 	WebUI.click(findTestObject('Page_- KAIZEN/sc_select_cliente2'))
 	
 	WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sc_select_cliente3'), 5)
 
-	WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/sc_select_cliente3'), Nombre, true)
+	WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/sc_select_cliente3'), Nombre.toString(), true)
     
 	WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sc_span_select_address'), 5)
 	

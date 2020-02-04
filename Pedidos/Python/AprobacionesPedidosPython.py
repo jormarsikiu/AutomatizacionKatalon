@@ -8,7 +8,7 @@ import datetime
 from openpyxl.utils import get_column_letter
 
 
-os.remove('Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx')
+#os.remove('Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx')
 idpedidos = pd.read_excel(r"Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
 
 df_pedidos= pd.DataFrame(idpedidos, columns= ['IdPedido'])

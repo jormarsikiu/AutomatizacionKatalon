@@ -112,8 +112,6 @@ df_fusion_logistico=pd.concat([df_usuarios, df_pedidoaprobados, df_logistico], a
 df_fusion_logistico = df_fusion_logistico.drop(['index'], axis=1)
 export_excel5 = df_fusion_logistico.to_excel(r'Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx', index = None, header=True)
 
-print(df_fusion_logistico['IDCargo'])
-
 
 os.remove('TestCargosInv.xlsx')
 os.remove('TestDataCargoLogistico.xlsx')

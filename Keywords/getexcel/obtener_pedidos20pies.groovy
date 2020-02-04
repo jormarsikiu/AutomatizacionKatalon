@@ -20,6 +20,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testdata.reader.ExcelFactory
 import com.kms.katalon.core.configuration.RunConfiguration
 import internal.GlobalVariable
+import com.kms.katalon.core.testdata.reader.ExcelFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 
 public class obtener_pedidos20pies {
 
@@ -30,22 +32,22 @@ public class obtener_pedidos20pies {
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 
+		String Idioma = excelData.getValue("Idioma", index);
 		String Usuario = excelData.getValue("Usuario", index);
 		String Contrasena = excelData.getValue("Contrasena", index);
-		int Idioma = excelData.getValue("Idioma", index);
-		int ID_Cliente = excelData.getValue("ID_Cliente", index);
-		int ID_Direccion = excelData.getValue("ID_Direccion", index);
-		int Contenedor = excelData.getValue("Contenedor", index);
+		String ID_Cliente = excelData.getValue("ID_Cliente", index);
+		String ID_Direccion = excelData.getValue("ID_Direccion", index);
+		String Contenedor = excelData.getValue("Contenedor", index);
 		String Incoterms = excelData.getValue("Incoterms", index);
-		int OpCompra = excelData.getValue("OpCompra", index);
-		int Presentacion = excelData.getValue("Presentacion", index);
-		int Producto = excelData.getValue("Producto", index);
-		int Cantidad = excelData.getValue("Cantidad", index);
-		int Presentacion2 = excelData.getValue("Presentacion2", index);
-		int Producto2 = excelData.getValue("Producto2", index);
-		int Cantidad2 = excelData.getValue("Cantidad2", index);
-		int OpCompra2 = excelData.getValue("OpCompra2", index);
-		int Iterar = excelData.getValue("Iterar", index);
+		String OpCompra = excelData.getValue("OpCompra", index);
+		String Presentacion = excelData.getValue("Presentacion", index);
+		String Producto = excelData.getValue("Producto", index);
+		String Cantidad = excelData.getValue("Cantidad", index);
+		String Presentacion2 = excelData.getValue("Presentacion2", index);
+		String Producto2 = excelData.getValue("Producto2", index);
+		String Cantidad2 = excelData.getValue("Cantidad2", index);
+		String OpCompra2 = excelData.getValue("OpCompra2", index);
+		String Iterar = excelData.getValue("Iterar", index);
 
 		List<String,String> data = [
 			Idioma,

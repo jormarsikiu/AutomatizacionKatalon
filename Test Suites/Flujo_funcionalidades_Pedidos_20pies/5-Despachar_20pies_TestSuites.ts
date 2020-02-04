@@ -21,43 +21,34 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Despachar_20pies</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/Despacho_data_20pies</testDataId>
-      </testDataLink>
       <variableLink>
-         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Idioma</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>1d057216-3997-46ac-9cdf-0a03de6369f0</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Usuario</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>0fc82bd5-9929-4689-97ca-d13c78270e98</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Contrasena</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>1f696116-87df-4092-92d7-2d8953ef2da4</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>IdPedido</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>97c770da-9151-4f2c-b7be-8c8ab8a9d3d4</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>f0770dc4-f4c7-4b99-8058-d55f3ae5c16b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>CantProductos</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>e52f68db-dace-4d04-9d2b-8ee81be90845</variableId>
       </variableLink>
    </testCaseLink>

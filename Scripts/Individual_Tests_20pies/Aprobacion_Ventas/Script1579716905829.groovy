@@ -16,6 +16,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+List<String> data = CustomKeywords.'getexcel.obtener_aprobaciones_20pies.getValuesExcelAprob20'(Index)
+String IdPedido = data[3]
+String Id_Cliente = data[4]
+String AprobVentas = data[5]
+print (Id_Cliente+"\n")
+print (AprobVentas+"\n")
+
+IDPedido = IdPedido 
+IDCliente = Id_Cliente
+AprobacionVentas = AprobVentas
+
 WebUI.click(findTestObject('Page_- KAIZEN/av_btn_ventas'))
 
 WebUI.click(findTestObject('Page_- KAIZEN/av_btn_aprobacinventas'))
