@@ -16,6 +16,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+List<String> data = CustomKeywords.'getexcel.obtener_produccion_20pies.getValuesExcelProduction'(Index)
+String IdPedido = data[3]
+IDPedido = IdPedido
+
+
+
 WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/op_menu_Operaciones'))
 
 WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/op_click_Orden de Produccin'))

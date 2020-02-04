@@ -17,8 +17,35 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.testdata.reader.ExcelFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 
 import internal.GlobalVariable
 
 public class obtener_despacho_20pies {
+	@Keyword
+	def List<String> getValuesExcelDespach(int index) {
+
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Despacho_20pies.xlsx";
+
+		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
+
+		String Idioma = excelData.getValue("Idioma", index);
+		String Usuario = excelData.getValue("Usuario", index);
+		String Contrasena = excelData.getValue("Contrasena", index);
+		String IdPedido = excelData.getValue("IdPedido", index);
+		String Id_Cliente = excelData.getValue("Id_Cliente", index);
+		String CantProductos = excelData.getValue("CantProductos", index);
+
+		List<String> data = [
+			Idioma,
+			Usuario,
+			Contrasena,
+			IdPedido,
+			Id_Cliente,
+			CantProductos
+		]
+
+		return data
+	}
 }

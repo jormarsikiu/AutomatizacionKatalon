@@ -15,10 +15,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Usuario') : Usuario, ('Contrasena') : Contrasena], 
+String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Despacho_20pies.xlsx"
+
+Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true)
+
+for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
+{
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Despacho', ('Index') : Index, ('Usuario') : Usuario, ('Contrasena') : Contrasena], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : 'Despacho', ('Index') : Index, ('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Despacho'), [('IDPedido') : IDPedido, ('CantProductos') : CantProductos], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Despacho'), [('Index') : Index, ('IDPedido') : IDPedido, ('CantProductos') : CantProductos], FailureHandling.STOP_ON_FAILURE)
 
+}

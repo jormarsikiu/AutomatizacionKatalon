@@ -27,11 +27,11 @@ else if (Evento=="Logistica"){
 	int Idioma = data3[0]
 }
 else if (Evento=="Produccion"){
-	List<String> data4 = CustomKeywords.'getexcel.obtener_produccion_20pies.getValuesExcelAprob20'(Index)
+	List<String> data4 = CustomKeywords.'getexcel.obtener_produccion_20pies.getValuesExcelProduction'(Index)
 	int Idioma = data4[0]
 }
 else if (Evento=="Despacho"){
-	List<String> data5 = CustomKeywords.'getexcel.obtener_despacho_20pies.getValuesExcelAprob20'(Index)
+	List<String> data5 = CustomKeywords.'getexcel.obtener_despacho_20pies.getValuesExcelDespach'(Index)
 	int Idioma = data5[0]
 }
 
