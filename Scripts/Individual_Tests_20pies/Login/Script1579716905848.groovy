@@ -16,9 +16,9 @@ import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-print(Evento+"\n")
+print("Evento Seleccionado: "+Evento+"\n")
 
-WebUI.openBrowser('http://test.kaizendev.net/Login/Accesar?salir=true')
+WebUI.openBrowser(GlobalVariable.Web)
 
 WebUI.maximizeWindow()
 
