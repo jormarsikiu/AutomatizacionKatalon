@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="4-GenerarProduccion_20pies_TestSuites" time="26.678" tests="2" failures="0" errors="1">
+   <testsuite name="4-GenerarProduccion_20pies_TestSuites" tests="2" failures="0" errors="1" time="26.678" timestamp="2020-02-06 08:57:35" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Flujo_funcionalidades_Pedidos_20pies/4-GenerarProduccion_20pies_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200206_085727\\Flujo_funcionalidades_Pedidos_20pies\\4-GenerarProduccion_20pies_TestSuites\\20200206_085727"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200206_085727\\Flujo_funcionalidades_Pedidos_20pies\\4-GenerarProduccion_20pies_TestSuites\\20200206_085727\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 79.0.3945.130"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="e72b55e197268f2e34ad8df2a142beb0"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies" time="4.266" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies" status="PASSED">
+         <system-out><![CDATA[2020-02-06 08:57:35 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies: Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies
+
+2020-02-06 08:57:36 - [TEST_STEP][PASSED] - python.Ex_produccion_pedidos_20pies.runPython(): python.Ex_produccion_pedidos_20pies.runPython is PASSED
+
+2020-02-06 08:57:40 - [MESSAGE][PASSED] - python.Ex_produccion_pedidos_20pies.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies" time="21.246" classname="Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: IDCliente for class: Script1580324170627
+	at TC_Orden_Produccion_20pies.run(TC_Orden_Produccion_20pies:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580993852354.run(TempTestSuite1580993852354.groovy:36)
+"/>
+         <system-out><![CDATA[2020-02-06 08:57:40 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies: Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: IDCliente for class: Script1580324170627
+	at TC_Orden_Produccion_20pies.run(TC_Orden_Produccion_20pies:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580993852354.run(TempTestSuite1580993852354.groovy:36)
+
+
+2020-02-06 08:57:40 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Orden_Produccion_20pies.xlsx: null
+
+2020-02-06 08:57:40 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-06 08:57:41 - [TEST_STEP][PASSED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): null
+
+2020-02-06 08:57:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Produccion", "Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-06 08:57:41 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-06 08:57:42 - [TEST_STEP][PASSED] - print(Evento + "
+"): null
+
+2020-02-06 08:57:42 - [TEST_STEP][PASSED] - openBrowser("http://test.kaizendev.net/Login/Accesar?salir=true"): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-06 08:57:42 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-06 08:57:42 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-02-06 08:57:54 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-06 08:57:54 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-06 08:57:55 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-06 08:57:55 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-06 08:57:55 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-06 08:57:55 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-06 08:57:55 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-06 08:57:55 - [TEST_STEP][PASSED] - data4 = obtener_excels.obtener_produccion_20pies.getValuesExcelProduction(Index): obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-06 08:57:55 - [MESSAGE][PASSED] - obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-06 08:57:55 - [TEST_STEP][PASSED] - Usuario = data4[1]: null
+
+2020-02-06 08:57:55 - [TEST_STEP][PASSED] - Contrasena = data4[2]: null
+
+2020-02-06 08:57:55 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-06 08:57:56 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-06 08:57:56 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-06 08:57:56 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-06 08:57:56 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-06 08:57:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-06 08:57:59 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-06 08:57:59 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Produccion", "Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-06 08:57:59 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-06 08:57:59 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-06 08:57:59 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-06 08:57:59 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-06 08:57:59 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-06 08:57:59 - [TEST_STEP][PASSED] - data4 = obtener_excels.obtener_produccion_20pies.getValuesExcelProduction(Index): obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-06 08:57:59 - [MESSAGE][PASSED] - obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-06 08:57:59 - [TEST_STEP][PASSED] - Idioma = data4[0]: null
+
+2020-02-06 08:57:59 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-06 08:58:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-06 08:58:00 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-06 08:58:00 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-06 08:58:00 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-06 08:58:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-06 08:58:01 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-06 08:58:01 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Orden_Produccion"), ["Index":Index, "IDCliente":IDCliente, "IDPedido":IDPedido], STOP_ON_FAILURE): null]]></system-out>
+         <system-err><![CDATA[2020-02-06 08:57:40 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies: Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: IDCliente for class: Script1580324170627
+	at TC_Orden_Produccion_20pies.run(TC_Orden_Produccion_20pies:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580993852354.run(TempTestSuite1580993852354.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-06 08:57:35 - [TEST_SUITE][ERROR] - 4-GenerarProduccion_20pies_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: IDCliente for class: Script1580324170627
+	at TC_Orden_Produccion_20pies.run(TC_Orden_Produccion_20pies:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580993852354.run(TempTestSuite1580993852354.groovy:36)]]></system-out>
+      <system-err><![CDATA[2020-02-06 08:57:35 - [TEST_SUITE][ERROR] - 4-GenerarProduccion_20pies_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: IDCliente for class: Script1580324170627
+	at TC_Orden_Produccion_20pies.run(TC_Orden_Produccion_20pies:32)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1580993852354.run(TempTestSuite1580993852354.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

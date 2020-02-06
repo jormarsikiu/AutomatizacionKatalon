@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>32675ce7-d2ad-4e9a-86e5-545b7f8f4431</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>

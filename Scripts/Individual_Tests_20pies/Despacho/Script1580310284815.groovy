@@ -16,6 +16,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+List<String> data = CustomKeywords.'obtener_excels.obtener_despacho_20pies.getValuesExcelDespach'(Index)
+String IdPedido = data[3]
+String Id_Cliente = data[4]
+String CantProd = data[5]
+
+IDPedido = IdPedido
+IDCliente = Id_Cliente
+CantProductos = CantProd
+
 WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/dp_menu_Operaciones'))
 
 WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/dp_menu_Lista de Empaque'))
