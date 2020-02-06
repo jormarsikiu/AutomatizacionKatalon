@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
 String Presentacion = data[8]
 String Producto = data[9]
 String Cantidad = data[10]

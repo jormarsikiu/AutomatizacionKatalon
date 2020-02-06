@@ -15,23 +15,23 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 if (Evento=="Crear"){
-	List<String> data = CustomKeywords.'getexcel.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+	List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
 	int Idioma = data[0]
 }
 else if (Evento=="Aprobar"){
-	List<String> data2 = CustomKeywords.'getexcel.obtener_aprobaciones_20pies.getValuesExcelAprob20'(Index)
+	List<String> data2 = CustomKeywords.'obtener_excels.obtener_aprobaciones_20pies.getValuesExcelAprob20'(Index)
 	int Idioma = data2[0]
 }
 else if (Evento=="Logistica"){
-	List<String> data3 = CustomKeywords.'getexcel.obtener_logistica_20pies.getValuesExcelLogistic'(Index)
+	List<String> data3 = CustomKeywords.'obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic'(Index)
 	int Idioma = data3[0]
 }
 else if (Evento=="Produccion"){
-	List<String> data4 = CustomKeywords.'getexcel.obtener_produccion_20pies.getValuesExcelProduction'(Index)
+	List<String> data4 = CustomKeywords.'obtener_excels.obtener_produccion_20pies.getValuesExcelProduction'(Index)
 	int Idioma = data4[0]
 }
 else if (Evento=="Despacho"){
-	List<String> data5 = CustomKeywords.'getexcel.obtener_despacho_20pies.getValuesExcelDespach'(Index)
+	List<String> data5 = CustomKeywords.'obtener_excels.obtener_despacho_20pies.getValuesExcelDespach'(Index)
 	int Idioma = data5[0]
 }
 

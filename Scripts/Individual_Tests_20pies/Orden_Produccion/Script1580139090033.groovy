@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-List<String> data = CustomKeywords.'getexcel.obtener_produccion_20pies.getValuesExcelProduction'(Index)
+List<String> data = CustomKeywords.'obtener_excels.obtener_produccion_20pies.getValuesExcelProduction'(Index)
 String IdPedido = data[3]
 IDPedido = IdPedido
 

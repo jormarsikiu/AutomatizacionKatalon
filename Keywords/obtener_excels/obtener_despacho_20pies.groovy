@@ -1,4 +1,4 @@
-package getexcel
+package obtener_excels
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -22,11 +22,11 @@ import com.kms.katalon.core.configuration.RunConfiguration
 
 import internal.GlobalVariable
 
-public class obtener_logistica_20pies {
+public class obtener_despacho_20pies {
 	@Keyword
-	def List<String> getValuesExcelLogistic(int index) {
+	def List<String> getValuesExcelDespach(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Despacho_20pies.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 
@@ -35,8 +35,7 @@ public class obtener_logistica_20pies {
 		String Contrasena = excelData.getValue("Contrasena", index);
 		String IdPedido = excelData.getValue("IdPedido", index);
 		String Id_Cliente = excelData.getValue("Id_Cliente", index);
-		String IDCargo = excelData.getValue("IDCargo", index);
-		String IDCargo2 = excelData.getValue("IDCargo2", index);
+		String CantProductos = excelData.getValue("CantProductos", index);
 
 		List<String> data = [
 			Idioma,
@@ -44,8 +43,7 @@ public class obtener_logistica_20pies {
 			Contrasena,
 			IdPedido,
 			Id_Cliente,
-			IDCargo,
-			IDCargo2
+			CantProductos
 		]
 
 		return data

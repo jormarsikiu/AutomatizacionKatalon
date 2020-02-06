@@ -1,4 +1,4 @@
-package getexcel
+package obtener_excels
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -19,24 +19,54 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testdata.reader.ExcelFactory
 import com.kms.katalon.core.configuration.RunConfiguration
-
 import internal.GlobalVariable
+import com.kms.katalon.core.testdata.reader.ExcelFactory
+import com.kms.katalon.core.configuration.RunConfiguration
 
-public class obtener_produccion_20pies {
+public class obtener_pedidos20pies {
+
 	@Keyword
-	def List<String> getValuesExcelProduction(int index) {
+	def List<String> getValuesExcelCreate20(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Orden_Produccion_20pies.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Crear_Pedido20pies.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 
 		String Idioma = excelData.getValue("Idioma", index);
 		String Usuario = excelData.getValue("Usuario", index);
 		String Contrasena = excelData.getValue("Contrasena", index);
-		String IdPedido = excelData.getValue("IdPedido", index);
-		String Id_Cliente = excelData.getValue("Id_Cliente", index);
+		String ID_Cliente = excelData.getValue("ID_Cliente", index);
+		String ID_Direccion = excelData.getValue("ID_Direccion", index);
+		String Contenedor = excelData.getValue("Contenedor", index);
+		String Incoterms = excelData.getValue("Incoterms", index);
+		String OpCompra = excelData.getValue("OpCompra", index);
+		String Presentacion = excelData.getValue("Presentacion", index);
+		String Producto = excelData.getValue("Producto", index);
+		String Cantidad = excelData.getValue("Cantidad", index);
+		String Presentacion2 = excelData.getValue("Presentacion2", index);
+		String Producto2 = excelData.getValue("Producto2", index);
+		String Cantidad2 = excelData.getValue("Cantidad2", index);
+		String OpCompra2 = excelData.getValue("OpCompra2", index);
+		String Iterar = excelData.getValue("Iterar", index);
 
-		List<String> data = [Idioma, Usuario, Contrasena, IdPedido, Id_Cliente]
+		List<String,String> data = [
+			Idioma,
+			Usuario,
+			Contrasena,
+			ID_Cliente,
+			ID_Direccion,
+			Contenedor,
+			Incoterms,
+			OpCompra,
+			Presentacion,
+			Producto,
+			Cantidad,
+			Presentacion2, ,
+			Producto2,
+			Cantidad2,
+			OpCompra2,
+			Iterar
+		]
 
 		return data
 	}
