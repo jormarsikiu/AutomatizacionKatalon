@@ -1,4 +1,4 @@
-# AutomatizacionKatalon
+# Automatización Katalon - Pedidos Petroquimical
 
 Instalar Python (Versión usada: 3.8.1) Ruta: C:\Program Files\Python3.8.1
 
