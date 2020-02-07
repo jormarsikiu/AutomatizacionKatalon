@@ -31,19 +31,21 @@ WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/dp_menu_Lista de Emp
 
 WebUI.executeJavaScript('document.querySelector(\'.btn-success[href="/DespachoPedido/Edit/' +IDPedido+ '"]\').click()', null)
 
-for(i=0; i<=GlobalVariable.CantProductosDespachar; i++)
+for(int i=1; i<=GlobalVariable.CantProductosDespachar; i++)
 {
 	if(CantProductos=='1'){	
 		
 		WebUI.click(findTestObject('Object Repository/Page_Lista de Empaque - KAIZEN/dp_click_mas_1'))
+		
 	}
 	else
 	{
 		WebUI.click(findTestObject('Object Repository/Page_Lista de Empaque - KAIZEN/dp_click_mas_1'))
 		
 		WebUI.click(findTestObject('Object Repository/Page_Lista de Empaque - KAIZEN/dp_click_mas_2'))
-	
+					
 	}
+
 }
 
 WebUI.executeJavaScript("document.querySelector(\".btn-warning[onclick='GuardarModal()']\").click()", null)

@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>17983afc-6442-4399-a896-a9ae4c8ba007</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Aleatorio_Pedidos_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>

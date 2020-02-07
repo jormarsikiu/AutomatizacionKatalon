@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="3-AgregarLogistica_20_TestSuites" time="235.966" tests="2" failures="0" errors="0">
+   <testsuite name="3-AgregarLogistica_20_TestSuites" tests="2" failures="0" errors="0" time="235.966" timestamp="2020-02-07 11:11:47" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Flujo_funcionalidades_Pedidos_20pies/3-AgregarLogistica_20_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200207_105507\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200207_105509"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200207_105507\\Flujo_funcionalidades_Pedidos_20pies\\3-AgregarLogistica_20_TestSuites\\20200207_105509\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.87"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="e336da316a8d6acf2f5709620df19a03"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies" time="4.26" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies" status="PASSED">
+         <system-out><![CDATA[2020-02-07 11:11:47 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies: Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies
+
+2020-02-07 11:11:48 - [TEST_STEP][PASSED] - python.Ex_logistica_pedidos_20pies.runPython(): python.Ex_logistica_pedidos_20pies.runPython is PASSED
+
+2020-02-07 11:11:52 - [MESSAGE][PASSED] - python.Ex_logistica_pedidos_20pies.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos_20pies" time="230.59" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos_20pies" status="PASSED">
+         <system-out><![CDATA[2020-02-07 11:11:52 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos_20pies: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos_20pies
+
+2020-02-07 11:11:52 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx: null
+
+2020-02-07 11:11:52 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-07 11:11:53 - [TEST_STEP][PASSED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:11:53 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Logistica", "Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:11:53 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-07 11:11:54 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-07 11:11:54 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:11:54 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-07 11:11:54 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-02-07 11:12:06 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:12:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-07 11:12:07 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-07 11:12:07 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:12:07 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:12:07 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:12:07 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:12:08 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:12:08 - [TEST_STEP][PASSED] - Usuario = data3[1]: null
+
+2020-02-07 11:12:08 - [TEST_STEP][PASSED] - Contrasena = data3[2]: null
+
+2020-02-07 11:12:08 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:12:08 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:12:08 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:12:09 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:12:09 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:12:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:12:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:12:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Logistica", "Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:12:11 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-07 11:12:12 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:12:12 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:12:12 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-07 11:12:12 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:12:12 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:12:12 - [TEST_STEP][PASSED] - Idioma = data3[0]: null
+
+2020-02-07 11:12:12 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:12:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:12:12 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-07 11:12:12 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:12:12 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:12:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:12:13 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:12:13 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["Index":Index, "IDCliente":IDCliente, "IDPedido":IDPedido, "IDCargo":IDCargo, "IDCargo2":IDCargo2], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:12:13 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:12:14 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - Id_Cliente = data[4]: null
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - IDCargo = data[5]: null
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - IDCargo2 = data[6]: null
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - IDCliente = Id_Cliente: null
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - IDCargo = IDCargo: null
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - IDCargo2 = IDCargo2: null
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:12:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:12:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:12:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:12:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:12:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:12:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:12:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:12:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:12:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:12:19 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '4' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:12:20 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:12:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:12:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:12:21 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/190"]').click()' successfully
+
+2020-02-07 11:12:23 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/190"]').click()' successfully
+
+2020-02-07 11:12:23 - [TEST_STEP][PASSED] - if (IDCargo == IDCargo2): null
+
+2020-02-07 11:12:23 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:12:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:12:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:12:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:12:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:12:24 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo, true): All options with value '30' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:12:26 - [MESSAGE][PASSED] - All options with value '30' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:12:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico): Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:12:26 - [MESSAGE][PASSED] - Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:12:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico): Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:12:27 - [MESSAGE][PASSED] - Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:12:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico): Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:12:27 - [MESSAGE][PASSED] - Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:12:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:12:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:12:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:12:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:12:28 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:12:30 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:12:30 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:12:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:12:31 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo').value=' + Valor_CargoLogistico + "'", null): Execute JavaScript 'document.getElementById('input30').value='222.000'' successfully
+
+2020-02-07 11:12:31 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input30').value='222.000'' successfully
+
+2020-02-07 11:12:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:12:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:12:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:12:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:12:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:12:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:12:32 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo2, true): All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:12:33 - [MESSAGE][PASSED] - All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:12:33 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico2): Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:12:34 - [MESSAGE][PASSED] - Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:12:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico2): Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:12:34 - [MESSAGE][PASSED] - Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:12:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico2): Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:12:34 - [MESSAGE][PASSED] - Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:12:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:12:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:12:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:12:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:12:35 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:12:36 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:12:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:12:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:12:37 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo2').value=' + Valor_CargoLogistico2 + "'", null): Execute JavaScript 'document.getElementById('input20').value='333.000'' successfully
+
+2020-02-07 11:12:37 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input20').value='333.000'' successfully
+
+2020-02-07 11:12:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:12:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:12:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:12:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:12:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:12:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:12:41 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:12:41 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Logistica", "Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:12:41 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-07 11:12:41 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-07 11:12:41 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:12:41 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-07 11:12:42 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-07 11:12:55 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:12:55 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-07 11:12:56 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-07 11:12:56 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:12:56 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:12:56 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:12:56 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:12:56 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:12:56 - [TEST_STEP][PASSED] - Usuario = data3[1]: null
+
+2020-02-07 11:12:56 - [TEST_STEP][PASSED] - Contrasena = data3[2]: null
+
+2020-02-07 11:12:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:12:56 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:12:56 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:12:57 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:12:57 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:13:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:13:00 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:13:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Logistica", "Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:13:00 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-07 11:13:00 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:13:00 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:13:00 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-07 11:13:00 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:00 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:00 - [TEST_STEP][PASSED] - Idioma = data3[0]: null
+
+2020-02-07 11:13:00 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:13:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:13:01 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-07 11:13:01 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:13:01 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:13:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:13:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:13:02 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["Index":Index, "IDCliente":IDCliente, "IDPedido":IDPedido, "IDCargo":IDCargo, "IDCargo2":IDCargo2], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:13:02 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:03 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - Id_Cliente = data[4]: null
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - IDCargo = data[5]: null
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - IDCargo2 = data[6]: null
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - IDCliente = Id_Cliente: null
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - IDCargo = IDCargo: null
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - IDCargo2 = IDCargo2: null
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:13:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:13:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:13:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:13:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:13:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:13:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:13:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:13:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:13:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:13:07 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '4' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:13:08 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:13:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:13:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:13:09 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/192"]').click()' successfully
+
+2020-02-07 11:13:11 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/192"]').click()' successfully
+
+2020-02-07 11:13:11 - [TEST_STEP][PASSED] - if (IDCargo == IDCargo2): null
+
+2020-02-07 11:13:11 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:13:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:12 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo, true): All options with value '29' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:13:13 - [MESSAGE][PASSED] - All options with value '29' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:13:13 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico): Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:13:14 - [MESSAGE][PASSED] - Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:13:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico): Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:13:15 - [MESSAGE][PASSED] - Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:13:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico): Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:13:15 - [MESSAGE][PASSED] - Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:13:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:13:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:13:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:13:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:13:16 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:13:18 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:13:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:13:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:13:18 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo').value=' + Valor_CargoLogistico + "'", null): Execute JavaScript 'document.getElementById('input29').value='222.000'' successfully
+
+2020-02-07 11:13:18 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input29').value='222.000'' successfully
+
+2020-02-07 11:13:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:13:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:13:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:20 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo2, true): All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:13:21 - [MESSAGE][PASSED] - All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:13:21 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico2): Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:13:22 - [MESSAGE][PASSED] - Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:13:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico2): Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:13:22 - [MESSAGE][PASSED] - Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:13:22 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico2): Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:13:23 - [MESSAGE][PASSED] - Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:13:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:13:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:13:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:13:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:13:23 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:13:24 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:13:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:13:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:13:25 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo2').value=' + Valor_CargoLogistico2 + "'", null): Execute JavaScript 'document.getElementById('input21').value='333.000'' successfully
+
+2020-02-07 11:13:25 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input21').value='333.000'' successfully
+
+2020-02-07 11:13:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:13:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:13:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:13:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:13:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:13:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:13:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:13:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Logistica", "Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:13:31 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-07 11:13:31 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-07 11:13:31 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:13:31 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-07 11:13:31 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-07 11:13:44 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:13:44 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-07 11:13:45 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-07 11:13:45 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:13:45 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:13:45 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:13:45 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:45 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:45 - [TEST_STEP][PASSED] - Usuario = data3[1]: null
+
+2020-02-07 11:13:45 - [TEST_STEP][PASSED] - Contrasena = data3[2]: null
+
+2020-02-07 11:13:45 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:13:46 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:13:46 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:13:46 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:13:46 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:13:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:13:48 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Logistica", "Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:13:48 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:48 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - Idioma = data3[0]: null
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:13:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:13:48 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:13:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:13:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["Index":Index, "IDCliente":IDCliente, "IDPedido":IDPedido, "IDCargo":IDCargo, "IDCargo2":IDCargo2], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:13:50 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:50 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - Id_Cliente = data[4]: null
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - IDCargo = data[5]: null
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - IDCargo2 = data[6]: null
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - IDCliente = Id_Cliente: null
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - IDCargo = IDCargo: null
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - IDCargo2 = IDCargo2: null
+
+2020-02-07 11:13:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:13:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:13:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:13:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:13:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:13:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:13:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:13:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:13:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:13:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:13:55 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '4' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:13:56 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:13:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:13:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:13:57 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/194"]').click()' successfully
+
+2020-02-07 11:13:58 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/194"]').click()' successfully
+
+2020-02-07 11:13:58 - [TEST_STEP][PASSED] - if (IDCargo == IDCargo2): null
+
+2020-02-07 11:13:58 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:13:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:13:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:00 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo, true): All options with value '25' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:14:01 - [MESSAGE][PASSED] - All options with value '25' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:14:01 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico): Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:14:02 - [MESSAGE][PASSED] - Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:14:02 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico): Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:14:02 - [MESSAGE][PASSED] - Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:14:02 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico): Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:14:03 - [MESSAGE][PASSED] - Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:14:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:14:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:14:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:14:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:14:04 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:14:05 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:14:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:05 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo').value=' + Valor_CargoLogistico + "'", null): Execute JavaScript 'document.getElementById('input25').value='222.000'' successfully
+
+2020-02-07 11:14:05 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input25').value='222.000'' successfully
+
+2020-02-07 11:14:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:14:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:14:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:07 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo2, true): All options with value '30' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:14:08 - [MESSAGE][PASSED] - All options with value '30' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:14:08 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico2): Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:14:09 - [MESSAGE][PASSED] - Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:14:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico2): Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:14:09 - [MESSAGE][PASSED] - Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:14:09 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico2): Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:14:10 - [MESSAGE][PASSED] - Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:14:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:14:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:14:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:14:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:14:11 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:14:11 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:14:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:12 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo2').value=' + Valor_CargoLogistico2 + "'", null): Execute JavaScript 'document.getElementById('input30').value='333.000'' successfully
+
+2020-02-07 11:14:12 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input30').value='333.000'' successfully
+
+2020-02-07 11:14:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:14:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:14:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:14:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:14:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:16 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:14:16 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Logistica", "Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:14:16 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-07 11:14:16 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-07 11:14:16 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:14:16 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-07 11:14:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-07 11:14:26 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:14:26 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-07 11:14:27 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-07 11:14:27 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:14:27 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:14:27 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:14:27 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:14:27 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:14:27 - [TEST_STEP][PASSED] - Usuario = data3[1]: null
+
+2020-02-07 11:14:27 - [TEST_STEP][PASSED] - Contrasena = data3[2]: null
+
+2020-02-07 11:14:27 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:14:27 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:14:27 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:14:28 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:14:28 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:14:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:14:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:14:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Logistica", "Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:14:30 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-07 11:14:30 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:14:30 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:14:30 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-07 11:14:30 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:14:30 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:14:30 - [TEST_STEP][PASSED] - Idioma = data3[0]: null
+
+2020-02-07 11:14:30 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:14:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:14:31 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-07 11:14:31 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:14:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:14:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:14:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["Index":Index, "IDCliente":IDCliente, "IDPedido":IDPedido, "IDCargo":IDCargo, "IDCargo2":IDCargo2], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:14:32 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:14:32 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - Id_Cliente = data[4]: null
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - IDCargo = data[5]: null
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - IDCargo2 = data[6]: null
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - IDCliente = Id_Cliente: null
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - IDCargo = IDCargo: null
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - IDCargo2 = IDCargo2: null
+
+2020-02-07 11:14:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:14:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:14:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:14:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:14:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:14:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:14:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:14:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:14:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:14:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:14:36 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '17' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:14:38 - [MESSAGE][PASSED] - All options with value '17' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:14:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:14:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:14:39 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/196"]').click()' successfully
+
+2020-02-07 11:14:40 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/196"]').click()' successfully
+
+2020-02-07 11:14:40 - [TEST_STEP][PASSED] - if (IDCargo == IDCargo2): null
+
+2020-02-07 11:14:40 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:42 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo, true): All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:14:43 - [MESSAGE][PASSED] - All options with value '20' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:14:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico): Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:14:43 - [MESSAGE][PASSED] - Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:14:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico): Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:14:44 - [MESSAGE][PASSED] - Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:14:44 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico): Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:14:44 - [MESSAGE][PASSED] - Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:14:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:14:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:14:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:14:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:14:45 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:14:47 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:14:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:47 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo').value=' + Valor_CargoLogistico + "'", null): Execute JavaScript 'document.getElementById('input20').value='222.000'' successfully
+
+2020-02-07 11:14:47 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input20').value='222.000'' successfully
+
+2020-02-07 11:14:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:14:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:14:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:14:49 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo2, true): All options with value '26' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:14:50 - [MESSAGE][PASSED] - All options with value '26' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:14:50 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico2): Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:14:51 - [MESSAGE][PASSED] - Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:14:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico2): Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:14:51 - [MESSAGE][PASSED] - Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:14:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico2): Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:14:52 - [MESSAGE][PASSED] - Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:14:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:14:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:14:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:14:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:14:52 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:14:53 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:14:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:54 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo2').value=' + Valor_CargoLogistico2 + "'", null): Execute JavaScript 'document.getElementById('input26').value='333.000'' successfully
+
+2020-02-07 11:14:54 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input26').value='333.000'' successfully
+
+2020-02-07 11:14:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:14:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:14:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:14:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:14:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:14:57 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:14:57 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Logistica", "Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:14:57 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-07 11:14:58 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-07 11:14:58 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:14:58 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-07 11:14:59 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-07 11:15:09 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-07 11:15:09 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-07 11:15:10 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-07 11:15:10 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:15:10 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:15:10 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:15:10 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:15:10 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:15:10 - [TEST_STEP][PASSED] - Usuario = data3[1]: null
+
+2020-02-07 11:15:10 - [TEST_STEP][PASSED] - Contrasena = data3[2]: null
+
+2020-02-07 11:15:10 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:15:10 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-07 11:15:10 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:15:11 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-07 11:15:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:15:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-07 11:15:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-07 11:15:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Logistica", "Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:15:12 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-07 11:15:12 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-07 11:15:12 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-07 11:15:12 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-07 11:15:12 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:15:12 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:15:12 - [TEST_STEP][PASSED] - Idioma = data3[0]: null
+
+2020-02-07 11:15:12 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:15:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-07 11:15:13 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-07 11:15:13 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:15:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:15:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-07 11:15:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["Index":Index, "IDCliente":IDCliente, "IDPedido":IDPedido, "IDCargo":IDCargo, "IDCargo2":IDCargo2], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully
+
+2020-02-07 11:15:14 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:15:14 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic is PASSED
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - Id_Cliente = data[4]: null
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - IDCargo = data[5]: null
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - IDCargo2 = data[6]: null
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - IDCliente = Id_Cliente: null
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - IDCargo = IDCargo: null
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - IDCargo2 = IDCargo2: null
+
+2020-02-07 11:15:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:15:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-07 11:15:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:15:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-07 11:15:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:15:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-07 11:15:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:15:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-07 11:15:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:15:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-07 11:15:19 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '4' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:15:21 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-07 11:15:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:15:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-07 11:15:22 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/197"]').click()' successfully
+
+2020-02-07 11:15:23 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/197"]').click()' successfully
+
+2020-02-07 11:15:23 - [TEST_STEP][PASSED] - if (IDCargo == IDCargo2): null
+
+2020-02-07 11:15:23 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:15:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:15:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:15:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:15:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:15:24 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo, true): All options with value '24' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:15:25 - [MESSAGE][PASSED] - All options with value '24' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:15:25 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico): Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:15:26 - [MESSAGE][PASSED] - Text '1XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:15:26 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico): Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:15:27 - [MESSAGE][PASSED] - Text '2XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:15:27 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico): Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:15:27 - [MESSAGE][PASSED] - Text '3XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:15:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:15:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:15:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:15:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:15:28 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:15:29 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:15:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:15:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:15:30 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo').value=' + Valor_CargoLogistico + "'", null): Execute JavaScript 'document.getElementById('input24').value='222.000'' successfully
+
+2020-02-07 11:15:30 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input24').value='222.000'' successfully
+
+2020-02-07 11:15:30 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:15:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:15:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:15:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-07 11:15:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:15:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-07 11:15:32 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo2, true): All options with value '29' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:15:33 - [MESSAGE][PASSED] - All options with value '29' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-07 11:15:33 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello_CargoLogistico2): Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:15:34 - [MESSAGE][PASSED] - Text '4XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+
+2020-02-07 11:15:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR"), Contenedor_CargoLogistico2): Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:15:34 - [MESSAGE][PASSED] - Text '5XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'
+
+2020-02-07 11:15:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA"), Reserva_CargoLogistico2): Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:15:35 - [MESSAGE][PASSED] - Text '6XYZ' is set on object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'
+
+2020-02-07 11:15:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:15:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos' is clicked on
+
+2020-02-07 11:15:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:15:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_naviera_cargos' is clicked on
+
+2020-02-07 11:15:35 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos"), Naviera, true): All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:15:36 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_naviera_cargos'  using regular expression
+
+2020-02-07 11:15:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:15:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico' is clicked on
+
+2020-02-07 11:15:37 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('input$IDCargo2').value=' + Valor_CargoLogistico2 + "'", null): Execute JavaScript 'document.getElementById('input29').value='333.000'' successfully
+
+2020-02-07 11:15:37 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('input29').value='333.000'' successfully
+
+2020-02-07 11:15:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_button_OK")): Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:15:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_button_OK' is clicked on
+
+2020-02-07 11:15:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:15:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Confirmar-cargo_logistico' is clicked on
+
+2020-02-07 11:15:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico")): Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:15:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_Aceptar_cargo_logistico' is clicked on
+
+2020-02-07 11:15:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-07 11:11:47 - [TEST_SUITE][PASSED] - 3-AgregarLogistica_20_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos_20pies]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

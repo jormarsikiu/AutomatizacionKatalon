@@ -14,6 +14,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import java.lang.Integer as Integer
+import com.kms.katalon.core.exception.StepFailedException
+
+
 
 List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
 
@@ -34,7 +38,8 @@ String Iterar = data[15]
 //WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_Element_presentacion'), 5)
 String boton = WebUI.executeJavaScript('return document.getElementById("btn_next").style.display;', null)
 
-int cantProductos = Iterar
+int Iterado = Iterar.toInteger()
+int cantProductos = Iterado
 
 //Se guarda el id del pedido
 String IDPedidoCreado = WebUI.executeJavaScript('return document.getElementById(\'IdPedido\').value;', null)
@@ -46,6 +51,7 @@ if (boton == 'block') {
     //WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_next')) 
     WebUI.click(findTestObject('Page_- KAIZEN/sp_Siguiente')) // WebUI.delay(5)
 } else {
+
     if (Iterar == '1') {
         WebUI.click(findTestObject('Page_- KAIZEN/sp_Element_presentacion'))
 
@@ -62,26 +68,30 @@ if (boton == 'block') {
         WebUI.setText(findTestObject('Page_- KAIZEN/sp_input_product_quantity'), Cantidad)
 
         WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_add_product'))
-
-        if (WebUI.verifyElementNotVisible(findTestObject('Page_- KAIZEN/sp_Siguiente'), FailureHandling.OPTIONAL))
-		{
-			
-			WebUI.closeBrowser()
-			
-		}
-		else{
-			
-			WebUI.click(findTestObject('Page_- KAIZEN/sp_Siguiente'))
-			
-			WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_btn_finish'), 5)
-			
-			WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_finish'))
-			
-			WebUI.delay(5)
-			
-			WebUI.closeBrowser()
-		}
 		
+		try {
+		
+				if (WebUI.verifyElementNotVisible(findTestObject('Page_- KAIZEN/sp_Siguiente'), FailureHandling.OPTIONAL) == true)
+				{
+					
+					WebUI.closeBrowser()
+					
+					
+				}
+				else{
+					
+					WebUI.click(findTestObject('Page_- KAIZEN/sp_Siguiente'))
+					
+					WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_btn_finish'), 5)
+					
+					WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_finish'))
+					
+					WebUI.delay(5)
+					
+					WebUI.closeBrowser()
+				}
+		
+		} catch (com.kms.katalon.core.exception.StepFailedException e) { this.println("error") }
 		
     } else if (Iterar == '2') {
 	
@@ -117,7 +127,8 @@ if (boton == 'block') {
 
         WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_add_product'))
 
-        if (WebUI.verifyElementNotVisible(findTestObject('Page_- KAIZEN/sp_Siguiente'), FailureHandling.OPTIONAL))
+		
+        if (WebUI.verifyElementNotVisible(findTestObject('Page_- KAIZEN/sp_Siguiente'), FailureHandling.OPTIONAL) == true)
 		{
 			
 			WebUI.closeBrowser()

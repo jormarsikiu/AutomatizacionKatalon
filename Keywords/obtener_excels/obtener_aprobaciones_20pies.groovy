@@ -38,7 +38,7 @@ public class obtener_aprobaciones_20pies {
 		String Contrasena = excelData.getValue("Contrasena", index);
 		String IdPedido = excelData.getValue("IdPedido", index);
 		String Id_Cliente = excelData.getValue("Id_Cliente", index);
-		String AprobVentas = excelData.getValue("AprobVentas", index);
+		String AprobVentas = excelData.getValue("Aprob. Ventas", index);
 		String AprobFinanciera = excelData.getValue("Aprob. Financiera", index);
 		String AprobProduccion = excelData.getValue("Aprob. Produccion", index);
 
