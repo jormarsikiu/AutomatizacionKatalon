@@ -7,9 +7,6 @@ import os
 from openpyxl.utils import get_column_letter
 from datetime import datetime
 
-
-#os.remove('Pedidos/DataExcel/Crear_Pedido20pies.xlsx')
-
 #Conexion con la base de fatos
 try:
 	server = '35.196.201.168' 
@@ -220,4 +217,6 @@ os.remove('TestDataProduct2.xlsx')
 os.remove('Testfusion.xlsx')
 os.remove('TestDataUser.xlsx')
 
+wb7 = openpyxl.Workbook() 
+wb7.save('Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx') 
 

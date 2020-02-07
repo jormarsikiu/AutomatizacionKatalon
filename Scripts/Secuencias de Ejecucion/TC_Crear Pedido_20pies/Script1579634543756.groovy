@@ -21,7 +21,7 @@ String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Crear_Pe
 
 Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true)
 
-for (def Index : (1..excelData.getRowNumbers() - 1))
+for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
 
 {
 	

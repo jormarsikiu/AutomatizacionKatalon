@@ -36,11 +36,11 @@ public class Ex_guardar_pedidos_creados {
 
 
 	@Keyword
-	public void demoKey(String name, int cantPedido) throws IOException{
+	public void demoKey(String idpedido, int cantPedido) throws IOException{
 		FileInputStream fis = new FileInputStream("${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 
-		XSSFSheet sheet = workbook.getSheet("sheet1");
+		XSSFSheet sheet = workbook.getSheet("Sheet");
 		Row header = sheet.createRow(0);
 		Cell c = header.createCell(0);
 		c.setCellValue("IdPedido");
@@ -53,7 +53,7 @@ public class Ex_guardar_pedidos_creados {
 		Row row = sheet.createRow(rowCount+1);
 		Cell c3 = row.createCell(0);
 		c3.setCellType(c3.CELL_TYPE_STRING);
-		c3.setCellValue(name);
+		c3.setCellValue(idpedido);
 		Cell c4 = row.createCell(1);
 		c4.setCellType(c4.CELL_TYPE_STRING);
 		c4.setCellValue(cantPedido);
