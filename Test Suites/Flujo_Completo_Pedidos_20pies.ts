@@ -57,7 +57,7 @@
             <profileName>default</profileName>
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
-         <runEnabled>true</runEnabled>
+         <runEnabled>false</runEnabled>
          <testSuiteEntity>Test Suites/Flujo_funcionalidades_Pedidos_20pies/6-BorrarExcels_20pies_TestSuites</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>

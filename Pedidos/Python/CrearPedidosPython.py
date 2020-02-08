@@ -181,7 +181,57 @@ for i in range (0, len(df_aleatorio)):
 	else:
 		df_aleatorio.loc[i, 'Resultado'] = "Prueba fallida"
 
-export_excel2 = df_aleatorio.to_excel (r'Pedidos/DataExcel/Crear_Pedido20pies.xlsx', index = None, header=True)
+df_aleatorio2=pd.DataFrame()
+for i in range (0, len(df_aleatorio)):
+	if ((df_aleatorio.loc[i,'OpCompra']==df_aleatorio.loc[i,'OpCompra2']) & (df_aleatorio.loc[i,'Presentacion']!=df_aleatorio.loc[i,'Presentacion2'])):
+		df_aleatorio2.loc[i, 'Idioma']=df_aleatorio.loc[i, 'Idioma']
+		df_aleatorio2.loc[i, 'Usuario']=df_aleatorio.loc[i, 'Usuario']
+		df_aleatorio2.loc[i, 'Contrasena']=df_aleatorio.loc[i, 'Contrasena']
+		df_aleatorio2.loc[i, 'ID_Cliente']=df_aleatorio.loc[i, 'ID_Cliente']
+		df_aleatorio2.loc[i, 'ID_Direccion']=df_aleatorio.loc[i, 'ID_Direccion']
+		df_aleatorio2.loc[i, 'Contenedor']=df_aleatorio.loc[i, 'Contenedor']
+		df_aleatorio2.loc[i, 'Incoterms']=df_aleatorio.loc[i, 'Incoterms']
+		df_aleatorio2.loc[i, 'OpCompra']=df_aleatorio.loc[i, 'OpCompra']
+		df_aleatorio2.loc[i, 'Presentacion']=df_aleatorio.loc[i, 'Presentacion']
+		df_aleatorio2.loc[i, 'Producto']=df_aleatorio.loc[i, 'Producto']
+		df_aleatorio2.loc[i, 'Cantidad']=df_aleatorio.loc[i, 'Cantidad']
+		df_aleatorio2.loc[i, 'Presentacion2']=df_aleatorio.loc[i, 'Presentacion2']
+		df_aleatorio2.loc[i, 'Producto2']=df_aleatorio.loc[i, 'Producto2']
+		df_aleatorio2.loc[i, 'Cantidad2']=df_aleatorio.loc[i, 'Cantidad2']
+		df_aleatorio2.loc[i, 'Iterar']=df_aleatorio.loc[i, 'Iterar']
+		df_aleatorio2.loc[i, 'Resultado']=df_aleatorio.loc[i, 'Resultado']
+
+"""
+#Estadsticas: Crear el borrador al 20% de los pedidos
+longitud=len(df_aleatorio2)
+print(longitud)
+
+porcentaje = longitud*(0.20)
+porcentaje =int(porcentaje)
+longitud2=porcentaje + (len(df_aleatorio2))
+print(len(df_aleatorio2))
+print(longitud)
+print(longitud2)
+
+	for i in range (longitud, longitud2):
+		df_aleatorio2.loc[i, 'Idioma']=df_aleatorio.loc[i, 'Idioma']
+		df_aleatorio2.loc[i, 'Usuario']=df_aleatorio.loc[i, 'Usuario']
+		df_aleatorio2.loc[i, 'Contrasena']=df_aleatorio.loc[i, 'Contrasena']
+		df_aleatorio2.loc[i, 'ID_Cliente']=df_aleatorio.loc[i, 'ID_Cliente']
+		df_aleatorio2.loc[i, 'ID_Direccion']=df_aleatorio.loc[i, 'ID_Direccion']
+		df_aleatorio2.loc[i, 'Contenedor']=df_aleatorio.loc[i, 'Contenedor']
+		df_aleatorio2.loc[i, 'Incoterms']=df_aleatorio.loc[i, 'Incoterms']
+		df_aleatorio2.loc[i, 'OpCompra']=df_aleatorio.loc[i, 'OpCompra']
+		df_aleatorio2.loc[i, 'Presentacion']=0
+		df_aleatorio2.loc[i, 'Producto']=0
+		df_aleatorio2.loc[i, 'Cantidad']=0
+		df_aleatorio2.loc[i, 'Presentacion2']=0
+		df_aleatorio2.loc[i, 'Producto2']=0
+		df_aleatorio2.loc[i, 'Cantidad2']=0
+		df_aleatorio2.loc[i, 'Iterar']=0
+		df_aleatorio2.loc[i, 'Resultado']= "Prueba fallida"
+""""
+export_excel2 = df_aleatorio2.to_excel (r'Pedidos/DataExcel/Crear_Pedido20pies.xlsx', index = None, header=True)
 
 
 #Ajustar columnas

@@ -13,13 +13,13 @@
    <testCaseLink>
       <guid>17983afc-6442-4399-a896-a9ae4c8ba007</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Aleatorio_Pedidos_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>13271a1c-f6f7-4c45-9d37-df005bdd9d4a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

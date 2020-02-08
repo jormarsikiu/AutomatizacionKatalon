@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="1-Crear_Pedidos_20_TestSuites" time="77.037" tests="1" failures="0" errors="1">
+   <testsuite name="1-Crear_Pedidos_20_TestSuites" tests="1" failures="0" errors="1" time="77.037" timestamp="2020-02-08 12:27:30" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Flujo_funcionalidades_Pedidos_20pies/1-Crear_Pedidos_20_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200208_122726\\Flujo_funcionalidades_Pedidos_20pies\\1-Crear_Pedidos_20_TestSuites\\20200208_122726"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200208_122726\\Flujo_funcionalidades_Pedidos_20pies\\1-Crear_Pedidos_20_TestSuites\\20200208_122726\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.87"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="ae60a19f7850ed1cb7db68b9b9df1967"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies" time="75.296" classname="Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1581179246635.run(TempTestSuite1581179246635.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: Script1579716905909.print() is applicable for argument types: (java.lang.String, java.lang.String) values: [boton , none]
+Possible solutions: print(java.lang.Object), printf(java.lang.String, [Ljava.lang.Object;), printf(java.lang.String, java.lang.Object), printf(java.lang.String, java.lang.Object), print(java.io.PrintWriter), printf(java.lang.String, [Ljava.lang.Object;)
+	at Seleccionar_Productos.run(Seleccionar_Productos:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+"/>
+         <system-out><![CDATA[2020-02-08 12:27:31 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies: Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1581179246635.run(TempTestSuite1581179246635.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: Script1579716905909.print() is applicable for argument types: (java.lang.String, java.lang.String) values: [boton , none]
+Possible solutions: print(java.lang.Object), printf(java.lang.String, [Ljava.lang.Object;), printf(java.lang.String, java.lang.Object), printf(java.lang.String, java.lang.Object), print(java.io.PrintWriter), printf(java.lang.String, [Ljava.lang.Object;)
+	at Seleccionar_Productos.run(Seleccionar_Productos:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2020-02-08 12:27:33 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Crear_Pedido20pies.xlsx: null
+
+2020-02-08 12:27:33 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-08 12:27:34 - [TEST_STEP][FAILED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1581179246635.run(TempTestSuite1581179246635.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: Script1579716905909.print() is applicable for argument types: (java.lang.String, java.lang.String) values: [boton , none]
+Possible solutions: print(java.lang.Object), printf(java.lang.String, [Ljava.lang.Object;), printf(java.lang.String, java.lang.Object), printf(java.lang.String, java.lang.Object), print(java.io.PrintWriter), printf(java.lang.String, [Ljava.lang.Object;)
+	at Seleccionar_Productos.run(Seleccionar_Productos:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-02-08 12:27:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Crear", "Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-08 12:27:35 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-08 12:27:35 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-08 12:27:35 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-08 12:27:36 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-08 12:27:36 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-02-08 12:27:48 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-08 12:27:48 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-08 12:27:49 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-08 12:27:49 - [TEST_STEP][PASSED] - if (Evento == "Crear"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-08 12:27:49 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20(Index): obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:27:49 - [MESSAGE][PASSED] - obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:27:49 - [TEST_STEP][PASSED] - Usuario = data[1]: null
+
+2020-02-08 12:27:49 - [TEST_STEP][PASSED] - Contrasena = data[2]: null
+
+2020-02-08 12:27:49 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-08 12:27:51 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-08 12:27:51 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-08 12:27:51 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-08 12:27:51 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-08 12:27:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-08 12:27:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-08 12:27:54 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Crear", "Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-08 12:27:54 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-08 12:27:54 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-08 12:27:54 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20(Index): obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:27:54 - [MESSAGE][PASSED] - obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:27:54 - [TEST_STEP][PASSED] - Idioma = data[0]: null
+
+2020-02-08 12:27:54 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-08 12:27:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-08 12:27:55 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-08 12:27:55 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-08 12:27:55 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-08 12:27:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-08 12:27:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-08 12:27:56 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Anadir_pedido"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Anadir_pedido' successfully
+
+2020-02-08 12:27:56 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Anadir_pedido: Test Cases/Individual_Tests_20pies/Anadir_pedido
+
+2020-02-08 12:27:56 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/bp_menu_pedido")): Object: 'Object Repository/Page_- KAIZEN/bp_menu_pedido' is clicked on
+
+2020-02-08 12:27:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/bp_menu_pedido' is clicked on
+
+2020-02-08 12:27:58 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/bp_click_menu_pedido")): Object: 'Object Repository/Page_- KAIZEN/bp_click_menu_pedido' is clicked on
+
+2020-02-08 12:27:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/bp_click_menu_pedido' is clicked on
+
+2020-02-08 12:27:59 - [TEST_STEP][PASSED] - click(findTestObject("Page_Pedidos de Lubricantes - KAIZEN/ap_btn_agregar")): Object: 'Object Repository/Page_Pedidos de Lubricantes - KAIZEN/ap_btn_agregar' is clicked on
+
+2020-02-08 12:28:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Pedidos de Lubricantes - KAIZEN/ap_btn_agregar' is clicked on
+
+2020-02-08 12:28:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Anadir_pedido' successfully
+
+2020-02-08 12:28:03 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Cliente"), ["Index":Index, "Nombre":Nombre, "Direccion":Direccion, "Contenedor":Contenedor], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Cliente' successfully
+
+2020-02-08 12:28:03 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Cliente: Test Cases/Individual_Tests_20pies/Seleccionar_Cliente
+
+2020-02-08 12:28:04 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20(Index): obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:28:04 - [MESSAGE][PASSED] - obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:28:04 - [TEST_STEP][PASSED] - Nombre = data[3]: null
+
+2020-02-08 12:28:04 - [TEST_STEP][PASSED] - Direccion = data[4]: null
+
+2020-02-08 12:28:04 - [TEST_STEP][PASSED] - Contenedor = data[5]: null
+
+2020-02-08 12:28:04 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-02-08 12:28:06 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-02-08 12:28:06 - [TEST_STEP][PASSED] - element = executeJavaScript("return document.getElementById('ID_CLIENTE_LIST').value;", null): Execute JavaScript 'return document.getElementById('ID_CLIENTE_LIST').value;' successfully
+
+2020-02-08 12:28:06 - [MESSAGE][PASSED] - Execute JavaScript 'return document.getElementById('ID_CLIENTE_LIST').value;' successfully
+
+2020-02-08 12:28:06 - [TEST_STEP][PASSED] - if (element == Nombre): null
+
+2020-02-08 12:28:06 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-08 12:28:06 - [TEST_STEP][PASSED] - print(Nombre + "
+"): null
+
+2020-02-08 12:28:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_select_cliente1")): Object: 'Object Repository/Page_- KAIZEN/sc_select_cliente1' is clicked on
+
+2020-02-08 12:28:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_select_cliente1' is clicked on
+
+2020-02-08 12:28:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_select_cliente2")): Object: 'Object Repository/Page_- KAIZEN/sc_select_cliente2' is clicked on
+
+2020-02-08 12:28:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_select_cliente2' is clicked on
+
+2020-02-08 12:28:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_- KAIZEN/sc_select_cliente3"), 5): Object 'Object Repository/Page_- KAIZEN/sc_select_cliente3' is present
+
+2020-02-08 12:28:08 - [MESSAGE][PASSED] - Object 'Object Repository/Page_- KAIZEN/sc_select_cliente3' is present
+
+2020-02-08 12:28:08 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_- KAIZEN/sc_select_cliente3"), Nombre.toString(), true): All options with value '7' are selected in object 'Object Repository/Page_- KAIZEN/sc_select_cliente3'  using regular expression
+
+2020-02-08 12:28:10 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_- KAIZEN/sc_select_cliente3'  using regular expression
+
+2020-02-08 12:28:10 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_- KAIZEN/sc_span_select_address"), 5): Object 'Object Repository/Page_- KAIZEN/sc_span_select_address' is present
+
+2020-02-08 12:28:11 - [MESSAGE][PASSED] - Object 'Object Repository/Page_- KAIZEN/sc_span_select_address' is present
+
+2020-02-08 12:28:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_span_select_address")): Object: 'Object Repository/Page_- KAIZEN/sc_span_select_address' is clicked on
+
+2020-02-08 12:28:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_span_select_address' is clicked on
+
+2020-02-08 12:28:11 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_- KAIZEN/sc_assing_select_address"), Direccion, true): All options with value '3' are selected in object 'Object Repository/Page_- KAIZEN/sc_assing_select_address'  using regular expression
+
+2020-02-08 12:28:13 - [MESSAGE][PASSED] - All options with value '3' are selected in object 'Object Repository/Page_- KAIZEN/sc_assing_select_address'  using regular expression
+
+2020-02-08 12:28:13 - [TEST_STEP][PASSED] - if (Contenedor == "20"): Object: 'Object Repository/Page_- KAIZEN/sc_btn_contenedor_20_pies' is clicked on
+
+2020-02-08 12:28:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_btn_contenedor_20_pies")): Object: 'Object Repository/Page_- KAIZEN/sc_btn_contenedor_20_pies' is clicked on
+
+2020-02-08 12:28:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_btn_contenedor_20_pies' is clicked on
+
+2020-02-08 12:28:13 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2020-02-08 12:28:15 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2020-02-08 12:28:15 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("Page_- KAIZEN/sc_btn_next"), 3): Object 'Object Repository/Page_- KAIZEN/sc_btn_next' is visible
+
+2020-02-08 12:28:16 - [MESSAGE][PASSED] - Object 'Object Repository/Page_- KAIZEN/sc_btn_next' is visible
+
+2020-02-08 12:28:16 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_btn_next")): Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-08 12:28:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-08 12:28:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Cliente' successfully
+
+2020-02-08 12:28:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Incoterm"), ["Index":Index, "Incoterm":Incoterm], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' successfully
+
+2020-02-08 12:28:17 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm: Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm
+
+2020-02-08 12:28:17 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20(Index): obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:28:17 - [MESSAGE][PASSED] - obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:28:17 - [TEST_STEP][PASSED] - Incoterm = data[6]: null
+
+2020-02-08 12:28:17 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_- KAIZEN/sin_select_incoterm"), Incoterm, true): All options with value 'EXW' are selected in object 'Object Repository/Page_- KAIZEN/sin_select_incoterm'  using regular expression
+
+2020-02-08 12:28:18 - [MESSAGE][PASSED] - All options with value 'EXW' are selected in object 'Object Repository/Page_- KAIZEN/sin_select_incoterm'  using regular expression
+
+2020-02-08 12:28:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_btn_next")): Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-08 12:28:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-08 12:28:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Incoterm' successfully
+
+2020-02-08 12:28:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Opcion_Compra"), ["Index":Index, "OpCompra1":OpCompra], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Opcion_Compra' successfully
+
+2020-02-08 12:28:19 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Opcion_Compra: Test Cases/Individual_Tests_20pies/Seleccionar_Opcion_Compra
+
+2020-02-08 12:28:19 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20(Index): obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:28:19 - [MESSAGE][PASSED] - obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:28:19 - [TEST_STEP][PASSED] - OpCompra1 = data[7]: null
+
+2020-02-08 12:28:19 - [TEST_STEP][PASSED] - delay(7): Delayed 7 second(s)
+
+2020-02-08 12:28:26 - [MESSAGE][PASSED] - Delayed 7 second(s)
+
+2020-02-08 12:28:26 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Page_- KAIZEN/so_SelectorOP"), 7): Object 'Object Repository/Page_- KAIZEN/so_SelectorOP' is clickable
+
+2020-02-08 12:28:27 - [MESSAGE][PASSED] - Object 'Object Repository/Page_- KAIZEN/so_SelectorOP' is clickable
+
+2020-02-08 12:28:27 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-08 12:28:30 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-08 12:28:30 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/so_select_SeleccioneOPCION")): Object: 'Object Repository/Page_- KAIZEN/so_select_SeleccioneOPCION' is clicked on
+
+2020-02-08 12:28:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/so_select_SeleccioneOPCION' is clicked on
+
+2020-02-08 12:28:31 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_- KAIZEN/so_select_SeleccioneOPCION"), OpCompra1, true): All options with value '7' are selected in object 'Object Repository/Page_- KAIZEN/so_select_SeleccioneOPCION'  using regular expression
+
+2020-02-08 12:28:32 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_- KAIZEN/so_select_SeleccioneOPCION'  using regular expression
+
+2020-02-08 12:28:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Page_- KAIZEN/sc_btn_next"), 7): Object 'Object Repository/Page_- KAIZEN/sc_btn_next' is present
+
+2020-02-08 12:28:33 - [MESSAGE][PASSED] - Object 'Object Repository/Page_- KAIZEN/sc_btn_next' is present
+
+2020-02-08 12:28:33 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sc_btn_next")): Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-08 12:28:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sc_btn_next' is clicked on
+
+2020-02-08 12:28:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Opcion_Compra' successfully
+
+2020-02-08 12:28:34 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Productos"), ["Index":Index, "Iterar":Iterar, "Presentacion":Presentacion, "Producto":Producto, "Cantidad":Cantidad, "Presentacion2":Presentacion2, ... ], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1581179246635.run(TempTestSuite1581179246635.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: Script1579716905909.print() is applicable for argument types: (java.lang.String, java.lang.String) values: [boton , none]
+Possible solutions: print(java.lang.Object), printf(java.lang.String, [Ljava.lang.Object;), printf(java.lang.String, java.lang.Object), printf(java.lang.String, java.lang.Object), print(java.io.PrintWriter), printf(java.lang.String, [Ljava.lang.Object;)
+	at Seleccionar_Productos.run(Seleccionar_Productos:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-02-08 12:28:34 - [TEST_CASE][ERROR] - Test Cases/Individual_Tests_20pies/Seleccionar_Productos: Test Cases/Individual_Tests_20pies/Seleccionar_Productos FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: Script1579716905909.print() is applicable for argument types: (java.lang.String, java.lang.String) values: [boton , none]
+Possible solutions: print(java.lang.Object), printf(java.lang.String, [Ljava.lang.Object;), printf(java.lang.String, java.lang.Object), printf(java.lang.String, java.lang.Object), print(java.io.PrintWriter), printf(java.lang.String, [Ljava.lang.Object;)
+	at Seleccionar_Productos.run(Seleccionar_Productos:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1581179246635.run(TempTestSuite1581179246635.groovy:36)
+
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20(Index): obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:28:34 - [MESSAGE][PASSED] - obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20 is PASSED
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - Presentacion = data[8]: null
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - Producto = data[9]: null
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - Cantidad = data[10]: null
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - Presentacion2 = data[11]: null
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - Producto2 = data[12]: null
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - Cantidad2 = data[13]: null
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - Iterar = data[15]: null
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - Iterado = Iterar.toInteger(): null
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - cantProductos = Iterado: null
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - IDPedidoCreado = executeJavaScript("return document.getElementById('IdPedido').value;", null): Execute JavaScript 'return document.getElementById('IdPedido').value;' successfully
+
+2020-02-08 12:28:34 - [MESSAGE][PASSED] - Execute JavaScript 'return document.getElementById('IdPedido').value;' successfully
+
+2020-02-08 12:28:34 - [TEST_STEP][PASSED] - exportar_archivos.Ex_guardar_pedidos_creados.demoKey(IDPedidoCreado, cantProductos): exportar_archivos.Ex_guardar_pedidos_creados.demoKey is PASSED
+
+2020-02-08 12:28:35 - [MESSAGE][PASSED] - exportar_archivos.Ex_guardar_pedidos_creados.demoKey is PASSED
+
+2020-02-08 12:28:35 - [TEST_STEP][PASSED] - boton = executeJavaScript("return document.getElementById("btn_next").style.display;", null): Execute JavaScript 'return document.getElementById("btn_next").style.display;' successfully
+
+2020-02-08 12:28:35 - [MESSAGE][PASSED] - Execute JavaScript 'return document.getElementById("btn_next").style.display;' successfully
+
+2020-02-08 12:28:35 - [TEST_STEP][PASSED] - if (boton == "block"): null
+
+2020-02-08 12:28:35 - [TEST_STEP][PASSED] - else: null
+
+2020-02-08 12:28:35 - [TEST_STEP][PASSED] - if (Iterar == "1"): null
+
+2020-02-08 12:28:35 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sp_Element_presentacion")): Object: 'Object Repository/Page_- KAIZEN/sp_Element_presentacion' is clicked on
+
+2020-02-08 12:28:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sp_Element_presentacion' is clicked on
+
+2020-02-08 12:28:35 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sp_click_select_presentation")): Object: 'Object Repository/Page_- KAIZEN/sp_click_select_presentation' is clicked on
+
+2020-02-08 12:28:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sp_click_select_presentation' is clicked on
+
+2020-02-08 12:28:36 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_- KAIZEN/sp_assing_select_presentation"), Presentacion, true): All options with value '7' are selected in object 'Object Repository/Page_- KAIZEN/sp_assing_select_presentation'  using regular expression
+
+2020-02-08 12:28:37 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_- KAIZEN/sp_assing_select_presentation'  using regular expression
+
+2020-02-08 12:28:37 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sp_Element_producto")): Object: 'Object Repository/Page_- KAIZEN/sp_Element_producto' is clicked on
+
+2020-02-08 12:28:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sp_Element_producto' is clicked on
+
+2020-02-08 12:28:38 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sp_click_select_product")): Object: 'Object Repository/Page_- KAIZEN/sp_click_select_product' is clicked on
+
+2020-02-08 12:28:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sp_click_select_product' is clicked on
+
+2020-02-08 12:28:38 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_- KAIZEN/sp_assing_select_product"), Producto, true): All options with value '312' are selected in object 'Object Repository/Page_- KAIZEN/sp_assing_select_product'  using regular expression
+
+2020-02-08 12:28:40 - [MESSAGE][PASSED] - All options with value '312' are selected in object 'Object Repository/Page_- KAIZEN/sp_assing_select_product'  using regular expression
+
+2020-02-08 12:28:40 - [TEST_STEP][PASSED] - setText(findTestObject("Page_- KAIZEN/sp_input_product_quantity"), Cantidad): Text '18' is set on object 'Object Repository/Page_- KAIZEN/sp_input_product_quantity'
+
+2020-02-08 12:28:40 - [MESSAGE][PASSED] - Text '18' is set on object 'Object Repository/Page_- KAIZEN/sp_input_product_quantity'
+
+2020-02-08 12:28:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/sp_btn_add_product")): Object: 'Object Repository/Page_- KAIZEN/sp_btn_add_product' is clicked on
+
+2020-02-08 12:28:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/sp_btn_add_product' is clicked on
+
+2020-02-08 12:28:41 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-02-08 12:28:46 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-02-08 12:28:46 - [TEST_STEP][PASSED] - print("boton ", boton): null
+
+2020-02-08 12:28:46 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1581179246635.run(TempTestSuite1581179246635.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: Script1579716905909.print() is applicable for argument types: (java.lang.String, java.lang.String) values: [boton , none]
+Possible solutions: print(java.lang.Object), printf(java.lang.String, [Ljava.lang.Object;), printf(java.lang.String, java.lang.Object), printf(java.lang.String, java.lang.Object), print(java.io.PrintWriter), printf(java.lang.String, [Ljava.lang.Object;)
+	at Seleccionar_Productos.run(Seleccionar_Productos:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)]]></system-out>
+         <system-err><![CDATA[2020-02-08 12:27:31 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies: Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1581179246635.run(TempTestSuite1581179246635.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: Script1579716905909.print() is applicable for argument types: (java.lang.String, java.lang.String) values: [boton , none]
+Possible solutions: print(java.lang.Object), printf(java.lang.String, [Ljava.lang.Object;), printf(java.lang.String, java.lang.Object), printf(java.lang.String, java.lang.Object), print(java.io.PrintWriter), printf(java.lang.String, [Ljava.lang.Object;)
+	at Seleccionar_Productos.run(Seleccionar_Productos:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-08 12:27:30 - [TEST_SUITE][ERROR] - 1-Crear_Pedidos_20_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1581179246635.run(TempTestSuite1581179246635.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: Script1579716905909.print() is applicable for argument types: (java.lang.String, java.lang.String) values: [boton , none]
+Possible solutions: print(java.lang.Object), printf(java.lang.String, [Ljava.lang.Object;), printf(java.lang.String, java.lang.Object), printf(java.lang.String, java.lang.Object), print(java.io.PrintWriter), printf(java.lang.String, [Ljava.lang.Object;)
+	at Seleccionar_Productos.run(Seleccionar_Productos:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[2020-02-08 12:27:30 - [TEST_SUITE][ERROR] - 1-Crear_Pedidos_20_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Productos' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Crear Pedido_20pies.run(TC_Crear Pedido_20pies:41)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1581179246635.run(TempTestSuite1581179246635.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: Script1579716905909.print() is applicable for argument types: (java.lang.String, java.lang.String) values: [boton , none]
+Possible solutions: print(java.lang.Object), printf(java.lang.String, [Ljava.lang.Object;), printf(java.lang.String, java.lang.Object), printf(java.lang.String, java.lang.Object), print(java.io.PrintWriter), printf(java.lang.String, [Ljava.lang.Object;)
+	at Seleccionar_Productos.run(Seleccionar_Productos:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>
