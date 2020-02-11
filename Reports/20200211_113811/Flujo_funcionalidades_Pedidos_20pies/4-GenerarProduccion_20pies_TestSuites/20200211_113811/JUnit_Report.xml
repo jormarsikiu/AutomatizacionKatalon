@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="4-GenerarProduccion_20pies_TestSuites" time="169.994" tests="2" failures="0" errors="0">
+   <testsuite name="4-GenerarProduccion_20pies_TestSuites" tests="2" failures="0" errors="0" time="169.994" timestamp="2020-02-11 11:38:13" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Flujo_funcionalidades_Pedidos_20pies/4-GenerarProduccion_20pies_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200211_113811\\Flujo_funcionalidades_Pedidos_20pies\\4-GenerarProduccion_20pies_TestSuites\\20200211_113811"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200211_113811\\Flujo_funcionalidades_Pedidos_20pies\\4-GenerarProduccion_20pies_TestSuites\\20200211_113811\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.87"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="f9ccf4a5ac851ee820b8dd56931664ca"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies" time="54.687" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies" status="PASSED">
+         <system-out><![CDATA[2020-02-11 11:38:14 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies: Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies
+
+2020-02-11 11:38:14 - [TEST_STEP][PASSED] - python.Ex_produccion_pedidos_20pies.runPython(): python.Ex_produccion_pedidos_20pies.runPython is PASSED
+
+2020-02-11 11:39:08 - [MESSAGE][PASSED] - python.Ex_produccion_pedidos_20pies.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies" time="114.035" classname="Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies" status="PASSED">
+         <system-out><![CDATA[2020-02-11 11:39:08 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies: Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies
+
+2020-02-11 11:39:09 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Orden_Produccion_20pies.xlsx: null
+
+2020-02-11 11:39:09 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-11 11:39:10 - [TEST_STEP][PASSED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Call Test Case 'Test Cases/Individual_Tests_20pies/Orden_Produccion' successfully
+
+2020-02-11 11:39:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Produccion", "Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-11 11:39:10 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-11 11:39:11 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-11 11:39:11 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-11 11:39:12 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-11 11:39:12 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-02-11 11:39:30 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-11 11:39:30 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-11 11:39:31 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-11 11:39:31 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-11 11:39:31 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-11 11:39:31 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-11 11:39:31 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-11 11:39:31 - [TEST_STEP][PASSED] - data4 = obtener_excels.obtener_produccion_20pies.getValuesExcelProduction(Index): obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:39:31 - [MESSAGE][PASSED] - obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:39:31 - [TEST_STEP][PASSED] - Usuario = data4[1]: null
+
+2020-02-11 11:39:31 - [TEST_STEP][PASSED] - Contrasena = data4[2]: null
+
+2020-02-11 11:39:32 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-11 11:39:32 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-11 11:39:32 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-11 11:39:33 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-11 11:39:33 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-11 11:39:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-11 11:39:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-11 11:39:35 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Produccion", "Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-11 11:39:35 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-11 11:39:35 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-11 11:39:35 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-11 11:39:35 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-11 11:39:35 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-11 11:39:35 - [TEST_STEP][PASSED] - data4 = obtener_excels.obtener_produccion_20pies.getValuesExcelProduction(Index): obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:39:35 - [MESSAGE][PASSED] - obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:39:35 - [TEST_STEP][PASSED] - Idioma = data4[0]: null
+
+2020-02-11 11:39:36 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-11 11:39:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-11 11:39:36 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-11 11:39:36 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-11 11:39:36 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-11 11:39:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-11 11:39:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-11 11:39:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Orden_Produccion"), ["Index":Index, "IDPedido":IDPedido], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Orden_Produccion' successfully
+
+2020-02-11 11:39:38 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Orden_Produccion: Test Cases/Individual_Tests_20pies/Orden_Produccion
+
+2020-02-11 11:39:38 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_produccion_20pies.getValuesExcelProduction(Index): obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:39:38 - [MESSAGE][PASSED] - obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:39:38 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-11 11:39:38 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-11 11:39:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/op_menu_Operaciones")): Object: 'Object Repository/Page_- KAIZEN/op_menu_Operaciones' is clicked on
+
+2020-02-11 11:39:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/op_menu_Operaciones' is clicked on
+
+2020-02-11 11:39:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/op_click_Orden de Produccin")): Object: 'Object Repository/Page_- KAIZEN/op_click_Orden de Produccin' is clicked on
+
+2020-02-11 11:39:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/op_click_Orden de Produccin' is clicked on
+
+2020-02-11 11:39:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_buscador_Produccion")): Object: 'Object Repository/Page_Index - KAIZEN/op_buscador_Produccion' is clicked on
+
+2020-02-11 11:39:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_buscador_Produccion' is clicked on
+
+2020-02-11 11:39:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/opp_buscar_orden")): Object: 'Object Repository/Page_Index - KAIZEN/opp_buscar_orden' is clicked on
+
+2020-02-11 11:39:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/opp_buscar_orden' is clicked on
+
+2020-02-11 11:39:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Index - KAIZEN/opp_escribir_orden"), IDPedido): Text '180' is set on object 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:39:43 - [MESSAGE][PASSED] - Text '180' is set on object 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:39:43 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Index - KAIZEN/opp_escribir_orden"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:39:43 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:39:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_btn_Buscar")): Object: 'Object Repository/Page_Index - KAIZEN/op_btn_Buscar' is clicked on
+
+2020-02-11 11:39:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_btn_Buscar' is clicked on
+
+2020-02-11 11:39:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_click_selecione_pedido")): Object: 'Object Repository/Page_Index - KAIZEN/op_click_selecione_pedido' is clicked on
+
+2020-02-11 11:39:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_click_selecione_pedido' is clicked on
+
+2020-02-11 11:39:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/op_Iniciar Produccin")): Object: 'Object Repository/Page_- KAIZEN/op_Iniciar Produccin' is clicked on
+
+2020-02-11 11:39:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/op_Iniciar Produccin' is clicked on
+
+2020-02-11 11:39:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_buscador_Produccion")): Object: 'Object Repository/Page_Index - KAIZEN/op_buscador_Produccion' is clicked on
+
+2020-02-11 11:39:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_buscador_Produccion' is clicked on
+
+2020-02-11 11:39:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/opp_buscar_orden")): Object: 'Object Repository/Page_Index - KAIZEN/opp_buscar_orden' is clicked on
+
+2020-02-11 11:39:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/opp_buscar_orden' is clicked on
+
+2020-02-11 11:39:49 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Index - KAIZEN/opp_escribir_orden"), IDPedido): Text '180' is set on object 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:39:50 - [MESSAGE][PASSED] - Text '180' is set on object 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:39:50 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Index - KAIZEN/opp_escribir_orden"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:39:50 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:39:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_btn_Buscar")): Object: 'Object Repository/Page_Index - KAIZEN/op_btn_Buscar' is clicked on
+
+2020-02-11 11:39:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_btn_Buscar' is clicked on
+
+2020-02-11 11:39:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_click_FInalizar_produccion")): Object: 'Object Repository/Page_Index - KAIZEN/op_click_FInalizar_produccion' is clicked on
+
+2020-02-11 11:39:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_click_FInalizar_produccion' is clicked on
+
+2020-02-11 11:39:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/op_Finalizar Produccin")): Object: 'Object Repository/Page_- KAIZEN/op_Finalizar Produccin' is clicked on
+
+2020-02-11 11:39:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/op_Finalizar Produccin' is clicked on
+
+2020-02-11 11:39:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Orden_Produccion' successfully
+
+2020-02-11 11:39:54 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Produccion", "Index":Index, "Usuario":Usuario, "Contrasena":Contrasena], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-11 11:39:54 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-11 11:39:54 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-11 11:39:54 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-11 11:39:54 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-11 11:39:55 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-11 11:40:06 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-11 11:40:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-11 11:40:07 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-11 11:40:07 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-11 11:40:07 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-11 11:40:07 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-11 11:40:07 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-11 11:40:07 - [TEST_STEP][PASSED] - data4 = obtener_excels.obtener_produccion_20pies.getValuesExcelProduction(Index): obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:40:07 - [MESSAGE][PASSED] - obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:40:07 - [TEST_STEP][PASSED] - Usuario = data4[1]: null
+
+2020-02-11 11:40:07 - [TEST_STEP][PASSED] - Contrasena = data4[2]: null
+
+2020-02-11 11:40:07 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-11 11:40:08 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-11 11:40:08 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-11 11:40:08 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-11 11:40:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-11 11:40:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-11 11:40:27 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-11 11:40:27 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Produccion", "Index":Index, "Idioma":Idioma], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-11 11:40:27 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-11 11:40:27 - [TEST_STEP][PASSED] - if (Evento == "Crear"): null
+
+2020-02-11 11:40:27 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-11 11:40:27 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-11 11:40:27 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-11 11:40:27 - [TEST_STEP][PASSED] - data4 = obtener_excels.obtener_produccion_20pies.getValuesExcelProduction(Index): obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:40:27 - [MESSAGE][PASSED] - obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:40:27 - [TEST_STEP][PASSED] - Idioma = data4[0]: null
+
+2020-02-11 11:40:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-11 11:40:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-11 11:40:30 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-11 11:40:30 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-11 11:40:30 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-11 11:40:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-11 11:40:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-11 11:40:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Orden_Produccion"), ["Index":Index, "IDPedido":IDPedido], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Orden_Produccion' successfully
+
+2020-02-11 11:40:31 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Orden_Produccion: Test Cases/Individual_Tests_20pies/Orden_Produccion
+
+2020-02-11 11:40:31 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_produccion_20pies.getValuesExcelProduction(Index): obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:40:31 - [MESSAGE][PASSED] - obtener_excels.obtener_produccion_20pies.getValuesExcelProduction is PASSED
+
+2020-02-11 11:40:31 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-11 11:40:31 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-11 11:40:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/op_menu_Operaciones")): Object: 'Object Repository/Page_- KAIZEN/op_menu_Operaciones' is clicked on
+
+2020-02-11 11:40:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/op_menu_Operaciones' is clicked on
+
+2020-02-11 11:40:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/op_click_Orden de Produccin")): Object: 'Object Repository/Page_- KAIZEN/op_click_Orden de Produccin' is clicked on
+
+2020-02-11 11:40:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/op_click_Orden de Produccin' is clicked on
+
+2020-02-11 11:40:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_buscador_Produccion")): Object: 'Object Repository/Page_Index - KAIZEN/op_buscador_Produccion' is clicked on
+
+2020-02-11 11:40:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_buscador_Produccion' is clicked on
+
+2020-02-11 11:40:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/opp_buscar_orden")): Object: 'Object Repository/Page_Index - KAIZEN/opp_buscar_orden' is clicked on
+
+2020-02-11 11:40:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/opp_buscar_orden' is clicked on
+
+2020-02-11 11:40:35 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Index - KAIZEN/opp_escribir_orden"), IDPedido): Text '182' is set on object 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:40:36 - [MESSAGE][PASSED] - Text '182' is set on object 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:40:36 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Index - KAIZEN/opp_escribir_orden"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:40:36 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:40:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_btn_Buscar")): Object: 'Object Repository/Page_Index - KAIZEN/op_btn_Buscar' is clicked on
+
+2020-02-11 11:40:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_btn_Buscar' is clicked on
+
+2020-02-11 11:40:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_click_selecione_pedido")): Object: 'Object Repository/Page_Index - KAIZEN/op_click_selecione_pedido' is clicked on
+
+2020-02-11 11:40:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_click_selecione_pedido' is clicked on
+
+2020-02-11 11:40:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/op_Iniciar Produccin")): Object: 'Object Repository/Page_- KAIZEN/op_Iniciar Produccin' is clicked on
+
+2020-02-11 11:40:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/op_Iniciar Produccin' is clicked on
+
+2020-02-11 11:40:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_buscador_Produccion")): Object: 'Object Repository/Page_Index - KAIZEN/op_buscador_Produccion' is clicked on
+
+2020-02-11 11:40:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_buscador_Produccion' is clicked on
+
+2020-02-11 11:40:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/opp_buscar_orden")): Object: 'Object Repository/Page_Index - KAIZEN/opp_buscar_orden' is clicked on
+
+2020-02-11 11:40:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/opp_buscar_orden' is clicked on
+
+2020-02-11 11:40:42 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Index - KAIZEN/opp_escribir_orden"), IDPedido): Text '182' is set on object 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:40:43 - [MESSAGE][PASSED] - Text '182' is set on object 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:40:43 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Index - KAIZEN/opp_escribir_orden"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:40:43 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Index - KAIZEN/opp_escribir_orden'
+
+2020-02-11 11:40:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_btn_Buscar")): Object: 'Object Repository/Page_Index - KAIZEN/op_btn_Buscar' is clicked on
+
+2020-02-11 11:40:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_btn_Buscar' is clicked on
+
+2020-02-11 11:40:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/op_click_FInalizar_produccion")): Object: 'Object Repository/Page_Index - KAIZEN/op_click_FInalizar_produccion' is clicked on
+
+2020-02-11 11:41:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/op_click_FInalizar_produccion' is clicked on
+
+2020-02-11 11:41:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/op_Finalizar Produccin")): Object: 'Object Repository/Page_- KAIZEN/op_Finalizar Produccin' is clicked on
+
+2020-02-11 11:41:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/op_Finalizar Produccin' is clicked on
+
+2020-02-11 11:41:03 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Orden_Produccion' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-11 11:38:13 - [TEST_SUITE][PASSED] - 4-GenerarProduccion_20pies_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

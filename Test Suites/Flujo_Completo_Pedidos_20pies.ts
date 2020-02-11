@@ -49,7 +49,16 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Flujo_funcionalidades_Pedidos_20pies/5-Despachar_20pies_TestSuites</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Flujo_funcionalidades_Pedidos_20pies/5-Inventario_20pies_TestSuites</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>default</profileName>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Flujo_funcionalidades_Pedidos_20pies/6-Despachar_20pies_TestSuites</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -58,7 +67,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>false</runEnabled>
-         <testSuiteEntity>Test Suites/Flujo_funcionalidades_Pedidos_20pies/6-BorrarExcels_20pies_TestSuites</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Flujo_funcionalidades_Pedidos_20pies/7-BorrarExcels_20pies_TestSuites</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
