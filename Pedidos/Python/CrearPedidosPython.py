@@ -6,6 +6,8 @@ import pandas as pd
 import os
 from openpyxl.utils import get_column_letter
 from datetime import datetime
+import random
+
 
 #Conexion con la base de fatos
 try:
@@ -181,6 +183,8 @@ for i in range (0, len(df_aleatorio)):
 	else:
 		df_aleatorio.loc[i, 'Resultado'] = "Prueba fallida"
 
+
+#Sacar las opciones de compra iguales 
 df_aleatorio2=pd.DataFrame()
 for i in range (0, len(df_aleatorio)):
 	if ((df_aleatorio.loc[i,'OpCompra']==df_aleatorio.loc[i,'OpCompra2']) & (df_aleatorio.loc[i,'Presentacion']!=df_aleatorio.loc[i,'Presentacion2'])):
@@ -201,37 +205,41 @@ for i in range (0, len(df_aleatorio)):
 		df_aleatorio2.loc[i, 'Iterar']=df_aleatorio.loc[i, 'Iterar']
 		df_aleatorio2.loc[i, 'Resultado']=df_aleatorio.loc[i, 'Resultado']
 
-"""
 #Estadsticas: Crear el borrador al 20% de los pedidos
-longitud=len(df_aleatorio2)
-print(longitud)
-
+longitud=1+len(df_aleatorio2)
 porcentaje = longitud*(0.20)
 porcentaje =int(porcentaje)
-longitud2=porcentaje + (len(df_aleatorio2))
-print(len(df_aleatorio2))
-print(longitud)
-print(longitud2)
+longitud2=porcentaje + longitud
 
-	for i in range (longitud, longitud2):
-		df_aleatorio2.loc[i, 'Idioma']=df_aleatorio.loc[i, 'Idioma']
-		df_aleatorio2.loc[i, 'Usuario']=df_aleatorio.loc[i, 'Usuario']
-		df_aleatorio2.loc[i, 'Contrasena']=df_aleatorio.loc[i, 'Contrasena']
-		df_aleatorio2.loc[i, 'ID_Cliente']=df_aleatorio.loc[i, 'ID_Cliente']
-		df_aleatorio2.loc[i, 'ID_Direccion']=df_aleatorio.loc[i, 'ID_Direccion']
-		df_aleatorio2.loc[i, 'Contenedor']=df_aleatorio.loc[i, 'Contenedor']
-		df_aleatorio2.loc[i, 'Incoterms']=df_aleatorio.loc[i, 'Incoterms']
-		df_aleatorio2.loc[i, 'OpCompra']=df_aleatorio.loc[i, 'OpCompra']
-		df_aleatorio2.loc[i, 'Presentacion']=0
-		df_aleatorio2.loc[i, 'Producto']=0
-		df_aleatorio2.loc[i, 'Cantidad']=0
-		df_aleatorio2.loc[i, 'Presentacion2']=0
-		df_aleatorio2.loc[i, 'Producto2']=0
-		df_aleatorio2.loc[i, 'Cantidad2']=0
-		df_aleatorio2.loc[i, 'Iterar']=0
-		df_aleatorio2.loc[i, 'Resultado']= "Prueba fallida"
-""""
-export_excel2 = df_aleatorio2.to_excel (r'Pedidos/DataExcel/Crear_Pedido20pies.xlsx', index = None, header=True)
+
+df_aleatorio3=pd.DataFrame()
+lenn=len(df_aleatorio2)
+i=random.randint(1, lenn) 
+print(i)
+
+for i in range (longitud, longitud2):
+	df_aleatorio2.loc[i, 'Idioma']=df_aleatorio2.loc[i, 'Idioma']
+	df_aleatorio2.loc[i, 'Usuario']=df_aleatorio2.loc[i, 'Usuario']
+	df_aleatorio2.loc[i, 'Contrasena']=df_aleatorio2.loc[i, 'Contrasena']
+	df_aleatorio2.loc[i, 'ID_Cliente']=df_aleatorio2.loc[i, 'ID_Cliente']
+	df_aleatorio2.loc[i, 'ID_Direccion']=df_aleatorio2.loc[i, 'ID_Direccion']
+	df_aleatorio2.loc[i, 'Contenedor']=df_aleatorio2.loc[i, 'Contenedor']
+	df_aleatorio2.loc[i, 'Incoterms']=df_aleatorio2.loc[i, 'Incoterms']
+	df_aleatorio2.loc[i, 'OpCompra']=0
+	df_aleatorio2.loc[i, 'Presentacion']=0
+	df_aleatorio2.loc[i, 'Producto']=0
+	df_aleatorio2.loc[i, 'Cantidad']=0
+	df_aleatorio2.loc[i, 'Presentacion2']=0
+	df_aleatorio2.loc[i, 'Producto2']=0
+	df_aleatorio2.loc[i, 'Cantidad2']=0
+	df_aleatorio2.loc[i, 'Iterar']=0
+	df_aleatorio2.loc[i, 'Resultado']= "Prueba fallida"
+
+#Crear dataframe con filas aleatorias
+nag=len(df_aleatorio2)
+df_aleatorio3 = df_aleatorio2.sample(nag)
+
+export_excel2 = df_aleatorio3.to_excel (r'Pedidos/DataExcel/Crear_Pedido20pies.xlsx', index = None, header=True)
 
 
 #Ajustar columnas

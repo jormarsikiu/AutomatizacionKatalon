@@ -58,10 +58,9 @@ else if (Evento=="Produccion"){
 	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
 	WebUI.setEncryptedText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
 	WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
-	
-}
-else if (Evento=="Despacho"){
-	List<String> data5 = CustomKeywords.'obtener_excels.obtener_despacho_20pies.getValuesExcelDespach'(Index)
+}	
+else if (Evento=="Inventario"){
+	List<String> data5 = CustomKeywords.'obtener_excels.obtener_inventario_20pies.getValuesExcelInventary'(Index)
 	String Usuario = data5[1]
 	String Contrasena = data5[2]
 	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
@@ -69,6 +68,17 @@ else if (Evento=="Despacho"){
 	WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
 	
 }
+else if (Evento=="Despacho"){
+	List<String> data6 = CustomKeywords.'obtener_excels.obtener_despacho_20pies.getValuesExcelDespach'(Index)
+	String Usuario = data6[1]
+	String Contrasena = data6[2]
+	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
+	WebUI.setEncryptedText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
+	WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
+	
+}
+
+
 
 /*
 WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>5-Despachar_20pies_TestSuites</name>
+   <name>6-Despachar_20pies_TestSuites</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -25,12 +25,6 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>1d057216-3997-46ac-9cdf-0a03de6369f0</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
          <variableId>0fc82bd5-9929-4689-97ca-d13c78270e98</variableId>
       </variableLink>
       <variableLink>
@@ -50,6 +44,12 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>e52f68db-dace-4d04-9d2b-8ee81be90845</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bacfa159-4344-4ff5-bc05-024b60d0d77f</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -31,9 +31,10 @@ String Producto2 = data[12]
 
 String Cantidad2 = data[13]
 
-String Iterar = data[15]
+String Iterar = data[14]
 
 int Iterado = Iterar.toInteger()
+
 int cantProductos = Iterado
 
 //Se guarda el id del pedido
@@ -79,7 +80,7 @@ if (boton == 'block') {
 					
 			WebUI.click(findTestObject('Page_- KAIZEN/sp_Siguiente'))
 					
-			WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_btn_finish'), 5)
+			//WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_btn_finish'), 5)
 					
 			WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_finish'))
 					
@@ -136,7 +137,7 @@ if (boton == 'block') {
 					
 			WebUI.click(findTestObject('Page_- KAIZEN/sp_Siguiente'))
 					
-			WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_btn_finish'), 5)
+			//WebUI.waitForElementPresent(findTestObject('Page_- KAIZEN/sp_btn_finish'), 5)
 					
 			WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_finish'))
 					

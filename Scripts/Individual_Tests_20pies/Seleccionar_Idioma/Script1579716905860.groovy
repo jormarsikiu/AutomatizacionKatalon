@@ -14,27 +14,32 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+int Idioma = 0
+
 if (Evento=="Crear"){
 	List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
-	int Idioma = data[0]
+	Idioma = data[0]
 }
 else if (Evento=="Aprobar"){
 	List<String> data2 = CustomKeywords.'obtener_excels.obtener_aprobaciones_20pies.getValuesExcelAprob20'(Index)
-	int Idioma = data2[0]
+	Idioma = data2[0]
 }
 else if (Evento=="Logistica"){
 	List<String> data3 = CustomKeywords.'obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic'(Index)
-	int Idioma = data3[0]
+	Idioma = data3[0]
 }
 else if (Evento=="Produccion"){
 	List<String> data4 = CustomKeywords.'obtener_excels.obtener_produccion_20pies.getValuesExcelProduction'(Index)
-	int Idioma = data4[0]
+	Idioma = data4[0]
+}
+else if (Evento=="Inventario"){
+	List<String> data5 = CustomKeywords.'obtener_excels.obtener_inventario_20pies.getValuesExcelInventary'(Index)
+	Idioma = data5[0]
 }
 else if (Evento=="Despacho"){
-	List<String> data5 = CustomKeywords.'obtener_excels.obtener_despacho_20pies.getValuesExcelDespach'(Index)
-	int Idioma = data5[0]
+	List<String> data6 = CustomKeywords.'obtener_excels.obtener_despacho_20pies.getValuesExcelDespach'(Index)
+	Idioma = data6[0]
 }
-
 WebUI.click(findTestObject('Page_- KAIZEN/si_btn_idioma'))
 
 if (Idioma == '0'){ 

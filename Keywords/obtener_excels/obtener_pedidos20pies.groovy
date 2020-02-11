@@ -46,7 +46,6 @@ public class obtener_pedidos20pies {
 		String Presentacion2 = excelData.getValue("Presentacion2", index);
 		String Producto2 = excelData.getValue("Producto2", index);
 		String Cantidad2 = excelData.getValue("Cantidad2", index);
-		String OpCompra2 = excelData.getValue("OpCompra2", index);
 		String Iterar = excelData.getValue("Iterar", index);
 
 		List<String,String> data = [
@@ -64,7 +63,6 @@ public class obtener_pedidos20pies {
 			Presentacion2, ,
 			Producto2,
 			Cantidad2,
-			OpCompra2,
 			Iterar
 		]
 

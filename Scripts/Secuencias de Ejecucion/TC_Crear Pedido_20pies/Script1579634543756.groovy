@@ -27,7 +27,7 @@ for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
 	
 	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : "Crear", ('Index') : Index, ('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : "Crear", ('Index') : Index, ('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : "Crear", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Anadir_pedido'), [:], FailureHandling.STOP_ON_FAILURE)
 
