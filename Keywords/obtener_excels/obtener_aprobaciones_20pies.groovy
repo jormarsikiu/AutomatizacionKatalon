@@ -26,6 +26,7 @@ import com.kms.katalon.core.configuration.RunConfiguration
 import internal.GlobalVariable
 
 public class obtener_aprobaciones_20pies {
+
 	@Keyword
 	def List<String> getValuesExcelAprob20(int index) {
 

@@ -121,8 +121,10 @@ for i in range (0, len(df_fusion2)):
 		df_fusion3.loc[i, 'IdPedido']=df_fusion2.loc[i, 'IdPedido']
 		df_fusion3.loc[i, 'Id_Cliente']=df_fusion2.loc[i, 'Id_Cliente']
 		df_fusion3.loc[i, 'Estatus_Pedido']=df_fusion2.loc[i, 'Estatus_Pedido']
+		"""
 		df_fusion3.loc[i, 'Creado_desde']=df_fusion2.loc[i, 'Creado_desde']
 		df_fusion3.loc[i, 'Creado_hasta']=df_fusion2.loc[i, 'Creado_hasta']
+		"""
 		df_fusion3.loc[i, 'Aprob. Ventas']=df_fusion2.loc[i, 'Aprob. Ventas']
 		df_fusion3.loc[i, 'Aprob. Financiera']=df_fusion2.loc[i, 'Aprob. Financiera']
 		df_fusion3.loc[i, 'Aprob. Produccion']=df_fusion2.loc[i, 'Aprob. Produccion']

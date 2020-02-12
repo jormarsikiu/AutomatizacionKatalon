@@ -7,7 +7,6 @@ import os
 import datetime
 from openpyxl.utils import get_column_letter
 
-#os.remove('Pedidos/DataExcel/Orden_Produccion_20pies.xlsx')
 idpedidos = pd.read_excel(r"Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
 
 df_pedidos= pd.DataFrame(idpedidos, columns= ['IdPedido'])
@@ -27,14 +26,14 @@ except Exception as e:
 	print ("No Conecto a la BD")
 	raise e
 
-data = pd.read_sql('select P.ID AS IdPedido, P.ID_CLIENTE AS Id_Cliente, P.FECHA_CREACION AS Creado_desde, E.NOMBRE As Estatus_Pedido from PEDIDO_MOVIL AS P, ESTATUS_PEDIDO AS E WHERE P.ID_ESTATUS = E.ID AND P.ID_ESTATUS=1029 AND P.ID in (' + ','.join((str(n) for n in l)) + ')',cnxn)
+data = pd.read_sql('select P.ID AS IdPedido, P.ID_CLIENTE AS Id_Cliente, E.NOMBRE As Estatus_Pedido from PEDIDO_MOVIL AS P, ESTATUS_PEDIDO AS E WHERE P.ID_ESTATUS = E.ID AND P.ID_ESTATUS=1029 AND P.ID in (' + ','.join((str(n) for n in l)) + ')',cnxn)
 
 data.to_excel('Orden_Produccion.xlsx')
 
 pedidoconfirmados=pd.read_excel(r"Orden_Produccion.xlsx")
 
 #Generacon de cargos logisticos aleatorios
-df_confirmados=  pd.DataFrame(pedidoconfirmados, columns= ['IdPedido', 'Id_Cliente', 'Estatus_Pedido', 'Creado_desde'])
+df_confirmados=  pd.DataFrame(pedidoconfirmados, columns= ['IdPedido', 'Id_Cliente', 'Estatus_Pedido'])
 
 export_excel = df_confirmados.to_excel (r'Orden_Produccion.xlsx', index = None, header=True)
 

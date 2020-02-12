@@ -20,11 +20,46 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class Ex_produccion_pedidos_20pies {
+public class ejecutarAleatoriosPython {
 
+	String actual;
 
 	@Keyword
-	def runPython(){
+	def runPython(String tipo){
+
+		if (tipo == 'Crear20'){
+			actual = "\\Pedidos\\Python\\CrearPedidosPython.py";
+			System.out.println("Archivo: Pedidos/DataExcel/Crear_Pedido20pies.xlsx");
+		}
+		else if (tipo == 'Crear40'){
+			actual = "\\Pedidos\\Python\\CrearPedidosPython40pies.py";
+			System.out.println("Archivo: Pedidos/DataExcel/Crear_Pedido40pies.xlsx");
+		}
+		else if (tipo == 'Aprobar'){
+			actual = "\\Pedidos\\Python\\AprobacionesPedidosPython.py";
+			System.out.println("Archivo: Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx");
+		}
+		else if (tipo == 'Logistica'){
+			actual = "\\Pedidos\\Python\\LogisticaPedidosPython.py";
+			System.out.println("Archivo: Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx");
+		}
+		else if (tipo == 'Produccion'){
+			actual = "\\Pedidos\\Python\\ProduccionPedidosPython.py";
+			System.out.println("Archivo: Pedidos/DataExcel/Orden_Produccion_20pies.xlsx");
+		}
+		else if (tipo == 'Inventario'){
+			actual = "\\Pedidos\\Python\\InventarioPedidos.py";
+			System.out.println("Archivo: Pedidos/DataExcel/Inventario_20pies.xlsx");
+		}
+		else if (tipo == 'Despacho'){
+			actual = "\\Pedidos\\Python\\DespachoPedidosPython.py";
+			System.out.println("Archivo Creado: Pedidos/DataExcel/Despacho_20pies.xlsx");
+		}
+		else if (tipo == 'BorradoTotal'){
+			actual = "\\Pedidos\\Python\\BorrarTodosExcelsPython.py";
+			System.out.println("Archivos Borrados en: Pedidos/DataExcel");
+		}
+
 
 		try {
 			System.out.println("Espere mientras se crea el archivo...");
@@ -37,8 +72,8 @@ public class Ex_produccion_pedidos_20pies {
 
 			// Run a command
 			String home = System.getProperty("user.dir");
-			String actual = "\\Pedidos\\Python\\ProduccionPedidosPython.py"
-			String ruta = home + actual
+
+			String ruta = home + actual;
 
 			Process process = Runtime.getRuntime().exec("cmd /c py "+ruta);
 
@@ -47,26 +82,33 @@ public class Ex_produccion_pedidos_20pies {
 			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
 			String line;
+
 			while ((line = reader.readLine()) != null) {
+
 				output.append(line + "\n");
 			}
 
 			int exitVal = process.waitFor();
+
 			if (exitVal == 0) {
-				System.out.println("Archivo Creado: Pedidos/DataExcel/Orden_Produccion_20pies.xlsx");
+
 				System.out.println(output);
-				//System.exit(0);
+
 			} else {
-				System.out.println("No se puedo crear el archivo!. Cierre el archivo");
+
+				System.out.println("No se puedo crear el archivo!. (Cierre el archivo o revise la instalación de python)");
 			}
 
 		} catch (IOException e) {
+
 			e.printStackTrace();
+
 		} catch (InterruptedException e) {
+
 			e.printStackTrace();
 		}
 
 	}
 
-
 }
+

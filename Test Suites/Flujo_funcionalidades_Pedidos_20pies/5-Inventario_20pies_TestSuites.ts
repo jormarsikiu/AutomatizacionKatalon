@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>6c94ca8b-2d4c-420d-8bcb-e24510f7766c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Inventario_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>

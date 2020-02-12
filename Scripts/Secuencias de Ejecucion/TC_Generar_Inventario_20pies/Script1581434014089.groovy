@@ -15,5 +15,4 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'python.Ex_inventario_pedidos_20pies.runPython'()
-
+CustomKeywords.'python.ejecutarAleatoriosPython.runPython'('Inventario')

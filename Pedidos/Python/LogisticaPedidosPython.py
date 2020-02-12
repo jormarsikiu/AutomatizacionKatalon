@@ -7,7 +7,6 @@ import os
 import datetime
 from openpyxl.utils import get_column_letter
 
-#os.remove('Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx')
 idpedidos = pd.read_excel(r"Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
 
 df_pedidos= pd.DataFrame(idpedidos, columns= ['IdPedido'])
@@ -27,7 +26,7 @@ except Exception as e:
 	print ("No Conecto a la BD")
 	raise e
 
-data = pd.read_sql('select P.ID AS IdPedido, P.ID_CLIENTE AS Id_Cliente, P.FECHA_CREACION AS Creado_desde, E.NOMBRE As Estatus_Pedido from PEDIDO_MOVIL AS P, ESTATUS_PEDIDO AS E WHERE P.ID_ESTATUS = E.ID AND P.ID_ESTATUS=2 AND P.ID in (' + ','.join((str(n) for n in l)) + ')',cnxn)
+data = pd.read_sql('select P.ID AS IdPedido, P.ID_CLIENTE AS Id_Cliente, E.NOMBRE As Estatus_Pedido from PEDIDO_MOVIL AS P, ESTATUS_PEDIDO AS E WHERE P.ID_ESTATUS = E.ID AND P.ID_ESTATUS=2 AND P.ID in (' + ','.join((str(n) for n in l)) + ')',cnxn)
 data1 = pd.read_sql('select ID as IDCargo, NOMBRE as NombreCargo from producto where ID_GRUPO=1',cnxn)
 data2 = pd.read_sql('select ID as IDCargo2, NOMBRE as NombreCargo2 from producto where ID_GRUPO=1',cnxn)
 
@@ -40,7 +39,7 @@ cargologistico = pd.read_excel(r"TestDataCargoLogistico.xlsx")
 cargologistico2 = pd.read_excel(r"TestDataCargoLogistico2.xlsx")
 
 #Generacon de cargos logisticos aleatorios
-df_pedidoaprobados=  pd.DataFrame(pedidoaprobados, columns= ['IdPedido', 'Id_Cliente', 'Estatus_Pedido', 'Creado_desde'])
+df_pedidoaprobados=  pd.DataFrame(pedidoaprobados, columns= ['IdPedido', 'Id_Cliente', 'Estatus_Pedido'])
 df_cargo = pd.DataFrame(cargologistico, columns= ['IDCargo', 'NombreCargo'])
 df_cargo2 = pd.DataFrame(cargologistico2, columns= ['IDCargo2', 'NombreCargo2'])
 

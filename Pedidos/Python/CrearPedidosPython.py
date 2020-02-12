@@ -211,20 +211,18 @@ porcentaje = longitud*(0.20)
 porcentaje =int(porcentaje)
 longitud2=porcentaje + longitud
 
-
 df_aleatorio3=pd.DataFrame()
 lenn=len(df_aleatorio2)
 i=random.randint(1, lenn) 
-print(i)
 
 for i in range (longitud, longitud2):
-	df_aleatorio2.loc[i, 'Idioma']=df_aleatorio2.loc[i, 'Idioma']
-	df_aleatorio2.loc[i, 'Usuario']=df_aleatorio2.loc[i, 'Usuario']
-	df_aleatorio2.loc[i, 'Contrasena']=df_aleatorio2.loc[i, 'Contrasena']
-	df_aleatorio2.loc[i, 'ID_Cliente']=df_aleatorio2.loc[i, 'ID_Cliente']
-	df_aleatorio2.loc[i, 'ID_Direccion']=df_aleatorio2.loc[i, 'ID_Direccion']
-	df_aleatorio2.loc[i, 'Contenedor']=df_aleatorio2.loc[i, 'Contenedor']
-	df_aleatorio2.loc[i, 'Incoterms']=df_aleatorio2.loc[i, 'Incoterms']
+	df_aleatorio2.loc[i, 'Idioma']=df_aleatorio.loc[i, 'Idioma']
+	df_aleatorio2.loc[i, 'Usuario']=df_aleatorio.loc[i, 'Usuario']
+	df_aleatorio2.loc[i, 'Contrasena']=df_aleatorio.loc[i, 'Contrasena']
+	df_aleatorio2.loc[i, 'ID_Cliente']=df_aleatorio.loc[i, 'ID_Cliente']
+	df_aleatorio2.loc[i, 'ID_Direccion']=df_aleatorio.loc[i, 'ID_Direccion']
+	df_aleatorio2.loc[i, 'Contenedor']=df_aleatorio.loc[i, 'Contenedor']
+	df_aleatorio2.loc[i, 'Incoterms']=df_aleatorio.loc[i, 'Incoterms']
 	df_aleatorio2.loc[i, 'OpCompra']=0
 	df_aleatorio2.loc[i, 'Presentacion']=0
 	df_aleatorio2.loc[i, 'Producto']=0
@@ -240,7 +238,6 @@ nag=len(df_aleatorio2)
 df_aleatorio3 = df_aleatorio2.sample(nag)
 
 export_excel2 = df_aleatorio3.to_excel (r'Pedidos/DataExcel/Crear_Pedido20pies.xlsx', index = None, header=True)
-
 
 #Ajustar columnas
 wb6 = openpyxl.load_workbook('Pedidos/DataExcel/Crear_Pedido20pies.xlsx')

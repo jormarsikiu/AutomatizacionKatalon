@@ -15,4 +15,4 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-CustomKeywords.'python.Ex_aprobar_pedido_20pies.runPython'()
+CustomKeywords.'python.ejecutarAleatoriosPython.runPython'('Aprobar')
