@@ -42,13 +42,24 @@ df_cliente = pd.DataFrame(cliente, columns= ['IdCliente', 'IdDireccion', 'IdPuer
 df_productoSoporta = pd.DataFrame(productoSoporta, columns= ['Producto', 'SoportaPeso', 'PesoProducto'])
 df_productoNoSoporta =  pd.DataFrame(productoNoSoporta, columns= ['Producto2', 'SoportaPeso2', 'PesoProducto2'])
 
-
 long1=len(df_cliente)
 long2=len(df_productoSoporta)
+long3=len(df_productoNoSoporta)
+"""
+if(long1 < long2 and long1 < long3):
+	n=long1
+else:
+	if(long2 < long1 and long2 < long3):
+		n=long2
+	else:
+		n=long3
+"""
+
 if (long1<=long2):
 	n=long1
 else:
 	n=long2
+
 
 df_cliente = df_cliente.iloc[0:n]
 df_productoSoporta = df_productoSoporta.iloc[0:n]
@@ -57,8 +68,18 @@ df_productoNoSoporta = df_productoNoSoporta.iloc[0:n]
 #Concatenar los dataframe en uno 
 
 df_fusion=pd.concat([df_cliente, df_productoSoporta, df_productoNoSoporta], axis=1)
+print(len(df_fusion))
+for i in range (0, len(df_fusion)):
+	if (df_fusion.loc[i, 'Producto2']==''):
+		df_fusion.loc[i, 'Producto2']=0
+		df_fusion.loc[i, 'SoportaPeso2']=0
+		df_fusion.loc[i, 'PesoProducto2']=0
+
+
 export_excel = df_fusion.to_excel (r'Testfusion.xlsx', index = None, header=True)
 n=n+1
+
+
 ############################################
 #Escribir el CIF y EXW
 wb2 = openpyxl.Workbook() 
@@ -129,7 +150,15 @@ for rows in sheet5.iter_cols(min_col=2, max_col=2, min_row=2, max_row=n):
 wb5.save("TestDataUser.xlsx") 
 
 ################################################
+#Determinar si se debe iterar 1 o 2 productos
+for j in range (0, len(df_fusion)):
+	if (df_fusion.loc[j, 'Producto2']==''):
+		df_fusion.loc[j, 'Iterar'] = 1
+	else:
+		df_fusion.loc[j, 'Iterar'] = 2
 
+
+###############################################################################
 #Leemos los excel 
 idioma = pd.read_excel(r"TestDataIdioma.xlsx")
 usuarios = pd.read_excel(r"TestDataUser.xlsx")
@@ -146,6 +175,7 @@ df_contenedor = pd.DataFrame(contenedor, columns= ['Contenedor'])
 df_fusion=pd.concat([df_idioma, df_usuarios, df_contenedor, df_icoterms, df_fusion], axis=1)
 export_excel = df_fusion.to_excel (r'Testfusion.xlsx', index = None, header=True)
 
+
 #Crear dataframe con filas aleatorias
 na=len(df_fusion)
 df_aleatorio = df_fusion.sample(na)
@@ -160,5 +190,5 @@ os.remove('TestDataContenedor.xlsx')
 os.remove('TestDataIncoterms.xlsx')
 os.remove('TestDataProductNo.xlsx')
 os.remove('TestDataProductSop.xlsx')
-os.remove('Testfusion.xlsx')
+#os.remove('Testfusion.xlsx')
 os.remove('TestDataUser.xlsx')

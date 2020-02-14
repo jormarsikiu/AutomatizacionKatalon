@@ -20,7 +20,7 @@
       <guid>13271a1c-f6f7-4c45-9d37-df005bdd9d4a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Crear Pedido_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_20pies</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

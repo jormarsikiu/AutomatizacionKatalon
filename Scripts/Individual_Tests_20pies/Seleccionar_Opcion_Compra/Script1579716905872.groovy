@@ -13,8 +13,17 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
-String OpCompra1 = data[7]
+String OpCompra1=0
+
+if (Evento=="Crear20"){
+
+	List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+	OpCompra1 = data[7]
+}
+else if (Evento=="Crear40"){
+	
+	OpCompra1=GlobalVariable.OpcionCompra40pies
+}
 
 WebUI.delay(7)
 

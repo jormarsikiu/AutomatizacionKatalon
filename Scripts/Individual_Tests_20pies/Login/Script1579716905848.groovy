@@ -22,7 +22,7 @@ WebUI.openBrowser(GlobalVariable.Web)
 
 WebUI.maximizeWindow()
 
-if (Evento=="Crear"){
+if (Evento=="Crear20"){
 	List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)	
 	String Usuario = data[1]	
 	String Contrasena = data[2]
@@ -32,6 +32,16 @@ if (Evento=="Crear"){
 	
 	
 }
+else if (Evento=="Crear40"){
+	List<String> data7 = CustomKeywords.'obtener_excels.obtener_pedidos40pies.getValuesExcelCreate40'(Index)
+	String Usuario = data7[1]
+	String Contrasena = data7[2]
+	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
+	WebUI.setEncryptedText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
+	WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
+	
+}
+
 else if (Evento=="Aprobar"){
 	List<String> data2 = CustomKeywords.'obtener_excels.obtener_aprobaciones_20pies.getValuesExcelAprob20'(Index)
 	String Usuario = data2[1]
@@ -77,17 +87,3 @@ else if (Evento=="Despacho"){
 	WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
 	
 }
-
-
-
-/*
-WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
-
-WebUI.setEncryptedText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
-
-//WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
-
-WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
-
-*/
-

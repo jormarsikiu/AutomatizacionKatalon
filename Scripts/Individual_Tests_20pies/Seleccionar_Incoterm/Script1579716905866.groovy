@@ -13,12 +13,20 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+String Incoterm
 
-String Incoterm = data[6]
+if (Evento=="Crear20"){
+	List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+	Incoterm = data[6]
+	
+}
+else if (Evento=="Crear40"){
+	List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos40pies.getValuesExcelCreate40'(Index)
+	Incoterm = data[6]
+	
+}
 
-WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/sin_select_incoterm'), 
-    Incoterm, true)
+WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/sin_select_incoterm'), Incoterm, true)
 
 
 WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_next'))

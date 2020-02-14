@@ -36,7 +36,7 @@ public class Ex_guardar_pedidos_creados {
 
 
 	@Keyword
-	public void demoKey(String idpedido, int cantPedido) throws IOException{
+	public void demoKey(int idpedido, int cantPedido) throws IOException{
 		FileInputStream fis = new FileInputStream("${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 

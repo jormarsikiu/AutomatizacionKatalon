@@ -10,11 +10,15 @@
          <value>id(&quot;IdDirCliente&quot;)[count(. | //*[@id = 'IdDirCliente']) = count(//*[@id = 'IdDirCliente'])]</value>
       </entry>
       <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//select[@id='IdDirCliente']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

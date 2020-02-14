@@ -25,6 +25,6 @@ WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Incoterm'),
 
 WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Opcion_Compra'), [('OpCompra1') : OpCompra], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Productos'), [('Presentacion') : Presentacion, ('Producto') : Producto, ('Cantidad') : Cantidad, ('Presentacion2') : Presentacion2
+WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Productos20pies'), [('Presentacion') : Presentacion, ('Producto') : Producto, ('Cantidad') : Cantidad, ('Presentacion2') : Presentacion2
         , ('Producto2') : Producto2, ('Cantidad2') : Cantidad2], FailureHandling.STOP_ON_FAILURE)
 

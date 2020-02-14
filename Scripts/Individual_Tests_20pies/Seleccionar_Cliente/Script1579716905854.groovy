@@ -13,11 +13,24 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+String Nombre 
+String Direccion 
+String Contenedor
 
-List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
-String Nombre = data[3]
-String Direccion = data[4]
-String Contenedor= data[5]
+if (Evento=="Crear20"){
+	List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
+	Nombre = data[3]
+	Direccion = data[4]
+	Contenedor= data[5]
+}
+
+else if (Evento=="Crear40"){
+	List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos40pies.getValuesExcelCreate40'(Index)
+	Nombre = data[3]
+	Direccion = data[4]
+	Contenedor= data[5]
+}
+
 
 WebUI.delay(2)
 
@@ -51,12 +64,15 @@ if ((element == Nombre)) {
     WebUI.selectOptionByValue(findTestObject('Page_- KAIZEN/sc_assing_select_address'), Direccion, 
         true)
 
+	WebUI.delay(5)
+	
 	if (Contenedor == '20'){
 	
     	WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_contenedor_20_pies'))
 	}
 	else{
-		WebUI.click(findTestObject('Page_- KAIZEN/sc_btn_contenedor_40_pies'))
+		//WebUI.doubleClick((findTestObject('Page_- KAIZEN/sc_btn_contenedor_40_pies'))
+		WebUI.executeJavaScript("document.querySelector(\".btn-primary[onclick='opcCont(40)']\").click()", null)
 		
 	}
     WebUI.delay(2)

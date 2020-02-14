@@ -18,27 +18,22 @@ import java.lang.Integer as Integer
 import com.kms.katalon.core.exception.StepFailedException
 
 List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
-
 String Presentacion = data[8]
-
 String Producto = data[9]
-
 String Cantidad = data[10]
-
 String Presentacion2 = data[11]
-
 String Producto2 = data[12]
-
 String Cantidad2 = data[13]
-
 String Iterar = data[14]
-
+	
 int Iterado = Iterar.toInteger()
 
 int cantProductos = Iterado
 
 //Se guarda el id del pedido
 String IDPedidoCreado = WebUI.executeJavaScript('return document.getElementById(\'IdPedido\').value;', null)
+
+IDPedidoCreado = IDPedidoCreado.toInteger()
 
 CustomKeywords.'exportar_archivos.Ex_guardar_pedidos_creados.demoKey'(IDPedidoCreado, cantProductos)
 

@@ -16,9 +16,13 @@ import org.openqa.selenium.Keys as Keys
 
 int Idioma = 0
 
-if (Evento=="Crear"){
+if (Evento=="Crear20"){
 	List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos20pies.getValuesExcelCreate20'(Index)
 	Idioma = data[0]
+}
+else if  (Evento=="Crear40"){
+	List<String> data7 = CustomKeywords.'obtener_excels.obtener_pedidos40pies.getValuesExcelCreate40'(Index)
+	Idioma = data7[0]
 }
 else if (Evento=="Aprobar"){
 	List<String> data2 = CustomKeywords.'obtener_excels.obtener_aprobaciones_20pies.getValuesExcelAprob20'(Index)
@@ -40,6 +44,7 @@ else if (Evento=="Despacho"){
 	List<String> data6 = CustomKeywords.'obtener_excels.obtener_despacho_20pies.getValuesExcelDespach'(Index)
 	Idioma = data6[0]
 }
+
 WebUI.click(findTestObject('Page_- KAIZEN/si_btn_idioma'))
 
 if (Idioma == '0'){ 
