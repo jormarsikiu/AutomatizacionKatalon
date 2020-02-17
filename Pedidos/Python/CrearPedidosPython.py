@@ -271,6 +271,10 @@ os.remove('TestDataProduct2.xlsx')
 os.remove('Testfusion.xlsx')
 os.remove('TestDataUser.xlsx')
 
-wb7 = openpyxl.Workbook() 
-wb7.save('Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx') 
 
+if os.path.isfile("Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx"):
+    print("Ya esta creado: Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
+else:
+	wb7 = openpyxl.Workbook() 
+	wb7.save('Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx') 
+	print("Archivo creado: Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")

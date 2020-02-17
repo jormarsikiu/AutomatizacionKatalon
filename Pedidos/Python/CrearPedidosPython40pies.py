@@ -177,7 +177,6 @@ for j in range (0, len(df_aleatorio)):
 
 export_excel2 = df_aleatorio.to_excel (r'Pedidos/DataExcel/Crear_Pedido40pies.xlsx', index = None, header=True)
 
-
 #Borrado de archivos
 os.remove('TestDataIdioma.xlsx')
 os.remove('TestDataClient.xlsx')
@@ -187,3 +186,10 @@ os.remove('TestDataProductNo.xlsx')
 os.remove('TestDataProductSop.xlsx')
 os.remove('Testfusion.xlsx')
 os.remove('TestDataUser.xlsx')
+
+if os.path.isfile("Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx"):
+    print("Ya esta creado: Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
+else:
+	wb7 = openpyxl.Workbook() 
+	wb7.save('Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx') 
+	print("Archivo creado: Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
