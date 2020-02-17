@@ -19,13 +19,13 @@ import java.lang.Integer as Integer
 
 List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos40pies.getValuesExcelCreate40'(Index)
 String ProductoSoportaPeso = data[9]
-String ProductoNoSoportaPeso = data[12]
+String ProductoNoSoportaPeso = data[11]
 String Cantidad
-String Iterar = data[15]
+String Iterar = data[13]
 
 int CapacidadDisponible = (data[8]).toInteger()
-int PesoProducto = (data[11]).toInteger()
-int PesoProducto2 = (data[14]).toInteger()
+int PesoProducto = (data[10]).toInteger()
+int PesoProducto2 = (data[12]).toInteger()
 int CantidadSoportadaAbajo
 int CantidadAñadida
 int CantidadRestante

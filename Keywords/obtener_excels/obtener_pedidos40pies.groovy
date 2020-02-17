@@ -41,11 +41,9 @@ public class obtener_pedidos40pies {
 
 		String CapacidadDescarga = excelData.getValue("CapacidadDescarga", index);
 		String CapacidadDisponible = excelData.getValue("CapacidadDisponible", index);
-		String Producto = excelData.getValue("Producto", index);
-		String SoportaPeso = excelData.getValue("SoportaPeso", index);
-		String PesoProducto = excelData.getValue("PesoProducto", index);
-		String Producto2 = excelData.getValue("Producto2", index);
-		String SoportaPeso2 = excelData.getValue("SoportaPeso2", index);
+		String ProductoSoportaPeso = excelData.getValue("ProductoSoportaPeso", index);
+		String PesoProducto1 = excelData.getValue("PesoProducto1", index);
+		String ProductoNoSoportaPeso = excelData.getValue("ProductoNoSoportaPeso", index);
 		String PesoProducto2 = excelData.getValue("PesoProducto2", index);
 		String Iterar = excelData.getValue("Iterar", index);
 
@@ -59,11 +57,9 @@ public class obtener_pedidos40pies {
 			Incoterms,
 			CapacidadDescarga,
 			CapacidadDisponible,
-			Producto,
-			SoportaPeso,
-			PesoProducto,
-			Producto2,
-			SoportaPeso2,
+			ProductoSoportaPeso,
+			PesoProducto1,
+			ProductoNoSoportaPeso,
 			PesoProducto2,
 			Iterar
 		]
