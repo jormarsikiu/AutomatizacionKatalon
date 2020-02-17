@@ -25,23 +25,23 @@ else if  (Evento=="Crear40"){
 	Idioma = data7[0]
 }
 else if (Evento=="Aprobar"){
-	List<String> data2 = CustomKeywords.'obtener_excels.obtener_aprobaciones_20pies.getValuesExcelAprob20'(Index)
+	List<String> data2 = CustomKeywords.'obtener_excels.obtener_aprobaciones.getValuesExcelAprob20'(Index)
 	Idioma = data2[0]
 }
 else if (Evento=="Logistica"){
-	List<String> data3 = CustomKeywords.'obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic'(Index)
+	List<String> data3 = CustomKeywords.'obtener_excels.obtener_logistica.getValuesExcelLogistic'(Index)
 	Idioma = data3[0]
 }
 else if (Evento=="Produccion"){
-	List<String> data4 = CustomKeywords.'obtener_excels.obtener_produccion_20pies.getValuesExcelProduction'(Index)
+	List<String> data4 = CustomKeywords.'obtener_excels.obtener_produccion.getValuesExcelProduction'(Index)
 	Idioma = data4[0]
 }
 else if (Evento=="Inventario"){
-	List<String> data5 = CustomKeywords.'obtener_excels.obtener_inventario_20pies.getValuesExcelInventary'(Index)
+	List<String> data5 = CustomKeywords.'obtener_excels.obtener_inventario.getValuesExcelInventary'(Index)
 	Idioma = data5[0]
 }
 else if (Evento=="Despacho"){
-	List<String> data6 = CustomKeywords.'obtener_excels.obtener_despacho_20pies.getValuesExcelDespach'(Index)
+	List<String> data6 = CustomKeywords.'obtener_excels.obtener_despacho.getValuesExcelDespach'(Index)
 	Idioma = data6[0]
 }
 

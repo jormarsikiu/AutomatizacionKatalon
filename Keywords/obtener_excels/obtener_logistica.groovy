@@ -22,11 +22,11 @@ import com.kms.katalon.core.configuration.RunConfiguration
 
 import internal.GlobalVariable
 
-public class obtener_despacho_20pies {
+public class obtener_logistica {
 	@Keyword
-	def List<String> getValuesExcelDespach(int index) {
+	def List<String> getValuesExcelLogistic(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Despacho_20pies.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 
@@ -35,7 +35,8 @@ public class obtener_despacho_20pies {
 		String Contrasena = excelData.getValue("Contrasena", index);
 		String IdPedido = excelData.getValue("IdPedido", index);
 		String Id_Cliente = excelData.getValue("Id_Cliente", index);
-		String CantProductos = excelData.getValue("CantProductos", index);
+		String IDCargo = excelData.getValue("IDCargo", index);
+		String IDCargo2 = excelData.getValue("IDCargo2", index);
 
 		List<String> data = [
 			Idioma,
@@ -43,7 +44,8 @@ public class obtener_despacho_20pies {
 			Contrasena,
 			IdPedido,
 			Id_Cliente,
-			CantProductos
+			IDCargo,
+			IDCargo2
 		]
 
 		return data

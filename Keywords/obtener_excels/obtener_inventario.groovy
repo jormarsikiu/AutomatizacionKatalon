@@ -6,8 +6,6 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
-import java.util.List
-
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -22,37 +20,25 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.core.testdata.reader.ExcelFactory
 import com.kms.katalon.core.configuration.RunConfiguration
 
-
 import internal.GlobalVariable
 
-public class obtener_aprobaciones_20pies {
+public class obtener_inventario {
 
 	@Keyword
-	def List<String> getValuesExcelAprob20(int index) {
+	def List<String> getValuesExcelInventary(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Inventario_20pies.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 
 		String Idioma = excelData.getValue("Idioma", index);
 		String Usuario = excelData.getValue("Usuario", index);
 		String Contrasena = excelData.getValue("Contrasena", index);
-		String IdPedido = excelData.getValue("IdPedido", index);
-		String Id_Cliente = excelData.getValue("Id_Cliente", index);
-		String AprobVentas = excelData.getValue("Aprob. Ventas", index);
-		String AprobFinanciera = excelData.getValue("Aprob. Financiera", index);
-		String AprobProduccion = excelData.getValue("Aprob. Produccion", index);
+		String CodProducto = excelData.getValue("CodProducto", index);
+		String Cantidad = excelData.getValue("Cantidad", index);
 
-		List<String> data = [
-			Idioma,
-			Usuario,
-			Contrasena,
-			IdPedido,
-			Id_Cliente,
-			AprobVentas,
-			AprobFinanciera,
-			AprobProduccion
-		]
+
+		List<String> data = [Idioma, Usuario, Contrasena, CodProducto, Cantidad]
 
 		return data
 	}

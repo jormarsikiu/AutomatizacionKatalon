@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>4-GenerarProduccion_20pies_TestSuites</name>
+   <name>6-Despachar_TestSuites</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -9,41 +9,47 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>4fb61eaa-9467-4e95-ac69-c6350def221e</testSuiteGuid>
+   <testSuiteGuid>21cc7c29-391f-4ec8-9d93-62159f96d840</testSuiteGuid>
    <testCaseLink>
-      <guid>32675ce7-d2ad-4e9a-86e5-545b7f8f4431</guid>
+      <guid>29ce1e78-6553-4aa2-86d3-50317d71a8b1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Despachar_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3cfccd5e-7cdf-4658-a7d4-a33718e168a0</guid>
+      <guid>602b4ce2-c0a7-455e-ab10-162ecf302c91</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Despachar_20pies</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>8e2df030-a28e-47c8-888c-bbd77bd1ec4e</variableId>
+         <variableId>0fc82bd5-9929-4689-97ca-d13c78270e98</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>ca5cb557-f7f1-453a-8994-832b591dc7af</variableId>
+         <variableId>1f696116-87df-4092-92d7-2d8953ef2da4</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>577a38d6-c645-42c7-8360-a114a529328d</variableId>
+         <variableId>97c770da-9151-4f2c-b7be-8c8ab8a9d3d4</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>3baf5a54-ce27-4a10-9783-7e2a9b8e084a</variableId>
+         <variableId>e52f68db-dace-4d04-9d2b-8ee81be90845</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bacfa159-4344-4ff5-bc05-024b60d0d77f</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

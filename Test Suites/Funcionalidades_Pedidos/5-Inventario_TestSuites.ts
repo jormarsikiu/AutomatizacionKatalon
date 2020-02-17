@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>3-AgregarLogistica_20_TestSuites</name>
+   <name>5-Inventario_TestSuites</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -9,59 +9,47 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
-   <testSuiteGuid>6a0225de-0408-4693-a134-f12a81a98597</testSuiteGuid>
+   <testSuiteGuid>5dc574ef-f849-478d-aef1-98340ed243b8</testSuiteGuid>
    <testCaseLink>
-      <guid>c3c00368-8635-44be-9ad9-999592b7c16e</guid>
+      <guid>6c94ca8b-2d4c-420d-8bcb-e24510f7766c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Inventario_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8ca0ecf6-af69-41a4-8c47-dc6f83daa9cd</guid>
+      <guid>60c98195-c50e-43eb-a3b8-f01b5fc5c54c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Inventario_20pies</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>d1232ff6-adac-417c-be89-e06530cf5ddd</variableId>
+         <variableId>9cda5e9b-e85c-4b36-991a-34eaf136ad27</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>76f6417f-47bf-492f-bb15-6d77326a5356</variableId>
+         <variableId>e71506c8-b054-4fec-8189-f794f07aabfd</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6f951296-9d30-4eca-bcaa-d8e03e7d3bae</variableId>
+         <variableId>474cdeda-903e-4c7b-b32f-c0df8231c026</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6e5c43c0-a274-474f-a3fb-881bb9c8064a</variableId>
+         <variableId>50e8741c-bf1e-4575-97f5-6d13dba620e4</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b1861e52-1f65-46ad-a520-85fb5861eb6f</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>3ede25ea-4b59-46b3-80dc-92c2545a1938</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>6e3562be-88cc-4030-aa76-40bd6889a1b0</variableId>
+         <variableId>04719b06-1d2c-4e93-a2f1-b844706ba2f5</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

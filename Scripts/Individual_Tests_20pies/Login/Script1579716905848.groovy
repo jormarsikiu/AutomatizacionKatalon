@@ -43,7 +43,7 @@ else if (Evento=="Crear40"){
 }
 
 else if (Evento=="Aprobar"){
-	List<String> data2 = CustomKeywords.'obtener_excels.obtener_aprobaciones_20pies.getValuesExcelAprob20'(Index)
+	List<String> data2 = CustomKeywords.'obtener_excels.obtener_aprobaciones.getValuesExcelAprob20'(Index)
 	String Usuario = data2[1]
 	String Contrasena = data2[2]
 	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
@@ -53,7 +53,7 @@ else if (Evento=="Aprobar"){
 	
 }
 else if (Evento=="Logistica"){
-	List<String> data3 = CustomKeywords.'obtener_excels.obtener_logistica_20pies.getValuesExcelLogistic'(Index)
+	List<String> data3 = CustomKeywords.'obtener_excels.obtener_logistica.getValuesExcelLogistic'(Index)
 	String Usuario = data3[1]
 	String Contrasena = data3[2]
 	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
@@ -62,7 +62,7 @@ else if (Evento=="Logistica"){
 	
 }
 else if (Evento=="Produccion"){
-	List<String> data4 = CustomKeywords.'obtener_excels.obtener_produccion_20pies.getValuesExcelProduction'(Index)
+	List<String> data4 = CustomKeywords.'obtener_excels.obtener_produccion.getValuesExcelProduction'(Index)
 	String Usuario = data4[1]
 	String Contrasena = data4[2]
 	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
@@ -70,7 +70,7 @@ else if (Evento=="Produccion"){
 	WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
 }	
 else if (Evento=="Inventario"){
-	List<String> data5 = CustomKeywords.'obtener_excels.obtener_inventario_20pies.getValuesExcelInventary'(Index)
+	List<String> data5 = CustomKeywords.'obtener_excels.obtener_inventario.getValuesExcelInventary'(Index)
 	String Usuario = data5[1]
 	String Contrasena = data5[2]
 	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
@@ -79,7 +79,7 @@ else if (Evento=="Inventario"){
 	
 }
 else if (Evento=="Despacho"){
-	List<String> data6 = CustomKeywords.'obtener_excels.obtener_despacho_20pies.getValuesExcelDespach'(Index)
+	List<String> data6 = CustomKeywords.'obtener_excels.obtener_despacho.getValuesExcelDespach'(Index)
 	String Usuario = data6[1]
 	String Contrasena = data6[2]
 	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
