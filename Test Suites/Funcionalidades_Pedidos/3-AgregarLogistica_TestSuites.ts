@@ -14,13 +14,13 @@
       <guid>c3c00368-8635-44be-9ad9-999592b7c16e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_CargosLogisticos</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8ca0ecf6-af69-41a4-8c47-dc6f83daa9cd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

@@ -14,13 +14,13 @@
       <guid>29ce1e78-6553-4aa2-86d3-50317d71a8b1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Despachar_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Despachar</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>602b4ce2-c0a7-455e-ab10-162ecf302c91</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Despachar_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Despachar</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

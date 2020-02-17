@@ -14,13 +14,13 @@
       <guid>6c94ca8b-2d4c-420d-8bcb-e24510f7766c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Inventario_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Inventario</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>60c98195-c50e-43eb-a3b8-f01b5fc5c54c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Inventario_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Inventario</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

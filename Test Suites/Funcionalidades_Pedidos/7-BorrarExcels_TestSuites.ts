@@ -14,6 +14,6 @@
       <guid>1fed8009-57cd-4fa3-bb5a-4bf662eaafc0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Remover_pedidos_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Remover_pedidos</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

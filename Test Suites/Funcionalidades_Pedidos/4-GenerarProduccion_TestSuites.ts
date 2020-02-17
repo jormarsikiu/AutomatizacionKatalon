@@ -14,13 +14,13 @@
       <guid>32675ce7-d2ad-4e9a-86e5-545b7f8f4431</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Produccion</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3cfccd5e-7cdf-4658-a7d4-a33718e168a0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion_20pies</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
