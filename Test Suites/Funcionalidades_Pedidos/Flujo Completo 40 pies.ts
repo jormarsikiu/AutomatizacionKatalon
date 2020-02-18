@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>f9d02c02-1aa2-4c8b-8ba0-2c72c394c326</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Pedidos_40pies</testCaseId>
    </testCaseLink>
    <testCaseLink>

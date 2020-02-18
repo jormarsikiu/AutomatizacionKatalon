@@ -138,7 +138,7 @@ if (boton == 'block') {
 			
 			CantidadRestante=CapacidadDisponible-CantidadAñadida
 			
-			Elementos=CantidadRestante/PesoProducto2
+			Elementos=CantidadRestante/PesoProducto
 			
 			String Cantidad2=Elementos.toString()
 
