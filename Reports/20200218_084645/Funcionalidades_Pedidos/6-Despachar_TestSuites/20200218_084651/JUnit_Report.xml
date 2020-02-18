@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="6-Despachar_TestSuites" time="5.39" tests="2" failures="0" errors="1">
+   <testsuite name="6-Despachar_TestSuites" tests="2" failures="0" errors="1" time="5.39" timestamp="2020-02-18 08:47:43" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/6-Despachar_TestSuites">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200218_084645\\Funcionalidades_Pedidos\\6-Despachar_TestSuites\\20200218_084651"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200218_084645\\Funcionalidades_Pedidos\\6-Despachar_TestSuites\\20200218_084651\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_Despachar" time="4.231" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_Despachar" status="PASSED">
+         <system-out><![CDATA[2020-02-18 08:47:43 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_Despachar: Test Cases/Secuencias de Ejecucion/TC_Generar_Despachar
+
+2020-02-18 08:47:44 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("Despacho"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-02-18 08:47:47 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Despachar" time="0.725" classname="Test Cases/Secuencias de Ejecucion/TC_Despachar" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Despachar FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Despacho_20pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Despachar.run(TC_Despachar:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582030011771.run(TempTestSuite1582030011771.groovy:36)
+"/>
+         <system-out><![CDATA[2020-02-18 08:47:47 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Despachar: Test Cases/Secuencias de Ejecucion/TC_Despachar FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Despacho_20pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Despachar.run(TC_Despachar:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582030011771.run(TempTestSuite1582030011771.groovy:36)
+
+
+2020-02-18 08:47:48 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Despacho_20pies.xlsx: null
+
+2020-02-18 08:47:48 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null]]></system-out>
+         <system-err><![CDATA[2020-02-18 08:47:47 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Despachar: Test Cases/Secuencias de Ejecucion/TC_Despachar FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Despacho_20pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Despachar.run(TC_Despachar:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582030011771.run(TempTestSuite1582030011771.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-18 08:47:43 - [TEST_SUITE][ERROR] - 6-Despachar_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Despachar FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Despacho_20pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Despachar.run(TC_Despachar:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582030011771.run(TempTestSuite1582030011771.groovy:36)]]></system-out>
+      <system-err><![CDATA[2020-02-18 08:47:43 - [TEST_SUITE][ERROR] - 6-Despachar_TestSuites: Test Cases/Secuencias de Ejecucion/TC_Despachar FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Despacho_20pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Despachar.run(TC_Despachar:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582030011771.run(TempTestSuite1582030011771.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

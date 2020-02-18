@@ -26,7 +26,6 @@ for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
 
 
 {
-	print(Index)
 	
 	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Inventario', ('Index') : Index, ('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
 

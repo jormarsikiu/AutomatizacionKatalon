@@ -18,9 +18,9 @@ try:
 	username = 'KAIZEN' 
 	password = 'SYSERP2016-9#' 
 	cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-	print ("Conecto")
+	print ("Conecto a la BD")
 except Exception as e:
-	print ("No Conecto")
+	print ("No Conecto a la BD")
 	raise e
 
 #Consultas SQL a la base de datos
@@ -38,12 +38,12 @@ cliente = pd.read_excel(r"TestDataClient.xlsx")
 productoSoporta = pd.read_excel(r"TestDataProductSop.xlsx")
 productoNoSoporta = pd.read_excel(r"TestDataProductNo.xlsx")
 
-
 #Se crean dataframes a partir del excel
 df_cliente = pd.DataFrame(cliente, columns= ['IdCliente', 'IdDireccion', 'IdPuerto', 'CapacidadDescarga', 'CapacidadDisponible'])
 df_productoSoporta = pd.DataFrame(productoSoporta, columns= ['ProductoSoportaPeso', 'PesoProducto1'])
 df_productoNoSoporta =  pd.DataFrame(productoNoSoporta, columns= ['ProductoNoSoportaPeso','PesoProducto2'])
 
+#Se determina la longitud de filas de dataframe para que no se desborde
 long1=len(df_cliente)
 long2=len(df_productoSoporta)
 long3=len(df_productoNoSoporta)
@@ -62,7 +62,7 @@ if (long1<=long2):
 else:
 	n=long2
 
-
+#Se asignan los tamanos a los dataframes para evitar el desborde
 df_cliente = df_cliente.iloc[0:n]
 df_productoSoporta = df_productoSoporta.iloc[0:n]
 df_productoNoSoporta = df_productoNoSoporta.iloc[0:n]
@@ -72,7 +72,6 @@ df_productoNoSoporta = df_productoNoSoporta.iloc[0:n]
 df_fusion=pd.concat([df_cliente, df_productoSoporta, df_productoNoSoporta], axis=1)
 export_excel = df_fusion.to_excel (r'Testfusion.xlsx', index = None, header=True)
 n=n+1
-
 
 ############################################
 #Escribir el CIF y EXW
@@ -175,7 +174,47 @@ for j in range (0, len(df_aleatorio)):
 	else:
 		df_aleatorio.loc[j, 'Iterar'] = 2
 
-export_excel2 = df_aleatorio.to_excel (r'Pedidos/DataExcel/Crear_Pedido40pies.xlsx', index = None, header=True)
+#Determinar se marcan los exitosos
+for j in range (0, len(df_aleatorio)):
+		df_aleatorio.loc[j, 'Resultado'] = "Prueba exitosa"
+
+
+#Estadsticas: Crear el borrador al 20% de los pedidos
+df_aleatorio2=pd.DataFrame()
+df_aleatorio2=df_aleatorio
+longitud=1+len(df_aleatorio2)
+porcentaje = longitud*(0.20)
+porcentaje =int(porcentaje)
+longitud2=porcentaje + longitud
+
+#Selecciona data aleatoria para hacer el pedido borrador 
+lenn=len(df_aleatorio2)
+i=random.randint(1, lenn) 
+
+for i in range (longitud, longitud2):
+	df_aleatorio2.loc[i, 'Idioma']=df_aleatorio.loc[i, 'Idioma']
+	df_aleatorio2.loc[i, 'Usuario']=df_aleatorio.loc[i, 'Usuario']
+	df_aleatorio2.loc[i, 'Contrasena']=df_aleatorio.loc[i, 'Contrasena']
+	df_aleatorio2.loc[i, 'Contenedor']=df_aleatorio.loc[i, 'Contenedor']
+	df_aleatorio2.loc[i, 'Incoterms']=df_aleatorio.loc[i, 'Incoterms']
+	df_aleatorio2.loc[i, 'IdCliente']=df_aleatorio.loc[i, 'IdCliente']
+	df_aleatorio2.loc[i, 'IdDireccion']=df_aleatorio.loc[i, 'IdDireccion']
+	df_aleatorio2.loc[i, 'IdPuerto']=0
+	df_aleatorio2.loc[i, 'CapacidadDescarga']=0
+	df_aleatorio2.loc[i, 'CapacidadDisponible']=0
+	df_aleatorio2.loc[i, 'ProductoSoportaPeso']=0
+	df_aleatorio2.loc[i, 'PesoProducto1']=0
+	df_aleatorio2.loc[i, 'ProductoNoSoportaPeso']=0
+	df_aleatorio2.loc[i, 'PesoProducto2']=0
+	df_aleatorio2.loc[i, 'Iterar']=0
+	df_aleatorio2.loc[i, 'Resultado']= "Prueba fallida"
+
+#Crear dataframe con filas aleatorias
+df_aleatorio3=pd.DataFrame()
+nag=len(df_aleatorio2)
+df_aleatorio3 = df_aleatorio2.sample(nag)
+
+export_excel2 = df_aleatorio3.to_excel (r'Pedidos/DataExcel/Crear_Pedido40pies.xlsx', index = None, header=True)
 
 #Borrado de archivos
 os.remove('TestDataIdioma.xlsx')
@@ -187,6 +226,7 @@ os.remove('TestDataProductSop.xlsx')
 os.remove('Testfusion.xlsx')
 os.remove('TestDataUser.xlsx')
 
+#Se valida y se crea el archivo que necesita Katalon para guardar los pedidos
 if os.path.isfile("Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx"):
     print("Ya esta creado: Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
 else:

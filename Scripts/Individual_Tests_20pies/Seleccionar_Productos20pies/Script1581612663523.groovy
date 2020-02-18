@@ -33,9 +33,9 @@ int cantProductos = Iterado
 //Se guarda el id del pedido
 String IDPedidoCreado = WebUI.executeJavaScript('return document.getElementById(\'IdPedido\').value;', null)
 
-IDPedidoCreado = IDPedidoCreado.toInteger()
+int IDPedidoCreado1 = IDPedidoCreado.toInteger()
 
-CustomKeywords.'exportar_archivos.Ex_guardar_pedidos_creados.demoKey'(IDPedidoCreado, cantProductos)
+CustomKeywords.'exportar_archivos.Ex_guardar_pedidos_creados.demoKey'(IDPedidoCreado1, cantProductos)
 
 String boton = WebUI.executeJavaScript('return document.getElementById("btn_next").style.display;', null)
 

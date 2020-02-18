@@ -51,6 +51,8 @@ WebUI.delay(5)
 if (AprobacionVentas=="Aprobar"){
 
 	String variable = 'btn_aprobar_'+IDPedido
+	
+	print(variable)
 
 	WebUI.executeJavaScript("document.getElementById('$variable').click();", null)	
 

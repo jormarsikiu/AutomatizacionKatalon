@@ -18,19 +18,21 @@ import java.lang.Integer as Integer
 
 
 List<String> data = CustomKeywords.'obtener_excels.obtener_pedidos40pies.getValuesExcelCreate40'(Index)
-String ProductoSoportaPeso = data[9]
-String ProductoNoSoportaPeso = data[11]
+String IDProductoSoportaPeso = data[9]
+String IDProductoNoSoportaPeso = data[11]
 String Cantidad
 String Iterar = data[13]
 
 int CapacidadDisponible = (data[8]).toInteger()
 int PesoProducto = (data[10]).toInteger()
 int PesoProducto2 = (data[12]).toInteger()
-int CantidadSoportadaAbajo
+String CantidadBase
 int CantidadAñadida
 int CantidadRestante
 int Elementos
 int cantProductos = Iterar.toInteger()
+int CantidadSoporta
+int CantidadNoSoporta
 
 print(Iterar)
 
@@ -53,11 +55,11 @@ if (boton == 'block') {
 		
 		//Se añade un solo producto que soporta peso hasta que llene la capacidad de contenedor
 		
-		CantidadSoportadaAbajo=20
+		CantidadBase=GlobalVariable.CandidadSoporta40pies
 		
-		Cantidad = CantidadSoportadaAbajo.toString()
+		Cantidad = CantidadBase
 		
-		Producto = ProductoSoportaPeso
+		Producto = IDProductoSoportaPeso
 					
 		WebUI.click(findTestObject('Page_- KAIZEN/sp_Element_producto'))
 	
@@ -69,7 +71,9 @@ if (boton == 'block') {
 	
 		WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_add_product'))
 		
-		CantidadAñadida=20*PesoProducto
+		CantidadSoporta=Cantidad.toInteger()
+		
+		CantidadAñadida=CantidadSoporta*PesoProducto
 		
 		CantidadRestante=CapacidadDisponible-CantidadAñadida
 		
@@ -112,11 +116,11 @@ if (boton == 'block') {
 		/*Se añaden dos productos: 20 productos que No soportan peso y lo restante en productos
 		que Si soportan peso hasta que llegue a completar la capacidad del contenedor*/
 				
-			CantidadSoportadaAbajo=20
+			CantidadBase=GlobalVariable.CantidadNSoporta40pies
 			
-			Cantidad = CantidadSoportadaAbajo.toString()
+			Cantidad = CantidadBase
 			
-			Producto = ProductoNoSoportaPeso
+			Producto = IDProductoNoSoportaPeso
 			
 			WebUI.click(findTestObject('Page_- KAIZEN/sp_Element_producto'))
 			
@@ -128,7 +132,9 @@ if (boton == 'block') {
 			
 			WebUI.click(findTestObject('Page_- KAIZEN/sp_btn_add_product'))
 			
-			CantidadAñadida=20*PesoProducto2
+			CantidadNoSoporta=Cantidad.toInteger()
+			
+			CantidadAñadida=CantidadNoSoporta*PesoProducto2
 			
 			CantidadRestante=CapacidadDisponible-CantidadAñadida
 			
@@ -136,7 +142,7 @@ if (boton == 'block') {
 			
 			String Cantidad2=Elementos.toString()
 
-			Producto = ProductoSoportaPeso
+			Producto = IDProductoSoportaPeso
 					
 			WebUI.click(findTestObject('Page_- KAIZEN/sp_Element_producto'))
 			

@@ -28,7 +28,7 @@ public class ejecutarAleatoriosPython {
 	def runPython(String tipo){
 
 		if (tipo == 'Crear20'){
-			actual = "\\Pedidos\\Python\\CrearPedidosPython.py";
+			actual = "\\Pedidos\\Python\\CrearPedidosPython20pies.py";
 			System.out.println("Archivo: Pedidos/DataExcel/Crear_Pedido20pies.xlsx");
 		}
 		else if (tipo == 'Crear40'){
@@ -96,7 +96,7 @@ public class ejecutarAleatoriosPython {
 
 			} else {
 
-				System.out.println("No se puedo crear el archivo!. (Cierre el archivo o revise la instalación de python)");
+				System.out.println("\nNo se puedo crear el archivo!. \n\nPOSIBLES SOLUCIONES: \n1. Cierre el archivo. \n2. Revise la instalación de python. \n3. Error en el código de python\n");
 			}
 
 		} catch (IOException e) {
