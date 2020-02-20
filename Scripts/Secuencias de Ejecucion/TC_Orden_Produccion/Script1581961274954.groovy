@@ -23,13 +23,11 @@ String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Orden_Pr
 Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, 'Sheet1', true)
 
 for (def Index = 1; Index <= excelData.getRowNumbers(); Index++) {
-    WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Produccion', ('Index') : Index, ('Usuario') : Usuario
-            , ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Produccion', ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : 'Produccion', ('Index') : Index
-            , ('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : 'Produccion', ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-    WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Orden_Produccion'), [('Index') : Index, ('IDPedido') : IDPedido], FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Orden_Produccion'), [('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
 }
 

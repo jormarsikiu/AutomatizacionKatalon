@@ -1,0 +1,1407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Flujo Completo 20 pies" time="546.937" tests="11" failures="1" errors="1">
+   <testsuite name="Flujo Completo 20 pies" tests="11" failures="1" errors="1" time="546.937" timestamp="2020-02-20 16:32:39" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/Flujo Completo 20 pies">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200220_163231\\Funcionalidades_Pedidos\\Flujo Completo 20 pies\\20200220_163231"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200220_163231\\Funcionalidades_Pedidos\\Flujo Completo 20 pies\\20200220_163231\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200220_163231\\Funcionalidades_Pedidos\\Flujo Completo 20 pies\\20200220_163231\\1582231270474.png"/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.116"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="11bcbc28eaffc73fde2234bb4fd450e8"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas" time="116.246" classname="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas" status="PASSED">
+         <system-out><![CDATA[2020-02-20 16:32:40 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas: Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas
+
+2020-02-20 16:32:40 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx: null
+
+2020-02-20 16:32:40 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-20 16:32:42 - [TEST_STEP][PASSED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully
+
+2020-02-20 16:32:42 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Aprobar", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-20 16:32:42 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-20 16:32:43 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-20 16:32:43 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-20 16:32:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-20 16:32:43 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-02-20 16:33:39 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-20 16:33:39 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-20 16:33:40 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-20 16:33:40 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-20 16:33:40 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-20 16:33:40 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:33:40 - [TEST_STEP][PASSED] - data2 = obtener_excels.obtener_aprobaciones.getValuesExcelAprob20(Index): obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:33:41 - [MESSAGE][PASSED] - obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:33:41 - [TEST_STEP][PASSED] - Usuario = data2[1]: null
+
+2020-02-20 16:33:41 - [TEST_STEP][PASSED] - Contrasena = data2[2]: null
+
+2020-02-20 16:33:41 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-20 16:33:42 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-20 16:33:42 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-20 16:33:42 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-20 16:33:42 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:33:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:33:47 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-20 16:33:47 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Aprobar", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-20 16:33:48 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-20 16:33:48 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-02-20 16:33:48 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-20 16:33:48 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-20 16:33:48 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-20 16:33:48 - [TEST_STEP][PASSED] - data2 = obtener_excels.obtener_aprobaciones.getValuesExcelAprob20(Index): obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:33:48 - [MESSAGE][PASSED] - obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:33:48 - [TEST_STEP][PASSED] - Idioma = data2[0]: null
+
+2020-02-20 16:33:48 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-20 16:33:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-20 16:33:49 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-20 16:33:49 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:33:49 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:33:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:33:52 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Aprobacion_Ventas"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully
+
+2020-02-20 16:33:52 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Aprobacion_Ventas: Test Cases/Individual_Tests_20pies/Aprobacion_Ventas
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_aprobaciones.getValuesExcelAprob20(Index): obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:33:52 - [MESSAGE][PASSED] - obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - Id_Cliente = data[4]: null
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - AprobVentas = data[5]: null
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - print(Id_Cliente + "
+"): null
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - print(AprobVentas + "
+"): null
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - IDCliente = Id_Cliente: null
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - AprobacionVentas = AprobVentas: null
+
+2020-02-20 16:33:52 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_ventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-02-20 16:33:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_ventas' is clicked on
+
+2020-02-20 16:33:53 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/av_btn_aprobacinventas")): Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-02-20 16:34:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/av_btn_aprobacinventas' is clicked on
+
+2020-02-20 16:34:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-02-20 16:34:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_aprobacionventas' is clicked on
+
+2020-02-20 16:34:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-02-20 16:34:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_seleccione_cliente' is clicked on
+
+2020-02-20 16:34:09 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-02-20 16:34:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_click_seleccione_cliente' is clicked on
+
+2020-02-20 16:34:09 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente"), IDCliente, true): All options with value '1' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-02-20 16:34:11 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_assing_seleccione_cliente'  using regular expression
+
+2020-02-20 16:34:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-02-20 16:34:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_Buscar' is clicked on
+
+2020-02-20 16:34:20 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-02-20 16:34:25 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-02-20 16:34:25 - [TEST_STEP][PASSED] - if (AprobacionVentas == "Aprobar"): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-02-20 16:34:25 - [TEST_STEP][PASSED] - variable = "btn_aprobar_" + IDPedido: null
+
+2020-02-20 16:34:25 - [TEST_STEP][PASSED] - print(variable): null
+
+2020-02-20 16:34:25 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('$variable').click();, null): Execute JavaScript 'document.getElementById('btn_aprobar_252').click();' successfully
+
+2020-02-20 16:34:25 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('btn_aprobar_252').click();' successfully
+
+2020-02-20 16:34:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar")): Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-02-20 16:34:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Ventas - KAIZEN/av_btn_aceptar' is clicked on
+
+2020-02-20 16:34:26 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2020-02-20 16:34:36 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2020-02-20 16:34:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Ventas' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Financiera" time="125.831" classname="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Financiera" status="PASSED">
+         <system-out><![CDATA[2020-02-20 16:34:36 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Aprobar_Financiera: Test Cases/Secuencias de Ejecucion/TC_Aprobar_Financiera
+
+2020-02-20 16:34:36 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx: null
+
+2020-02-20 16:34:36 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-20 16:34:36 - [TEST_STEP][PASSED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Financiera' successfully
+
+2020-02-20 16:34:36 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Aprobar", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-20 16:34:36 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-20 16:34:36 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-20 16:34:36 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-20 16:34:37 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-20 16:34:38 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-20 16:35:39 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-20 16:35:39 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-20 16:35:40 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-20 16:35:40 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-20 16:35:40 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-20 16:35:40 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:35:40 - [TEST_STEP][PASSED] - data2 = obtener_excels.obtener_aprobaciones.getValuesExcelAprob20(Index): obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:35:40 - [MESSAGE][PASSED] - obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:35:40 - [TEST_STEP][PASSED] - Usuario = data2[1]: null
+
+2020-02-20 16:35:40 - [TEST_STEP][PASSED] - Contrasena = data2[2]: null
+
+2020-02-20 16:35:40 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-20 16:35:42 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-20 16:35:42 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-20 16:35:42 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-20 16:35:42 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:35:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:35:47 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-20 16:35:47 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Aprobar", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-20 16:35:47 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-20 16:35:47 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-02-20 16:35:47 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-20 16:35:47 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-20 16:35:47 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-20 16:35:47 - [TEST_STEP][PASSED] - data2 = obtener_excels.obtener_aprobaciones.getValuesExcelAprob20(Index): obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:35:47 - [MESSAGE][PASSED] - obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:35:47 - [TEST_STEP][PASSED] - Idioma = data2[0]: null
+
+2020-02-20 16:35:47 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-20 16:35:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-20 16:35:48 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-20 16:35:48 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:35:48 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:35:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:35:52 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-20 16:35:52 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Aprobacion_Financiera"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Financiera' successfully
+
+2020-02-20 16:35:52 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Aprobacion_Financiera: Test Cases/Individual_Tests_20pies/Aprobacion_Financiera
+
+2020-02-20 16:35:52 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_aprobaciones.getValuesExcelAprob20(Index): obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:35:52 - [MESSAGE][PASSED] - obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:35:52 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-20 16:35:52 - [TEST_STEP][PASSED] - Id_Cliente = data[4]: null
+
+2020-02-20 16:35:52 - [TEST_STEP][PASSED] - AprobFinanciera = data[6]: null
+
+2020-02-20 16:35:52 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-20 16:35:52 - [TEST_STEP][PASSED] - IDCliente = Id_Cliente: null
+
+2020-02-20 16:35:52 - [TEST_STEP][PASSED] - AprobacionFinanciera = AprobFinanciera: null
+
+2020-02-20 16:35:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/af_btn_Crdito y Cobranza")): Object: 'Object Repository/Page_- KAIZEN/af_btn_Crdito y Cobranza' is clicked on
+
+2020-02-20 16:35:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/af_btn_Crdito y Cobranza' is clicked on
+
+2020-02-20 16:35:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/af_btn_Aprobacin Financiera")): Object: 'Object Repository/Page_- KAIZEN/af_btn_Aprobacin Financiera' is clicked on
+
+2020-02-20 16:36:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/af_btn_Aprobacin Financiera' is clicked on
+
+2020-02-20 16:36:07 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacion Financiera - KAIZEN/af_click_Aprobacin Financiera")): Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_click_Aprobacin Financiera' is clicked on
+
+2020-02-20 16:36:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_click_Aprobacin Financiera' is clicked on
+
+2020-02-20 16:36:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacion Financiera - KAIZEN/af_btn_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_btn_seleccione_cliente' is clicked on
+
+2020-02-20 16:36:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_btn_seleccione_cliente' is clicked on
+
+2020-02-20 16:36:09 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacion Financiera - KAIZEN/af_click_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_click_seleccione_cliente' is clicked on
+
+2020-02-20 16:36:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_click_seleccione_cliente' is clicked on
+
+2020-02-20 16:36:09 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Page_Aprobacion Financiera - KAIZEN/af_assing_seleccione_cliente"), IDCliente, true): All options with value '1' are selected in object 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_assing_seleccione_cliente'  using regular expression
+
+2020-02-20 16:36:11 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_assing_seleccione_cliente'  using regular expression
+
+2020-02-20 16:36:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacion Financiera - KAIZEN/af_btn_Buscar")): Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_btn_Buscar' is clicked on
+
+2020-02-20 16:36:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_btn_Buscar' is clicked on
+
+2020-02-20 16:36:26 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-02-20 16:36:31 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-02-20 16:36:31 - [TEST_STEP][PASSED] - if (AprobacionFinanciera == "Aprobar"): Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_btn_Aceptar' is clicked on
+
+2020-02-20 16:36:31 - [TEST_STEP][PASSED] - variable = "btn_aprobar_" + IDPedido: null
+
+2020-02-20 16:36:31 - [TEST_STEP][PASSED] - executeJavaScript(document.getElementById('$variable').click();, null): Execute JavaScript 'document.getElementById('btn_aprobar_252').click();' successfully
+
+2020-02-20 16:36:31 - [MESSAGE][PASSED] - Execute JavaScript 'document.getElementById('btn_aprobar_252').click();' successfully
+
+2020-02-20 16:36:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_Aprobacion Financiera - KAIZEN/af_btn_Aceptar")): Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_btn_Aceptar' is clicked on
+
+2020-02-20 16:36:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacion Financiera - KAIZEN/af_btn_Aceptar' is clicked on
+
+2020-02-20 16:36:32 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2020-02-20 16:36:42 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2020-02-20 16:36:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Financiera' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Produccion" time="140.09" classname="Test Cases/Secuencias de Ejecucion/TC_Aprobar_Produccion" status="PASSED">
+         <system-out><![CDATA[2020-02-20 16:36:42 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Aprobar_Produccion: Test Cases/Secuencias de Ejecucion/TC_Aprobar_Produccion
+
+2020-02-20 16:36:42 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx: null
+
+2020-02-20 16:36:42 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-20 16:36:42 - [TEST_STEP][PASSED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Produccion' successfully
+
+2020-02-20 16:36:42 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Aprobar", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-20 16:36:42 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-20 16:36:42 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-20 16:36:42 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-20 16:36:42 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-20 16:36:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-20 16:37:27 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-20 16:37:27 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-20 16:37:28 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-20 16:37:28 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-20 16:37:28 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-20 16:37:28 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:37:28 - [TEST_STEP][PASSED] - data2 = obtener_excels.obtener_aprobaciones.getValuesExcelAprob20(Index): obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:37:28 - [MESSAGE][PASSED] - obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:37:28 - [TEST_STEP][PASSED] - Usuario = data2[1]: null
+
+2020-02-20 16:37:28 - [TEST_STEP][PASSED] - Contrasena = data2[2]: null
+
+2020-02-20 16:37:28 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-20 16:37:29 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-20 16:37:29 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-20 16:37:30 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-20 16:37:30 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:37:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:37:39 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Aprobar", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-20 16:37:39 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - data2 = obtener_excels.obtener_aprobaciones.getValuesExcelAprob20(Index): obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:37:39 - [MESSAGE][PASSED] - obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - Idioma = data2[0]: null
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-20 16:37:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:37:39 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:37:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:37:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-20 16:37:42 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Aprobacion_Produccion"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Produccion' successfully
+
+2020-02-20 16:37:42 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Aprobacion_Produccion: Test Cases/Individual_Tests_20pies/Aprobacion_Produccion
+
+2020-02-20 16:37:43 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_aprobaciones.getValuesExcelAprob20(Index): obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:37:43 - [MESSAGE][PASSED] - obtener_excels.obtener_aprobaciones.getValuesExcelAprob20 is PASSED
+
+2020-02-20 16:37:43 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-20 16:37:43 - [TEST_STEP][PASSED] - Id_Cliente = data[4]: null
+
+2020-02-20 16:37:43 - [TEST_STEP][PASSED] - AprobProduccion = data[7]: null
+
+2020-02-20 16:37:43 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-20 16:37:43 - [TEST_STEP][PASSED] - IDCliente = Id_Cliente: null
+
+2020-02-20 16:37:43 - [TEST_STEP][PASSED] - AprobacionProduccion = AprobProduccion: null
+
+2020-02-20 16:37:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/apo_menuOperaciones")): Object: 'Object Repository/Page_- KAIZEN/apo_menuOperaciones' is clicked on
+
+2020-02-20 16:37:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/apo_menuOperaciones' is clicked on
+
+2020-02-20 16:37:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/apo_menu_aprobacion_produccin")): Object: 'Object Repository/Page_- KAIZEN/apo_menu_aprobacion_produccin' is clicked on
+
+2020-02-20 16:38:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/apo_menu_aprobacion_produccin' is clicked on
+
+2020-02-20 16:38:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_click_aprobacion_produccin")): Object: 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_click_aprobacion_produccin' is clicked on
+
+2020-02-20 16:38:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_click_aprobacion_produccin' is clicked on
+
+2020-02-20 16:38:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_seleccione_cliente")): Object: 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_seleccione_cliente' is clicked on
+
+2020-02-20 16:38:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_seleccione_cliente' is clicked on
+
+2020-02-20 16:38:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_click_selecione_cliente")): Object: 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_click_selecione_cliente' is clicked on
+
+2020-02-20 16:38:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_click_selecione_cliente' is clicked on
+
+2020-02-20 16:38:12 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_assing_selecione_cliente"), IDCliente, true): All options with value '1' are selected in object 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_assing_selecione_cliente'  using regular expression
+
+2020-02-20 16:38:14 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_assing_selecione_cliente'  using regular expression
+
+2020-02-20 16:38:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_Buscar")): Object: 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_Buscar' is clicked on
+
+2020-02-20 16:38:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Aprobacin de Produccin - KAIZEN/apo_Buscar' is clicked on
+
+2020-02-20 16:38:27 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-info[href="/PedidoLubricante/DetalleAprobacion/" + IDPedido + "?Ventana=3"]').click()", null): Execute JavaScript 'document.querySelector('.btn-info[href="/PedidoLubricante/DetalleAprobacion/252?Ventana=3"]').click()' successfully
+
+2020-02-20 16:38:33 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-info[href="/PedidoLubricante/DetalleAprobacion/252?Ventana=3"]').click()' successfully
+
+2020-02-20 16:38:33 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-02-20 16:38:38 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-02-20 16:38:38 - [TEST_STEP][PASSED] - if (AprobacionProduccion == "Aprobar"): Object: 'Object Repository/Page_- KAIZEN/apo_btn_Aceptar' is clicked on
+
+2020-02-20 16:38:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/apo_Aprobar")): Object: 'Object Repository/Page_- KAIZEN/apo_Aprobar' is clicked on
+
+2020-02-20 16:38:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/apo_Aprobar' is clicked on
+
+2020-02-20 16:38:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/apo_btn_Aceptar")): Object: 'Object Repository/Page_- KAIZEN/apo_btn_Aceptar' is clicked on
+
+2020-02-20 16:38:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/apo_btn_Aceptar' is clicked on
+
+2020-02-20 16:38:52 - [TEST_STEP][PASSED] - delay(10): Delayed 10 second(s)
+
+2020-02-20 16:39:02 - [MESSAGE][PASSED] - Delayed 10 second(s)
+
+2020-02-20 16:39:02 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Aprobacion_Produccion' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_CargosLogisticos" time="7.412" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_CargosLogisticos" status="PASSED">
+         <system-out><![CDATA[2020-02-20 16:39:02 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_CargosLogisticos: Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_CargosLogisticos
+
+2020-02-20 16:39:02 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("Logistica"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-02-20 16:39:09 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" time="120.919" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+"/>
+         <system-out><![CDATA[2020-02-20 16:39:10 - [TEST_CASE][FAILED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2020-02-20 16:39:10 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx: null
+
+2020-02-20 16:39:10 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-20 16:39:10 - [TEST_STEP][FAILED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2020-02-20 16:39:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Login"), ["Evento":"Logistica", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-20 16:39:10 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Login: Test Cases/Individual_Tests_20pies/Login
+
+2020-02-20 16:39:10 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-20 16:39:10 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-20 16:39:10 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-20 16:39:11 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-20 16:40:20 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-20 16:40:20 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-20 16:40:21 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-20 16:40:21 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-20 16:40:21 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-20 16:40:21 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-20 16:40:21 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:40:21 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica.getValuesExcelLogistic is PASSED
+
+2020-02-20 16:40:21 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica.getValuesExcelLogistic is PASSED
+
+2020-02-20 16:40:21 - [TEST_STEP][PASSED] - Usuario = data3[1]: null
+
+2020-02-20 16:40:21 - [TEST_STEP][PASSED] - Contrasena = data3[2]: null
+
+2020-02-20 16:40:21 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-20 16:40:22 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-20 16:40:22 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-20 16:40:23 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-20 16:40:23 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:40:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-20 16:40:32 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Login' successfully
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests_20pies/Seleccionar_Idioma"), ["Evento":"Logistica", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-20 16:40:32 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests_20pies/Seleccionar_Idioma: Test Cases/Individual_Tests_20pies/Seleccionar_Idioma
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - data3 = obtener_excels.obtener_logistica.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica.getValuesExcelLogistic is PASSED
+
+2020-02-20 16:40:32 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica.getValuesExcelLogistic is PASSED
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - Idioma = data3[0]: null
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-20 16:40:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:40:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:40:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-20 16:40:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests_20pies/Seleccionar_Idioma' successfully
+
+2020-02-20 16:40:36 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests_20pies/Agregar_Logistica"), ["Index":Index], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2020-02-20 16:40:36 - [TEST_CASE][FAILED] - Test Cases/Individual_Tests_20pies/Agregar_Logistica: Test Cases/Individual_Tests_20pies/Agregar_Logistica FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_logistica.getValuesExcelLogistic(Index): obtener_excels.obtener_logistica.getValuesExcelLogistic is PASSED
+
+2020-02-20 16:40:36 - [MESSAGE][PASSED] - obtener_excels.obtener_logistica.getValuesExcelLogistic is PASSED
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - IdPedido = data[3]: null
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - Id_Cliente = data[4]: null
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - IDCargo = data[5]: null
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - IDCargo2 = data[6]: null
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - IDPedido = IdPedido: null
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - IDCliente = Id_Cliente: null
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - IDCargo = IDCargo: null
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - IDCargo2 = IDCargo2: null
+
+2020-02-20 16:40:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_menu_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-20 16:40:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_menu_operaciones' is clicked on
+
+2020-02-20 16:40:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_click_operaciones")): Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-20 16:40:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_click_operaciones' is clicked on
+
+2020-02-20 16:40:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-20 16:40:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_operaciones_logistica' is clicked on
+
+2020-02-20 16:40:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-20 16:40:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_btn_seleccione_cliente' is clicked on
+
+2020-02-20 16:40:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-20 16:40:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_click_seleccione_cliente' is clicked on
+
+2020-02-20 16:40:45 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente"), IDCliente, true): All options with value '1' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-20 16:40:47 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Logstica - KAIZEN/lg_assing_seleccione_cliente'  using regular expression
+
+2020-02-20 16:40:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido")): Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-20 16:41:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Logstica - KAIZEN/lg_Buscar_pedido' is clicked on
+
+2020-02-20 16:41:01 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/" + IDPedido + ""]').click()", null): Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/252"]').click()' successfully
+
+2020-02-20 16:41:07 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector('.btn-success[href="/PedidoLubricante/Verificacion/252"]').click()' successfully
+
+2020-02-20 16:41:07 - [TEST_STEP][PASSED] - if (IDCargo == IDCargo2): null
+
+2020-02-20 16:41:07 - [TEST_STEP][FAILED] - else: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Script1580137396650.run(Script1580137396650.groovy:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1581961207239.run(Script1581961207239.groovy:31)
+	... 13 more
+)
+
+2020-02-20 16:41:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-20 16:41:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_seleccione_cargos_logsticos' is clicked on
+
+2020-02-20 16:41:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos")): Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-20 16:41:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/lg_btn_click_cargos_logsticos' is clicked on
+
+2020-02-20 16:41:09 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos"), IDCargo, true): All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-20 16:41:10 - [MESSAGE][PASSED] - All options with value '21' are selected in object 'Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'  using regular expression
+
+2020-02-20 16:41:10 - [TEST_STEP][FAILED] - setText(findTestObject("Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO"), Sello): Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Script1580137396650.run(Script1580137396650.groovy:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1581961207239.run(Script1581961207239.groovy:31)
+	... 13 more
+)
+
+2020-02-20 16:41:10 - [MESSAGE][FAILED] - Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Script1580137396650.run(Script1580137396650.groovy:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1581961207239.run(Script1581961207239.groovy:31)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200220_163231\\Funcionalidades_Pedidos\\Flujo Completo 20 pies\\20200220_163231\\1582231270474.png]]
+
+2020-02-20 16:41:10 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)]]></system-out>
+         <system-err><![CDATA[2020-02-20 16:39:10 - [TEST_CASE][FAILED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Produccion" time="13.479" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Produccion" status="PASSED">
+         <system-out><![CDATA[2020-02-20 16:41:10 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Produccion: Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Produccion
+
+2020-02-20 16:41:11 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("Produccion"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-02-20 16:41:24 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion" time="0.323" classname="Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion" status="PASSED">
+         <system-out><![CDATA[2020-02-20 16:41:24 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion: Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion
+
+2020-02-20 16:41:24 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Orden_Produccion_20pies.xlsx: null
+
+2020-02-20 16:41:24 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-20 16:41:24 - [TEST_STEP][PASSED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Inventario" time="9.817" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Inventario" status="PASSED">
+         <system-out><![CDATA[2020-02-20 16:41:24 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Inventario: Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Inventario
+
+2020-02-20 16:41:25 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("Inventario"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-02-20 16:41:34 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Inventario" time="0.25" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Inventario" status="PASSED">
+         <system-out><![CDATA[2020-02-20 16:41:34 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Inventario
+
+2020-02-20 16:41:34 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Inventario_20pies.xlsx: null
+
+2020-02-20 16:41:34 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-20 16:41:34 - [TEST_STEP][PASSED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Despachar" time="10.522" classname="Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Despachar" status="PASSED">
+         <system-out><![CDATA[2020-02-20 16:41:34 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Despachar: Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Despachar
+
+2020-02-20 16:41:35 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("Despacho"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-02-20 16:41:45 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Despachar" time="0.315" classname="Test Cases/Secuencias de Ejecucion/TC_Despachar" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Despachar FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: getProjectDir for class: com.kms.katalon.core.configuration.RunConfiguration
+	at TC_Despachar.run(TC_Despachar:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+"/>
+         <system-out><![CDATA[2020-02-20 16:41:45 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Despachar: Test Cases/Secuencias de Ejecucion/TC_Despachar FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: getProjectDir for class: com.kms.katalon.core.configuration.RunConfiguration
+	at TC_Despachar.run(TC_Despachar:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+
+
+2020-02-20 16:41:45 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Despacho_20pies.xlsx: null]]></system-out>
+         <system-err><![CDATA[2020-02-20 16:41:45 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Despachar: Test Cases/Secuencias de Ejecucion/TC_Despachar FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: getProjectDir for class: com.kms.katalon.core.configuration.RunConfiguration
+	at TC_Despachar.run(TC_Despachar:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-20 16:32:39 - [TEST_SUITE][FAILED] - Flujo Completo 20 pies: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-out>
+      <system-err><![CDATA[2020-02-20 16:32:39 - [TEST_SUITE][FAILED] - Flujo Completo 20 pies: Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests_20pies/Agregar_Logistica' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Cargos_Logisticos.run(TC_Agregar_Cargos_Logisticos:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582230756320.run(TempTestSuite1582230756320.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to set text 'null' of object 'Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:66)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at Agregar_Logistica.run(Agregar_Logistica:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.lang.IllegalArgumentException: Text is null
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.doCall(SetTextKeyword.groovy:48)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword$_setText_closure1.call(SetTextKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-err>
+   </testsuite>
+</testsuites>

@@ -87,3 +87,13 @@ else if (Evento=="Despacho"){
 	WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
 	
 }
+
+else if (Evento=="MovimientoDeInventario"){
+	List<String> data7 = CustomKeywords.'obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario'(Index)
+	String Usuario = data7[1]
+	String Contrasena = data7[2]
+	WebUI.setText(findTestObject('Page_Iniciar Sesion - KAIZEN/is_input_email'), Usuario)
+	WebUI.setEncryptedText(findTestObject('Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'), Contrasena)
+	WebUI.click(findTestObject('Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema'))
+	
+}

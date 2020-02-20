@@ -25,21 +25,18 @@ for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
 
 {
 	
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : "Crear20", ('Index') : Index, ('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Anadir_pedido'), [:], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Cliente'), [('Evento') : "Crear20", ('Index') : Index, ('Nombre') : Nombre, ('Direccion') : Direccion
-        , ('Contenedor') : Contenedor], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Cliente'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Incoterm'), [('Evento') : "Crear20", ('Index') : Index, ('Incoterm') : Incoterm], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Incoterm'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Opcion_Compra'), [('Evento') : "Crear20", ('Index') : Index, ('OpCompra1') : OpCompra], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Opcion_Compra'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Productos20pies'), [('Index') : Index, ('Iterar') : Iterar, ('Presentacion') : Presentacion
-        , ('Producto') : Producto, ('Cantidad') : Cantidad, ('Presentacion2') : Presentacion2, ('Producto2') : Producto2
-        , ('Cantidad2') : Cantidad2], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Productos20pies'), [('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
 }

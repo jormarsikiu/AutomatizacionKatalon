@@ -14,20 +14,21 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testdata.reader.ExcelFactory
-import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.testdata.reader.ExcelFactory as ExcelFactory
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
 String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Despacho_20pies.xlsx"
 
-Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true)
+Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, 'Sheet1', true)
 
-for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
-{
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Despacho', ('Index') : Index, ('Usuario') : Usuario, ('Contrasena') : Contrasena], 
-    FailureHandling.STOP_ON_FAILURE)
+for (def Index = 1; Index <= excelData.getRowNumbers(); Index++) {
+    WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Despacho', ('Index') : Index, ('Usuario') : Usuario
+            , ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : 'Despacho', ('Index') : Index],  FailureHandling.STOP_ON_FAILURE)
+    WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : 'Despacho', ('Index') : Index], 
+        FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Despacho'), [('Index') : Index, ('IDPedido') : IDPedido, ('CantProductos') : CantProductos], FailureHandling.STOP_ON_FAILURE)
-
+    WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Despacho'), [('Index') : Index], 
+        FailureHandling.STOP_ON_FAILURE)
 }
+

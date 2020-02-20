@@ -22,7 +22,7 @@ if (Evento=="Crear20"){
 }
 else if (Evento=="Crear40"){
 	
-	OpCompra1=GlobalVariable.OpcionCompra40pies
+	OpCompra1=GlobalVariable.OpcionCompra
 }
 
 WebUI.delay(7)

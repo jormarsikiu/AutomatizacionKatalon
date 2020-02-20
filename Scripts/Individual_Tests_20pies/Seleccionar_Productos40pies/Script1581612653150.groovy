@@ -55,7 +55,7 @@ if (boton == 'block') {
 		
 		//Se añade un solo producto que soporta peso hasta que llene la capacidad de contenedor
 		
-		CantidadBase=GlobalVariable.CandidadSoporta40pies
+		CantidadBase=GlobalVariable.CandidadSoporta
 		
 		Cantidad = CantidadBase
 		
@@ -116,7 +116,7 @@ if (boton == 'block') {
 		/*Se añaden dos productos: 20 productos que No soportan peso y lo restante en productos
 		que Si soportan peso hasta que llegue a completar la capacidad del contenedor*/
 				
-			CantidadBase=GlobalVariable.CantidadNSoporta40pies
+			CantidadBase=GlobalVariable.CantidadNoSoporta
 			
 			Cantidad = CantidadBase
 			

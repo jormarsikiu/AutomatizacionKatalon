@@ -27,10 +27,10 @@ for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
 
 {
 	
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Inventario', ('Index') : Index, ('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Inventario', ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
 	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : 'Inventario', ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Inventario'), [('Index') : Index, ('CodigoProducto') : CodigoProducto, ('Cantidad') : Cantidad], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Inventario'), [('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
 }

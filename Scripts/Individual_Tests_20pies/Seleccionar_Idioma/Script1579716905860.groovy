@@ -45,6 +45,13 @@ else if (Evento=="Despacho"){
 	Idioma = data6[0]
 }
 
+else if (Evento=="MovimientoDeInventario"){
+	List<String> data7 = CustomKeywords.'obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario'(Index)
+	Idioma = data7[0]
+
+}
+
+
 WebUI.click(findTestObject('Page_- KAIZEN/si_btn_idioma'))
 
 if (Idioma == '0'){ 

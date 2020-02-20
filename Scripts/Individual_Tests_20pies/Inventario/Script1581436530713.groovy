@@ -28,10 +28,10 @@ WebUI.click(findTestObject('Object Repository/Page_Agregar Productos - KAIZEN/iv
 
 WebUI.click(findTestObject('Object Repository/Page_Index - KAIZEN/iv_btn_Agregar_inventario'))
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/iv_select_concepto'), GlobalVariable.Concepto_inventario, 
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/iv_select_concepto'), GlobalVariable.Concepto, 
     true)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/iv_select_motivo'), GlobalVariable.Motivo_inventario, 
+WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/iv_select_motivo'), GlobalVariable.Motivo, 
     true)
 
 WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/iv_btn_Buscar Producto'))

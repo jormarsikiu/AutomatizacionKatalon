@@ -53,11 +53,11 @@ if (IDCargo == IDCargo2) {
     WebUI.selectOptionByValue(findTestObject('Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'), IDCargo, 
         true)
 
-    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'), GlobalVariable.Sello_CargoLogistico)
+    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'), GlobalVariable.Sello)
 
-    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'), GlobalVariable.Contenedor_CargoLogistico)
+    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'), GlobalVariable.Contenedor)
 
-    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'), GlobalVariable.Reserva_CargoLogistico)
+    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'), GlobalVariable.Reserva)
 
     WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos'))
 
@@ -67,7 +67,7 @@ if (IDCargo == IDCargo2) {
 
     WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico'))
 	
-	WebUI.executeJavaScript("document.getElementById('input$IDCargo').value='" +GlobalVariable.Valor_CargoLogistico +"'", null)
+	WebUI.executeJavaScript("document.getElementById('input$IDCargo').value='" +GlobalVariable.Valor +"'", null)
 	
   //  WebUI.executeJavaScript("document.getElementById('input' +$IDCargo).value='222.000'", null)
 	
@@ -81,11 +81,11 @@ if (IDCargo == IDCargo2) {
     WebUI.selectOptionByValue(findTestObject('Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'), IDCargo, 
         true)
 
-    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'), GlobalVariable.Sello_CargoLogistico)
+    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'), GlobalVariable.Sello)
 
-    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'), GlobalVariable.Contenedor_CargoLogistico)
+    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'), GlobalVariable.Contenedor)
 
-    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'), GlobalVariable.Reserva_CargoLogistico)
+    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'), GlobalVariable.Reserva)
 
     WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos'))
 
@@ -95,7 +95,7 @@ if (IDCargo == IDCargo2) {
 
     WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/lg_Agregar_cargo_logistico'))
 	
-	WebUI.executeJavaScript("document.getElementById('input$IDCargo').value='" +GlobalVariable.Valor_CargoLogistico +"'", null)
+	WebUI.executeJavaScript("document.getElementById('input$IDCargo').value='" +GlobalVariable.Valor +"'", null)
 		
     WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/lg_button_OK'))
 	
@@ -110,11 +110,11 @@ if (IDCargo == IDCargo2) {
     WebUI.selectOptionByValue(findTestObject('Object Repository/Page_- KAIZEN/lg_btn_assing_cargos_logsticos'), IDCargo2, 
         true)
 
-    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'), GlobalVariable.Sello_CargoLogistico2)
+    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_SELLO'), GlobalVariable.Sello2)
 
-    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'), GlobalVariable.Contenedor_CargoLogistico2)
+    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_CONTENEDOR'), GlobalVariable.Contenedor2)
 
-    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'), GlobalVariable.Reserva_CargoLogistico2)
+    WebUI.setText(findTestObject('Object Repository/Page_- KAIZEN/lg_input_Agregar_NRO_RESERVA'), GlobalVariable.Reserva2)
 
     WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/lg_btn_Seleccione_naviera_cargos'))
 
@@ -126,7 +126,7 @@ if (IDCargo == IDCargo2) {
 
     //WebUI.executeJavaScript("document.getElementById('input' +$IDCargo2).value='444.000'", null)
 	
-	WebUI.executeJavaScript("document.getElementById('input$IDCargo2').value='" +GlobalVariable.Valor_CargoLogistico2 +"'", null)
+	WebUI.executeJavaScript("document.getElementById('input$IDCargo2').value='" +GlobalVariable.Valor2 +"'", null)
 
     WebUI.click(findTestObject('Object Repository/Page_- KAIZEN/lg_button_OK'))
 
