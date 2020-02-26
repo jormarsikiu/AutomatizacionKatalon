@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Flujo Completo Mov Inventario" time="194.194" tests="1" failures="0" errors="1">
+   <testsuite name="Flujo Completo Mov Inventario" tests="1" failures="0" errors="1" time="194.194" timestamp="2020-02-25 11:21:38" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/Flujo Completo Mov Inventario">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200225_112131\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200225_112131"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200225_112131\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200225_112131\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.122"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="799dc2aeb87a56383f6d63b133849367"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen" time="193.008" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582644095922.run(TempTestSuite1582644095922.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue() is applicable for argument types: (com.kms.katalon.core.testobject.TestObject, java.lang.Integer, java.lang.Boolean) values: [TestObject - 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen', ...]
+Possible solutions: selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), selectOptionByLabel(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean)
+	at Anadir_Producto_Almacen.run(Anadir_Producto_Almacen:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+"/>
+         <system-out><![CDATA[2020-02-25 11:21:38 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen: Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582644095922.run(TempTestSuite1582644095922.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue() is applicable for argument types: (com.kms.katalon.core.testobject.TestObject, java.lang.Integer, java.lang.Boolean) values: [TestObject - 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen', ...]
+Possible solutions: selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), selectOptionByLabel(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean)
+	at Anadir_Producto_Almacen.run(Anadir_Producto_Almacen:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2020-02-25 11:21:39 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/ProductoAlmacen.xlsx: null
+
+2020-02-25 11:21:39 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-25 11:21:40 - [TEST_STEP][FAILED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Unable to call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582644095922.run(TempTestSuite1582644095922.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue() is applicable for argument types: (com.kms.katalon.core.testobject.TestObject, java.lang.Integer, java.lang.Boolean) values: [TestObject - 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen', ...]
+Possible solutions: selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), selectOptionByLabel(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean)
+	at Anadir_Producto_Almacen.run(Anadir_Producto_Almacen:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-02-25 11:21:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:21:40 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-02-25 11:21:41 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-25 11:21:41 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:21:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-25 11:21:41 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-02-25 11:22:06 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:22:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-25 11:22:08 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:22:08 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - Usuario = data7[1]: null
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - Contrasena = data7[2]: null
+
+2020-02-25 11:22:08 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:22:09 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:22:09 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:22:09 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:22:09 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:22:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:22:12 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:22:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:22:12 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:22:13 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - Idioma = data8[0]: null
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:22:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - if (Idioma == "0"): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-02-25 11:22:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Ingles")): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-02-25 11:22:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-02-25 11:22:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:22:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Anadir_Producto_Almacen"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' successfully
+
+2020-02-25 11:22:15 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Anadir_Producto_Almacen: Test Cases/Individual_Tests/Anadir_Producto_Almacen
+
+2020-02-25 11:22:15 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:22:15 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:22:15 - [TEST_STEP][PASSED] - Producto = data[3]: null
+
+2020-02-25 11:22:15 - [TEST_STEP][PASSED] - CantidadMinima = data[4]: null
+
+2020-02-25 11:22:15 - [TEST_STEP][PASSED] - CantidadMaxima = data[5]: null
+
+2020-02-25 11:22:15 - [TEST_STEP][PASSED] - Almacen = data[6]: null
+
+2020-02-25 11:22:15 - [TEST_STEP][PASSED] - Almacen2 = data[7]: null
+
+2020-02-25 11:22:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:22:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:22:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:22:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:22:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mvi_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:22:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:22:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:22:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:22:21 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Producto): Text 'TRENTON 5 LUBERMAX ULTRA DUTY SYNHETIC BLEND 15W-40' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:22:23 - [MESSAGE][PASSED] - Text 'TRENTON 5 LUBERMAX ULTRA DUTY SYNHETIC BLEND 15W-40' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:22:23 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:22:23 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:22:23 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen, true): All options with value '7' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:22:25 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:22:25 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:22:28 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:22:28 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:22:28 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:22:28 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-02-25 11:22:28 - [TEST_STEP][PASSED] - if (modal == null): null
+
+2020-02-25 11:22:28 - [TEST_STEP][PASSED] - else: Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:22:28 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector(".swal2-confirm").click();", null): Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:22:28 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:22:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:22:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:22:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:22:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:22:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mvi_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:22:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:22:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:22:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:22:36 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Producto): Text 'TRENTON 5 LUBERMAX ULTRA DUTY SYNHETIC BLEND 15W-40' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:22:37 - [MESSAGE][PASSED] - Text 'TRENTON 5 LUBERMAX ULTRA DUTY SYNHETIC BLEND 15W-40' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:22:37 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:22:38 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:22:38 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen2, true): All options with value '2' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:22:39 - [MESSAGE][PASSED] - All options with value '2' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:22:39 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:22:42 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:22:42 - [TEST_STEP][PASSED] - modal2 = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:22:42 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:22:42 - [TEST_STEP][PASSED] - if (modal2 == null): null
+
+2020-02-25 11:22:42 - [TEST_STEP][PASSED] - else: Browser is closed
+
+2020-02-25 11:22:42 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector(".swal2-confirm").click();", null): Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:22:42 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:22:42 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-02-25 11:22:43 - [MESSAGE][PASSED] - Browser is closed
+
+2020-02-25 11:22:43 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' successfully
+
+2020-02-25 11:22:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:22:43 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-02-25 11:22:43 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-25 11:22:43 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:22:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-25 11:23:22 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:23:22 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-25 11:23:24 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:23:24 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - Usuario = data7[1]: null
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - Contrasena = data7[2]: null
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:23:24 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:23:24 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:23:25 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:23:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:23:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:23:29 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:23:29 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:23:29 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - Idioma = data8[0]: null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:23:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-25 11:23:29 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-25 11:23:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-25 11:23:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:23:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Anadir_Producto_Almacen"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' successfully
+
+2020-02-25 11:23:34 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Anadir_Producto_Almacen: Test Cases/Individual_Tests/Anadir_Producto_Almacen
+
+2020-02-25 11:23:34 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:23:34 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:23:34 - [TEST_STEP][PASSED] - Producto = data[3]: null
+
+2020-02-25 11:23:34 - [TEST_STEP][PASSED] - CantidadMinima = data[4]: null
+
+2020-02-25 11:23:34 - [TEST_STEP][PASSED] - CantidadMaxima = data[5]: null
+
+2020-02-25 11:23:34 - [TEST_STEP][PASSED] - Almacen = data[6]: null
+
+2020-02-25 11:23:34 - [TEST_STEP][PASSED] - Almacen2 = data[7]: null
+
+2020-02-25 11:23:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:23:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:23:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:23:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:23:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mvi_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:23:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:23:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:23:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:23:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Producto): Text 'TRENTON 5 HIGH MILEAGE SYNTHETIC BLEND 10W-30' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:23:44 - [MESSAGE][PASSED] - Text 'TRENTON 5 HIGH MILEAGE SYNTHETIC BLEND 10W-30' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:23:44 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:23:45 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:23:45 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen, true): All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:23:46 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:23:46 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:23:49 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:23:49 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:23:49 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:23:49 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-02-25 11:23:49 - [TEST_STEP][PASSED] - if (modal == null): null
+
+2020-02-25 11:23:49 - [TEST_STEP][PASSED] - else: Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:23:49 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector(".swal2-confirm").click();", null): Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:23:49 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:23:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:23:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:23:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:23:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:23:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mvi_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:23:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:23:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:23:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:23:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Producto): Text 'TRENTON 5 HIGH MILEAGE SYNTHETIC BLEND 10W-30' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:23:58 - [MESSAGE][PASSED] - Text 'TRENTON 5 HIGH MILEAGE SYNTHETIC BLEND 10W-30' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:23:58 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:23:59 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:23:59 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen2, true): All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:24:00 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:24:00 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:24:03 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:24:03 - [TEST_STEP][PASSED] - modal2 = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:24:03 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:24:03 - [TEST_STEP][PASSED] - if (modal2 == null): null
+
+2020-02-25 11:24:03 - [TEST_STEP][PASSED] - else: Browser is closed
+
+2020-02-25 11:24:03 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector(".swal2-confirm").click();", null): Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:24:03 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-02-25 11:24:03 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-02-25 11:24:04 - [MESSAGE][PASSED] - Browser is closed
+
+2020-02-25 11:24:04 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' successfully
+
+2020-02-25 11:24:04 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:24:04 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-02-25 11:24:04 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-25 11:24:04 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:24:04 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-25 11:24:26 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:24:26 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-25 11:24:27 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:24:27 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - Usuario = data7[1]: null
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - Contrasena = data7[2]: null
+
+2020-02-25 11:24:27 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:24:28 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:24:28 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:24:28 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:24:28 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:24:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:24:31 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:24:31 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:24:31 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - Idioma = data8[0]: null
+
+2020-02-25 11:24:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:24:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:24:32 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-25 11:24:32 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-25 11:24:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-25 11:24:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-25 11:24:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:24:34 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests/Anadir_Producto_Almacen"), ["Index":Index], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582644095922.run(TempTestSuite1582644095922.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue() is applicable for argument types: (com.kms.katalon.core.testobject.TestObject, java.lang.Integer, java.lang.Boolean) values: [TestObject - 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen', ...]
+Possible solutions: selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), selectOptionByLabel(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean)
+	at Anadir_Producto_Almacen.run(Anadir_Producto_Almacen:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-02-25 11:24:34 - [TEST_CASE][ERROR] - Test Cases/Individual_Tests/Anadir_Producto_Almacen: Test Cases/Individual_Tests/Anadir_Producto_Almacen FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue() is applicable for argument types: (com.kms.katalon.core.testobject.TestObject, java.lang.Integer, java.lang.Boolean) values: [TestObject - 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen', ...]
+Possible solutions: selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), selectOptionByLabel(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean)
+	at Anadir_Producto_Almacen.run(Anadir_Producto_Almacen:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582644095922.run(TempTestSuite1582644095922.groovy:36)
+
+
+2020-02-25 11:24:34 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:24:34 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:24:34 - [TEST_STEP][PASSED] - Producto = data[3]: null
+
+2020-02-25 11:24:34 - [TEST_STEP][PASSED] - CantidadMinima = data[4]: null
+
+2020-02-25 11:24:34 - [TEST_STEP][PASSED] - CantidadMaxima = data[5]: null
+
+2020-02-25 11:24:34 - [TEST_STEP][PASSED] - Almacen = data[6]: null
+
+2020-02-25 11:24:34 - [TEST_STEP][PASSED] - Almacen2 = data[7]: null
+
+2020-02-25 11:24:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:24:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:24:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:24:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:24:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mvi_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:24:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:24:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:24:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:24:41 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Producto): Text 'TRENTON5 ULTRA CUTTING OIL ISO 46' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:24:42 - [MESSAGE][PASSED] - Text 'TRENTON5 ULTRA CUTTING OIL ISO 46' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:24:42 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:24:43 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:24:43 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen, true): All options with value '7' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:24:44 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:24:44 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:24:47 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:24:47 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:24:47 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:24:47 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-02-25 11:24:47 - [TEST_STEP][PASSED] - if (modal == null): null
+
+2020-02-25 11:24:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn"), CantidadMinima): Text '8' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:24:47 - [MESSAGE][PASSED] - Text '8' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:24:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn"), CantidadMaxima): Text '146' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:24:48 - [MESSAGE][PASSED] - Text '146' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:24:48 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:24:51 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:24:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:24:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:24:51 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), 4, true): null
+
+2020-02-25 11:24:51 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582644095922.run(TempTestSuite1582644095922.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue() is applicable for argument types: (com.kms.katalon.core.testobject.TestObject, java.lang.Integer, java.lang.Boolean) values: [TestObject - 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen', ...]
+Possible solutions: selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), selectOptionByLabel(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean)
+	at Anadir_Producto_Almacen.run(Anadir_Producto_Almacen:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)]]></system-out>
+         <system-err><![CDATA[2020-02-25 11:21:38 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen: Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582644095922.run(TempTestSuite1582644095922.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue() is applicable for argument types: (com.kms.katalon.core.testobject.TestObject, java.lang.Integer, java.lang.Boolean) values: [TestObject - 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen', ...]
+Possible solutions: selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), selectOptionByLabel(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean)
+	at Anadir_Producto_Almacen.run(Anadir_Producto_Almacen:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-25 11:21:38 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582644095922.run(TempTestSuite1582644095922.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue() is applicable for argument types: (com.kms.katalon.core.testobject.TestObject, java.lang.Integer, java.lang.Boolean) values: [TestObject - 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen', ...]
+Possible solutions: selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), selectOptionByLabel(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean)
+	at Anadir_Producto_Almacen.run(Anadir_Producto_Almacen:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[2020-02-25 11:21:38 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:30)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582644095922.run(TempTestSuite1582644095922.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: static com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.selectOptionByValue() is applicable for argument types: (com.kms.katalon.core.testobject.TestObject, java.lang.Integer, java.lang.Boolean) values: [TestObject - 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen', ...]
+Possible solutions: selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), selectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean), deselectOptionByValue(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean, com.kms.katalon.core.model.FailureHandling), selectOptionByLabel(com.kms.katalon.core.testobject.TestObject, java.lang.String, boolean)
+	at Anadir_Producto_Almacen.run(Anadir_Producto_Almacen:60)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>

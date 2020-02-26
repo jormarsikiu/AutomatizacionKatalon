@@ -14,7 +14,7 @@
       <guid>f9d02c02-1aa2-4c8b-8ba0-2c72c394c326</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Pedidos_40pies</testCaseId>
+      <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Pedidos_40pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8ccbef4d-a934-4b2b-bf92-d19b14399fb9</guid>
@@ -26,7 +26,7 @@
       <guid>bc344e1f-613f-4baf-a4e7-72c2c24310a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Aprobaciones</testCaseId>
+      <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Aprobaciones</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>bec91432-4f5e-4985-a429-6d518e013289</guid>
@@ -50,7 +50,7 @@
       <guid>9e7b42b9-1605-46cc-9ae7-5f57cc07c6ba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_CargosLogisticos</testCaseId>
+      <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_CargosLogisticos</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>84b79423-4b3d-4842-925e-333eff50e7b4</guid>
@@ -62,13 +62,13 @@
       <guid>e8c9a9a3-bc20-4428-a496-4c7fc4b6be02</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Produccion</testCaseId>
+      <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Produccion</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>59a63cd0-4460-4386-8dca-94df52b62204</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Orden_Produccion</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Orden_Produccion</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -98,7 +98,7 @@
       <guid>7921ffcf-b3be-43ae-8135-4d19a170c033</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Inventario</testCaseId>
+      <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Inventario</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>58666659-ad70-48c5-8713-e8d364def5b6</guid>
@@ -110,13 +110,13 @@
       <guid>431b79ee-3ba0-4540-9754-a75cdafa3788</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Generar_Excel_Despachar</testCaseId>
+      <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Despachar</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>62bd392f-d0b8-47de-935a-a40cfb42b7e0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Despachar</testCaseId>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Despacho</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Flujo Completo Mov Inventario" time="383.172" tests="2" failures="1" errors="0">
+   <testsuite name="Flujo Completo Mov Inventario" tests="2" failures="1" errors="0" time="383.172" timestamp="2020-02-25 11:50:43" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/Flujo Completo Mov Inventario">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200225_115036\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200225_115036"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200225_115036\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200225_115036\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.122"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="fdfeb37baa260ca1c1b4d220dd843f6c"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_ProductoAlmacen" time="5.116" classname="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_ProductoAlmacen" status="PASSED">
+         <system-out><![CDATA[2020-02-25 11:50:43 - [TEST_CASE][PASSED] - Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_ProductoAlmacen: Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_ProductoAlmacen
+
+2020-02-25 11:50:44 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("ProductoAlmacen"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-02-25 11:50:48 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen" time="376.908" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests/Login' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+"/>
+         <system-out><![CDATA[2020-02-25 11:50:48 - [TEST_CASE][FAILED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen: Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests/Login' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2020-02-25 11:50:49 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/ProductoAlmacen.xlsx: null
+
+2020-02-25 11:50:49 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-25 11:50:50 - [TEST_STEP][FAILED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Unable to call Test Case 'Test Cases/Individual_Tests/Login' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests/Login' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2020-02-25 11:50:50 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:50:50 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-02-25 11:50:50 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-25 11:50:50 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:50:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-25 11:50:51 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-02-25 11:51:04 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:51:04 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-25 11:51:05 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:51:05 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - Usuario = data7[1]: null
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - Contrasena = data7[2]: null
+
+2020-02-25 11:51:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:51:06 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:51:06 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:51:07 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:51:07 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:51:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:51:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:51:09 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:51:09 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - Idioma = data8[0]: null
+
+2020-02-25 11:51:09 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:51:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:51:10 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-02-25 11:51:10 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-25 11:51:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-25 11:51:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-02-25 11:51:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:51:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Anadir_Producto_Almacen"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' successfully
+
+2020-02-25 11:51:12 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Anadir_Producto_Almacen: Test Cases/Individual_Tests/Anadir_Producto_Almacen
+
+2020-02-25 11:51:12 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:51:12 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:51:12 - [TEST_STEP][PASSED] - Producto = data[3]: null
+
+2020-02-25 11:51:12 - [TEST_STEP][PASSED] - CantidadMinima = data[4]: null
+
+2020-02-25 11:51:12 - [TEST_STEP][PASSED] - CantidadMaxima = data[5]: null
+
+2020-02-25 11:51:12 - [TEST_STEP][PASSED] - Almacen = data[6]: null
+
+2020-02-25 11:51:12 - [TEST_STEP][PASSED] - Almacen2 = data[7]: null
+
+2020-02-25 11:51:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:51:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:51:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:51:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:51:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mvi_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:51:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:51:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:51:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:51:16 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Producto): Text 'TRENTON 5 LUBERMAX PROFESSIONAL  20W-50 ALL FLEET' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:51:18 - [MESSAGE][PASSED] - Text 'TRENTON 5 LUBERMAX PROFESSIONAL  20W-50 ALL FLEET' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:51:18 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:51:18 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:51:18 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen, true): All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:19 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:19 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:51:22 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:51:22 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:51:23 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:51:23 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-02-25 11:51:23 - [TEST_STEP][PASSED] - if (modal == null): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:51:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn"), CantidadMinima): Text '23' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:51:23 - [MESSAGE][PASSED] - Text '23' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:51:23 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn"), CantidadMaxima): Text '39953' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:51:24 - [MESSAGE][PASSED] - Text '39953' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:51:24 - [TEST_STEP][PASSED] - delay(7): Delayed 7 second(s)
+
+2020-02-25 11:51:31 - [MESSAGE][PASSED] - Delayed 7 second(s)
+
+2020-02-25 11:51:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:51:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:51:31 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), "4", true): All options with value '4' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:32 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:32 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen, true): All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:33 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:51:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:51:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:51:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:51:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:51:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:51:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mvi_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:51:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:51:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:51:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:51:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Producto): Text 'TRENTON 5 LUBERMAX PROFESSIONAL  20W-50 ALL FLEET' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:51:41 - [MESSAGE][PASSED] - Text 'TRENTON 5 LUBERMAX PROFESSIONAL  20W-50 ALL FLEET' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:51:41 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:51:42 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:51:42 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen2, true): All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:43 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:43 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:51:46 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:51:46 - [TEST_STEP][PASSED] - modal2 = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:51:46 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:51:46 - [TEST_STEP][PASSED] - if (modal2 == null): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:51:46 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn"), CantidadMinima): Text '23' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:51:47 - [MESSAGE][PASSED] - Text '23' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:51:47 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn"), CantidadMaxima): Text '39953' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:51:47 - [MESSAGE][PASSED] - Text '39953' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:51:47 - [TEST_STEP][PASSED] - delay(7): Delayed 7 second(s)
+
+2020-02-25 11:51:54 - [MESSAGE][PASSED] - Delayed 7 second(s)
+
+2020-02-25 11:51:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:51:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:51:55 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), "4", true): All options with value '4' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:56 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:56 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen2, true): All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:57 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:51:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:52:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:52:17 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' successfully
+
+2020-02-25 11:52:17 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:52:17 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-02-25 11:52:17 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-25 11:52:17 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:52:17 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-25 11:52:18 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-25 11:55:29 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:55:29 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-25 11:55:31 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:55:31 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - Usuario = data7[1]: null
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - Contrasena = data7[2]: null
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:55:31 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-02-25 11:55:31 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:55:32 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-02-25 11:55:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:55:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-02-25 11:55:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:55:51 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:55:51 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - Idioma = data8[0]: null
+
+2020-02-25 11:55:51 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:55:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-02-25 11:55:52 - [TEST_STEP][PASSED] - if (Idioma == "0"): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-02-25 11:55:52 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Ingles")): Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-02-25 11:55:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Ingles' is clicked on
+
+2020-02-25 11:55:53 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-02-25 11:55:53 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Anadir_Producto_Almacen"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' successfully
+
+2020-02-25 11:55:53 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Anadir_Producto_Almacen: Test Cases/Individual_Tests/Anadir_Producto_Almacen
+
+2020-02-25 11:55:53 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen(Index): obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:55:54 - [MESSAGE][PASSED] - obtener_excels.obtener_producto_almacen.getValuesExcelProductoAlmacen is PASSED
+
+2020-02-25 11:55:54 - [TEST_STEP][PASSED] - Producto = data[3]: null
+
+2020-02-25 11:55:54 - [TEST_STEP][PASSED] - CantidadMinima = data[4]: null
+
+2020-02-25 11:55:54 - [TEST_STEP][PASSED] - CantidadMaxima = data[5]: null
+
+2020-02-25 11:55:54 - [TEST_STEP][PASSED] - Almacen = data[6]: null
+
+2020-02-25 11:55:54 - [TEST_STEP][PASSED] - Almacen2 = data[7]: null
+
+2020-02-25 11:55:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:55:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:55:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:56:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:56:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mvi_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:56:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:56:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:56:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:56:08 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Producto): Text 'TRENTON5 REFRIGERANT/COMPRESSOR SYNTHETIC OIL 100' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:56:09 - [MESSAGE][PASSED] - Text 'TRENTON5 REFRIGERANT/COMPRESSOR SYNTHETIC OIL 100' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:56:09 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:56:10 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:56:10 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen, true): All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:11 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:11 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:56:14 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:56:14 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:56:14 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:56:14 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-02-25 11:56:14 - [TEST_STEP][PASSED] - if (modal == null): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:56:14 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn"), CantidadMinima): Text '39' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:56:15 - [MESSAGE][PASSED] - Text '39' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:56:15 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn"), CantidadMaxima): Text '1941' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:56:15 - [MESSAGE][PASSED] - Text '1941' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:56:15 - [TEST_STEP][PASSED] - delay(7): Delayed 7 second(s)
+
+2020-02-25 11:56:22 - [MESSAGE][PASSED] - Delayed 7 second(s)
+
+2020-02-25 11:56:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:56:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:56:23 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), "4", true): All options with value '4' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:24 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:24 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen, true): All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:25 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:56:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:56:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:56:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_Inventario' is clicked on
+
+2020-02-25 11:56:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen")): Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:56:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mvi_menu_productos_por_almacen' is clicked on
+
+2020-02-25 11:56:30 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mvi_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:56:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mvi_agregar' is clicked on
+
+2020-02-25 11:56:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:56:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_btn_seleccione' is clicked on
+
+2020-02-25 11:56:33 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Producto): Text 'TRENTON5 REFRIGERANT/COMPRESSOR SYNTHETIC OIL 100' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:56:34 - [MESSAGE][PASSED] - Text 'TRENTON5 REFRIGERANT/COMPRESSOR SYNTHETIC OIL 100' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:56:34 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:56:35 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_prodcuto'
+
+2020-02-25 11:56:35 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen2, true): All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:36 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:36 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-02-25 11:56:39 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-02-25 11:56:39 - [TEST_STEP][PASSED] - modal2 = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:56:39 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-02-25 11:56:39 - [TEST_STEP][PASSED] - if (modal2 == null): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:56:39 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn"), CantidadMinima): Text '39' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:56:40 - [MESSAGE][PASSED] - Text '39' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mnima_almacn'
+
+2020-02-25 11:56:40 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn"), CantidadMaxima): Text '1941' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:56:40 - [MESSAGE][PASSED] - Text '1941' is set on object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_cantidad_mxima_en_almacn'
+
+2020-02-25 11:56:40 - [TEST_STEP][PASSED] - delay(7): Delayed 7 second(s)
+
+2020-02-25 11:56:47 - [MESSAGE][PASSED] - Delayed 7 second(s)
+
+2020-02-25 11:56:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:56:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_button_OK' is clicked on
+
+2020-02-25 11:56:48 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), "4", true): All options with value '4' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:49 - [MESSAGE][PASSED] - All options with value '4' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:49 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen"), Almacen2, true): All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:50 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'  using regular expression
+
+2020-02-25 11:56:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar")): Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:56:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar' is clicked on
+
+2020-02-25 11:56:55 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Anadir_Producto_Almacen' successfully
+
+2020-02-25 11:56:55 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"ProductoAlmacen", "Index":Index], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests/Login' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests/Login' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)
+
+2020-02-25 11:56:55 - [TEST_CASE][FAILED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+
+
+2020-02-25 11:56:55 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-25 11:56:55 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:56:55 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-02-25 11:56:56 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-25 11:57:05 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-25 11:57:05 - [TEST_STEP][FAILED] - maximizeWindow(): Unable to maximize current window (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Script1582302053606.run(Script1582302053606.groovy:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1582301841574.run(Script1582301841574.groovy:26)
+	... 13 more
+)
+
+2020-02-25 11:57:05 - [MESSAGE][WARNING] - Cannot take screenshot
+
+2020-02-25 11:57:05 - [MESSAGE][FAILED] - Unable to maximize current window (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Script1582302053606.run(Script1582302053606.groovy:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at Script1582301841574.run(Script1582301841574.groovy:26)
+	... 13 more
+)
+
+2020-02-25 11:57:05 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests/Login' (Root cause: com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests/Login' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more
+)]]></system-out>
+         <system-err><![CDATA[2020-02-25 11:50:48 - [TEST_CASE][FAILED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen: Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests/Login' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-25 11:50:43 - [TEST_SUITE][FAILED] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests/Login' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-out>
+      <system-err><![CDATA[2020-02-25 11:50:43 - [TEST_SUITE][FAILED] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Call Test Case 'Test Cases/Individual_Tests/Login' failed
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:63)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Producto_Almacen.run(TC_Agregar_Producto_Almacen:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582645840884.run(TempTestSuite1582645840884.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Unable to maximize current window
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.maximizeWindow(MaximizeWindowKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword.execute(MaximizeWindowKeyword.groovy:69)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.maximizeWindow(WebUiBuiltInKeywords.groovy:279)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$maximizeWindow$0.call(Unknown Source)
+	at Login.run(Login:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=80.0.3987.122)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-K43U1BVQ', ip: '192.168.99.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.122, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\kaizen\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:64162}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fdfeb37baa260ca1c1b4d220dd843f6c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWindow.maximize(EventFiringWebDriver.java:769)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.doCall(MaximizeWindowKeyword.groovy:85)
+	at com.kms.katalon.core.webui.keyword.builtin.MaximizeWindowKeyword$_maximizeWindow_closure1.call(MaximizeWindowKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 35 more]]></system-err>
+   </testsuite>
+</testsuites>

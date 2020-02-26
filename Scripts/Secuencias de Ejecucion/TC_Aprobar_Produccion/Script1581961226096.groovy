@@ -24,12 +24,12 @@ Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", 
 for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
 
 {
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : 'Aprobar',  ('Index') : Index], 
+WebUI.callTestCase(findTestCase('Individual_Tests/Login'), [('Evento') : 'Aprobar',  ('Index') : Index], 
     FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : 'Aprobar',  ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Idioma'), [('Evento') : 'Aprobar',  ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Aprobacion_Produccion'), [ ('Index') : Index], 
+WebUI.callTestCase(findTestCase('Individual_Tests/Aprobacion_Produccion'), [ ('Index') : Index], 
     FailureHandling.STOP_ON_FAILURE)
 
 }

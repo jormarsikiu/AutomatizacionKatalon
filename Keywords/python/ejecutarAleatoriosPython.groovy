@@ -59,9 +59,17 @@ public class ejecutarAleatoriosPython {
 			actual = "\\Pedidos\\Python\\BorrarTodosExcelsPython.py";
 			System.out.println("Archivos Borrados en: Pedidos/DataExcel");
 		}
+		else if (tipo == 'ProductoAlmacen'){
+			actual = "\\Pedidos\\Python\\ProductoAlmacenPython.py";
+			System.out.println("Archivo Creado: Pedidos/DataExcel/ProductoAlmacen.xlsx");
+		}
 		else if (tipo == 'MovimientoInventario'){
 			actual = "\\Pedidos\\Python\\MovimientoInventario.py";
 			System.out.println("Archivo Creado: Pedidos/DataExcel/MovimientoInventario.xlsx");
+		}
+		else if (tipo == 'Reporte'){
+			actual = "\\Pedidos\\Python\\ReporteMovimientoInventario.py";
+			System.out.println("Archivo Creado: Pedidos/DataExcel/ReporteMovimientoInventario.xlsx");
 		}
 
 

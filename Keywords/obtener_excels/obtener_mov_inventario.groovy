@@ -38,14 +38,12 @@ public class obtener_mov_inventario {
 		String CodProducto = excelData.getValue("CodProducto", index);
 		String IdGrupo = excelData.getValue("IdGrupo", index);
 		String Producto = excelData.getValue("Producto", index);
-		String CantidadActual = excelData.getValue("CantidadActual", index);
 		String Existencia = excelData.getValue("Existencia", index);
 		String IdAlmacen1 = excelData.getValue("IdAlmacen1", index);
-		String Almacen1 = excelData.getValue("Almacen1", index);
-		String CantMaxAlmacen1 = excelData.getValue("CantMaxAlmacen1", index);
+		String CantidadActual1 = excelData.getValue("CantidadActual1", index);
 		String IdAlmacen2 = excelData.getValue("IdAlmacen2", index);
-		String Almacen2 = excelData.getValue("Almacen2", index);
-		String CantMaxAlmacen2 = excelData.getValue("CantMaxAlmacen2", index);
+		String CantidadActual2 = excelData.getValue("CantidadActual2", index);
+		String CantidadAnadir = excelData.getValue("CantidadAnadir", index);
 
 
 		List<String> data = [
@@ -57,14 +55,12 @@ public class obtener_mov_inventario {
 			CodProducto,
 			IdGrupo,
 			Producto,
-			CantidadActual,
 			Existencia,
 			IdAlmacen1,
-			Almacen1,
-			CantMaxAlmacen1,
+			CantidadActual1,
 			IdAlmacen2,
-			Almacen2,
-			CantMaxAlmacen2
+			CantidadActual2, 
+			CantidadAnadir
 		]
 
 		return data

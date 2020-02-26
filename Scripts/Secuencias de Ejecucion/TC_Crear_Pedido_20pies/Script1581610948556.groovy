@@ -25,18 +25,18 @@ for (def Index = 1; Index<=excelData.getRowNumbers(); Index++)
 
 {
 	
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests/Login'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Idioma'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Anadir_pedido'), [:], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests/Anadir_pedido'), [:], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Cliente'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Cliente'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Incoterm'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Incoterm'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Opcion_Compra'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Opcion_Compra'), [('Evento') : "Crear20", ('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
-	WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Productos20pies'), [('Index') : Index], FailureHandling.STOP_ON_FAILURE)
+	WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Productos20pies'), [('Index') : Index], FailureHandling.STOP_ON_FAILURE)
 
 }

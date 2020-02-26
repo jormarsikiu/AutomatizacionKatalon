@@ -13,18 +13,18 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Login'), [('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Individual_Tests/Login'), [('Usuario') : Usuario, ('Contrasena') : Contrasena], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Idioma'), [('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Idioma'), [('Idioma') : Idioma], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Buscar_pedido'), [('IDPedido') : IDPedido], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Individual_Tests/Buscar_pedido'), [('IDPedido') : IDPedido], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Cliente'), [('Nombre') : Nombre, ('Direccion') : Direccion, ('Contenedor') : Contenedor], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Cliente'), [('Nombre') : Nombre, ('Direccion') : Direccion, ('Contenedor') : Contenedor], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Incoterm'), [('Incoterm') : Incoterm], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Incoterm'), [('Incoterm') : Incoterm], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Opcion_Compra'), [('OpCompra1') : OpCompra], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Opcion_Compra'), [('OpCompra1') : OpCompra], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Individual_Tests_20pies/Seleccionar_Productos20pies'), [('Presentacion') : Presentacion, ('Producto') : Producto, ('Cantidad') : Cantidad, ('Presentacion2') : Presentacion2
+WebUI.callTestCase(findTestCase('Individual_Tests/Seleccionar_Productos20pies'), [('Presentacion') : Presentacion, ('Producto') : Producto, ('Cantidad') : Cantidad, ('Presentacion2') : Presentacion2
         , ('Producto2') : Producto2, ('Cantidad2') : Cantidad2], FailureHandling.STOP_ON_FAILURE)
 
