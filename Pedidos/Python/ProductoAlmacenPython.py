@@ -18,18 +18,38 @@ except Exception as e:
 	print ("No Conecto a la BD")
 	raise e
 
-data = pd.read_sql('SELECT ID as IdProducto, CODIGO as CodProducto, NOMBRE as Producto, EXISTENCIA as Existencia, ID_GRUPO as IdGrupo FROM PRODUCTO WHERE ELIMINADO = 0 AND ACTIVO = 1 AND ID_GRUPO IN (6, 7, 32) AND EXISTENCIA>0',cnxn)
+data = pd.read_sql('SELECT ID as IdProducto, CODIGO as CodProducto, NOMBRE as Producto, EXISTENCIA as Existencia, ID_GRUPO as IdGrupo, EN_VENTA as EnVenta FROM PRODUCTO WHERE ELIMINADO = 0 AND ACTIVO = 1 AND ID_GRUPO IN (6, 7, 32) AND EXISTENCIA>0',cnxn)
+data2= pd.read_sql('SELECT ID as IdProducto, CODIGO as CodProducto, NOMBRE as Producto, EXISTENCIA as Existencia, ID_GRUPO as IdGrupo, EN_VENTA as EnVenta FROM PRODUCTO WHERE ELIMINADO = 0 AND ACTIVO = 1 AND ID_GRUPO IN (6, 7, 32) AND EXISTENCIA>0 AND EN_VENTA=1',cnxn)
+
 
 data.to_excel('Producto.xlsx')
-producto=pd.read_excel(r"Producto.xlsx")
-df_producto=  pd.DataFrame(producto, columns= ['IdProducto', 'CodProducto', 'Producto', 'Existencia', 'IdGrupo'])
-nc=len(df_producto)
-df_producto = df_producto.sample(nc)
-df_producto = df_producto.reset_index(drop=True)
+data2.to_excel('ProductoEnVenta.xlsx')
 
-n=11
-df_producto = df_producto.iloc[0:n]
+producto1=pd.read_excel(r"Producto.xlsx")
+df_producto1=  pd.DataFrame(producto1, columns= ['IdProducto', 'CodProducto', 'Producto', 'Existencia', 'IdGrupo', 'EnVenta'])
 
+productoEnVenta=pd.read_excel(r"ProductoEnVenta.xlsx")
+df_productoEnVenta=pd.DataFrame(productoEnVenta, columns= ['IdProducto', 'CodProducto', 'Producto',  'Existencia', 'IdGrupo', 'EnVenta',])
+
+nc=len(df_producto1)
+df_producto1 = df_producto1.sample(nc)
+df_producto1 = df_producto1.reset_index(drop=True)
+df_producto1 = df_producto1.iloc[0:11]
+
+na=len(df_productoEnVenta)
+df_productoEnVenta = df_productoEnVenta.sample(na)
+df_productoEnVenta = df_productoEnVenta.reset_index(drop=True)
+df_productoEnVenta = df_productoEnVenta.iloc[0:1]
+
+df_producto=pd.concat([df_productoEnVenta, df_producto1], ignore_index=True)
+
+
+for i in range (0, len(df_producto)):
+	if (df_producto.loc[i, 'EnVenta']==True):
+		df_producto.loc[i, 'EnVenta']=1
+	elif (df_producto.loc[i, 'EnVenta']==False):
+		df_producto.loc[i, 'EnVenta']=0
+		
 #Aleatorios de cantidad minima y cantidad maxima
 for i in range (0, len(df_producto)):
 	if (df_producto.loc[i, 'IdGrupo']==6):
@@ -81,9 +101,11 @@ for i in range (0, len(df_producto)):
 #for i in range (0, len(df_producto)):
 #	df_producto.loc[i, 'CantidadAnadir'] = random.randint(0, 100)
 
+
 export_excel = df_producto.to_excel (r'Producto.xlsx', index = None, header=True)
 
 #################################################################################
+
 #Escribir el Usuario y contrasena
 wb = openpyxl.Workbook() 
 sheet = wb.active
@@ -125,7 +147,7 @@ export_excel = df_almacen.to_excel (r'Pedidos/DataExcel/ProductoAlmacen.xlsx', i
 
 os.remove('Producto.xlsx')
 os.remove('TestDataUser.xlsx')
-
+os.remove('ProductoEnVenta.xlsx')
 
 
 

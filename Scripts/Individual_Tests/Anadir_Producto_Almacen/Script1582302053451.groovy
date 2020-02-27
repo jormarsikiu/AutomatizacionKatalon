@@ -71,6 +71,9 @@ if (modal == null) //No existe el modal
 		WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Agregar Productos - KAIZEN/mvi_assing_almacen'), Almacen,
 			true)
 		
+		WebUI.click(findTestObject('Object Repository/Page_Agregar Productos - KAIZEN/mvi_Guardar')) //existe el modal
+		
+		
 	}
 	else
 	{

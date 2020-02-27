@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>c02a1ab8-a0d8-43ba-9a86-2c0d49fec6c3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Mov_Inventario</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -37,7 +37,7 @@
    <testCaseLink>
       <guid>50465e6c-6e91-4507-a82b-0388bbfbe7ff</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
