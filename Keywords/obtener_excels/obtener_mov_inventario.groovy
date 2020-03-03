@@ -43,7 +43,7 @@ public class obtener_mov_inventario {
 		String CantidadActual1 = excelData.getValue("CantidadActual1", index);
 		String IdAlmacen2 = excelData.getValue("IdAlmacen2", index);
 		String CantidadActual2 = excelData.getValue("CantidadActual2", index);
-		String CantidadMovida = excelData.getValue("CantidadMovida", index);
+		String CantidadMovida = excelData.getValue("CantidadAMover", index);
 
 
 		List<String> data = [

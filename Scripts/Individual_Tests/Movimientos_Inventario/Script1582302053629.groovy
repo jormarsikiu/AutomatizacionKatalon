@@ -52,16 +52,75 @@ WebUI.sendKeys(findTestObject('Object Repository/Page_Create - KAIZEN/mi_assing_
 
 WebUI.setText(findTestObject('Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'), cantidad)
 
-//WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_click_almacen1'))
+WebUI.sendKeys(findTestObject('Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'), Keys.chord(Keys.ENTER))
 
-//WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_select_almacen1'))
+WebUI.delay(5)
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'), IdAlmacen1, true)
+String modal = WebUI.executeJavaScript('return document.querySelector(\'.swal2-popup\');', null)
 
-if (concepto=='TransferenciaDeMercancias'){
+if (modal == null) //No existe el modal
+{
+print(modal)
+	//WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_click_almacen1'))
+	
+	//WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_select_almacen1'))
+	
+	if (motivo=='EntradaPorFabricacion'){
+		
+		WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_btn_Guardar'))
+		
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Index - KAIZEN/mi_btn_agregar'), 5)
+	}
+	else{
+		WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'), IdAlmacen1, true)
+		
+		if (concepto=='TransferenciaDeMercancias'){
+		
+			WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/mi_assing_almacen2'), IdAlmacen2, true)
+			
+			WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_btn_Guardar'))
+			
+			WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Index - KAIZEN/mi_btn_agregar'), 5)
+		}
+		else{
+		
+		WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_btn_Guardar'))
+		
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Index - KAIZEN/mi_btn_agregar'), 5)
+		}
+	}
 
-	WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/mi_assing_almacen2'), IdAlmacen2, true)
+
+} else {//Existe el modal
+	WebUI.executeJavaScript('document.querySelector(".swal2-confirm").click();', null)
+	
+	if (motivo=='EntradaPorFabricacion'){
+		
+		WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_btn_Guardar'))
+		
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Index - KAIZEN/mi_btn_agregar'), 5)
+	}
+	else{
+		WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'), IdAlmacen1, true)
+		
+		if (concepto=='TransferenciaDeMercancias'){
+		
+			WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Create - KAIZEN/mi_assing_almacen2'), IdAlmacen2, true)
+			
+			WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_btn_Guardar'))
+			
+			WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Index - KAIZEN/mi_btn_agregar'), 5)
+		}
+		else{
+		
+		WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_btn_Guardar'))
+		
+		WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Index - KAIZEN/mi_btn_agregar'), 5)
+		}
+	}
 }
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/mi_btn_Guardar'))
+
+
 

@@ -121,7 +121,7 @@ for rows in sheet.iter_cols(min_col=1, max_col=1, min_row=2, max_row=lg):
 	for row in rows:
 			count = count+1
 			if count%2 == 0:
-				row.value="0"
+				row.value="1"
 			else:
 				row.value="1"	
 

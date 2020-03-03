@@ -44,6 +44,7 @@ WebUI.setText(findTestObject('Object Repository/Page_Create - KAIZEN/iv_input_Ca
 
 WebUI.click(findTestObject('Object Repository/Page_Create - KAIZEN/iv_btn_Guardar'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Index - KAIZEN/iv_btn_Agregar_inventario'), 2)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_Index - KAIZEN/iv_btn_Agregar_inventario'), 5)
+
 
 

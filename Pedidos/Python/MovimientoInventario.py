@@ -5,10 +5,14 @@ import openpyxl
 import pandas as pd
 import os
 import random
+import math
+import numpy as np
+
 
 productos_almacen = pd.read_excel(r"Pedidos/DataExcel/ProductoAlmacen.xlsx")
 df_productos_almacen= pd.DataFrame(productos_almacen, columns= ['IdProducto'])
 l=df_productos_almacen.iloc[:, 0].tolist()
+
 
 #Conexion con la base de fatos
 try:
@@ -26,7 +30,7 @@ data = pd.read_sql('SELECT T.NOMBRE AS Concepto, P.VALOR AS Motivo FROM PARAMETR
 data2 = pd.read_sql('SELECT P.ID as IdProducto, P.CODIGO as CodProducto, P.NOMBRE as Producto, P.EXISTENCIA as Existencia, P.EN_VENTA as EnVenta, P.ID_GRUPO as IdGrupo FROM PRODUCTO AS P WHERE P.ID_GRUPO IN (6, 7, 32) AND P.ID IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
 data3=pd.read_sql('SELECT ID_PRODUCTO AS IdProducto, ID_ALMACEN AS IdAlmacen1, CANTIDAD_ACTUAL AS CantidadActual1 FROM PRODUCTO_ALMACEN WHERE ID_ALMACEN IN (1,2,6,7) AND ID_PRODUCTO IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
 data4=pd.read_sql('SELECT ID_PRODUCTO AS IdProducto, ID_ALMACEN AS IdAlmacen2, CANTIDAD_ACTUAL AS CantidadActual2 FROM PRODUCTO_ALMACEN WHERE ID_ALMACEN IN (1,2,6,7) AND ID_PRODUCTO IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
-data5 = pd.read_sql('SELECT P.ID as IdProducto, P.CODIGO as CodProducto, P.NOMBRE as Producto, P.EXISTENCIA as Existencia, P.EN_VENTA as EnVenta, P.ID_GRUPO as IdGrupo FROM PRODUCTO AS P WHERE P.ID_GRUPO IN (6, 7, 32) AND P.EN_VENTA =1 AND P.ID IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
+data5 = pd.read_sql('SELECT P.ID as IdProducto, P.CODIGO as CodProducto, P.NOMBRE as Producto, P.EXISTENCIA as Existencia, P.EN_VENTA as EnVenta, P.ID_GRUPO as IdGrupo FROM PRODUCTO AS P WHERE P.ID_GRUPO =7 AND P.EN_VENTA =1 AND P.ID IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
 
 data.to_excel('Concepto.xlsx')
 data2.to_excel('Productos.xlsx')
@@ -36,16 +40,20 @@ data5.to_excel('ProductosVenta.xlsx')
 
 concepto=pd.read_excel(r"Concepto.xlsx")
 df_concepto=  pd.DataFrame(concepto, columns= ['Concepto', 'Motivo'])
+n=len(df_concepto)
+df_concepto = df_concepto.sample(n)
 
 #Se elimina la fila Venta de Productos para agregarla con un producto en venta
 for i in range (0, len(df_concepto)):
-	if (df_concepto.loc[i, 'Motivo']=='Venta de Productos'):
+	if (df_concepto.loc[i, 'Motivo']=='VentaProducto'):
+		df_concepto=df_concepto.drop([i],axis=0)
+	elif (df_concepto.loc[i, 'Motivo']=='ParaDespacho'):
 		df_concepto=df_concepto.drop([i],axis=0)
 
 #Se limitan los productos a la cantidad de conceptos
 producto=pd.read_excel(r"Productos.xlsx")
 df_producto=  pd.DataFrame(producto, columns= ['IdProducto', 'IdGrupo', 'CodProducto', 'Producto', 'Existencia', 'EnVenta'])
-df_producto = df_producto.iloc[0:10]
+df_producto = df_producto.iloc[0:9]
 
 #Se extraen los productos en venta para agregarlos al motivo de venta por productos
 #Se aleatorian para escoger solo uno
@@ -53,11 +61,11 @@ productosventa=pd.read_excel(r"ProductosVenta.xlsx")
 df_producto_venta=  pd.DataFrame(productosventa, columns= ['IdProducto', 'IdGrupo', 'CodProducto', 'Producto', 'Existencia', 'EnVenta'])
 np=len(df_producto_venta)
 df_producto_venta = df_producto_venta.sample(np)
-df_producto_venta = df_producto_venta.iloc[0:1]
+df_producto_venta = df_producto_venta.iloc[0:2]
+
 
 #Se concatenan los todos los productos con el producto en venta en fusion
 df_fusion=pd.concat([df_producto, df_producto_venta], axis=0, ignore_index=True)
-
 
 #Cambiar el nombre del grupo
 for i in range (0, len(df_fusion)):
@@ -80,14 +88,26 @@ df_concepto = df_concepto.reset_index(drop=True)
 df_fusion = df_fusion.reset_index(drop=True)
 df_mov=pd.concat([df_concepto, df_fusion], axis=1)
 
+
 #Se agrega el motivo de Venta de Productos en el producto que esta a la venta 
-a=(len(df_mov))-1
-b=1+(len(df_mov))
-for i in range (a, b):
+
+a=(len(df_mov))-3
+b=(len(df_mov))-2
+c=(len(df_mov))-1
+d=len(df_mov)
+
+
+for i in range (9, 10):
 	if (df_mov['Concepto'].isnull().any()):
 		df_mov.loc[i, 'Concepto'] = 'SalidaDeMercancias'
-		df_mov.loc[i, 'Motivo'] = 'Venta de Productos'
+		df_mov.loc[i, 'Motivo'] = 'VentaProducto'
 
+for i in range (10, 11):
+	if (df_mov['Concepto'].isnull().any()):
+		df_mov.loc[i, 'Concepto'] = 'TransferenciaDeMercancias'
+		df_mov.loc[i, 'Motivo'] = 'ParaDespacho'
+
+	
 
 #Se seleccionan los productos con los almacenes y la cantidad que hay dentro de ellos
 almacen1 = pd.read_excel(r"Almacen1.xlsx")
@@ -124,13 +144,13 @@ sheet.cell(row=1, column=3).value ="Contrasena"
 
 count=0
 count5=0
-
+#No acepta multidioma aun 
 lg=(len(df_mov_inventario))+1
 for rows in sheet.iter_cols(min_col=1, max_col=1, min_row=2, max_row=lg):
 	for row in rows:
 			count = count+1
 			if count%2 == 0:
-				row.value="0"
+				row.value="1" 
 			else:
 				row.value="1"	
 
@@ -153,22 +173,35 @@ df_usuarios =  pd.DataFrame(usuarios, columns= ['Idioma', 'Usuario', 'Contrasena
 df_mov_inventario=df_mov_inventario.reset_index(drop=True)
 df_movinventario2=pd.concat([df_usuarios, df_mov_inventario], axis=1)
 
+
 #Calcular la cantidad a mover
 df_n= pd.DataFrame(df_movinventario2, columns= ['CantidadActual1'])
 
 #Convertir la columna CantidadActual1 en una lista (resultado numeros decimales)
-list1=df_n.iloc[:, 0].tolist()
+lista=df_n.iloc[:, 0].tolist()
 
-#Convertir en 0 los numeros negativos para que no se saque mas del almacen 
-list2 = [0 if i < 0 else i for i in list1]
+list1 = [0.0 if math.isnan(x) else x for x in lista]
 
 #Convertir la lista en numeros enteros
-for i in range(len(list2)):
-	list2[i] = int(list2[i])
+for i in range(len(list1)):
+	list1[i] = int(list1[i])
 
+#Convertir en 0 los numeros negativos para que no se saque mas del almacen 
+list_salida = [0 if i < 0 else i for i in list1]
+list_tranf = [0 if i < 0 else i for i in list1]
+
+#Convertir los 0 en 1
+for i in range(len(list_salida)):
+	if (list_salida[i] == 0):
+		list_salida[i] = 1
+
+#Para los conceptos de entrada o salida debe ser mayor que 0 y para transferencia puede ser 0 
 #Se limita la CantidadMovida con el limite de la CantidadActual1 y se retornan aleatorios
 for i in range (0, len(df_movinventario2)):
-	df_movinventario2.loc[i, 'CantidadMovida'] = random.randint(0, list2[i])
+	if(df_movinventario2.loc[i, 'Concepto']=='TransferenciaDeMercancias'):
+		df_movinventario2.loc[i, 'CantidadAMover'] = random.randint(0, list_tranf[i])
+	else:
+		df_movinventario2.loc[i, 'CantidadAMover'] = random.randint(1, list_salida[i])
 
 #Los conceptos que no son de transferencia no tienen almacen 2
 for j in range (0, len(df_movinventario2)):
@@ -177,17 +210,22 @@ for j in range (0, len(df_movinventario2)):
 		df_movinventario2.loc[j, 'CantidadActual2'] = 'NA'
 
 #Se eliminan los registros duplicados
-df_movinventario3= pd.DataFrame()
-df_movinventario2 = df_movinventario2.reset_index(drop=True)
-df_movinventario3 = df_movinventario2.drop_duplicates(subset='IdProducto', keep='first')
+
+#for j in range (0, len(df_movinventario2)):
+	#if (df_movinventario2.loc[j, 'Concepto']!='TransferenciaDeMercancias'):
+		#df_movinventario3 = df_movinventario2.drop_duplicates(['IdProducto', 'Existencia'], keep='first')
+	#df_movinventario2 = df_movinventario2.drop_duplicates(subset='IdProducto', keep='first')
+		#df_movinventario2.drop_duplicates(['IdProducto', 'Existencia'], keep='first')
 
 
-#nc=len(df_movinventario3)
-#df_movinventario4 = df_movinventario3.sample(nc)
-df_movinventario3 = df_movinventario3.reset_index(drop=True)
-export_excel = df_movinventario3.to_excel (r'Pedidos/DataExcel/MovimientoDeInventario.xlsx', index = None, header=True)
-print(len(df_movinventario3))
-#print(len(df_movinventario4))
+
+print(len(df_movinventario2))
+#df_movinventario2 = df_movinventario2.reset_index(drop=True)
+#df_movinventario3 = df_movinventario2.drop_duplicates(subset='IdProducto', keep='first')
+#nc=len(df_movinventario2)
+#df_movinventario3 = df_movinventario2.sample(nc)
+#df_movinventario3 = df_movinventario3.reset_index(drop=True)
+export_excel = df_movinventario2.to_excel (r'Pedidos/DataExcel/MovimientoDeInventario.xlsx', index = None, header=True)
 
 os.remove('Concepto.xlsx')
 os.remove('Productos.xlsx')

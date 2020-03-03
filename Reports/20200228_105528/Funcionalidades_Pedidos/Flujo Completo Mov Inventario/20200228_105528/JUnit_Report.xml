@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Flujo Completo Mov Inventario" time="44.587" tests="3" failures="0" errors="1">
+   <testsuite name="Flujo Completo Mov Inventario" tests="3" failures="0" errors="1" time="44.587" timestamp="2020-02-28 10:55:30" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/Flujo Completo Mov Inventario">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200228_105528\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200228_105528"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200228_105528\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200228_105528\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.122"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="fbc26513aab09e2ef2fb9f207e8943d7"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Mov_Inventario" time="5.789" classname="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Mov_Inventario" status="PASSED">
+         <system-out><![CDATA[2020-02-28 10:55:31 - [TEST_CASE][PASSED] - Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Mov_Inventario: Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Mov_Inventario
+
+2020-02-28 10:55:31 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("MovimientoInventario"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-02-28 10:55:36 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" time="32.748" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Login' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582901728120.run(TempTestSuite1582901728120.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)
+	at com.kms.katalon.core.testdata.TestData$getValue$0.call(Unknown Source)
+	at obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(obtener_mov_inventario.groovy:46)
+	at obtener_excels.obtener_mov_inventario.invokeMethod(obtener_mov_inventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login.run(Login:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+"/>
+         <system-out><![CDATA[2020-02-28 10:55:36 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Login' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582901728120.run(TempTestSuite1582901728120.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)
+	at com.kms.katalon.core.testdata.TestData$getValue$0.call(Unknown Source)
+	at obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(obtener_mov_inventario.groovy:46)
+	at obtener_excels.obtener_mov_inventario.invokeMethod(obtener_mov_inventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login.run(Login:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2020-02-28 10:55:37 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/MovimientoDeInventario.xlsx: null
+
+2020-02-28 10:55:37 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-02-28 10:55:38 - [TEST_STEP][FAILED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Unable to call Test Case 'Test Cases/Individual_Tests/Login' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Login' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582901728120.run(TempTestSuite1582901728120.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)
+	at com.kms.katalon.core.testdata.TestData$getValue$0.call(Unknown Source)
+	at obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(obtener_mov_inventario.groovy:46)
+	at obtener_excels.obtener_mov_inventario.invokeMethod(obtener_mov_inventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login.run(Login:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-02-28 10:55:38 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests/Login' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Login' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582901728120.run(TempTestSuite1582901728120.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)
+	at com.kms.katalon.core.testdata.TestData$getValue$0.call(Unknown Source)
+	at obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(obtener_mov_inventario.groovy:46)
+	at obtener_excels.obtener_mov_inventario.invokeMethod(obtener_mov_inventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login.run(Login:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-02-28 10:55:38 - [TEST_CASE][ERROR] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login FAILED.
+Reason:
+java.lang.IllegalArgumentException: Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)
+	at com.kms.katalon.core.testdata.TestData$getValue$0.call(Unknown Source)
+	at obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(obtener_mov_inventario.groovy:46)
+	at obtener_excels.obtener_mov_inventario.invokeMethod(obtener_mov_inventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login.run(Login:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582901728120.run(TempTestSuite1582901728120.groovy:36)
+
+
+2020-02-28 10:55:38 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-02-28 10:55:38 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-28 10:55:39 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-02-28 10:55:39 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-02-28 10:56:07 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-02-28 10:56:07 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-02-28 10:56:09 - [MESSAGE][PASSED] - Current window maximized
+
+2020-02-28 10:56:09 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-02-28 10:56:09 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-02-28 10:56:09 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-02-28 10:56:09 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-02-28 10:56:09 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-02-28 10:56:09 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-02-28 10:56:09 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-02-28 10:56:09 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-02-28 10:56:09 - [TEST_STEP][ERROR] - else if (Evento == "MovimientoDeInventario"): Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+
+2020-02-28 10:56:09 - [TEST_STEP][ERROR] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+
+2020-02-28 10:56:09 - [MESSAGE][ERROR] - Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+
+2020-02-28 10:56:09 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests/Login' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Login' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582901728120.run(TempTestSuite1582901728120.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)
+	at com.kms.katalon.core.testdata.TestData$getValue$0.call(Unknown Source)
+	at obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(obtener_mov_inventario.groovy:46)
+	at obtener_excels.obtener_mov_inventario.invokeMethod(obtener_mov_inventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login.run(Login:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)]]></system-out>
+         <system-err><![CDATA[2020-02-28 10:55:36 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Login' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582901728120.run(TempTestSuite1582901728120.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)
+	at com.kms.katalon.core.testdata.TestData$getValue$0.call(Unknown Source)
+	at obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(obtener_mov_inventario.groovy:46)
+	at obtener_excels.obtener_mov_inventario.invokeMethod(obtener_mov_inventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login.run(Login:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario" time="4.898" classname="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario" status="PASSED">
+         <system-out><![CDATA[2020-02-28 10:56:09 - [TEST_CASE][PASSED] - Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario: Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario
+
+2020-02-28 10:56:10 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("Reporte"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-02-28 10:56:14 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-02-28 10:55:30 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Login' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582901728120.run(TempTestSuite1582901728120.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)
+	at com.kms.katalon.core.testdata.TestData$getValue$0.call(Unknown Source)
+	at obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(obtener_mov_inventario.groovy:46)
+	at obtener_excels.obtener_mov_inventario.invokeMethod(obtener_mov_inventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login.run(Login:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[2020-02-28 10:55:30 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Login' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:26)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1582901728120.run(TempTestSuite1582901728120.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Invalid column name 'CantidadMovida' for test data 'C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/MovimientoDeInventario.xlsx'. Possible values are '{Idioma,Usuario,Contrasena,Concepto,Motivo,IdProducto,IdGrupo,CodProducto,Producto,Existencia,EnVenta,IdAlmacen1,CantidadActual1,IdAlmacen2,CantidadActual2,CantidadAMover}'
+	at com.kms.katalon.core.testdata.AbstractTestData.verifyColumnName(AbstractTestData.java:78)
+	at com.kms.katalon.core.testdata.AbstractTestData.getObjectValue(AbstractTestData.java:136)
+	at com.kms.katalon.core.testdata.AbstractTestData.getValue(AbstractTestData.java:107)
+	at com.kms.katalon.core.testdata.TestData$getValue$0.call(Unknown Source)
+	at obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(obtener_mov_inventario.groovy:46)
+	at obtener_excels.obtener_mov_inventario.invokeMethod(obtener_mov_inventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Login.run(Login:98)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>
