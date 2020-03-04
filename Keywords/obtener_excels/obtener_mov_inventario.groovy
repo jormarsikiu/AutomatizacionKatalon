@@ -38,7 +38,7 @@ public class obtener_mov_inventario {
 		String CodProducto = excelData.getValue("CodProducto", index);
 		String IdGrupo = excelData.getValue("IdGrupo", index);
 		String Producto = excelData.getValue("Producto", index);
-		String Existencia = excelData.getValue("Existencia", index);
+		String Existencia = excelData.getValue("ExistenciaInicial", index);
 		String IdAlmacen1 = excelData.getValue("IdAlmacen1", index);
 		String CantidadActual1 = excelData.getValue("CantidadActual1", index);
 		String IdAlmacen2 = excelData.getValue("IdAlmacen2", index);

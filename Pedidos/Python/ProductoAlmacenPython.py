@@ -18,18 +18,18 @@ except Exception as e:
 	print ("No Conecto a la BD")
 	raise e
 
-data = pd.read_sql('SELECT ID as IdProducto, CODIGO as CodProducto, NOMBRE as Producto, EXISTENCIA as Existencia, ID_GRUPO as IdGrupo, EN_VENTA as EnVenta FROM PRODUCTO WHERE ELIMINADO = 0 AND ACTIVO = 1 AND ID_GRUPO IN (6, 7, 32) AND EXISTENCIA>0',cnxn)
-data2= pd.read_sql('SELECT ID as IdProducto, CODIGO as CodProducto, NOMBRE as Producto, EXISTENCIA as Existencia, ID_GRUPO as IdGrupo, EN_VENTA as EnVenta FROM PRODUCTO WHERE ELIMINADO = 0 AND ACTIVO = 1 AND ID_GRUPO IN (6, 7, 32) AND EXISTENCIA>0 AND EN_VENTA=1',cnxn)
+data = pd.read_sql('SELECT ID as IdProducto, CODIGO as CodProducto, NOMBRE as Producto, EXISTENCIA as ExistenciaInicial, ID_GRUPO as IdGrupo, EN_VENTA as EnVenta FROM PRODUCTO WHERE ELIMINADO = 0 AND ACTIVO = 1 AND ID_GRUPO IN (6, 7, 32) AND EXISTENCIA>0',cnxn)
+data2= pd.read_sql('SELECT ID as IdProducto, CODIGO as CodProducto, NOMBRE as Producto, EXISTENCIA as ExistenciaInicial, ID_GRUPO as IdGrupo, EN_VENTA as EnVenta FROM PRODUCTO WHERE ELIMINADO = 0 AND ACTIVO = 1 AND ID_GRUPO IN (6, 7, 32) AND EXISTENCIA>0 AND EN_VENTA=1',cnxn)
 
 
 data.to_excel('Producto.xlsx')
 data2.to_excel('ProductoEnVenta.xlsx')
 
 producto1=pd.read_excel(r"Producto.xlsx")
-df_producto1=  pd.DataFrame(producto1, columns= ['IdProducto', 'CodProducto', 'Producto', 'Existencia', 'IdGrupo', 'EnVenta'])
+df_producto1=  pd.DataFrame(producto1, columns= ['IdProducto', 'CodProducto', 'Producto', 'ExistenciaInicial', 'IdGrupo', 'EnVenta'])
 
 productoEnVenta=pd.read_excel(r"ProductoEnVenta.xlsx")
-df_productoEnVenta=pd.DataFrame(productoEnVenta, columns= ['IdProducto', 'CodProducto', 'Producto',  'Existencia', 'IdGrupo', 'EnVenta',])
+df_productoEnVenta=pd.DataFrame(productoEnVenta, columns= ['IdProducto', 'CodProducto', 'Producto',  'ExistenciaInicial', 'IdGrupo', 'EnVenta',])
 
 nc=len(df_producto1)
 df_producto1 = df_producto1.sample(nc)

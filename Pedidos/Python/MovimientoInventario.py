@@ -26,10 +26,10 @@ except Exception as e:
 	raise e
 #P.ID=PA.ID_PRODUCTO AND PA.ID_ALMACEN=A.ID AND
 data = pd.read_sql('SELECT T.NOMBRE AS Concepto, P.VALOR AS Motivo FROM PARAMETRO AS P, TIPO_PARAMETRO AS T WHERE T.ID = P.ID_TIPO_PARAMETRO AND P.ID_TIPO_PARAMETRO IN (17, 18, 19) ORDER BY T.ID',cnxn)
-data2 = pd.read_sql('SELECT P.ID as IdProducto, P.CODIGO as CodProducto, P.NOMBRE as Producto, P.EXISTENCIA as Existencia, P.EN_VENTA as EnVenta, P.ID_GRUPO as IdGrupo FROM PRODUCTO AS P WHERE P.ID_GRUPO IN (6, 7, 32) AND P.ID IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
+data2 = pd.read_sql('SELECT P.ID as IdProducto, P.CODIGO as CodProducto, P.NOMBRE as Producto, P.EXISTENCIA as ExistenciaInicial, P.EN_VENTA as EnVenta, P.ID_GRUPO as IdGrupo FROM PRODUCTO AS P WHERE P.ID_GRUPO IN (6, 7, 32) AND P.ID IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
 data3=pd.read_sql('SELECT ID_PRODUCTO AS IdProducto, ID_ALMACEN AS IdAlmacen1, CANTIDAD_ACTUAL AS CantidadActual1 FROM PRODUCTO_ALMACEN WHERE ID_ALMACEN IN (1,2,6,7) AND ID_PRODUCTO IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
 data4=pd.read_sql('SELECT ID_PRODUCTO AS IdProducto, ID_ALMACEN AS IdAlmacen2, CANTIDAD_ACTUAL AS CantidadActual2 FROM PRODUCTO_ALMACEN WHERE ID_ALMACEN IN (1,2,6,7) AND ID_PRODUCTO IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
-data5 = pd.read_sql('SELECT P.ID as IdProducto, P.CODIGO as CodProducto, P.NOMBRE as Producto, P.EXISTENCIA as Existencia, P.EN_VENTA as EnVenta, P.ID_GRUPO as IdGrupo FROM PRODUCTO AS P WHERE P.ID_GRUPO =7 AND P.EN_VENTA =1 AND P.ID IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
+data5 = pd.read_sql('SELECT P.ID as IdProducto, P.CODIGO as CodProducto, P.NOMBRE as Producto, P.EXISTENCIA as ExistenciaInicial, P.EN_VENTA as EnVenta, P.ID_GRUPO as IdGrupo FROM PRODUCTO AS P WHERE P.ID_GRUPO =7 AND P.EN_VENTA =1 AND P.ID IN (' + ','.join((str(n) for n in l)) + ')',cnxn)
 
 data.to_excel('Concepto.xlsx')
 data2.to_excel('Productos.xlsx')
@@ -51,13 +51,13 @@ for i in range (0, len(df_concepto)):
 
 #Se limitan los productos a la cantidad de conceptos
 producto=pd.read_excel(r"Productos.xlsx")
-df_producto=  pd.DataFrame(producto, columns= ['IdProducto', 'IdGrupo', 'CodProducto', 'Producto', 'Existencia', 'EnVenta'])
+df_producto=  pd.DataFrame(producto, columns= ['IdProducto', 'IdGrupo', 'CodProducto', 'Producto', 'ExistenciaInicial', 'EnVenta'])
 df_producto = df_producto.iloc[0:9]
 
 #Se extraen los productos en venta para agregarlos al motivo de venta por productos
 #Se aleatorian para escoger solo uno
 productosventa=pd.read_excel(r"ProductosVenta.xlsx")
-df_producto_venta=  pd.DataFrame(productosventa, columns= ['IdProducto', 'IdGrupo', 'CodProducto', 'Producto', 'Existencia', 'EnVenta'])
+df_producto_venta=  pd.DataFrame(productosventa, columns= ['IdProducto', 'IdGrupo', 'CodProducto', 'Producto', 'ExistenciaInicial', 'EnVenta'])
 np=len(df_producto_venta)
 df_producto_venta = df_producto_venta.sample(np)
 df_producto_venta = df_producto_venta.iloc[0:2]
@@ -235,7 +235,7 @@ os.remove('Almacen2.xlsx')
 os.remove('Almacenes.xlsx')
 os.remove('TestDataUser.xlsx')
 os.remove('Movimiento.xlsx')
-
+"""
 #Se valida y se crea el archivo que necesita Katalon para guardar los pedidos
 if os.path.isfile("Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx"):
     print("Ya esta creado: Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx")
@@ -243,7 +243,7 @@ else:
 	wb7 = openpyxl.Workbook() 
 	wb7.save('Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx') 
 	print("Archivo creado: Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx")
-
+"""
 
 
 
