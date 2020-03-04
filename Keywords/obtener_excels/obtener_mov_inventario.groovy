@@ -26,7 +26,7 @@ public class obtener_mov_inventario {
 	@Keyword
 	def List<String> getValuesExcelMovInventario(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/MovimientoDeInventario.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Inventario/MovimientoDeInventario.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 
@@ -44,6 +44,7 @@ public class obtener_mov_inventario {
 		String IdAlmacen2 = excelData.getValue("IdAlmacen2", index);
 		String CantidadActual2 = excelData.getValue("CantidadActual2", index);
 		String CantidadMovida = excelData.getValue("CantidadAMover", index);
+		String IdProducto = excelData.getValue("IdProducto", index);
 
 
 		List<String> data = [
@@ -60,7 +61,8 @@ public class obtener_mov_inventario {
 			CantidadActual1,
 			IdAlmacen2,
 			CantidadActual2,
-			CantidadMovida
+			CantidadMovida,
+			IdProducto
 		]
 
 		return data

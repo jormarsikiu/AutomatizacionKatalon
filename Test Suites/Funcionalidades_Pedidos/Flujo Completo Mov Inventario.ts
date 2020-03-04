@@ -35,7 +35,7 @@
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>50465e6c-6e91-4507-a82b-0388bbfbe7ff</guid>
+      <guid>1ee52bf0-e64c-4ef3-8e24-1e4158f7d4ec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario</testCaseId>

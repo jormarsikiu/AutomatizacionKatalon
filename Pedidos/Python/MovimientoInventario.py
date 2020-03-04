@@ -9,10 +9,9 @@ import math
 import numpy as np
 
 
-productos_almacen = pd.read_excel(r"Pedidos/DataExcel/ProductoAlmacen.xlsx")
+productos_almacen = pd.read_excel(r"Pedidos/DataExcel/Inventario/ProductoAlmacen.xlsx")
 df_productos_almacen= pd.DataFrame(productos_almacen, columns= ['IdProducto'])
 l=df_productos_almacen.iloc[:, 0].tolist()
-
 
 #Conexion con la base de fatos
 try:
@@ -198,8 +197,10 @@ for i in range(len(list_salida)):
 #Para los conceptos de entrada o salida debe ser mayor que 0 y para transferencia puede ser 0 
 #Se limita la CantidadMovida con el limite de la CantidadActual1 y se retornan aleatorios
 for i in range (0, len(df_movinventario2)):
-	if(df_movinventario2.loc[i, 'Concepto']=='TransferenciaDeMercancias'):
-		df_movinventario2.loc[i, 'CantidadAMover'] = random.randint(0, list_tranf[i])
+	if((df_movinventario2.loc[i, 'Concepto']=='TransferenciaDeMercancias')& (df_movinventario2.loc[i, 'CantidadActual1']==0)):
+		df_movinventario2.loc[i, 'CantidadAMover'] = 0
+	elif((df_movinventario2.loc[i, 'Concepto']=='TransferenciaDeMercancias')& (df_movinventario2.loc[i, 'CantidadActual1']>0)):
+		df_movinventario2.loc[i, 'CantidadAMover'] = random.randint(1, list_salida[i])
 	else:
 		df_movinventario2.loc[i, 'CantidadAMover'] = random.randint(1, list_salida[i])
 
@@ -210,7 +211,6 @@ for j in range (0, len(df_movinventario2)):
 		df_movinventario2.loc[j, 'CantidadActual2'] = 'NA'
 
 #Se eliminan los registros duplicados
-
 #for j in range (0, len(df_movinventario2)):
 	#if (df_movinventario2.loc[j, 'Concepto']!='TransferenciaDeMercancias'):
 		#df_movinventario3 = df_movinventario2.drop_duplicates(['IdProducto', 'Existencia'], keep='first')
@@ -219,13 +219,13 @@ for j in range (0, len(df_movinventario2)):
 
 
 
-print(len(df_movinventario2))
+#print(len(df_movinventario2))
 #df_movinventario2 = df_movinventario2.reset_index(drop=True)
 #df_movinventario3 = df_movinventario2.drop_duplicates(subset='IdProducto', keep='first')
 #nc=len(df_movinventario2)
 #df_movinventario3 = df_movinventario2.sample(nc)
 #df_movinventario3 = df_movinventario3.reset_index(drop=True)
-export_excel = df_movinventario2.to_excel (r'Pedidos/DataExcel/MovimientoDeInventario.xlsx', index = None, header=True)
+export_excel = df_movinventario2.to_excel (r'Pedidos/DataExcel/Inventario/MovimientoDeInventario.xlsx', index = None, header=True)
 
 os.remove('Concepto.xlsx')
 os.remove('Productos.xlsx')
@@ -236,7 +236,13 @@ os.remove('Almacenes.xlsx')
 os.remove('TestDataUser.xlsx')
 os.remove('Movimiento.xlsx')
 
-
+#Se valida y se crea el archivo que necesita Katalon para guardar los pedidos
+if os.path.isfile("Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx"):
+    print("Ya esta creado: Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx")
+else:
+	wb7 = openpyxl.Workbook() 
+	wb7.save('Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx') 
+	print("Archivo creado: Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx")
 
 
 

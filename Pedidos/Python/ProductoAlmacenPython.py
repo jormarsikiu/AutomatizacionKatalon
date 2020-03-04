@@ -34,12 +34,12 @@ df_productoEnVenta=pd.DataFrame(productoEnVenta, columns= ['IdProducto', 'CodPro
 nc=len(df_producto1)
 df_producto1 = df_producto1.sample(nc)
 df_producto1 = df_producto1.reset_index(drop=True)
-df_producto1 = df_producto1.iloc[0:11]
+df_producto1 = df_producto1.iloc[0:10]
 
 na=len(df_productoEnVenta)
 df_productoEnVenta = df_productoEnVenta.sample(na)
 df_productoEnVenta = df_productoEnVenta.reset_index(drop=True)
-df_productoEnVenta = df_productoEnVenta.iloc[0:1]
+df_productoEnVenta = df_productoEnVenta.iloc[0:2]
 
 df_producto=pd.concat([df_productoEnVenta, df_producto1], ignore_index=True)
 
@@ -143,7 +143,7 @@ df_usuarios =  pd.DataFrame(usuarios, columns= ['Idioma', 'Usuario', 'Contrasena
 
 df_almacen=pd.concat([df_usuarios, df_producto], axis=1)
 
-export_excel = df_almacen.to_excel (r'Pedidos/DataExcel/ProductoAlmacen.xlsx', index = None, header=True)
+export_excel = df_almacen.to_excel (r'Pedidos/DataExcel/Inventario/ProductoAlmacen.xlsx', index = None, header=True)
 
 os.remove('Producto.xlsx')
 os.remove('TestDataUser.xlsx')

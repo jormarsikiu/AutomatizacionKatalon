@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Flujo Completo Mov Inventario" time="158.409" tests="1" failures="0" errors="1">
+   <testsuite name="Flujo Completo Mov Inventario" tests="1" failures="0" errors="1" time="158.409" timestamp="2020-03-03 14:49:08" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/Flujo Completo Mov Inventario">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200303_144906\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200303_144906"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200303_144906\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200303_144906\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.122"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="fb1ba4a0f2d1d5a37847a67a24fd10dd"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" time="157.283" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583261346042.run(TempTestSuite1583261346042.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.util.Random.nextInt() is applicable for argument types: (java.lang.String) values: [701]
+Possible solutions: nextInt(), nextInt(int), nextLong(), getAt(java.lang.String), nextFloat(), notify()
+	at Movimientos_Inventario.run(Movimientos_Inventario:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+"/>
+         <system-out><![CDATA[2020-03-03 14:49:08 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583261346042.run(TempTestSuite1583261346042.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.util.Random.nextInt() is applicable for argument types: (java.lang.String) values: [701]
+Possible solutions: nextInt(), nextInt(int), nextLong(), getAt(java.lang.String), nextFloat(), notify()
+	at Movimientos_Inventario.run(Movimientos_Inventario:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+
+
+2020-03-03 14:49:09 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/MovimientoDeInventario.xlsx: null
+
+2020-03-03 14:49:09 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-03-03 14:49:10 - [TEST_STEP][FAILED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Unable to call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583261346042.run(TempTestSuite1583261346042.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.util.Random.nextInt() is applicable for argument types: (java.lang.String) values: [701]
+Possible solutions: nextInt(), nextInt(int), nextLong(), getAt(java.lang.String), nextFloat(), notify()
+	at Movimientos_Inventario.run(Movimientos_Inventario:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-03-03 14:49:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-03 14:49:10 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-03 14:49:10 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-03 14:49:10 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-03 14:49:11 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-03 14:49:11 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-03-03 14:50:03 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-03 14:50:03 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-03 14:50:05 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-03 14:50:05 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-03 14:50:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-03 14:50:06 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-03 14:50:06 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-03 14:50:06 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-03 14:50:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-03 14:51:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-03 14:51:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-03 14:51:09 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-03 14:51:09 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-03 14:51:10 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-03 14:51:10 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-03 14:51:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-03 14:51:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-03 14:51:10 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-03 14:51:10 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-03 14:51:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-03 14:51:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-03 14:51:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-03 14:51:14 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583261346042.run(TempTestSuite1583261346042.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.util.Random.nextInt() is applicable for argument types: (java.lang.String) values: [701]
+Possible solutions: nextInt(), nextInt(int), nextLong(), getAt(java.lang.String), nextFloat(), notify()
+	at Movimientos_Inventario.run(Movimientos_Inventario:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)
+
+2020-03-03 14:51:14 - [TEST_CASE][ERROR] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario FAILED.
+Reason:
+groovy.lang.MissingMethodException: No signature of method: java.util.Random.nextInt() is applicable for argument types: (java.lang.String) values: [701]
+Possible solutions: nextInt(), nextInt(int), nextLong(), getAt(java.lang.String), nextFloat(), notify()
+	at Movimientos_Inventario.run(Movimientos_Inventario:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583261346042.run(TempTestSuite1583261346042.groovy:36)
+
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-03 14:51:14 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - if (IdGrupo == "Materia Prima"): null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - else if (IdGrupo == "Producto Terminado"): null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - cantidad = rand.nextInt(250 - 1 + 1) + 1: null
+
+2020-03-03 14:51:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Producto_Faltante_Almacen"), ["concepto":"EntradaDeMercancias", "motivo":"CompraProductos", "codProducto":codProducto, "cantidad":cantidad, "IdAlmacen1":IdAlmacen1, ... ], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Producto_Faltante_Almacen' successfully
+
+2020-03-03 14:51:15 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Producto_Faltante_Almacen: Test Cases/Individual_Tests/Producto_Faltante_Almacen
+
+2020-03-03 14:51:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-03 14:51:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-03 14:51:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-03 14:51:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-03 14:51:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-03 14:51:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-03 14:51:25 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'EntradaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-03 14:51:26 - [MESSAGE][PASSED] - All options with value 'EntradaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-03 14:51:26 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'CompraProductos' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-03 14:51:27 - [MESSAGE][PASSED] - All options with value 'CompraProductos' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-03 14:51:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-03 14:51:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-03 14:51:28 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '1200-660-055' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-03 14:51:29 - [MESSAGE][PASSED] - Text '1200-660-055' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-03 14:51:29 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-03 14:51:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-03 14:51:29 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidad): Text '70' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-03 14:51:30 - [MESSAGE][PASSED] - Text '70' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-03 14:51:30 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-03 14:51:30 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-03 14:51:30 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-03 14:51:35 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-03 14:51:35 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-03 14:51:35 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-03 14:51:35 - [TEST_STEP][PASSED] - if (modal == null): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-03 14:51:35 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-03-03 14:51:35 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '7' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-03 14:51:37 - [MESSAGE][PASSED] - All options with value '7' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-03 14:51:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-03 14:51:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-03 14:51:39 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-03 14:51:41 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-03 14:51:41 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-03 14:51:46 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-03 14:51:46 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Producto_Faltante_Almacen' successfully
+
+2020-03-03 14:51:46 - [TEST_STEP][PASSED] - nuevacantidad = rand.nextInt(cantidad - 10 + 1) + 10: null
+
+2020-03-03 14:51:46 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583261346042.run(TempTestSuite1583261346042.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.util.Random.nextInt() is applicable for argument types: (java.lang.String) values: [701]
+Possible solutions: nextInt(), nextInt(int), nextLong(), getAt(java.lang.String), nextFloat(), notify()
+	at Movimientos_Inventario.run(Movimientos_Inventario:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+)]]></system-out>
+         <system-err><![CDATA[2020-03-03 14:49:08 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583261346042.run(TempTestSuite1583261346042.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.util.Random.nextInt() is applicable for argument types: (java.lang.String) values: [701]
+Possible solutions: nextInt(), nextInt(int), nextLong(), getAt(java.lang.String), nextFloat(), notify()
+	at Movimientos_Inventario.run(Movimientos_Inventario:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-03-03 14:49:08 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583261346042.run(TempTestSuite1583261346042.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.util.Random.nextInt() is applicable for argument types: (java.lang.String) values: [701]
+Possible solutions: nextInt(), nextInt(int), nextLong(), getAt(java.lang.String), nextFloat(), notify()
+	at Movimientos_Inventario.run(Movimientos_Inventario:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-out>
+      <system-err><![CDATA[2020-03-03 14:49:08 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583261346042.run(TempTestSuite1583261346042.groovy:36)
+Caused by: groovy.lang.MissingMethodException: No signature of method: java.util.Random.nextInt() is applicable for argument types: (java.lang.String) values: [701]
+Possible solutions: nextInt(), nextInt(int), nextLong(), getAt(java.lang.String), nextFloat(), notify()
+	at Movimientos_Inventario.run(Movimientos_Inventario:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more]]></system-err>
+   </testsuite>
+</testsuites>
