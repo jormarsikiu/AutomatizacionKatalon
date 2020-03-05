@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Flujo Completo Mov Inventario" time="220.429" tests="2" failures="0" errors="1">
+   <testsuite name="Flujo Completo Mov Inventario" tests="2" failures="0" errors="1" time="220.429" timestamp="2020-03-05 10:17:41" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/Flujo Completo Mov Inventario">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200305_101738\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200305_101738"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200305_101738\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200305_101738\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.132"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="4e55e3b6f93701d9f0c198db39d9678a"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" time="209.197" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583417858340.run(TempTestSuite1583417858340.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:39)
+	... 32 more
+"/>
+         <system-out><![CDATA[2020-03-05 10:17:41 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583417858340.run(TempTestSuite1583417858340.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:39)
+	... 32 more
+
+
+2020-03-05 10:17:42 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Inventario/MovimientoDeInventario.xlsx: null
+
+2020-03-05 10:17:42 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-03-05 10:17:43 - [TEST_STEP][FAILED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Unable to call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583417858340.run(TempTestSuite1583417858340.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:39)
+	... 32 more
+)
+
+2020-03-05 10:17:43 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:17:43 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-05 10:17:43 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-05 10:17:43 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:17:44 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-05 10:17:44 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-03-05 10:19:26 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:19:26 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-05 10:19:28 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:19:28 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-05 10:19:28 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:19:29 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:19:29 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:19:29 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:19:29 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:19:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:19:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:19:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:19:40 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:19:41 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:19:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:19:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:19:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:19:49 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:19:49 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583417858340.run(TempTestSuite1583417858340.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:39)
+	... 32 more
+)
+
+2020-03-05 10:19:49 - [TEST_CASE][ERROR] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario FAILED.
+Reason:
+org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583417858340.run(TempTestSuite1583417858340.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:39)
+	... 32 more
+
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:19:50 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - IdProducto = data[14]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - Existencia = data[8]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - cantidadActual1 = data[10]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - cantidadActual2 = data[12]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - cantidadAMover = data[13]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - nuevacantidad = 0: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:19:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:19:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:20:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:20:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:20:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:20:36 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'SalidaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:20:38 - [MESSAGE][PASSED] - All options with value 'SalidaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:20:38 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'DispatchOutput' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:20:41 - [MESSAGE][PASSED] - All options with value 'DispatchOutput' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:20:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:20:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:20:41 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '2663-909-114' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:20:42 - [MESSAGE][PASSED] - Text '2663-909-114' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:20:42 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:20:43 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:20:43 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidadAMover): Text '392611' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:20:43 - [MESSAGE][PASSED] - Text '392611' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:20:43 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:20:44 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:20:44 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:20:49 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:20:49 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:20:49 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:20:49 - [TEST_STEP][PASSED] - if (modal == null): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:20:49 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-03-05 10:20:49 - [TEST_STEP][PASSED] - if (motivo == "EntradaPorFabricacion"): null
+
+2020-03-05 10:20:49 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:20:49 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:20:53 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:20:53 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias"): null
+
+2020-03-05 10:20:53 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:20:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:21:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:21:04 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:21:05 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:21:05 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:21:10 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:21:10 - [TEST_STEP][ERROR] - exportar_archivos.logInventario.reporteInv(concepto, motivo, IdProducto, codProducto, Producto, IdGrupo, Existencia, IdAlmacen1, cantidadActual1, IdAlmacen2, cantidadActual2, cantidad): java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+
+2020-03-05 10:21:10 - [MESSAGE][ERROR] - java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+
+2020-03-05 10:21:10 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583417858340.run(TempTestSuite1583417858340.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:39)
+	... 32 more
+)]]></system-out>
+         <system-err><![CDATA[2020-03-05 10:17:41 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583417858340.run(TempTestSuite1583417858340.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:39)
+	... 32 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario" time="10.026" classname="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario" status="PASSED">
+         <system-out><![CDATA[2020-03-05 10:21:10 - [TEST_CASE][PASSED] - Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario: Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario
+
+2020-03-05 10:21:11 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("Reporte"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-03-05 10:21:20 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-03-05 10:17:41 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583417858340.run(TempTestSuite1583417858340.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:39)
+	... 32 more]]></system-out>
+      <system-err><![CDATA[2020-03-05 10:17:41 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583417858340.run(TempTestSuite1583417858340.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The system cannot find the file specified)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:39)
+	... 32 more]]></system-err>
+   </testsuite>
+</testsuites>

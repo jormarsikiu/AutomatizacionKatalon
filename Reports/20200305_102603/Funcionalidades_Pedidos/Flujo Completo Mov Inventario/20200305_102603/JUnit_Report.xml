@@ -1,0 +1,1556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Flujo Completo Mov Inventario" time="321.24" tests="2" failures="0" errors="1">
+   <testsuite name="Flujo Completo Mov Inventario" tests="2" failures="0" errors="1" time="321.24" timestamp="2020-03-05 10:26:05" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/Flujo Completo Mov Inventario">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200305_102603\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200305_102603"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200305_102603\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200305_102603\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.132"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="68b5b5b96affd19e8e90bb6ab14a7595"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" time="314.107" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583418363231.run(TempTestSuite1583418363231.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:135)
+	... 32 more
+"/>
+         <system-out><![CDATA[2020-03-05 10:26:06 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583418363231.run(TempTestSuite1583418363231.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:135)
+	... 32 more
+
+
+2020-03-05 10:26:06 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Inventario/MovimientoDeInventario.xlsx: null
+
+2020-03-05 10:26:06 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-03-05 10:26:07 - [TEST_STEP][FAILED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Unable to call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583418363231.run(TempTestSuite1583418363231.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:135)
+	... 32 more
+)
+
+2020-03-05 10:26:07 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:26:07 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-05 10:26:08 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-05 10:26:08 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:26:09 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-05 10:26:09 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-03-05 10:26:33 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:26:33 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-05 10:26:34 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:26:34 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:26:35 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:26:35 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-05 10:26:35 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-05 10:26:35 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:26:36 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:26:36 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:26:36 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:26:36 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:26:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:26:39 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:26:39 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:26:39 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:26:40 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:26:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:26:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:26:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:26:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:26:42 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 10:26:42 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:26:43 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - IdProducto = data[14]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - Existencia = data[8]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - cantidadActual1 = data[10]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - cantidadActual2 = data[12]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - cantidadAMover = data[13]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - nuevacantidad = 0: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:26:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:26:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:26:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:26:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:26:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:26:50 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'TransferenciaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:26:52 - [MESSAGE][PASSED] - All options with value 'TransferenciaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:26:52 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'Fabricacion' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:26:53 - [MESSAGE][PASSED] - All options with value 'Fabricacion' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:26:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:26:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:26:54 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '2663-909-114' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:26:54 - [MESSAGE][PASSED] - Text '2663-909-114' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:26:54 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:26:55 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:26:55 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidadAMover): Text '11619' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:26:56 - [MESSAGE][PASSED] - Text '11619' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:26:56 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:26:56 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:26:56 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:27:01 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:27:01 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:27:01 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:27:01 - [TEST_STEP][PASSED] - if (modal == null): null
+
+2020-03-05 10:27:01 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:27:01 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector(".swal2-confirm").click();", null): Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-03-05 10:27:01 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-03-05 10:27:01 - [TEST_STEP][PASSED] - if (motivo == "EntradaPorFabricacion"): null
+
+2020-03-05 10:27:01 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:27:01 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:27:03 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:27:03 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias"): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:27:03 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen2"), IdAlmacen2, true): All options with value '6' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen2'  using regular expression
+
+2020-03-05 10:27:05 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen2'  using regular expression
+
+2020-03-05 10:27:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:27:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:27:07 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:27:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:27:10 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:27:15 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:27:15 - [TEST_STEP][PASSED] - exportar_archivos.logInventario.reporteInv(concepto, motivo, IdProducto, codProducto, Producto, IdGrupo, Existencia, IdAlmacen1, cantidadActual1, IdAlmacen2, cantidadActual2, cantidad): exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 10:27:15 - [MESSAGE][PASSED] - exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 10:27:15 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 10:27:15 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:27:15 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-05 10:27:15 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-05 10:27:15 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:27:15 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-03-05 10:27:16 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-05 10:27:30 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:27:30 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-05 10:27:31 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:27:31 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-05 10:27:31 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:27:32 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:27:32 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:27:32 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:27:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:27:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:27:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:27:34 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:27:34 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-05 10:27:34 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:27:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:27:35 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-05 10:27:35 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:27:35 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:27:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:27:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 10:27:37 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:27:37 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - IdProducto = data[14]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - Existencia = data[8]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - cantidadActual1 = data[10]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - cantidadActual2 = data[12]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - cantidadAMover = data[13]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - nuevacantidad = 0: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:27:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:27:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:27:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:27:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:27:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:27:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:27:45 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'TransferenciaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:27:47 - [MESSAGE][PASSED] - All options with value 'TransferenciaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:27:47 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'Fabricacion' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:27:49 - [MESSAGE][PASSED] - All options with value 'Fabricacion' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:27:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:27:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:27:50 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '2663-909-114' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:27:51 - [MESSAGE][PASSED] - Text '2663-909-114' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:27:51 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:27:51 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:27:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidadAMover): Text '2626149' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:27:52 - [MESSAGE][PASSED] - Text '2626149' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:27:52 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:27:52 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:27:52 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:27:57 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:27:57 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:27:57 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:27:57 - [TEST_STEP][PASSED] - if (modal == null): null
+
+2020-03-05 10:27:57 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:27:57 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector(".swal2-confirm").click();", null): Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-03-05 10:27:57 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-03-05 10:27:57 - [TEST_STEP][PASSED] - if (motivo == "EntradaPorFabricacion"): null
+
+2020-03-05 10:27:57 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:27:57 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '6' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:28:00 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:28:00 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias"): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:28:00 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen2"), IdAlmacen2, true): All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen2'  using regular expression
+
+2020-03-05 10:28:01 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen2'  using regular expression
+
+2020-03-05 10:28:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:28:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:28:05 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:28:06 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:28:06 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:28:11 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:28:11 - [TEST_STEP][PASSED] - exportar_archivos.logInventario.reporteInv(concepto, motivo, IdProducto, codProducto, Producto, IdGrupo, Existencia, IdAlmacen1, cantidadActual1, IdAlmacen2, cantidadActual2, cantidad): exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 10:28:11 - [MESSAGE][PASSED] - exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 10:28:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 10:28:11 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:28:11 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-05 10:28:11 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-05 10:28:11 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:28:11 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-03-05 10:28:12 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-05 10:28:29 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:28:29 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-05 10:28:30 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:28:30 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:28:30 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:28:30 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:28:31 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:28:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:28:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:28:33 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:28:33 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:28:33 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-05 10:28:33 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:28:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:28:34 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-05 10:28:34 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:28:34 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:28:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:28:35 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 10:28:35 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:28:35 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - IdProducto = data[14]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - Existencia = data[8]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - cantidadActual1 = data[10]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - cantidadActual2 = data[12]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - cantidadAMover = data[13]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - nuevacantidad = 0: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:28:35 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:28:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:28:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:28:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:28:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:28:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:28:45 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'EntradaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:28:46 - [MESSAGE][PASSED] - All options with value 'EntradaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:28:46 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'InitialLoading' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:28:48 - [MESSAGE][PASSED] - All options with value 'InitialLoading' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:28:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:28:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:28:48 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '9511-101-140' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:28:49 - [MESSAGE][PASSED] - Text '9511-101-140' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:28:49 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:28:50 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:28:50 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidadAMover): Text '4888' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:28:50 - [MESSAGE][PASSED] - Text '4888' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:28:50 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:28:51 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:28:51 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:28:56 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:28:56 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:28:56 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:28:56 - [TEST_STEP][PASSED] - if (modal == null): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:28:56 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-03-05 10:28:56 - [TEST_STEP][PASSED] - if (motivo == "EntradaPorFabricacion"): null
+
+2020-03-05 10:28:56 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:28:56 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:28:57 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:28:57 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias"): null
+
+2020-03-05 10:28:57 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:28:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:29:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:29:03 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:29:04 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:29:04 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:29:09 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:29:09 - [TEST_STEP][PASSED] - exportar_archivos.logInventario.reporteInv(concepto, motivo, IdProducto, codProducto, Producto, IdGrupo, Existencia, IdAlmacen1, cantidadActual1, IdAlmacen2, cantidadActual2, cantidad): exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 10:29:09 - [MESSAGE][PASSED] - exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 10:29:09 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 10:29:09 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:29:09 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-05 10:29:09 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-05 10:29:09 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:29:09 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-03-05 10:29:10 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-05 10:29:32 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:29:32 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-05 10:29:33 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:29:33 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:29:33 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:29:33 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:29:34 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:29:34 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:29:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:29:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:29:36 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-05 10:29:36 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:29:37 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:29:37 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-05 10:29:37 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:29:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:29:37 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-05 10:29:37 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:29:37 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:29:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:29:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 10:29:38 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:29:38 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - IdProducto = data[14]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - Existencia = data[8]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - cantidadActual1 = data[10]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - cantidadActual2 = data[12]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - cantidadAMover = data[13]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - nuevacantidad = 0: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:29:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:29:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:29:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:29:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:29:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:29:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:29:46 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'EntradaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:29:48 - [MESSAGE][PASSED] - All options with value 'EntradaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:29:48 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'InitialLoading' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:29:49 - [MESSAGE][PASSED] - All options with value 'InitialLoading' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:29:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:29:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:29:50 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '9511-101-140' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:29:51 - [MESSAGE][PASSED] - Text '9511-101-140' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:29:51 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:29:51 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:29:51 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidadAMover): Text '1882' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:29:52 - [MESSAGE][PASSED] - Text '1882' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:29:52 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:29:52 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:29:52 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:29:57 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:29:57 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:29:57 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:29:57 - [TEST_STEP][PASSED] - if (modal == null): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:29:57 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-03-05 10:29:57 - [TEST_STEP][PASSED] - if (motivo == "EntradaPorFabricacion"): null
+
+2020-03-05 10:29:57 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:29:57 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '6' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:29:59 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:29:59 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias"): null
+
+2020-03-05 10:29:59 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:29:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:30:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:30:04 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:30:05 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:30:05 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:30:10 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:30:10 - [TEST_STEP][PASSED] - exportar_archivos.logInventario.reporteInv(concepto, motivo, IdProducto, codProducto, Producto, IdGrupo, Existencia, IdAlmacen1, cantidadActual1, IdAlmacen2, cantidadActual2, cantidad): exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 10:30:10 - [MESSAGE][PASSED] - exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 10:30:10 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 10:30:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:30:10 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-05 10:30:10 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-05 10:30:10 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:30:10 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-03-05 10:30:11 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-05 10:30:36 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 10:30:36 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-05 10:30:37 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:30:37 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-05 10:30:37 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:30:38 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 10:30:38 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:30:38 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 10:30:38 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:30:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 10:30:40 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 10:30:40 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:30:41 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:30:41 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:30:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:30:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:30:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 10:30:42 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 10:30:42 - [TEST_STEP][FAILED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Unable to call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583418363231.run(TempTestSuite1583418363231.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:135)
+	... 32 more
+)
+
+2020-03-05 10:30:42 - [TEST_CASE][ERROR] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario FAILED.
+Reason:
+org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583418363231.run(TempTestSuite1583418363231.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:135)
+	... 32 more
+
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:30:42 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - IdProducto = data[14]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - Existencia = data[8]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - cantidadActual1 = data[10]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - cantidadActual2 = data[12]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - cantidadAMover = data[13]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - nuevacantidad = 0: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 10:30:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:30:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 10:30:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:30:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 10:30:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:30:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 10:30:52 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'SalidaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:30:54 - [MESSAGE][PASSED] - All options with value 'SalidaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 10:30:54 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'DevolucionProductoCompra' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:30:55 - [MESSAGE][PASSED] - All options with value 'DevolucionProductoCompra' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 10:30:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:30:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 10:30:56 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '9511-202-111' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:30:57 - [MESSAGE][PASSED] - Text '9511-202-111' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:30:57 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:30:57 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 10:30:57 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidadAMover): Text '6' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:30:58 - [MESSAGE][PASSED] - Text '6' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:30:58 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:30:58 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 10:30:58 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:31:03 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:31:03 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:31:03 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 10:31:03 - [TEST_STEP][PASSED] - if (modal == null): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:31:03 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-03-05 10:31:03 - [TEST_STEP][PASSED] - if (motivo == "EntradaPorFabricacion"): null
+
+2020-03-05 10:31:03 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:31:03 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:31:05 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 10:31:05 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias"): null
+
+2020-03-05 10:31:05 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:31:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:31:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 10:31:14 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:31:15 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 10:31:15 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 10:31:20 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 10:31:20 - [TEST_STEP][ERROR] - exportar_archivos.logInventario.reporteInv(concepto, motivo, IdProducto, codProducto, Producto, IdGrupo, Existencia, IdAlmacen1, cantidadActual1, IdAlmacen2, cantidadActual2, cantidad): java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+
+2020-03-05 10:31:20 - [MESSAGE][ERROR] - java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+
+2020-03-05 10:31:20 - [MESSAGE][FAILED] - Unable to call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' (Root cause: com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583418363231.run(TempTestSuite1583418363231.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:135)
+	... 32 more
+)]]></system-out>
+         <system-err><![CDATA[2020-03-05 10:26:06 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583418363231.run(TempTestSuite1583418363231.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:135)
+	... 32 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario" time="5.732" classname="Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario" status="PASSED">
+         <system-out><![CDATA[2020-03-05 10:31:20 - [TEST_CASE][PASSED] - Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario: Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario
+
+2020-03-05 10:31:20 - [TEST_STEP][PASSED] - python.ejecutarAleatoriosPython.runPython("Reporte"): python.ejecutarAleatoriosPython.runPython is PASSED
+
+2020-03-05 10:31:26 - [MESSAGE][PASSED] - python.ejecutarAleatoriosPython.runPython is PASSED]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-03-05 10:26:05 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583418363231.run(TempTestSuite1583418363231.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:135)
+	... 32 more]]></system-out>
+      <system-err><![CDATA[2020-03-05 10:26:05 - [TEST_SUITE][ERROR] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' failed because of error(s)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:66)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.call(CallTestCaseKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:68)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.callTestCase(CallTestCaseKeyword.groovy:81)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword.execute(CallTestCaseKeyword.groovy:44)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.callTestCase(BuiltinKeywords.groovy:334)
+	at TC_Agregar_Movimiento_Inventario.run(TC_Agregar_Movimiento_Inventario:31)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583418363231.run(TempTestSuite1583418363231.groovy:36)
+Caused by: org.codehaus.groovy.runtime.InvokerInvocationException: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.invokeMethod(reporteInventario.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at Movimientos_Inventario.run(Movimientos_Inventario:157)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestCaseMain.runTestCase(TestCaseMain.java:114)
+	at com.kms.katalon.core.keyword.builtin.CallTestCaseKeyword$_callTestCase_closure1.doCall(CallTestCaseKeyword.groovy:59)
+	... 20 more
+Caused by: java.io.FileNotFoundException: C:\Users\kaizen\git\AutomatizacionKatalon\Pedidos\DataExcel\Inventario\LogReporteInventarioKatalon.xlsx (The process cannot access the file because it is being used by another process)
+	at exportar_archivos.logInventario.reporteInv(reporteInventario.groovy:135)
+	... 32 more]]></system-err>
+   </testsuite>
+</testsuites>

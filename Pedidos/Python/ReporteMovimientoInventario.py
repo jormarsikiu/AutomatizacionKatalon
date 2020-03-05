@@ -6,7 +6,7 @@ import pandas as pd
 import os
 import random
 
-productos_almacen = pd.read_excel(r"Pedidos/DataExcel/Inventario/ProductoAlmacen.xlsx")
+productos_almacen = pd.read_excel(r"Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx")
 df_productos_almacen= pd.DataFrame(productos_almacen, columns= ['IdProducto'])
 l=df_productos_almacen.iloc[:, 0].tolist()
 
@@ -50,7 +50,11 @@ df_mov_inv_concepto=pd.merge(df_concepto_motivo, df_reporte, on=['IdProducto'], 
 
 df_mov_inv_concepto = df_mov_inv_concepto.drop_duplicates(['IdProducto', 'IdAlmacenes'], keep='first')
 
-export_excel = df_mov_inv_concepto.to_excel (r'Pedidos/DataExcel/Inventario/ReporteMovimientoDeInventario.xlsx', index = None, header=True)
+df_mov_in=  pd.DataFrame()
+
+df_mov_in = df_mov_inv_concepto[['Concepto', 'Motivo', 'IdProducto', 'CodProducto', 'Producto', 'IdGrupo', 'ExistenciaInicial', 'ExistenciaActual', 'IdAlmacenes', 'CantidadActual']]
+
+export_excel = df_mov_in.to_excel (r'Pedidos/DataExcel/Inventario/ReporteMovimientoDeInventario.xlsx', index = None, header=True)
 
 os.remove('Vista.xlsx')
 

@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Flujo Completo Mov Inventario" time="146.889" tests="1" failures="0" errors="0">
+   <testsuite name="Flujo Completo Mov Inventario" tests="1" failures="0" errors="0" time="146.889" timestamp="2020-03-05 15:04:58" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/Flujo Completo Mov Inventario">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200305_150456\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200305_150456"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200305_150456\\Funcionalidades_Pedidos\\Flujo Completo Mov Inventario\\20200305_150456\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.132"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="sessionId" value="5f3fbe82c5d1fe00247280030cd067c5"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" time="145.749" classname="Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario" status="PASSED">
+         <system-out><![CDATA[2020-03-05 15:04:59 - [TEST_CASE][PASSED] - Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario
+
+2020-03-05 15:04:59 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Inventario/MovimientoDeInventario.xlsx: null
+
+2020-03-05 15:04:59 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null
+
+2020-03-05 15:05:00 - [TEST_STEP][PASSED] - for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)]): Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 15:05:00 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 15:05:00 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-05 15:05:01 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-05 15:05:01 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 15:05:02 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-05 15:05:02 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-03-05 15:05:14 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 15:05:14 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-05 15:05:15 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:05:15 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-05 15:05:15 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 15:05:16 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 15:05:16 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 15:05:17 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 15:05:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 15:05:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 15:05:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 15:05:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 15:05:19 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:05:20 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 15:05:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 15:05:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 15:05:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 15:05:21 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 15:05:21 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 15:05:21 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:05:22 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - IdProducto = data[14]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - Existencia = data[8]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - cantidadActual1 = data[10]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - cantidadActual2 = data[12]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - cantidadAMover = data[13]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - nuevacantidad = 0: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 15:05:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 15:05:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 15:05:23 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 15:05:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 15:05:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 15:05:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 15:05:29 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'EntradaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 15:05:30 - [MESSAGE][PASSED] - All options with value 'EntradaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 15:05:30 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'CompraProductos' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 15:05:32 - [MESSAGE][PASSED] - All options with value 'CompraProductos' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 15:05:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 15:05:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 15:05:32 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '2663-909-114' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:05:33 - [MESSAGE][PASSED] - Text '2663-909-114' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:05:33 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:05:34 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:05:34 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidadAMover): Text '2209420' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:05:34 - [MESSAGE][PASSED] - Text '2209420' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:05:34 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:05:35 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:05:35 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 15:05:40 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 15:05:40 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 15:05:40 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 15:05:40 - [TEST_STEP][PASSED] - if (modal == null): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:05:40 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-03-05 15:05:40 - [TEST_STEP][PASSED] - if (motivo == "EntradaPorFabricacion"): null
+
+2020-03-05 15:05:40 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:05:40 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 15:05:42 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 15:05:42 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias"): null
+
+2020-03-05 15:05:42 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:05:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 15:05:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 15:05:44 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:05:45 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:05:45 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 15:05:50 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 15:05:50 - [TEST_STEP][PASSED] - exportar_archivos.logInventario.reporteInv(concepto, motivo, IdProducto, codProducto, Producto, IdGrupo, Existencia, IdAlmacen1, cantidadActual1, IdAlmacen2, cantidadActual2, cantidad): exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 15:05:50 - [MESSAGE][PASSED] - exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 15:05:50 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 15:05:50 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 15:05:50 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-05 15:05:50 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-05 15:05:50 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 15:05:50 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-03-05 15:05:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-05 15:06:01 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 15:06:01 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-05 15:06:02 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:02 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-05 15:06:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 15:06:03 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 15:06:03 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 15:06:03 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 15:06:03 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 15:06:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 15:06:05 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 15:06:05 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 15:06:06 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:06 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 15:06:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 15:06:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 15:06:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 15:06:07 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 15:06:07 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 15:06:08 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:08 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - IdProducto = data[14]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - Existencia = data[8]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - cantidadActual1 = data[10]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - cantidadActual2 = data[12]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - cantidadAMover = data[13]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - nuevacantidad = 0: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 15:06:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 15:06:08 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 15:06:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 15:06:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 15:06:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 15:06:14 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'SalidaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 15:06:17 - [MESSAGE][PASSED] - All options with value 'SalidaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 15:06:17 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'DevolucionProductoCompra' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 15:06:18 - [MESSAGE][PASSED] - All options with value 'DevolucionProductoCompra' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 15:06:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 15:06:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 15:06:19 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '9440-303-304' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:06:20 - [MESSAGE][PASSED] - Text '9440-303-304' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:06:20 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:06:20 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:06:20 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidadAMover): Text '31268' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:06:21 - [MESSAGE][PASSED] - Text '31268' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:06:21 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:06:21 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:06:21 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 15:06:26 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 15:06:26 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 15:06:26 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 15:06:26 - [TEST_STEP][PASSED] - if (modal == null): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:06:26 - [TEST_STEP][PASSED] - print(modal): null
+
+2020-03-05 15:06:26 - [TEST_STEP][PASSED] - if (motivo == "EntradaPorFabricacion"): null
+
+2020-03-05 15:06:26 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:06:26 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 15:06:28 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 15:06:28 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias"): null
+
+2020-03-05 15:06:28 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:06:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 15:06:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 15:06:31 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:06:31 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:06:31 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 15:06:36 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 15:06:36 - [TEST_STEP][PASSED] - exportar_archivos.logInventario.reporteInv(concepto, motivo, IdProducto, codProducto, Producto, IdGrupo, Existencia, IdAlmacen1, cantidadActual1, IdAlmacen2, cantidadActual2, cantidad): exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 15:06:37 - [MESSAGE][PASSED] - exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 15:06:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 15:06:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Login"), ["Evento":"MovimientoDeInventario", "Index":Index, "Usuario":"", "Contrasena":""], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 15:06:37 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Login: Test Cases/Individual_Tests/Login
+
+2020-03-05 15:06:37 - [TEST_STEP][PASSED] - print("Evento Seleccionado: " + Evento + "
+"): null
+
+2020-03-05 15:06:37 - [TEST_STEP][PASSED] - openBrowser(Web): Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 15:06:37 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-03-05 15:06:37 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-05 15:06:47 - [MESSAGE][PASSED] - Browser is opened with url: 'http://test.kaizendev.net/Login/Accesar?salir=true'
+
+2020-03-05 15:06:47 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-05 15:06:48 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - data8 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:48 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - Usuario = data8[1]: null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - Contrasena = data8[2]: null
+
+2020-03-05 15:06:48 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Iniciar Sesion - KAIZEN/is_input_email"), Usuario): Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 15:06:49 - [MESSAGE][PASSED] - Text 'automated.test@grupokaizen.net' is set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_input_email'
+
+2020-03-05 15:06:49 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Page_Iniciar Sesion - KAIZEN/IS_input_contrasena"), Contrasena): Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 15:06:49 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Page_Iniciar Sesion - KAIZEN/IS_input_contrasena'
+
+2020-03-05 15:06:49 - [TEST_STEP][PASSED] - click(findTestObject("Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema")): Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 15:06:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Iniciar Sesion - KAIZEN/is_btn_ingresar_sistema' is clicked on
+
+2020-03-05 15:06:51 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Login' successfully
+
+2020-03-05 15:06:51 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Seleccionar_Idioma"), ["Evento":"MovimientoDeInventario", "Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 15:06:52 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Seleccionar_Idioma: Test Cases/Individual_Tests/Seleccionar_Idioma
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - Idioma = 0: null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - if (Evento == "Crear20"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - else if (Evento == "Crear40"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - else if (Evento == "Aprobar"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - else if (Evento == "Logistica"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - else if (Evento == "Produccion"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - else if (Evento == "Inventario"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - else if (Evento == "Despacho"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - else if (Evento == "ProductoAlmacen"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - else if (Evento == "MovimientoDeInventario"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - data7 = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:52 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - Idioma = data7[0]: null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_btn_idioma")): Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 15:06:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_btn_idioma' is clicked on
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - if (Idioma == "0"): null
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - else: Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 15:06:52 - [TEST_STEP][PASSED] - click(findTestObject("Page_- KAIZEN/si_Spanish")): Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 15:06:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/si_Spanish' is clicked on
+
+2020-03-05 15:06:54 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Seleccionar_Idioma' successfully
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Individual_Tests/Movimientos_Inventario"), ["Index":Index], STOP_ON_FAILURE): Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully
+
+2020-03-05 15:06:54 - [TEST_CASE][PASSED] - Test Cases/Individual_Tests/Movimientos_Inventario: Test Cases/Individual_Tests/Movimientos_Inventario
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - data = obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario(Index): obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:54 - [MESSAGE][PASSED] - obtener_excels.obtener_mov_inventario.getValuesExcelMovInventario is PASSED
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - IdProducto = data[14]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - Existencia = data[8]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - cantidadActual1 = data[10]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - cantidadActual2 = data[12]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - codProducto = data[5]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - IdGrupo = data[6]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - Producto = data[7]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - IdAlmacen1 = data[9]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - IdAlmacen2 = data[11]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - cantidadAMover = data[13]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - cantidad = data[13]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - rand = new java.util.Random(): null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - nuevacantidad = 0: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias" & cantidad == "0"): null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - concepto = data[3]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - motivo = data[4]: null
+
+2020-03-05 15:06:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Inventario")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 15:06:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Inventario' is clicked on
+
+2020-03-05 15:06:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_- KAIZEN/mi_menu_Movimientos")): Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 15:06:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_- KAIZEN/mi_menu_Movimientos' is clicked on
+
+2020-03-05 15:06:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar")): Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 15:07:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is clicked on
+
+2020-03-05 15:07:00 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_concepto"), concepto, true): All options with value 'TransferenciaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 15:07:02 - [MESSAGE][PASSED] - All options with value 'TransferenciaDeMercancias' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_concepto'  using regular expression
+
+2020-03-05 15:07:02 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_motivo"), motivo, true): All options with value 'Fabricacion' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 15:07:04 - [MESSAGE][PASSED] - All options with value 'Fabricacion' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_select_motivo'  using regular expression
+
+2020-03-05 15:07:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto")): Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 15:07:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_select_buscar_Producto' is clicked on
+
+2020-03-05 15:07:04 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), codProducto): Text '9440-404-385' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:07:05 - [MESSAGE][PASSED] - Text '9440-404-385' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:07:05 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_producto"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:07:06 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_producto'
+
+2020-03-05 15:07:06 - [TEST_STEP][PASSED] - setText(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), cantidadAMover): Text '10460' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:07:06 - [MESSAGE][PASSED] - Text '10460' is set on object 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:07:06 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_cantidad"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:07:07 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Page_Create - KAIZEN/mi_assing_cantidad'
+
+2020-03-05 15:07:07 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 15:07:12 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 15:07:12 - [TEST_STEP][PASSED] - modal = executeJavaScript("return document.querySelector('.swal2-popup');", null): Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 15:07:12 - [MESSAGE][PASSED] - Execute JavaScript 'return document.querySelector('.swal2-popup');' successfully
+
+2020-03-05 15:07:12 - [TEST_STEP][PASSED] - if (modal == null): null
+
+2020-03-05 15:07:12 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:07:12 - [TEST_STEP][PASSED] - executeJavaScript("document.querySelector(".swal2-confirm").click();", null): Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-03-05 15:07:12 - [MESSAGE][PASSED] - Execute JavaScript 'document.querySelector(".swal2-confirm").click();' successfully
+
+2020-03-05 15:07:12 - [TEST_STEP][PASSED] - if (motivo == "EntradaPorFabricacion"): null
+
+2020-03-05 15:07:12 - [TEST_STEP][PASSED] - else: Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:07:12 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen1"), IdAlmacen1, true): All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 15:07:14 - [MESSAGE][PASSED] - All options with value '1' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen1'  using regular expression
+
+2020-03-05 15:07:14 - [TEST_STEP][PASSED] - if (concepto == "TransferenciaDeMercancias"): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:07:14 - [TEST_STEP][PASSED] - selectOptionByValue(findTestObject("Object Repository/Page_Create - KAIZEN/mi_assing_almacen2"), IdAlmacen2, true): All options with value '6' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen2'  using regular expression
+
+2020-03-05 15:07:15 - [MESSAGE][PASSED] - All options with value '6' are selected in object 'Object Repository/Page_Create - KAIZEN/mi_assing_almacen2'  using regular expression
+
+2020-03-05 15:07:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_Create - KAIZEN/mi_btn_Guardar")): Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 15:07:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Create - KAIZEN/mi_btn_Guardar' is clicked on
+
+2020-03-05 15:07:18 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Page_Index - KAIZEN/mi_btn_agregar"), 5): Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:07:19 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Index - KAIZEN/mi_btn_agregar' is present
+
+2020-03-05 15:07:19 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2020-03-05 15:07:24 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2020-03-05 15:07:24 - [TEST_STEP][PASSED] - exportar_archivos.logInventario.reporteInv(concepto, motivo, IdProducto, codProducto, Producto, IdGrupo, Existencia, IdAlmacen1, cantidadActual1, IdAlmacen2, cantidadActual2, cantidad): exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 15:07:24 - [MESSAGE][PASSED] - exportar_archivos.logInventario.reporteInv is PASSED
+
+2020-03-05 15:07:24 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Individual_Tests/Movimientos_Inventario' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-03-05 15:04:58 - [TEST_SUITE][PASSED] - Flujo Completo Mov Inventario: Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

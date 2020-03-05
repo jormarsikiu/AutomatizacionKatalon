@@ -225,6 +225,23 @@ for j in range (0, len(df_movinventario2)):
 #nc=len(df_movinventario2)
 #df_movinventario3 = df_movinventario2.sample(nc)
 #df_movinventario3 = df_movinventario3.reset_index(drop=True)
+
+for j in range (0, len(df_movinventario2)):
+	if (df_movinventario2.loc[j, 'Concepto']=='EntradaDeMercancias'):
+		df_movinventario2.loc[j, 'VerificarAlmacen1'] = df_movinventario2.loc[j, 'CantidadActual1'] + df_movinventario2.loc[j, 'CantidadAMover']
+		df_movinventario2.loc[j, 'VerificarAlmacen2'] = 'NA'
+		df_movinventario2.loc[j, 'VerificarExistencia'] = df_movinventario2.loc[j, 'ExistenciaInicial'] + df_movinventario2.loc[j, 'CantidadAMover']
+	elif (df_movinventario2.loc[j, 'Concepto']=='SalidaDeMercancias'):
+		df_movinventario2.loc[j, 'VerificarAlmacen1'] = df_movinventario2.loc[j, 'CantidadActual1'] - df_movinventario2.loc[j, 'CantidadAMover']
+		df_movinventario2.loc[j, 'VerificarAlmacen2'] = 'NA'
+		df_movinventario2.loc[j, 'VerificarExistencia'] = df_movinventario2.loc[j, 'ExistenciaInicial'] - df_movinventario2.loc[j, 'CantidadAMover']
+	elif (df_movinventario2.loc[j, 'Concepto']=='TransferenciaDeMercancias'):
+		df_movinventario2.loc[j, 'VerificarAlmacen1'] = df_movinventario2.loc[j, 'CantidadActual1'] - df_movinventario2.loc[j, 'CantidadAMover']
+		df_movinventario2.loc[j, 'VerificarAlmacen2'] = df_movinventario2.loc[j, 'CantidadActual2'] + df_movinventario2.loc[j, 'CantidadAMover']
+		df_movinventario2.loc[j, 'VerificarExistencia'] = df_movinventario2.loc[j, 'ExistenciaInicial'] 
+
+
+
 export_excel = df_movinventario2.to_excel (r'Pedidos/DataExcel/Inventario/MovimientoDeInventario.xlsx', index = None, header=True)
 
 os.remove('Concepto.xlsx')
@@ -235,7 +252,7 @@ os.remove('Almacen2.xlsx')
 os.remove('Almacenes.xlsx')
 os.remove('TestDataUser.xlsx')
 os.remove('Movimiento.xlsx')
-"""
+
 #Se valida y se crea el archivo que necesita Katalon para guardar los pedidos
 if os.path.isfile("Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx"):
     print("Ya esta creado: Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx")
@@ -243,7 +260,7 @@ else:
 	wb7 = openpyxl.Workbook() 
 	wb7.save('Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx') 
 	print("Archivo creado: Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx")
-"""
+
 
 
 

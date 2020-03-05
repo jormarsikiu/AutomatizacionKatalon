@@ -31,13 +31,13 @@
    <testCaseLink>
       <guid>2bb94dfb-0c78-4862-8999-05aa22cb2866</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1ee52bf0-e64c-4ef3-8e24-1e4158f7d4ec</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
