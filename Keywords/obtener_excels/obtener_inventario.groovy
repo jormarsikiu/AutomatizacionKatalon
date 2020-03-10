@@ -27,7 +27,7 @@ public class obtener_inventario {
 	@Keyword
 	def List<String> getValuesExcelInventary(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Inventario_20pies.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Inventario.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 

@@ -74,7 +74,7 @@ df_usuarios =  pd.DataFrame(usuarios, columns= ['Idioma', 'Usuario', 'Contrasena
 #################################################################################
 
 df_fusion_orden=pd.concat([df_usuarios, df_confirmados], axis=1)
-export_excel = df_fusion_orden.to_excel(r'Pedidos/DataExcel/Orden_Produccion_20pies.xlsx', index = None, header=True)
+export_excel = df_fusion_orden.to_excel(r'Pedidos/DataExcel/Orden_Produccion.xlsx', index = None, header=True)
 
 os.remove('TestDataUser.xlsx')
 os.remove('Orden_Produccion.xlsx')

@@ -78,7 +78,7 @@ df_fusion_orden=pd.concat([df_usuarios, df_confirmados, ], axis=1)
 
 df_orden_prod=pd.merge(df_fusion_orden, df_pedidos, on="IdPedido", how="left")
 
-export_excel = df_orden_prod.to_excel(r'Pedidos/DataExcel/Despacho_20pies.xlsx', index = None, header=True)
+export_excel = df_orden_prod.to_excel(r'Pedidos/DataExcel/Despacho.xlsx', index = None, header=True)
 
 os.remove('TestDataUser.xlsx')
 os.remove('Despachar.xlsx')

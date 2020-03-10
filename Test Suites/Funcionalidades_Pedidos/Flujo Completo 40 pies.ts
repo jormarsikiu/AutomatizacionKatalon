@@ -13,19 +13,19 @@
    <testCaseLink>
       <guid>f9d02c02-1aa2-4c8b-8ba0-2c72c394c326</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Pedidos_40pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8ccbef4d-a934-4b2b-bf92-d19b14399fb9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>bc344e1f-613f-4baf-a4e7-72c2c24310a1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Aprobaciones</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -147,11 +147,5 @@
          <value></value>
          <variableId>e52f68db-dace-4d04-9d2b-8ee81be90845</variableId>
       </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5d10e606-084e-4c2b-8791-381f6b7769aa</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Remover_pedidos</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

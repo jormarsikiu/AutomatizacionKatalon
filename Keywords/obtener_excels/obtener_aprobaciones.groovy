@@ -30,7 +30,7 @@ public class obtener_aprobaciones {
 	@Keyword
 	def List<String> getValuesExcelAprob20(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/AprobacionesPedidos.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 

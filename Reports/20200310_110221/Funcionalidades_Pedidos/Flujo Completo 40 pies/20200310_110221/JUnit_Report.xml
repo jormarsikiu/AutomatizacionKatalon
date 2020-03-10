@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Flujo Completo 40 pies" time="6.811" tests="1" failures="0" errors="1">
+   <testsuite name="Flujo Completo 40 pies" tests="1" failures="0" errors="1" time="6.811" timestamp="2020-03-10 11:02:29" hostname="kaizen - LAPTOP-K43U1BVQ" id="Test Suites/Funcionalidades_Pedidos/Flujo Completo 40 pies">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200310_110221\\Funcionalidades_Pedidos\\Flujo Completo 40 pies\\20200310_110221"/>
+         <property name="logFiles" value="C:\\Users\\kaizen\\git\\AutomatizacionKatalon\\Reports\\20200310_110221\\Funcionalidades_Pedidos\\Flujo Completo 40 pies\\20200310_110221\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="kaizen - LAPTOP-K43U1BVQ"/>
+         <property name="hostAddress" value="192.168.99.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+      </properties>
+      <testcase name="Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies" time="0.978" classname="Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies" status="ERROR">
+         <error type="ERROR" message="Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Crear_Pedido40pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Crear_Pedido_40pies.run(TC_Crear_Pedido_40pies:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583852546824.run(TempTestSuite1583852546824.groovy:36)
+"/>
+         <system-out><![CDATA[2020-03-10 11:02:30 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies: Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Crear_Pedido40pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Crear_Pedido_40pies.run(TC_Crear_Pedido_40pies:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583852546824.run(TempTestSuite1583852546824.groovy:36)
+
+
+2020-03-10 11:02:30 - [TEST_STEP][PASSED] - archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Crear_Pedido40pies.xlsx: null
+
+2020-03-10 11:02:30 - [TEST_STEP][PASSED] - excelData = getExcelDataWithDefaultSheet(archivo, "Sheet1", true): null]]></system-out>
+         <system-err><![CDATA[2020-03-10 11:02:30 - [TEST_CASE][ERROR] - Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies: Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Crear_Pedido40pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Crear_Pedido_40pies.run(TC_Crear_Pedido_40pies:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583852546824.run(TempTestSuite1583852546824.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-03-10 11:02:29 - [TEST_SUITE][ERROR] - Flujo Completo 40 pies: Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Crear_Pedido40pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Crear_Pedido_40pies.run(TC_Crear_Pedido_40pies:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583852546824.run(TempTestSuite1583852546824.groovy:36)]]></system-out>
+      <system-err><![CDATA[2020-03-10 11:02:29 - [TEST_SUITE][ERROR] - Flujo Completo 40 pies: Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies FAILED.
+Reason:
+java.io.FileNotFoundException: C:/Users/kaizen/git/AutomatizacionKatalon/Pedidos/DataExcel/Crear_Pedido40pies.xlsx
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelData(ExcelFactory.java:25)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory.getExcelDataWithDefaultSheet(ExcelFactory.java:17)
+	at com.kms.katalon.core.testdata.reader.ExcelFactory$getExcelDataWithDefaultSheet.call(Unknown Source)
+	at TC_Crear_Pedido_40pies.run(TC_Crear_Pedido_40pies:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1583852546824.run(TempTestSuite1583852546824.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

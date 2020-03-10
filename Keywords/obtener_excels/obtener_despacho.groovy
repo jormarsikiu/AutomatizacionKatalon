@@ -26,7 +26,7 @@ public class obtener_despacho {
 	@Keyword
 	def List<String> getValuesExcelDespach(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Despacho_20pies.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Despacho.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 

@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testdata.reader.ExcelFactory
 import com.kms.katalon.core.configuration.RunConfiguration
 
-String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx"
+String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/AprobacionesPedidos.xlsx"
 
 Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true)
 

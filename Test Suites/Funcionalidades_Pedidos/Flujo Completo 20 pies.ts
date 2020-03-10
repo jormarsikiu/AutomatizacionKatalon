@@ -13,7 +13,7 @@
    <testCaseLink>
       <guid>1dc22bb9-4b30-481c-83ff-4382239d9fdb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Pedidos_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -147,11 +147,5 @@
          <value></value>
          <variableId>e52f68db-dace-4d04-9d2b-8ee81be90845</variableId>
       </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>359f4750-764a-40e4-a27f-07d943ef5190</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Remover_pedidos</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

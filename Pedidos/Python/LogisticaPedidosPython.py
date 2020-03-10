@@ -109,7 +109,7 @@ df_pedidoaprobados = df_pedidoaprobados.reset_index()
 
 df_fusion_logistico=pd.concat([df_usuarios, df_pedidoaprobados, df_logistico], axis=1)
 df_fusion_logistico = df_fusion_logistico.drop(['index'], axis=1)
-export_excel5 = df_fusion_logistico.to_excel(r'Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx', index = None, header=True)
+export_excel5 = df_fusion_logistico.to_excel(r'Pedidos/DataExcel/Cargos_Logisticos.xlsx', index = None, header=True)
 
 
 os.remove('TestCargosInv.xlsx')

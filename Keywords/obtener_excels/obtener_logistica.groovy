@@ -26,7 +26,7 @@ public class obtener_logistica {
 	@Keyword
 	def List<String> getValuesExcelLogistic(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Cargos_Logisticos.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 

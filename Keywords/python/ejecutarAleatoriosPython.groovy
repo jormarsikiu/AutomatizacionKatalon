@@ -37,23 +37,23 @@ public class ejecutarAleatoriosPython {
 		}
 		else if (tipo == 'Aprobar'){
 			actual = "\\Pedidos\\Python\\AprobacionesPedidosPython.py";
-			System.out.println("Archivo: Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx");
+			System.out.println("Archivo: Pedidos/DataExcel/AprobacionesPedidos.xlsx");
 		}
 		else if (tipo == 'Logistica'){
 			actual = "\\Pedidos\\Python\\LogisticaPedidosPython.py";
-			System.out.println("Archivo: Pedidos/DataExcel/Cargos_Logisticos20pies.xlsx");
+			System.out.println("Archivo: Pedidos/DataExcel/Cargos_Logisticos.xlsx");
 		}
 		else if (tipo == 'Produccion'){
 			actual = "\\Pedidos\\Python\\ProduccionPedidosPython.py";
-			System.out.println("Archivo: Pedidos/DataExcel/Orden_Produccion_20pies.xlsx");
+			System.out.println("Archivo: Pedidos/DataExcel/Orden_Produccion.xlsx");
 		}
 		else if (tipo == 'Inventario'){
 			actual = "\\Pedidos\\Python\\InventarioPedidos.py";
-			System.out.println("Archivo: Pedidos/DataExcel/Inventario_20pies.xlsx");
+			System.out.println("Archivo: Pedidos/DataExcel/Inventario.xlsx");
 		}
 		else if (tipo == 'Despacho'){
 			actual = "\\Pedidos\\Python\\DespachoPedidosPython.py";
-			System.out.println("Archivo Creado: Pedidos/DataExcel/Despacho_20pies.xlsx");
+			System.out.println("Archivo Creado: Pedidos/DataExcel/Despacho.xlsx");
 		}
 		else if (tipo == 'BorradoTotal'){
 			actual = "\\Pedidos\\Python\\BorrarTodosExcelsPython.py";

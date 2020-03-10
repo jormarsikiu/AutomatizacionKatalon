@@ -129,10 +129,10 @@ for i in range (0, len(df_fusion2)):
 		df_fusion3.loc[i, 'Aprob. Financiera']=df_fusion2.loc[i, 'Aprob. Financiera']
 		df_fusion3.loc[i, 'Aprob. Produccion']=df_fusion2.loc[i, 'Aprob. Produccion']
 
-export_excel3 = df_fusion3.to_excel (r'Pedidos/DataExcel/AprobacionesPedidos_20pies.xlsx', index = None, header=True)
+export_excel3 = df_fusion3.to_excel (r'Pedidos/DataExcel/AprobacionesPedidos.xlsx', index = None, header=True)
 
 
 os.remove('TestEstadoPedido.xlsx')
-os.remove('ventas.xlsx')
+os.remove('Ventas.xlsx')
 os.remove('AprobacionV.xlsx')
 os.remove('TestDataUser.xlsx')

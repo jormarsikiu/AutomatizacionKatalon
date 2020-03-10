@@ -70,7 +70,7 @@ df_usuarios =  pd.DataFrame(usuarios, columns= ['Idioma', 'Usuario', 'Contrasena
 
 df_inventario=pd.concat([df_usuarios, df_producidos], axis=1)
 
-export_excel = df_inventario.to_excel (r'Pedidos/DataExcel/Inventario_20pies.xlsx', index = None, header=True)
+export_excel = df_inventario.to_excel (r'Pedidos/DataExcel/Inventario.xlsx', index = None, header=True)
 
 os.remove('TestDataUser.xlsx')
 os.remove('Inventario.xlsx')

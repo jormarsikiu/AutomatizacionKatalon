@@ -26,7 +26,7 @@ public class obtener_produccion {
 	@Keyword
 	def List<String> getValuesExcelProduction(int index) {
 
-		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Orden_Produccion_20pies.xlsx";
+		String archivo = "${RunConfiguration.getProjectDir()}/Pedidos/DataExcel/Orden_Produccion.xlsx";
 
 		Object excelData = ExcelFactory.getExcelDataWithDefaultSheet(archivo, "Sheet1", true);
 
