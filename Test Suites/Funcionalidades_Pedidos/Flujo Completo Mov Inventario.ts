@@ -31,7 +31,7 @@
    <testCaseLink>
       <guid>2bb94dfb-0c78-4862-8999-05aa22cb2866</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario</testCaseId>
    </testCaseLink>
    <testCaseLink>

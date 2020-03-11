@@ -35,16 +35,16 @@
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>10e3e30e-b873-4671-abe4-c412fce24de8</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Aprobar_Financiera</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>d49dd983-4f72-478d-b5a3-1da5d0143b4e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Aprobar_Produccion</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>10e3e30e-b873-4671-abe4-c412fce24de8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Aprobar_Financiera</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>694d79f7-c166-47f3-8583-ef9e18fac00f</guid>

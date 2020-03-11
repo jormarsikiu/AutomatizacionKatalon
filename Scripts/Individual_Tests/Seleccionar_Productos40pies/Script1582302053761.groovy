@@ -113,7 +113,7 @@ if (boton == 'block') {
 		
 		
 	} else if ((Iterar == '2')&&(PesoProducto2<=CapacidadDisponible)) {
-		/*Se añaden dos productos: 20 productos que No soportan peso y lo restante en productos
+		/*Se añaden dos productos: n productos que No soportan peso y lo restante en productos
 		que Si soportan peso hasta que llegue a completar la capacidad del contenedor*/
 				
 			CantidadBase=GlobalVariable.CantidadNoSoporta

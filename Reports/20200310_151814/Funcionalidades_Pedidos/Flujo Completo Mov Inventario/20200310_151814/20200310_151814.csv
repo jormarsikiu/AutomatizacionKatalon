@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Flujo Completo Mov Inventario,Chrome 80.0.3987.132,,,2020-03-10 15:18:22,2020-03-10 15:45:09,"26m - 47,285s",FAILED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_ProductoAlmacen,Chrome 80.0.3987.132,,,2020-03-10 15:18:22,2020-03-10 15:18:34,"11,609s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""ProductoAlmacen"")",Chrome 80.0.3987.132,,,2020-03-10 15:18:23,2020-03-10 15:18:34,"11,134s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Agregar_Producto_Almacen,Chrome 80.0.3987.132,,,2020-03-10 15:18:34,2020-03-10 15:39:43,"21m - 8,691s",FAILED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Inventario/ProductoAlmacen.xlsx,Chrome 80.0.3987.132,,,2020-03-10 15:18:34,2020-03-10 15:18:34,"0,017s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-10 15:18:34,2020-03-10 15:18:35,"0,825s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-10 15:18:35,2020-03-10 15:39:43,"21m - 7,496s",FAILED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Mov_Inventario,Chrome 80.0.3987.132,,,2020-03-10 15:39:43,2020-03-10 15:39:57,"14,141s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""MovimientoInventario"")",Chrome 80.0.3987.132,,,2020-03-10 15:39:43,2020-03-10 15:39:57,"13,947s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Agregar_Movimiento_Inventario,Chrome 80.0.3987.132,,,2020-03-10 15:39:57,2020-03-10 15:45:00,"5m - 3,482s",FAILED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Inventario/MovimientoDeInventario.xlsx,Chrome 80.0.3987.132,,,2020-03-10 15:39:57,2020-03-10 15:39:57,"0,000s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-10 15:39:57,2020-03-10 15:39:57,"0,032s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-10 15:39:57,2020-03-10 15:45:00,"5m - 3,204s",FAILED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Reporte_Mov_Inventario,Chrome 80.0.3987.132,,,2020-03-10 15:45:00,2020-03-10 15:45:09,"8,796s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""Reporte"")",Chrome 80.0.3987.132,,,2020-03-10 15:45:01,2020-03-10 15:45:09,"8,574s",PASSED
