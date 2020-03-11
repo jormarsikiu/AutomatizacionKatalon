@@ -37,7 +37,7 @@ public class ejecutarAleatoriosPython {
 		}
 		else if (tipo == 'Aprobar'){
 			actual = "\\Pedidos\\Python\\AprobacionesPedidosPython.py";
-			System.out.println("Archivo: Pedidos/DataExcel/AprobacionesPedidos.xlsx");
+			System.out.println("Archivo: Pedidos/DataExcel/Aprobaciones_Pedidos.xlsx");
 		}
 		else if (tipo == 'Logistica'){
 			actual = "\\Pedidos\\Python\\LogisticaPedidosPython.py";

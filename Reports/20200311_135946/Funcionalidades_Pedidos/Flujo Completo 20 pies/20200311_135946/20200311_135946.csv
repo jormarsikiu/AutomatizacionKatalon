@@ -1,0 +1,7 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Flujo Completo 20 pies,Chrome 80.0.3987.132,,,2020-03-11 13:59:54,2020-03-11 14:00:41,"47,110s",FAILED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas,Chrome 80.0.3987.132,,,2020-03-11 13:59:54,2020-03-11 14:00:41,"46,665s",FAILED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Aprobaciones_Pedidos.xlsx,Chrome 80.0.3987.132,,,2020-03-11 13:59:55,2020-03-11 13:59:55,"0,027s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-11 13:59:55,2020-03-11 13:59:56,"1,188s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-11 13:59:56,2020-03-11 14:00:41,"44,834s",FAILED
