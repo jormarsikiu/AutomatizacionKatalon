@@ -6,14 +6,16 @@ import pandas as pd
 import os
 from datetime import datetime
 import random
+from ConexionBD import *
+print(SERVER)
 
 
 #Conexion con la base de fatos
 try:
-	server = '35.196.201.168' 
-	database = 'PETROCHEMICAL_PRUEBAS' 
-	username = 'KAIZEN' 
-	password = 'SYSERP2016-9#' 
+	server = SERVER
+	database = DATABASE
+	username = USERNAME
+	password = PASSWORD
 	cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 	print ("Conecto a la BD")
 except Exception as e:

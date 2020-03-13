@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Flujo Completo 40 pies,Chrome 80.0.3987.132,,,2020-03-13 12:01:31,2020-03-13 12:02:21,"49,867s",PASSED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Despachar,Chrome 80.0.3987.132,,,2020-03-13 12:01:32,2020-03-13 12:01:36,"4,324s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""Despacho"")",Chrome 80.0.3987.132,,,2020-03-13 12:01:32,2020-03-13 12:01:36,"3,987s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Agregar_Despacho,Chrome 80.0.3987.132,,,2020-03-13 12:01:36,2020-03-13 12:02:21,"45,169s",PASSED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Despacho.xlsx,Chrome 80.0.3987.132,,,2020-03-13 12:01:37,2020-03-13 12:01:37,"0,029s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-13 12:01:37,2020-03-13 12:01:38,"0,886s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-13 12:01:38,2020-03-13 12:02:21,"43,565s",PASSED

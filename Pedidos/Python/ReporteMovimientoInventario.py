@@ -5,6 +5,8 @@ import openpyxl
 import pandas as pd
 import os
 import random
+from ConexionBD import *
+print(SERVER)
 
 productos_almacen = pd.read_excel(r"Pedidos/DataExcel/Inventario/LogReporteInventarioKatalon.xlsx")
 df_productos_almacen= pd.DataFrame(productos_almacen, columns= ['IdProducto'])
@@ -12,10 +14,10 @@ l=df_productos_almacen.iloc[:, 0].tolist()
 
 #Conexion con la base de fatos
 try:
-	server = '35.196.201.168' 
-	database = 'PETROCHEMICAL_PRUEBAS' 
-	username = 'KAIZEN' 
-	password = 'SYSERP2016-9#' 
+	server = SERVER
+	database = DATABASE
+	username = USERNAME
+	password = PASSWORD
 	cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 	print ("Conecto a la BD")
 except Exception as e:

@@ -6,6 +6,8 @@ import pandas as pd
 import os
 import datetime
 from openpyxl.utils import get_column_letter
+from ConexionBD import *
+print(SERVER)
 
 idpedidos = pd.read_excel(r"Pedidos/DataExcel/Pedidos_Creados_Katalon.xlsx")
 
@@ -17,10 +19,10 @@ l=df_pedidos.iloc[:, 0].tolist()
 
 #Conexion con la base de fatos
 try:
-	server = '35.196.201.168' 
-	database = 'PETROCHEMICAL_PRUEBAS' 
-	username = 'KAIZEN' 
-	password = 'SYSERP2016-9#' 
+	server = SERVER
+	database = DATABASE
+	username = USERNAME
+	password = PASSWORD
 	cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 	print ("Conecto a la BD")
 except Exception as e:

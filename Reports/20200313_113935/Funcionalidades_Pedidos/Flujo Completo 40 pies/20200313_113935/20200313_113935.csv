@@ -1,0 +1,60 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Flujo Completo 40 pies,Chrome 80.0.3987.132,,,2020-03-13 11:39:43,2020-03-13 12:00:15,"20m - 32,368s",FAILED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Pedidos_40pies,Chrome 80.0.3987.132,,,2020-03-13 11:39:43,2020-03-13 11:39:48,"5,008s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""Crear40"")",Chrome 80.0.3987.132,,,2020-03-13 11:39:44,2020-03-13 11:39:48,"4,638s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_40pies,Chrome 80.0.3987.132,,,2020-03-13 11:39:48,2020-03-13 11:45:57,"6m - 8,177s",PASSED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Crear_Pedido40pies.xlsx,Chrome 80.0.3987.132,,,2020-03-13 11:39:49,2020-03-13 11:39:49,"0,028s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-13 11:39:49,2020-03-13 11:39:50,"0,850s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-13 11:39:50,2020-03-13 11:45:57,"6m - 6,861s",PASSED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Aprobaciones,Chrome 80.0.3987.132,,,2020-03-13 11:45:57,2020-03-13 11:46:01,"4,192s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""Aprobar"")",Chrome 80.0.3987.132,,,2020-03-13 11:45:57,2020-03-13 11:46:01,"3,983s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Aprobar_Ventas,Chrome 80.0.3987.132,,,2020-03-13 11:46:01,2020-03-13 11:48:10,"2m - 9,234s",PASSED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Aprobaciones_Pedidos.xlsx,Chrome 80.0.3987.132,,,2020-03-13 11:46:01,2020-03-13 11:46:01,"0,000s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-13 11:46:01,2020-03-13 11:46:01,"0,031s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-13 11:46:01,2020-03-13 11:48:10,"2m - 8,957s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Aprobar_Financiera,Chrome 80.0.3987.132,,,2020-03-13 11:48:10,2020-03-13 11:51:23,"3m - 13,537s",PASSED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Aprobaciones_Pedidos.xlsx,Chrome 80.0.3987.132,,,2020-03-13 11:48:10,2020-03-13 11:48:10,"0,001s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-13 11:48:10,2020-03-13 11:48:10,"0,013s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-13 11:48:10,2020-03-13 11:51:23,"3m - 13,155s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Aprobar_Produccion,Chrome 80.0.3987.132,,,2020-03-13 11:51:24,2020-03-13 11:54:01,"2m - 37,550s",PASSED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Aprobaciones_Pedidos.xlsx,Chrome 80.0.3987.132,,,2020-03-13 11:51:24,2020-03-13 11:51:24,"0,000s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-13 11:51:24,2020-03-13 11:51:24,"0,026s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-13 11:51:24,2020-03-13 11:54:01,"2m - 37,209s",PASSED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_CargosLogisticos,Chrome 80.0.3987.132,,,2020-03-13 11:54:01,2020-03-13 11:54:06,"5,207s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""Logistica"")",Chrome 80.0.3987.132,,,2020-03-13 11:54:01,2020-03-13 11:54:06,"5,000s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Agregar_Cargos_Logisticos,Chrome 80.0.3987.132,,,2020-03-13 11:54:06,2020-03-13 11:55:54,"1m - 47,564s",PASSED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Cargos_Logisticos.xlsx,Chrome 80.0.3987.132,,,2020-03-13 11:54:06,2020-03-13 11:54:06,"0,001s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-13 11:54:06,2020-03-13 11:54:07,"0,023s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-13 11:54:07,2020-03-13 11:55:54,"1m - 47,323s",PASSED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Produccion,Chrome 80.0.3987.132,,,2020-03-13 11:55:54,2020-03-13 11:55:58,"4,156s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""Produccion"")",Chrome 80.0.3987.132,,,2020-03-13 11:55:54,2020-03-13 11:55:58,"3,920s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Agregar_Orden_Produccion,Chrome 80.0.3987.132,,,2020-03-13 11:55:58,2020-03-13 11:57:12,"1m - 14,167s",PASSED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Orden_Produccion.xlsx,Chrome 80.0.3987.132,,,2020-03-13 11:55:58,2020-03-13 11:55:58,"0,001s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-13 11:55:58,2020-03-13 11:55:58,"0,025s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-13 11:55:58,2020-03-13 11:57:12,"1m - 13,874s",PASSED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Inventario,Chrome 80.0.3987.132,,,2020-03-13 11:57:12,2020-03-13 11:57:17,"4,990s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""Inventario"")",Chrome 80.0.3987.132,,,2020-03-13 11:57:12,2020-03-13 11:57:17,"4,739s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Agregar_Inventario,Chrome 80.0.3987.132,,,2020-03-13 11:57:17,2020-03-13 11:59:12,"1m - 54,787s",PASSED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Inventario.xlsx,Chrome 80.0.3987.132,,,2020-03-13 11:57:17,2020-03-13 11:57:17,"0,001s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-13 11:57:17,2020-03-13 11:57:17,"0,025s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-13 11:57:17,2020-03-13 11:59:12,"1m - 54,473s",PASSED
+,,,,,,,
+Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Despachar,Chrome 80.0.3987.132,,,2020-03-13 11:59:12,2020-03-13 11:59:17,"5,166s",PASSED
+"python.ejecutarAleatoriosPython.runPython(""Despacho"")",Chrome 80.0.3987.132,,,2020-03-13 11:59:12,2020-03-13 11:59:17,"4,930s",PASSED
+,,,,,,,
+Test Cases/Secuencias de Ejecucion/TC_Agregar_Despacho,Chrome 80.0.3987.132,,,2020-03-13 11:59:17,2020-03-13 12:00:15,"58,176s",FAILED
+archivo = $RunConfiguration.getProjectDir()/Pedidos/DataExcel/Despacho.xlsx,Chrome 80.0.3987.132,,,2020-03-13 11:59:17,2020-03-13 11:59:17,"0,001s",PASSED
+"excelData = getExcelDataWithDefaultSheet(archivo, ""Sheet1"", true)",Chrome 80.0.3987.132,,,2020-03-13 11:59:17,2020-03-13 11:59:17,"0,020s",PASSED
+"for ([Index = 1, Index <= excelData.getRowNumbers(), (Index++)])",Chrome 80.0.3987.132,,,2020-03-13 11:59:17,2020-03-13 12:00:15,"57,826s",FAILED

@@ -19,13 +19,13 @@
    <testCaseLink>
       <guid>89616a7b-3011-48de-a011-c8d9a5c6ea9a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Secuencias de Ejecucion/TC_Crear_Pedido_20pies</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b7a76be4-f0cd-42f5-9bce-779989919a58</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Generar_Excels_Secuencias/TC_Generar_Excel_Aprobaciones</testCaseId>
    </testCaseLink>
    <testCaseLink>
